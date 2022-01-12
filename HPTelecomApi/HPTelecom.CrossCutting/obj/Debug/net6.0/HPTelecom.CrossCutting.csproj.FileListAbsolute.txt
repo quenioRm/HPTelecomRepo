@@ -9,3 +9,11 @@ C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.CrossCutting\obj\Debug\
 C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.CrossCutting\obj\Debug\net6.0\HPTelecom.CrossCutting.dll
 C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.CrossCutting\obj\Debug\net6.0\ref\HPTelecom.CrossCutting.dll
 C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.CrossCutting\obj\Debug\net6.0\HPTelecom.CrossCutting.pdb
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.CrossCutting\obj\Debug\net6.0\HPTelecom.CrossCutting.csproj.AssemblyReference.cache
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.CrossCutting\bin\Debug\net6.0\HPTelecom.Domain.dll
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.CrossCutting\bin\Debug\net6.0\HPTelecom.Infra.dll
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.CrossCutting\bin\Debug\net6.0\HPTelecom.Service.dll
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.CrossCutting\bin\Debug\net6.0\HPTelecom.Infra.pdb
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.CrossCutting\bin\Debug\net6.0\HPTelecom.Service.pdb
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.CrossCutting\bin\Debug\net6.0\HPTelecom.Domain.pdb
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.CrossCutting\obj\Debug\net6.0\HPTelecom.CrossCutting.csproj.CopyComplete

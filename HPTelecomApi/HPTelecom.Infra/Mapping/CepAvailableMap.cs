@@ -8,25 +8,23 @@ namespace HPTelecom.Infra.Mapping
     {
         public void Configure(EntityTypeBuilder<CepAvailableEntity> builder)
         {
-            builder.ToTable("cep_available");
+            builder.ToTable("Table_Cep_Available");
 
             builder.Property(e => e.Id)
-                   .HasMaxLength(40)
-                   .IsRequired();
+                .ValueGeneratedOnAdd()
+                .IsRequired();
 
             builder.Property(e => e.cep)
-                   .HasMaxLength(145)
-                   .IsRequired();
+                .IsRequired()
+                .HasMaxLength(150);
 
-            builder.Property(e => e.status)
-                    .IsRequired();
+            builder.Property(e => e.createdAt)
+                .HasColumnType("datetime")
+                .HasDefaultValueSql("(getdate())")
+                .IsRequired();
 
-            builder.Property(e => e.created_At)
-                   .HasColumnType("timestamp")
-                   .IsRequired();
-
-            builder.Property(e => e.updated_At)
-                   .HasColumnType("timestamp");
+            builder.Property(e => e.updatedAt)
+                .HasColumnType("datetime");
         }
     }
 }

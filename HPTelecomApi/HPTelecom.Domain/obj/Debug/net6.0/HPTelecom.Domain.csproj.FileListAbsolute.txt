@@ -1,12 +1,12 @@
-C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Domain\bin\Debug\net6.0\HPTelecom.Domain.deps.json
-C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Domain\bin\Debug\net6.0\HPTelecom.Domain.dll
-C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Domain\bin\Debug\net6.0\ref\HPTelecom.Domain.dll
-C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Domain\bin\Debug\net6.0\HPTelecom.Domain.pdb
-C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Domain\obj\Debug\net6.0\HPTelecom.Domain.csproj.AssemblyReference.cache
 C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Domain\obj\Debug\net6.0\HPTelecom.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Domain\obj\Debug\net6.0\HPTelecom.Domain.AssemblyInfoInputs.cache
 C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Domain\obj\Debug\net6.0\HPTelecom.Domain.AssemblyInfo.cs
 C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Domain\obj\Debug\net6.0\HPTelecom.Domain.csproj.CoreCompileInputs.cache
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Domain\bin\Debug\net6.0\HPTelecom.Domain.deps.json
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Domain\bin\Debug\net6.0\HPTelecom.Domain.dll
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Domain\bin\Debug\net6.0\ref\HPTelecom.Domain.dll
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Domain\bin\Debug\net6.0\HPTelecom.Domain.pdb
 C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Domain\obj\Debug\net6.0\HPTelecom.Domain.dll
 C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Domain\obj\Debug\net6.0\ref\HPTelecom.Domain.dll
 C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Domain\obj\Debug\net6.0\HPTelecom.Domain.pdb
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Domain\obj\Debug\net6.0\HPTelecom.Domain.csproj.AssemblyReference.cache

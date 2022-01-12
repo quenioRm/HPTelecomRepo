@@ -1,13 +1,12 @@
-﻿
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace HPTelecom.Domain.Entities
 {
-    public abstract class BaseEntity
+    public abstract class BaseEntity<T>
     {
         [Key]
         public Guid Id { get; set; }
-        public DateTime created_At { get; set; }
-        public DateTime updated_At { get; set; }
+        public DateTime createdAt { get; set; }
+        public DateTime updatedAt { get; set; }
     }
 }

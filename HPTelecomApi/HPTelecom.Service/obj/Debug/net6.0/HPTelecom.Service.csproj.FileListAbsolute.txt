@@ -9,3 +9,7 @@ C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Service\obj\Debug\net6.
 C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Service\obj\Debug\net6.0\HPTelecom.Service.dll
 C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Service\obj\Debug\net6.0\ref\HPTelecom.Service.dll
 C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Service\obj\Debug\net6.0\HPTelecom.Service.pdb
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Service\obj\Debug\net6.0\HPTelecom.Service.csproj.AssemblyReference.cache
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Service\bin\Debug\net6.0\HPTelecom.Domain.dll
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Service\bin\Debug\net6.0\HPTelecom.Domain.pdb
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Service\obj\Debug\net6.0\HPTelecom.Service.csproj.CopyComplete

@@ -1,69 +1,68 @@
 ﻿using HPTelecom.Domain.Entities;
-using HPTelecom.Domain.Interfaces;
-using HPTelecom.Infra.Context;
+using HPTelecom.Domain.Interfaces.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace HPTelecom.Infra.Repository
 {
-    public class BaseRepository<T> : IRepository<T> where T : BaseEntity
+    public class BaseRepository<T, T2> : IRepository<T, T2>
+        where T : BaseEntity<T2>
     {
+        protected readonly DbContext _context;
+        protected readonly DbSet<T> _dbset;
 
-        protected readonly HPTelecomContext _context;
-        private DbSet<T> _dataset;
-        public BaseRepository(HPTelecomContext context)
+        public BaseRepository(DbContext context, DbSet<T> dbset)
         {
             _context = context;
-            _dataset = _context.Set<T>();
+            _dbset = dbset;
         }
-        public async Task<bool> DeleteAsync(Guid id)
+
+        public async Task<bool> DeleteAsync(T2 Id)
         {
-            var result = await _dataset.SingleOrDefaultAsync(p => p.Id.Equals(id));
+            var result = await _dbset.SingleOrDefaultAsync(p => p.Id.Equals(Id));
             if (result == null)
                 return false;
 
-            _dataset.Remove(result);
+            _dbset.Remove(result);
+
             await _context.SaveChangesAsync();
+
             return true;
         }
 
         public async Task<T> InsertAsync(T item)
         {
-            if (item.Id == Guid.Empty)
-                item.Id = Guid.NewGuid();
-
-            item.created_At = DateTime.UtcNow;
-            _dataset.Add(item);
+            item.createdAt = DateTime.Now;
+            _dbset.Add(item);
 
             await _context.SaveChangesAsync();
 
             return item;
         }
 
-        public async Task<bool> ExistAsync(Guid id)
+        public async Task<bool> ExistAsync(T2 Id)
         {
-            return await _dataset.AnyAsync(p => p.Id.Equals(id));
+            return await _dbset.AnyAsync(p => p.Id.Equals(Id));
         }
 
-        public async Task<T> SelectAsync(Guid id)
+        public async Task<T> SelectAsync(T2 Id)
         {
-            return await _dataset.SingleOrDefaultAsync(p => p.Id.Equals(id));
+            return await _dbset.SingleOrDefaultAsync(p => p.Id.Equals(Id));
         }
 
         public async Task<IEnumerable<T>> SelectAsync()
         {
-            return await _dataset.ToListAsync();
+            return await _dbset.ToListAsync();
         }
 
         public async Task<T> UpdateAsync(T item)
         {
-            var result = await _dataset.SingleOrDefaultAsync(p => p.Id.Equals(item.Id));
+            var result = await _dbset.SingleOrDefaultAsync(p => p.Id.Equals(item.Id));
             if (result == null)
                 return null;
 
-            item.updated_At = DateTime.UtcNow;
-            item.created_At = result.created_At;
-
+            item.updatedAt = DateTime.Now;
             _context.Entry(result).CurrentValues.SetValues(item);
+
             await _context.SaveChangesAsync();
 
             return item;
