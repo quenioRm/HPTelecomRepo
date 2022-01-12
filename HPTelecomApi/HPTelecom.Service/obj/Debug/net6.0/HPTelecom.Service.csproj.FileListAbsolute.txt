@@ -1,0 +1,11 @@
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Service\bin\Debug\net6.0\HPTelecom.Service.deps.json
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Service\bin\Debug\net6.0\HPTelecom.Service.dll
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Service\bin\Debug\net6.0\ref\HPTelecom.Service.dll
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Service\bin\Debug\net6.0\HPTelecom.Service.pdb
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Service\obj\Debug\net6.0\HPTelecom.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Service\obj\Debug\net6.0\HPTelecom.Service.AssemblyInfoInputs.cache
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Service\obj\Debug\net6.0\HPTelecom.Service.AssemblyInfo.cs
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Service\obj\Debug\net6.0\HPTelecom.Service.csproj.CoreCompileInputs.cache
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Service\obj\Debug\net6.0\HPTelecom.Service.dll
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Service\obj\Debug\net6.0\ref\HPTelecom.Service.dll
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Service\obj\Debug\net6.0\HPTelecom.Service.pdb

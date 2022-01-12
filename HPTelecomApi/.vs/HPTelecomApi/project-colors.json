@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bc2695b5-4900-49a7-ab8b-5a42f29a099e": {
+      "ProjectGuid": "bc2695b5-4900-49a7-ab8b-5a42f29a099e",
+      "DisplayName": "HPTelecomApi",
+      "ColorIndex": 0
+    },
+    "6004c1a7-6bf3-4724-9957-713e1e14589f": {
+      "ProjectGuid": "6004c1a7-6bf3-4724-9957-713e1e14589f",
+      "DisplayName": "HPTelecom.Application",
+      "ColorIndex": 1
+    },
+    "939bbe20-83d7-43a8-b947-ddb000402711": {
+      "ProjectGuid": "939bbe20-83d7-43a8-b947-ddb000402711",
+      "DisplayName": "HPTelecom.CrossCutting",
+      "ColorIndex": 2
+    },
+    "1b24df4f-9d9f-4e40-80e8-35c9b2474735": {
+      "ProjectGuid": "1b24df4f-9d9f-4e40-80e8-35c9b2474735",
+      "DisplayName": "HPTelecom.Domain",
+      "ColorIndex": 3
+    },
+    "d7ab102c-9190-4fc8-bcff-9143d1ee80b3": {
+      "ProjectGuid": "d7ab102c-9190-4fc8-bcff-9143d1ee80b3",
+      "DisplayName": "HPTelecom.Infra",
+      "ColorIndex": 4
+    },
+    "6825a6bb-312a-426e-ad57-bc83e8302364": {
+      "ProjectGuid": "6825a6bb-312a-426e-ad57-bc83e8302364",
+      "DisplayName": "HPTelecom.Service",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}

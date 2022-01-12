@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HPTelecom.Application", "HPTelecom.Application\HPTelecom.Application.csproj", "{6004C1A7-6BF3-4724-9957-713E1E14589F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HPTelecom.CrossCutting", "HPTelecom.CrossCutting\HPTelecom.CrossCutting.csproj", "{939BBE20-83D7-43A8-B947-DDB000402711}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HPTelecom.Domain", "HPTelecom.Domain\HPTelecom.Domain.csproj", "{1B24DF4F-9D9F-4E40-80E8-35C9B2474735}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HPTelecom.Infra", "HPTelecom.Infra\HPTelecom.Infra.csproj", "{D7AB102C-9190-4FC8-BCFF-9143D1EE80B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HPTelecom.Service", "HPTelecom.Service\HPTelecom.Service.csproj", "{6825A6BB-312A-426E-AD57-BC83E8302364}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6004C1A7-6BF3-4724-9957-713E1E14589F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6004C1A7-6BF3-4724-9957-713E1E14589F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6004C1A7-6BF3-4724-9957-713E1E14589F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6004C1A7-6BF3-4724-9957-713E1E14589F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{939BBE20-83D7-43A8-B947-DDB000402711}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{939BBE20-83D7-43A8-B947-DDB000402711}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{939BBE20-83D7-43A8-B947-DDB000402711}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{939BBE20-83D7-43A8-B947-DDB000402711}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B24DF4F-9D9F-4E40-80E8-35C9B2474735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B24DF4F-9D9F-4E40-80E8-35C9B2474735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B24DF4F-9D9F-4E40-80E8-35C9B2474735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B24DF4F-9D9F-4E40-80E8-35C9B2474735}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7AB102C-9190-4FC8-BCFF-9143D1EE80B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7AB102C-9190-4FC8-BCFF-9143D1EE80B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7AB102C-9190-4FC8-BCFF-9143D1EE80B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7AB102C-9190-4FC8-BCFF-9143D1EE80B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6825A6BB-312A-426E-AD57-BC83E8302364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6825A6BB-312A-426E-AD57-BC83E8302364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6825A6BB-312A-426E-AD57-BC83E8302364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6825A6BB-312A-426E-AD57-BC83E8302364}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF45D44B-EC4A-4679-AD2D-4F28DA9C5305}
+	EndGlobalSection
+EndGlobal

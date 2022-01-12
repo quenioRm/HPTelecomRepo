@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "iBoeNAg3F87JRt+YeYsFYHeIi566n3RK1b/9Es0CSz7qqWsLIJi9f8Fln28j+u+vS1Zfdg5PfBwfBF1XTykPmQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\NoobNoob\\source\\repos\\HP\\HPTelecomApi\\HPTelecom.Application\\HPTelecom.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NoobNoob\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\NoobNoob\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\NoobNoob\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\NoobNoob\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\NoobNoob\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\NoobNoob\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

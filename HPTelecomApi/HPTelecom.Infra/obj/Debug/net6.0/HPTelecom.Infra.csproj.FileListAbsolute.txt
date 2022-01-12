@@ -1,0 +1,5 @@
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Infra\obj\Debug\net6.0\HPTelecom.Infra.csproj.AssemblyReference.cache
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Infra\obj\Debug\net6.0\HPTelecom.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Infra\obj\Debug\net6.0\HPTelecom.Infra.AssemblyInfoInputs.cache
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Infra\obj\Debug\net6.0\HPTelecom.Infra.AssemblyInfo.cs
+C:\Users\NoobNoob\source\repos\HP\HPTelecomApi\HPTelecom.Infra\obj\Debug\net6.0\HPTelecom.Infra.csproj.CoreCompileInputs.cache
