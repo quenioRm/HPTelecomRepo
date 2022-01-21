@@ -22,13 +22,13 @@ export const HomeMainContent = () => {
     const [centerImages, setcenterImages] = useState(
         [
             {id : 1, image: "images/hub/hub1-8.png"},
-            {id : 2, image: "images/hub/hub2-8.png"},
-            {id : 3, image: "images/hub/hub3-8.png"},
-            {id : 4, image: "images/hub/hub4-8.png"},
-            {id : 5, image: "images/hub/hub5-8.png"},
-            {id : 6, image: "images/hub/hub6-8.png"},
-            {id : 7, image: "images/hub/hub7-8.png"},
-            {id : 8, image: "images/hub/hub8-8.png"},
+            {id : 2, image: "images/hub/hub-linha2-8.png"},
+            {id : 3, image: "images/hub/hub-linha3-8.png"},
+            {id : 4, image: "images/hub/hub-linha4-8.png"},
+            {id : 5, image: "images/hub/hub-linha5-8.png"},
+            {id : 6, image: "images/hub/hub-linha6-8.png"},
+            {id : 7, image: "images/hub/hub-linha7-8.png"},
+            {id : 8, image: "images/hub/hub-linha8-8.png"},
         ]
     )
 
@@ -55,16 +55,10 @@ export const HomeMainContent = () => {
         });
     }
 
-    const [centerImageClassname , setCenterImageClassName] = useState("col-lg-4 col-md-12 align-self-center text-center")
-
     const updateSelectCenterImage = id => {
         Object.keys(centerImages).forEach(function(key) {
             if(centerImages[key].id == id){
-               setCenterImageClassName("col-lg-4 col-md-12 align-self-center text-center fade-in-image")
                setSelectCenterImage(centerImages[key].image)
-               setTimeout(() => {
-                    setCenterImageClassName("col-lg-4 col-md-12 align-self-center text-center")
-               }, 3500);
             }
         });
     }
@@ -174,7 +168,7 @@ export const HomeMainContent = () => {
                     onMouseLeave={() => handleMouseLeave(4)}
                     style={{
                         position:"relative",
-                        left: "-10px"
+                        left: "-15px"
                     }}
                 >
                     <h4 className="iq-font-black iq-tw-5">
@@ -196,12 +190,18 @@ export const HomeMainContent = () => {
                     </p>
                 </div>
             </div>
-            <div id="centerImage" className={centerImageClassname}>
+            <div id="centerImage" className="col-lg-4 col-md-12 align-self-center text-center">
                 <img src={selectCenterImage} alt="" 
-                style={{
-                    position:"relative",
-                    left:"-80px"
-                }}
+                    style={{
+                        position:"relative",
+                        left:"-80px"
+                    }}
+                />
+                <img src={selectCenterImage} alt="" 
+                    style={{
+                        position:"relative",
+                        left:"-80px"
+                    }}
                 />
             </div>
             <div className="col-lg-4 col-md-12">
@@ -210,8 +210,8 @@ export const HomeMainContent = () => {
                 onMouseLeave={() => handleMouseLeave(5)}
                 style={{
                     position:"relative",
-                    top:"40px",
-                    left:"-70px"
+                    top:"60px",
+                    left:"-65px"
                 }}
                 >
                     <h4 className="iq-font-black iq-tw-5">
@@ -284,8 +284,8 @@ export const HomeMainContent = () => {
                     onMouseLeave={() => handleMouseLeave(8)} 
                     style={{
                         position:"relative",
-                        left:"-30px",
-                        top:"-30px"
+                        left:"-34px",
+                        top:"-45px"
                     }}              
                 >
                     <h4 className="iq-font-black iq-tw-5">
