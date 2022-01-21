@@ -60,14 +60,35 @@ export const HomeMainContent = () => {
       updateSelectCenterImage(newicon.id)
     }, [newicon])
 
+
+
     const updateIcons = id => {
-        Object.keys(images).forEach(function(key) {
-            var textKey = "icon" + id;
-            if(key == textKey){
-                const changedIcon = Object.assign({}, images, { [textKey] : newicon.image })
-                setImages(changedIcon)
+        var textKey = "icon" + id;
+        const items = [];
+
+        Object.keys(icons).forEach(function(key) {
+            var iconKey = "icon" + icons[key].id;
+            if(iconKey == textKey){
+                items.push({
+                    [iconKey] : icons[key].on
+                })
+            }else{
+                items.push({
+                    [iconKey] : icons[key].off
+                })
             }
         });
+
+        console.log("antes", images);
+        items.map((item, key)=> {
+            var tempId = "icon" + (key + 1)
+            //setImages({})
+            console.log({ [tempId] : item[tempId]})
+            const changedIcon = Object.assign({}, images, { [tempId] : item[tempId]})
+            setImages(changedIcon)
+        })
+
+        console.log("depois",images);
     }
 
     const [centerImageOpacity, setCenterImageOpacity] = useState(1);
@@ -108,7 +129,9 @@ export const HomeMainContent = () => {
             </div>
             </div>
             <div className="row h-100">
-            <div className="col-lg-4 col-md-12 text-right">
+            <div className="col-lg-4 col-md-12 text-right" style={{
+                zIndex:1
+            }}>
                 <div className="iq-feature2 iq-mtb-22 first-l" 
                 onMouseEnter={() => handleMouseEnter(1)}
                 onMouseLeave={() => handleMouseLeave(1)}
@@ -121,7 +144,7 @@ export const HomeMainContent = () => {
                     <h4 className="iq-font-black iq-tw-5">
                         <Link to="/">Alta velocidade</Link>
                         <span className="iq-icon iq-ml-10">
-                        <img
+                        <img 
                             className="img-fluid"
                             src={images.icon1}
                             alt=""
@@ -174,7 +197,10 @@ export const HomeMainContent = () => {
                 >
                     <h4 className="iq-font-black iq-tw-5">
                         <a href="services-details.html">Coin Exchange</a>{" "}
-                        <span className="iq-icon iq-ml-10">
+                        <span className="iq-icon iq-ml-10"
+                        onMouseEnter={() => handleMouseEnter(3)}
+                        onMouseLeave={() => handleMouseLeave(3)}
+                        >
                         <img
                             className="img-fluid"
                             src={images.icon3}
