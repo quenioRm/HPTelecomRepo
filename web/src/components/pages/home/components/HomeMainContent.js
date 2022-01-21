@@ -1,92 +1,315 @@
-import react from "react";
+import react, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { ChangeContentOneEffect } from "./ChangeContentOneEffect";
 
 export const HomeMainContent = () => {
+
+    const [images, setImages] = useState(
+        {
+            icon1: "images/hub/icons/1_velocidade_off.png",
+            icon2: "images/hub/icons/2_Sem difelidade_off.png",
+            icon3: "images/hub/icons/3_suporte_off.png",
+            icon4: "images/hub/icons/4_Chat_off.png",
+            icon5: "images/hub/icons/5_Ping_off.png",
+            icon6: "images/hub/icons/6_Home Office_off.png",
+            icon7: "images/hub/icons/7_UDH_off.png",
+            icon8: "images/hub/icons/8_Clube_off.png",
+        }
+    )
+
+    const [selectCenterImage, setSelectCenterImage] = useState("images/hub/hub1-8.png");
+    
+    const [centerImages, setcenterImages] = useState(
+        [
+            {id : 1, image: "images/hub/hub1-8.png"},
+            {id : 2, image: "images/hub/hub2-8.png"},
+            {id : 3, image: "images/hub/hub3-8.png"},
+            {id : 4, image: "images/hub/hub4-8.png"},
+            {id : 5, image: "images/hub/hub5-8.png"},
+            {id : 6, image: "images/hub/hub6-8.png"},
+            {id : 7, image: "images/hub/hub7-8.png"},
+            {id : 8, image: "images/hub/hub8-8.png"},
+        ]
+    )
+
+    const { 
+        handleMouseEnter,
+        handleMouseLeave,
+        icons,
+        newicon
+
+    } = ChangeContentOneEffect()
+
+    useEffect(() => {
+      updateIcons(newicon.id)
+      updateSelectCenterImage(newicon.id)
+    }, [newicon])
+
+    const updateIcons = id => {
+        Object.keys(images).forEach(function(key) {
+            var textKey = "icon" + id;
+            if(key == textKey){
+                const changedIcon = Object.assign({}, images, { [textKey] : newicon.image })
+                setImages(changedIcon)
+            }
+        });
+    }
+
+    const [centerImageClassname , setCenterImageClassName] = useState("col-lg-4 col-md-12 align-self-center text-center")
+
+    const updateSelectCenterImage = id => {
+        Object.keys(centerImages).forEach(function(key) {
+            if(centerImages[key].id == id){
+               setCenterImageClassName("col-lg-4 col-md-12 align-self-center text-center fade-in-image")
+               setSelectCenterImage(centerImages[key].image)
+               setTimeout(() => {
+                    setCenterImageClassName("col-lg-4 col-md-12 align-self-center text-center")
+               }, 3500);
+            }
+        });
+    }
+
     return(
         <>
         {/* Parte 1 */}
-       <section className="overview-block-ptb iq-fea-2">
+        <section className="overview-block-ptb iq-feature-aria">
         <div className="container">
             <div className="row">
             <div className="col-sm-12">
                 <div className="heading-title">
-                <h3 className="title iq-tw-5 iq-mb-20">Bitcoin Features</h3>
+                <h3 className="title iq-tw-5 iq-mb-25">Bitcoin Features</h3>
                 <p>
-                    Here is 3 Easy Steps to Busy &amp; Sell Bitcoin. Lorem Ipsum has
-                    been the industry's standard dummy text ever since the 1500s, when
-                    an unknown printer took a galley of type and scrambled it to make a
-                    type specimen book.{" "}
+                    Lorem Ipsum has been the industry's standard dummy text ever since
+                    the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book.{" "}
                 </p>
                 </div>
             </div>
             </div>
-            <div className="row">
-            <div className="col-sm-12">
-                <div className="iq-feature5">
-                <img src="images/services/big/01.png" alt="icon1" />
-                <h5 className="text-black iq-tw-5 iq-pt-20 iq-pb-10">
-                    <a href="services-details.html">Fast Transaction</a>
-                </h5>
-                <p className="iq-mb-0">
-                    Lorem Ipsum has been the industry's standard dummy text ever since
-                    the 1500s, when an unknown printer took.
-                </p>
-                </div>
-                <div className="iq-feature5">
-                <img src="images/services/big/02.png" alt="icon1" />
-                <h5 className="text-black iq-tw-5 iq-pt-20 iq-pb-10">
-                    <a href="services-details.html">Secure and Stable</a>
-                </h5>
-                <p className="iq-mb-0">
-                    Lorem Ipsum has been the industry's standard dummy text ever since
-                    the 1500s, when an unknown printer took.
-                </p>
-                </div>
-                <div className="iq-feature5">
-                <img src="images/services/big/03.png" alt="icon1" />
-                <h5 className="text-black iq-tw-5 iq-pt-20 iq-pb-10">
-                    <a href="services-details.html">Coin Exchange</a>
-                </h5>
-                <p className="iq-mb-0">
-                    Lorem Ipsum has been the industry's standard dummy text ever since
-                    the 1500s, when an unknown printer took.
-                </p>
-                </div>
-                <div className="iq-feature5">
-                <img src="images/services/big/04.png" alt="icon1" />
-                <h5 className="text-black iq-tw-5 iq-pt-20 iq-pb-10">
-                    <a href="services-details.html">Mobile Apps</a>
-                </h5>
-                <p className="iq-mb-0">
-                    Lorem Ipsum has been the industry's standard dummy text ever since
-                    the 1500s, when an unknown printer took.
-                </p>
-                </div>
-                <div className="iq-feature5">
-                <img src="images/services/big/05.png" alt="icon1" />
-                <h5 className="text-black iq-tw-5 iq-pt-20 iq-pb-10">
-                    <a href="services-details.html">24/7 Trading</a>
-                </h5>
-                <p className="iq-mb-0">
-                    Lorem Ipsum has been the industry's standard dummy text ever since
-                    the 1500s, when an unknown printer took.
-                </p>
-                </div>
-                <div className="iq-feature5">
-                <div className="feature7 text-center">
-                    <img src="images/services/big/06.png" alt="icon1" />
-                    <h5 className="text-black iq-tw-5 iq-pt-20 iq-pb-10">
-                    <a href="services-details.html">Free Consulting</a>
-                    </h5>
-                    <p className="iq-mb-0">
-                    Lorem Ipsum has been the industry's standard dummy text ever since
-                    the 1500s, when an unknown printer took.
+            <div className="row h-100">
+            <div className="col-lg-4 col-md-12 text-right">
+                <div className="iq-feature2 iq-mtb-22 first-l" 
+                onMouseEnter={() => handleMouseEnter(1)}
+                onMouseLeave={() => handleMouseLeave(1)}
+                style={{
+                    position:"relative",
+                    left:"45px",
+                    top:"65px"
+                }}
+                >
+                    <h4 className="iq-font-black iq-tw-5">
+                        <Link to="/">Alta velocidade</Link>
+                        <span className="iq-icon iq-ml-10">
+                        <img
+                            className="img-fluid"
+                            src={images.icon1}
+                            alt=""
+                        />
+                        </span>
+                    </h4>
+                    <p>
+                        Lorem Ipsum has been the industry's standard dummy text ever since
+                        the 1500s.{" "}
+                        <a href="#" className="iq-font-green">
+                        [ ... ]
+                        </a>
                     </p>
                 </div>
+                <div className="iq-feature2 iq-mtb-20 second-l"
+                onMouseEnter={() => handleMouseEnter(2)}
+                onMouseLeave={() => handleMouseLeave(2)}
+                style={{
+                    position:"relative",
+                    left:"-5px",
+                    top:"50px"
+                }}
+                >
+                    <h4 className="iq-font-black iq-tw-5">
+                        <a href="services-details.html">Secure and Stable</a>{" "}
+                        <span className="iq-icon iq-ml-10">
+                        <img
+                            className="img-fluid"
+                            src={images.icon2}
+                            alt=""
+                        />
+                        </span>
+                    </h4>
+                    <p>
+                        Lorem Ipsum has been the industry's standard dummy text ever since
+                        the 1500s.{" "}
+                        <a href="#" className="iq-font-green">
+                        [ ... ]
+                        </a>
+                    </p>
                 </div>
+                <div className="iq-feature2 iq-mtb-20 first-l"
+                    onMouseEnter={() => handleMouseEnter(3)}
+                    onMouseLeave={() => handleMouseLeave(3)}
+                    style={{
+                        position:"relative",
+                        left:"30px",
+                        top:"20px"
+                    }}
+                >
+                    <h4 className="iq-font-black iq-tw-5">
+                        <a href="services-details.html">Coin Exchange</a>{" "}
+                        <span className="iq-icon iq-ml-10">
+                        <img
+                            className="img-fluid"
+                            src={images.icon3}
+                            alt=""
+                        />
+                        </span>
+                    </h4>
+                    <p>
+                        Lorem Ipsum has been the industry's standard dummy text ever since
+                        the 1500s.{" "}
+                        <a href="#" className="iq-font-green">
+                        [ ... ]
+                        </a>
+                    </p>
+                </div>
+                <div className="iq-feature2 iq-mtb-20 first-l"
+                    onMouseEnter={() => handleMouseEnter(4)}
+                    onMouseLeave={() => handleMouseLeave(4)}
+                    style={{
+                        position:"relative",
+                        left: "-10px"
+                    }}
+                >
+                    <h4 className="iq-font-black iq-tw-5">
+                        <a href="services-details.html">Coin Exchange</a>{" "}
+                        <span className="iq-icon iq-ml-10">
+                        <img
+                            className="img-fluid"
+                            src={images.icon4}
+                            alt=""
+                        />
+                        </span>
+                    </h4>
+                    <p>
+                        Lorem Ipsum has been the industry's standard dummy text ever since
+                        the 1500s.{" "}
+                        <a href="#" className="iq-font-green">
+                        [ ... ]
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div id="centerImage" className={centerImageClassname}>
+                <img src={selectCenterImage} alt="" 
+                style={{
+                    position:"relative",
+                    left:"-80px"
+                }}
+                />
+            </div>
+            <div className="col-lg-4 col-md-12">
+                <div className="iq-feature2 iq-mtb-20 first-r"
+                onMouseEnter={() => handleMouseEnter(5)}
+                onMouseLeave={() => handleMouseLeave(5)}
+                style={{
+                    position:"relative",
+                    top:"40px",
+                    left:"-70px"
+                }}
+                >
+                    <h4 className="iq-font-black iq-tw-5">
+                        <span className="iq-icon iq-mr-10">
+                        <img
+                            className="img-fluid"
+                            src={images.icon5}
+                            alt=""
+                        />
+                        </span>
+                        <a href="services-details.html">Mobile Apps</a>
+                    </h4>
+                    <p>
+                        Lorem Ipsum has been the industry's standard dummy text ever since
+                        the 1500s.{" "}
+                        <a href="#" className="iq-font-green">
+                        [ ... ]
+                        </a>
+                    </p>
+                </div>
+                <div className="iq-feature2 iq-mtb-20 second-r"
+                    onMouseEnter={() => handleMouseEnter(6)}
+                    onMouseLeave={() => handleMouseLeave(6)}
+                    style={{
+                        position:"relative",
+                        left:"-10px"
+                    }}
+                >
+                    <h4 className="iq-font-black iq-tw-5">
+                        <span className="iq-icon iq-mr-10">
+                        <img
+                            className="img-fluid"
+                            src={images.icon6}
+                            alt=""
+                        />
+                        </span>
+                        <a href="services-details.html">24/7 Trading</a>
+                    </h4>
+                    <p>
+                        Lorem Ipsum has been the industry's standard dummy text ever since
+                        the 1500s.
+                    </p>
+                </div>
+                <div className="iq-feature2 iq-mtb-20 first-r"
+                    onMouseEnter={() => handleMouseEnter(7)}
+                    onMouseLeave={() => handleMouseLeave(7)}  
+                    style={{
+                        position:"relative",
+                        top:"-10px",
+                        left:"-65px"
+                    }}              
+                >
+                    <h4 className="iq-font-black iq-tw-5">
+                        <span className="iq-icon iq-mr-10">
+                        <img
+                            className="img-fluid"
+                            src={images.icon7}
+                            alt=""
+                        />
+                        </span>
+                        <a href="services-details.html">Free Consulting</a>
+                    </h4>
+                    <p>
+                        Lorem Ipsum has been the industry's standard dummy text ever since
+                        the 1500s.
+                    </p>
+                </div>
+                <div className="iq-feature2 iq-mtb-20 first-r"
+                    onMouseEnter={() => handleMouseEnter(8)}
+                    onMouseLeave={() => handleMouseLeave(8)} 
+                    style={{
+                        position:"relative",
+                        left:"-30px",
+                        top:"-30px"
+                    }}              
+                >
+                    <h4 className="iq-font-black iq-tw-5">
+                        <span className="iq-icon iq-mr-10">
+                        <img
+                            className="img-fluid"
+                            src={images.icon8}
+                            alt=""
+                        />
+                        </span>
+                        <a href="services-details.html">Free Consulting</a>
+                    </h4>
+                    <p>
+                        Lorem Ipsum has been the industry's standard dummy text ever since
+                        the 1500s.
+                    </p>
+                </div>
+            </div>
+            <div className="particles text-center">
+                <img className="img-fluid" src="images/particles.png" alt="" />
             </div>
             </div>
         </div>
-        </section> 
+        </section>
         {/* Parte 2 */}
           {/* Testimonial */}
   <div

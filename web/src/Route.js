@@ -15,6 +15,7 @@ export default () => {
       <MainLayout>
         <Switch>
           <Route exact path='/' exact component={Home} />
+          <Route exact path='*' exact component={Home} />
         </Switch>
       </MainLayout>
     </Route>

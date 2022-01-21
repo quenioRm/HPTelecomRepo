@@ -1,6 +1,44 @@
-import react from "react";
+import react, {useState, useEffect} from "react";
 
 export const HeaderLayout = () => {
+
+    const [y, setY] = useState(0);
+    const [logoClass, setLogoClass] = useState({
+        height: "240px",
+        position : "relative",
+        top : "-100px",
+        left : "-48px"
+    });
+
+    const handleNavigation = (e) => {
+      const window = e.currentTarget;
+       if (y < window.scrollY) {
+        if(window.scrollY <= 20){
+            setLogoClass({
+                height: "240px",
+                position : "relative",
+                top : "-100px",
+                left : "-48px"
+            });
+        }else{
+            setLogoClass({
+                height : "40px",
+                position : "",
+                top : "",
+                left : ""
+            });
+        }
+      }
+      setY(y);
+    };
+  
+    useEffect(() => {
+      setY(window.scrollY);
+  
+      window.addEventListener("scroll", (e) => handleNavigation(e));
+    }, []);
+  
+
     return(
         <>
         {/* Header */}
@@ -8,7 +46,7 @@ export const HeaderLayout = () => {
             <div className="topbar">
             <div className="container">
                 <div className="row">
-                <div className="col-lg-6 col-md-6 col-sm-6">
+                {/* <div className="col-lg-6 col-md-6 col-sm-6">
                     <div className="topbar-left">
                     <ul className="list-inline">
                         <li className="list-inline-item">
@@ -57,7 +95,7 @@ export const HeaderLayout = () => {
                         </li>
                     </ul>
                     </div>
-                </div>
+                </div> */}
                 </div>
             </div>
             </div>
@@ -66,12 +104,18 @@ export const HeaderLayout = () => {
                 <div className="row">
                 <div className="col-md-12">
                     <div className="logo">
-                    <a href="home-1.html">
+                    <a href="/">
                         <img
                         id="logo_img"
                         className="img-fluid"
-                        src="images/logo-white.png"
+                        src="images/logotipo-primario-rgb-01.png"
                         alt="logo"
+                        style={{
+                            height : logoClass.height,
+                            position : logoClass.position,
+                            top : logoClass.top,
+                            left : logoClass.left
+                        }}
                         />
                     </a>
                     </div>
