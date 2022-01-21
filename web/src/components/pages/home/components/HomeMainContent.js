@@ -17,11 +17,11 @@ export const HomeMainContent = () => {
         }
     )
 
-    const [selectCenterImage, setSelectCenterImage] = useState("images/hub/hub1-8.png");
+    const [selectCenterImage, setSelectCenterImage] = useState("images/hub/hub-linha1-8.png");
     
     const [centerImages, setcenterImages] = useState(
         [
-            {id : 1, image: "images/hub/hub1-8.png"},
+            {id : 1, image: "images/hub/hub-linha1-8.png"},
             {id : 2, image: "images/hub/hub-linha2-8.png"},
             {id : 3, image: "images/hub/hub-linha3-8.png"},
             {id : 4, image: "images/hub/hub-linha4-8.png"},
@@ -29,6 +29,21 @@ export const HomeMainContent = () => {
             {id : 6, image: "images/hub/hub-linha6-8.png"},
             {id : 7, image: "images/hub/hub-linha7-8.png"},
             {id : 8, image: "images/hub/hub-linha8-8.png"},
+        ]
+    )
+
+    const [selectCenterImageContent, setSelectCenterImageContent] = useState("images/hub/hub-centro-1-8.png");
+
+    const [centerImagesContent, setcenterImagesContent] = useState(
+        [
+            {id : 1, image: "images/hub/hub-centro-1-8.png"},
+            {id : 2, image: "images/hub/hub-centro-2-8.png"},
+            {id : 3, image: "images/hub/hub-centro-3-8.png"},
+            {id : 4, image: "images/hub/hub-centro-4-8.png"},
+            {id : 5, image: "images/hub/hub-centro-5-8.png"},
+            {id : 6, image: "images/hub/hub-centro-6-8.png"},
+            {id : 7, image: "images/hub/hub-centro-7-8.png"},
+            {id : 8, image: "images/hub/hub-centro-8-8.png"},
         ]
     )
 
@@ -55,10 +70,22 @@ export const HomeMainContent = () => {
         });
     }
 
+    const [centerImageOpacity, setCenterImageOpacity] = useState(1);
+
     const updateSelectCenterImage = id => {
         Object.keys(centerImages).forEach(function(key) {
             if(centerImages[key].id == id){
                setSelectCenterImage(centerImages[key].image)
+            }
+        });
+
+        Object.keys(centerImagesContent).forEach(function(key) {
+            if(centerImagesContent[key].id == id){
+                setCenterImageOpacity(0);
+                setSelectCenterImageContent(centerImagesContent[key].image)
+                setTimeout(() => {
+                    setCenterImageOpacity(1);
+                }, 1000);
             }
         });
     }
@@ -88,7 +115,7 @@ export const HomeMainContent = () => {
                 style={{
                     position:"relative",
                     left:"45px",
-                    top:"65px"
+                    top:"85px"
                 }}
                 >
                     <h4 className="iq-font-black iq-tw-5">
@@ -197,12 +224,14 @@ export const HomeMainContent = () => {
                         left:"-80px"
                     }}
                 />
-                <img src={selectCenterImage} alt="" 
-                    style={{
-                        position:"relative",
-                        left:"-80px"
-                    }}
-                />
+                <div className="overlay"
+                style={{
+                    opacity: centerImageOpacity
+                }}
+                >
+                    <img src={selectCenterImageContent} alt=""
+                    />
+                </div>
             </div>
             <div className="col-lg-4 col-md-12">
                 <div className="iq-feature2 iq-mtb-20 first-r"
