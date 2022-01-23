@@ -4,113 +4,23 @@ import { ChangeContentOneEffect } from "./ChangeContentOneEffect";
 
 export const HomeMainContent = () => {
 
-    const [images, setImages] = useState(
-        {
-            icon1: "images/hub/icons/1_velocidade_off.png",
-            icon2: "images/hub/icons/2_Sem difelidade_off.png",
-            icon3: "images/hub/icons/3_suporte_off.png",
-            icon4: "images/hub/icons/4_Chat_off.png",
-            icon5: "images/hub/icons/5_Ping_off.png",
-            icon6: "images/hub/icons/6_Home Office_off.png",
-            icon7: "images/hub/icons/7_UDH_off.png",
-            icon8: "images/hub/icons/8_Clube_off.png",
-        }
-    )
-
-    const [selectCenterImage, setSelectCenterImage] = useState("images/hub/hub-linha1-8.png");
     
-    const [centerImages, setcenterImages] = useState(
-        [
-            {id : 1, image: "images/hub/hub-linha1-8.png"},
-            {id : 2, image: "images/hub/hub-linha2-8.png"},
-            {id : 3, image: "images/hub/hub-linha3-8.png"},
-            {id : 4, image: "images/hub/hub-linha4-8.png"},
-            {id : 5, image: "images/hub/hub-linha5-8.png"},
-            {id : 6, image: "images/hub/hub-linha6-8.png"},
-            {id : 7, image: "images/hub/hub-linha7-8.png"},
-            {id : 8, image: "images/hub/hub-linha8-8.png"},
-        ]
-    )
-
-    const [selectCenterImageContent, setSelectCenterImageContent] = useState("images/hub/hub-centro-1-8.png");
-
-    const [centerImagesContent, setcenterImagesContent] = useState(
-        [
-            {id : 1, image: "images/hub/hub-centro-1-8.png"},
-            {id : 2, image: "images/hub/hub-centro-2-8.png"},
-            {id : 3, image: "images/hub/hub-centro-3-8.png"},
-            {id : 4, image: "images/hub/hub-centro-4-8.png"},
-            {id : 5, image: "images/hub/hub-centro-5-8.png"},
-            {id : 6, image: "images/hub/hub-centro-6-8.png"},
-            {id : 7, image: "images/hub/hub-centro-7-8.png"},
-            {id : 8, image: "images/hub/hub-centro-8-8.png"},
-        ]
-    )
 
     const { 
         handleMouseEnter,
         handleMouseLeave,
+        handleIconOff,
+        updateSelectCenterImage,
+        iconsList,
         icons,
-        newicon
+        centerImageOpacity,
+        centerImagesContent,
+        selectCenterImageContent,
+        selectCenterImage
 
     } = ChangeContentOneEffect()
 
-    useEffect(() => {
-      updateIcons(newicon.id)
-      updateSelectCenterImage(newicon.id)
-    }, [newicon])
-
-
-
-    const updateIcons = id => {
-        var textKey = "icon" + id;
-        const items = [];
-
-        Object.keys(icons).forEach(function(key) {
-            var iconKey = "icon" + icons[key].id;
-            if(iconKey == textKey){
-                items.push({
-                    [iconKey] : icons[key].on
-                })
-            }else{
-                items.push({
-                    [iconKey] : icons[key].off
-                })
-            }
-        });
-
-        console.log("antes", images);
-        items.map((item, key)=> {
-            var tempId = "icon" + (key + 1)
-            //setImages({})
-            console.log({ [tempId] : item[tempId]})
-            const changedIcon = Object.assign({}, images, { [tempId] : item[tempId]})
-            setImages(changedIcon)
-        })
-
-        console.log("depois",images);
-    }
-
-    const [centerImageOpacity, setCenterImageOpacity] = useState(1);
-
-    const updateSelectCenterImage = id => {
-        Object.keys(centerImages).forEach(function(key) {
-            if(centerImages[key].id == id){
-               setSelectCenterImage(centerImages[key].image)
-            }
-        });
-
-        Object.keys(centerImagesContent).forEach(function(key) {
-            if(centerImagesContent[key].id == id){
-                setCenterImageOpacity(0);
-                setSelectCenterImageContent(centerImagesContent[key].image)
-                setTimeout(() => {
-                    setCenterImageOpacity(1);
-                }, 1000);
-            }
-        });
-    }
-
+   
     return(
         <>
         {/* Parte 1 */}
@@ -146,7 +56,7 @@ export const HomeMainContent = () => {
                         <span className="iq-icon iq-ml-10">
                         <img 
                             className="img-fluid"
-                            src={images.icon1}
+                            src={icons[1]}
                             alt=""
                         />
                         </span>
@@ -173,7 +83,7 @@ export const HomeMainContent = () => {
                         <span className="iq-icon iq-ml-10">
                         <img
                             className="img-fluid"
-                            src={images.icon2}
+                            src={icons[2]}
                             alt=""
                         />
                         </span>
@@ -203,7 +113,7 @@ export const HomeMainContent = () => {
                         >
                         <img
                             className="img-fluid"
-                            src={images.icon3}
+                            src={icons[3]}
                             alt=""
                         />
                         </span>
@@ -229,7 +139,7 @@ export const HomeMainContent = () => {
                         <span className="iq-icon iq-ml-10">
                         <img
                             className="img-fluid"
-                            src={images.icon4}
+                            src={icons[4]}
                             alt=""
                         />
                         </span>
@@ -273,7 +183,7 @@ export const HomeMainContent = () => {
                         <span className="iq-icon iq-mr-10">
                         <img
                             className="img-fluid"
-                            src={images.icon5}
+                            src={icons[5]}
                             alt=""
                         />
                         </span>
@@ -299,7 +209,7 @@ export const HomeMainContent = () => {
                         <span className="iq-icon iq-mr-10">
                         <img
                             className="img-fluid"
-                            src={images.icon6}
+                            src={icons[6]}
                             alt=""
                         />
                         </span>
@@ -323,7 +233,7 @@ export const HomeMainContent = () => {
                         <span className="iq-icon iq-mr-10">
                         <img
                             className="img-fluid"
-                            src={images.icon7}
+                            src={icons[7]}
                             alt=""
                         />
                         </span>
@@ -347,7 +257,7 @@ export const HomeMainContent = () => {
                         <span className="iq-icon iq-mr-10">
                         <img
                             className="img-fluid"
-                            src={images.icon8}
+                            src={icons[8]}
                             alt=""
                         />
                         </span>
