@@ -15,19 +15,24 @@ export const FooterLayout = () => {
                     <img
                         id="logo_img_2"
                         className="img-fluid"
-                        src="images/logo-white.png"
+                        src="images/logotipo-primario-rgb-01.png"
                         alt="#"
+                        style={{
+                            position:"relative",
+                            top:"-50px",
+                            left:"-35px"
+                        }}
                     />
-                    <div className="iq-font-white iq-mt-15 ">
+                    {/* <div className="iq-font-white iq-mt-15 ">
                         Lorem Ipsum is simply dummy text of the printing and typesetting
                         industry. Lorem Ipsum has been the industry's standard dummy
                         text ever since the 1500s. Lorem Ipsum has been the industry's
                         standard dummy text ever since the 1500s.
-                    </div>
+                    </div> */}
                     </div>
                 </div>
                 <div className="col-lg-2 col-md-6 col-sm-12 iq-mtb-60 footer-menu">
-                    <h5 className="small-title iq-tw-5 iq-font-white">Menu</h5>
+                    {/* <h5 className="small-title iq-tw-5 iq-font-white">Menu</h5>
                     <ul className="iq-pl-0">
                     <li>
                         <a href="# ">Home</a>
@@ -44,7 +49,7 @@ export const FooterLayout = () => {
                     <li>
                         <a href="# ">Contact Us</a>
                     </li>
-                    </ul>
+                    </ul> */}
                 </div>
                 <div className="col-lg-3 col-md-6 col-sm-12 iq-contact iq-mtb-60">
                     <h5 className="small-title iq-tw-5 iq-font-white">
@@ -83,7 +88,7 @@ export const FooterLayout = () => {
                 <div className="col-sm-6">
                     <div className="iq-copyright iq-mt-10 iq-font-white">
                     Copyright <span id="copyright"> </span>{" "}
-                    <a href="#">CoinEx</a> All Rights Reserved{" "}
+                    <a href="#">HP Telecom</a> Todos os direitos reservados{" "}
                     </div>
                 </div>
                 <div className="col-sm-6">

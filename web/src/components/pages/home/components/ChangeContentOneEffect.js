@@ -25,18 +25,9 @@ export const ChangeContentOneEffect = () => {
         8 :"images/hub/icons/8_Clube_off.png"
     })
 
-    const handleIconOff = id => {
-        iconsList.map((icon, key) => {
-            if(icon.id !== id){
-                setIcons({
-                    ...icons,
-                    [key + 1] : icon.off
-                })
-            }
-        })
-    }
 
     const handleMouseEnter = id => {
+
         iconsList.map((icon, key) => {
             if(icon.id === id){
                 setIcons({
@@ -57,8 +48,6 @@ export const ChangeContentOneEffect = () => {
                 })
             }
         })
-
-        updateSelectCenterImage(id)
     }
 
     const [selectCenterImage, setSelectCenterImage] = useState("images/hub/hub1-8.png");
@@ -93,7 +82,7 @@ export const ChangeContentOneEffect = () => {
 
     const [centerImageOpacity, setCenterImageOpacity] = useState(1);
 
-    const updateSelectCenterImage = id => {
+    const updateSelectCenterImage = async id => {
     
         setCenterImageOpacity(0);
         setSelectCenterImageContent("")
@@ -104,8 +93,6 @@ export const ChangeContentOneEffect = () => {
                     setCenterImageOpacity(1);
                     setSelectCenterImageContent(centerImagesContent[key].image)
                 }, 2000);
-
-                console.log(icons);
             }
         });
     }
@@ -113,7 +100,6 @@ export const ChangeContentOneEffect = () => {
     return{
         handleMouseEnter,
         handleMouseLeave,
-        handleIconOff,
         updateSelectCenterImage,
         iconsList,
         icons,

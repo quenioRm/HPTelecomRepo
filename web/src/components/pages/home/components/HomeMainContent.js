@@ -41,8 +41,6 @@ export const HomeMainContent = () => {
                 zIndex:1
             }}>
                 <div className="iq-feature2 iq-mtb-22 first-l" 
-                onMouseEnter={() => handleMouseEnter(1)}
-                onMouseLeave={() => handleMouseLeave(1)}
                 style={{
                     position:"relative",
                     left:"45px",
@@ -53,6 +51,8 @@ export const HomeMainContent = () => {
                         <Link to="/">Alta velocidade</Link>
                         <span className="iq-icon iq-ml-10">
                         <img 
+                            onMouseEnter={() => handleMouseEnter(1)}
+                            onMouseLeave={() => handleMouseLeave(1)}
                             className="img-fluid"
                             src={icons[1]}
                             alt=""
@@ -68,8 +68,6 @@ export const HomeMainContent = () => {
                     </p>
                 </div>
                 <div className="iq-feature2 iq-mtb-20 second-l"
-                onMouseEnter={() => handleMouseEnter(2)}
-                onMouseLeave={() => handleMouseLeave(2)}
                 style={{
                     position:"relative",
                     left:"-5px",
@@ -77,9 +75,11 @@ export const HomeMainContent = () => {
                 }}
                 >
                     <h4 className="iq-font-black iq-tw-5">
-                        <a href="services-details.html">Secure and Stable</a>{" "}
+                        <a href="services-details.html">Sem fidelidade</a>{" "}
                         <span className="iq-icon iq-ml-10">
                         <img
+                            onMouseEnter={() => handleMouseEnter(2)}
+                            onMouseLeave={() => handleMouseLeave(2)}
                             className="img-fluid"
                             src={icons[2]}
                             alt=""
@@ -95,8 +95,6 @@ export const HomeMainContent = () => {
                     </p>
                 </div>
                 <div className="iq-feature2 iq-mtb-20 first-l"
-                    onMouseEnter={() => handleMouseEnter(3)}
-                    onMouseLeave={() => handleMouseLeave(3)}
                     style={{
                         position:"relative",
                         left:"30px",
@@ -104,12 +102,12 @@ export const HomeMainContent = () => {
                     }}
                 >
                     <h4 className="iq-font-black iq-tw-5">
-                        <a href="services-details.html">Coin Exchange</a>{" "}
+                        <a href="services-details.html">Técnicos locais</a>{" "}
                         <span className="iq-icon iq-ml-10"
-                        onMouseEnter={() => handleMouseEnter(3)}
-                        onMouseLeave={() => handleMouseLeave(3)}
                         >
                         <img
+                            onMouseEnter={() => handleMouseEnter(3)}
+                            onMouseLeave={() => handleMouseLeave(3)}
                             className="img-fluid"
                             src={icons[3]}
                             alt=""
@@ -125,24 +123,32 @@ export const HomeMainContent = () => {
                     </p>
                 </div>
                 <div className="iq-feature2 iq-mtb-20 first-l"
-                    onMouseEnter={() => handleMouseEnter(4)}
-                    onMouseLeave={() => handleMouseLeave(4)}
                     style={{
                         position:"relative",
                         left: "-15px"
                     }}
                 >
                     <h4 className="iq-font-black iq-tw-5">
-                        <a href="services-details.html">Coin Exchange</a>{" "}
+                        <a 
+                        style={{
+                            position:"relative",
+                            left: "-95px"
+                        }}
+                        href="/">Grande interatividade</a>{" "}
                         <span className="iq-icon iq-ml-10">
                         <img
+                            style={{position:"relative" , top:"-55px"}}
+                            onMouseEnter={() => handleMouseEnter(4)}
+                            onMouseLeave={() => handleMouseLeave(4)}
                             className="img-fluid"
                             src={icons[4]}
                             alt=""
                         />
                         </span>
                     </h4>
-                    <p>
+                    <p
+                    style={{position:"relative" , top:"-60px"}}
+                    >
                         Lorem Ipsum has been the industry's standard dummy text ever since
                         the 1500s.{" "}
                         <a href="#" className="iq-font-green">
@@ -155,7 +161,8 @@ export const HomeMainContent = () => {
                 <img src={selectCenterImage} alt="" 
                     style={{
                         position:"relative",
-                        left:"-80px"
+                        left:"-80px",
+                        top:"-100px"
                     }}
                 />
                 <div className="overlay"
@@ -163,14 +170,16 @@ export const HomeMainContent = () => {
                     opacity: centerImageOpacity
                 }}
                 >
-                    <img src={selectCenterImageContent} alt=""
-                    />
+                <img src={selectCenterImageContent} alt=""
+                    style={{
+                        position:"relative",
+                        top:"-100px"
+                    }}
+                />
                 </div>
             </div>
             <div className="col-lg-4 col-md-12">
                 <div className="iq-feature2 iq-mtb-20 first-r"
-                onMouseEnter={() => handleMouseEnter(5)}
-                onMouseLeave={() => handleMouseLeave(5)}
                 style={{
                     position:"relative",
                     top:"60px",
@@ -180,12 +189,14 @@ export const HomeMainContent = () => {
                     <h4 className="iq-font-black iq-tw-5">
                         <span className="iq-icon iq-mr-10">
                         <img
+                            onMouseEnter={() => handleMouseEnter(5)}
+                            onMouseLeave={() => handleMouseLeave(5)}
                             className="img-fluid"
                             src={icons[5]}
                             alt=""
                         />
                         </span>
-                        <a href="services-details.html">Mobile Apps</a>
+                        <a href="services-details.html">Ping e latência</a>
                     </h4>
                     <p>
                         Lorem Ipsum has been the industry's standard dummy text ever since
@@ -196,22 +207,23 @@ export const HomeMainContent = () => {
                     </p>
                 </div>
                 <div className="iq-feature2 iq-mtb-20 second-r"
-                    onMouseEnter={() => handleMouseEnter(6)}
-                    onMouseLeave={() => handleMouseLeave(6)}
                     style={{
                         position:"relative",
-                        left:"-10px"
+                        left:"-10px",
+                        top:"20px"
                     }}
                 >
                     <h4 className="iq-font-black iq-tw-5">
                         <span className="iq-icon iq-mr-10">
                         <img
+                            onMouseEnter={() => handleMouseEnter(6)}
+                            onMouseLeave={() => handleMouseLeave(6)}
                             className="img-fluid"
                             src={icons[6]}
                             alt=""
                         />
                         </span>
-                        <a href="services-details.html">24/7 Trading</a>
+                        <a href="services-details.html">Home office</a>
                     </h4>
                     <p>
                         Lorem Ipsum has been the industry's standard dummy text ever since
@@ -219,49 +231,85 @@ export const HomeMainContent = () => {
                     </p>
                 </div>
                 <div className="iq-feature2 iq-mtb-20 first-r"
-                    onMouseEnter={() => handleMouseEnter(7)}
-                    onMouseLeave={() => handleMouseLeave(7)}  
                     style={{
                         position:"relative",
-                        top:"-10px",
+                        top:"-5px",
                         left:"-65px"
                     }}              
                 >
                     <h4 className="iq-font-black iq-tw-5">
                         <span className="iq-icon iq-mr-10">
                         <img
+                            onMouseEnter={() => handleMouseEnter(7)}
+                            onMouseLeave={() => handleMouseLeave(7)}  
                             className="img-fluid"
                             src={icons[7]}
                             alt=""
                         />
                         </span>
-                        <a href="services-details.html">Free Consulting</a>
+                        <a href="services-details.html"
+                            style={{position:"relative", left:"80px", top:"-80px"}}
+                        >
+                            <p>
+                                Assista online 
+                            </p>
+                            <p style={{position:"relative", top:"-20px"}}>
+                                em UHD
+                            </p>
+                        </a>
                     </h4>
-                    <p>
+                    <p
+                    style={{position:"relative", top:"-105px"}}
+                    >
                         Lorem Ipsum has been the industry's standard dummy text ever since
                         the 1500s.
                     </p>
                 </div>
                 <div className="iq-feature2 iq-mtb-20 first-r"
-                    onMouseEnter={() => handleMouseEnter(8)}
-                    onMouseLeave={() => handleMouseLeave(8)} 
                     style={{
                         position:"relative",
                         left:"-34px",
-                        top:"-45px"
+                        top:"-135px"
                     }}              
                 >
                     <h4 className="iq-font-black iq-tw-5">
                         <span className="iq-icon iq-mr-10">
                         <img
+                            onMouseEnter={() => handleMouseEnter(8)}
+                            onMouseLeave={() => handleMouseLeave(8)} 
                             className="img-fluid"
                             src={icons[8]}
                             alt=""
                         />
                         </span>
-                        <a href="services-details.html">Free Consulting</a>
+                        <a href="services-details.html">
+                            <p
+                                style={{
+                                    position:"relative",
+                                    left:"80px",
+                                    top:"-85px"
+                                }}
+                            >
+                                Clube
+                            </p>
+                            <p
+                                style={{
+                                    position:"relative",
+                                    left:"80px",
+                                    top:"-105px"
+                                }}
+                            >
+                                de descontos
+                            </p>
+                        </a>
                     </h4>
-                    <p>
+                    <p
+                        style={{
+                            position:"relative",
+                            left:"74px",
+                            top:"-115px"
+                        }}       
+                    >
                         Lorem Ipsum has been the industry's standard dummy text ever since
                         the 1500s.
                     </p>
@@ -311,7 +359,10 @@ export const HomeMainContent = () => {
                   popularised in the 1960s.
                 </p>
                 <h5 className="iq-tw-6 iq-font-yellow">Rinks Cooper</h5>
-                <span>CEO, CoinEx</span>
+                <span>
+                    CEO, CoinEx
+                    <img width={90} style={{maxWidth:"20%", position:"relative", left:"340px"}} src="images\another\estrelas-8.png"/>
+                </span>
               </div>
               <div className="testimonial iq-font-white">
                 <p className="description">
@@ -323,7 +374,10 @@ export const HomeMainContent = () => {
                   popularised in the 1960s.
                 </p>
                 <h5 className="iq-tw-6 iq-font-yellow">JD Scot</h5>
-                <span>CEO, CoinEx</span>
+                <span>
+                    CEO, CoinEx
+                    <img width={90} style={{maxWidth:"20%", position:"relative", left:"340px"}} src="images\another\estrelas-8.png"/>
+                </span>
               </div>
               <div className="testimonial iq-font-white">
                 <p className="description">
@@ -335,7 +389,10 @@ export const HomeMainContent = () => {
                   popularised in the 1960s.
                 </p>
                 <h5 className="iq-tw-6 iq-font-yellow">Haris Morgan</h5>
-                <span>CEO, CoinEx</span>
+                <span>
+                    CEO, CoinEx
+                    <img width={90} style={{maxWidth:"20%", position:"relative", left:"340px"}} src="images\another\estrelas-8.png"/>
+                </span>
               </div>
             </div>
           </div>
@@ -364,7 +421,15 @@ export const HomeMainContent = () => {
             <div className="col-lg-3 col-md-6 col-sm-12">
                 <div className="iq-pricing">
                 <span className="icon">
-                    <i aria-hidden="true" className="ion-social-bitcoin-outline" />
+                    <img
+                    src="images\another\plano1-8.png"
+                    width={80}
+                    style={{
+                        position:"relative",
+                        top:"-8px"
+                    }}
+                    >
+                    </img>
                 </span>
                 <div className="pricing-header">
                     <h3 className="title">Standard</h3>
@@ -400,7 +465,15 @@ export const HomeMainContent = () => {
             <div className="col-lg-3 col-md-6 col-sm-12">
                 <div className="iq-pricing">
                 <span className="icon">
-                    <i aria-hidden="true" className="ion-social-bitcoin-outline" />
+                    <img
+                    src="images\another\plano2-8.png"
+                    width={80}
+                    style={{
+                        position:"relative",
+                        top:"-8px"
+                    }}
+                    >
+                    </img>
                 </span>
                 <div className="pricing-header">
                     <h3 className="title">Medium</h3>
@@ -436,7 +509,15 @@ export const HomeMainContent = () => {
             <div className="col-lg-3 col-md-6 col-sm-12">
                 <div className="iq-pricing">
                 <span className="icon">
-                    <i aria-hidden="true" className="ion-social-bitcoin-outline" />
+                <img
+                    src="images\another\plano3-8.png"
+                    width={80}
+                    style={{
+                        position:"relative",
+                        top:"-8px"
+                    }}
+                    >
+                </img>
                 </span>
                 <div className="pricing-header">
                     <h3 className="title">Premium</h3>
@@ -472,7 +553,103 @@ export const HomeMainContent = () => {
             <div className="col-lg-3 col-md-6 col-sm-12">
                 <div className="iq-pricing">
                 <span className="icon">
-                    <i aria-hidden="true" className="ion-social-bitcoin-outline" />
+                <img
+                    src="images\another\plano4-8.png"
+                    width={80}
+                    style={{
+                        position:"relative",
+                        top:"-8px"
+                    }}
+                    >
+                </img>
+                </span>
+                <div className="pricing-header">
+                    <h3 className="title">Ultimate</h3>
+                    <span className="price-value">$99</span>
+                </div>
+                <ul className="pricing-content">
+                    <li>
+                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
+                    Photoshop
+                    </li>
+                    <li>
+                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
+                    HTML5 &amp; CSS 5
+                    </li>
+                    <li>
+                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
+                    Wordpress
+                    </li>
+                    <li>
+                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
+                    Javascript
+                    </li>
+                    <li>
+                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
+                    Animation
+                    </li>
+                </ul>
+                <a className="button" href="#">
+                    Choose Package
+                </a>
+                </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-sm-12">
+                <div className="iq-pricing">
+                <span className="icon">
+                <img
+                    src="images\another\plano5-8.png"
+                    width={80}
+                    style={{
+                        position:"relative",
+                        top:"-8px"
+                    }}
+                    >
+                </img>
+                </span>
+                <div className="pricing-header">
+                    <h3 className="title">Ultimate</h3>
+                    <span className="price-value">$99</span>
+                </div>
+                <ul className="pricing-content">
+                    <li>
+                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
+                    Photoshop
+                    </li>
+                    <li>
+                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
+                    HTML5 &amp; CSS 5
+                    </li>
+                    <li>
+                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
+                    Wordpress
+                    </li>
+                    <li>
+                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
+                    Javascript
+                    </li>
+                    <li>
+                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
+                    Animation
+                    </li>
+                </ul>
+                <a className="button" href="#">
+                    Choose Package
+                </a>
+                </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-sm-12">
+                <div className="iq-pricing">
+                <span className="icon">
+                <img
+                    src="images\another\plano6-8.png"
+                    width={80}
+                    style={{
+                        position:"relative",
+                        top:"-8px"
+                    }}
+                    >
+                </img>
                 </span>
                 <div className="pricing-header">
                     <h3 className="title">Ultimate</h3>
