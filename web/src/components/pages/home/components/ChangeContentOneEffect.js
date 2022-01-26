@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 
 export const ChangeContentOneEffect = () => {
 
@@ -76,7 +76,7 @@ export const ChangeContentOneEffect = () => {
         ]
     )
 
-    const [selectCenterImageContent, setSelectCenterImageContent] = useState("images/hub/hub-centro-1-8.png");
+    const [selectCenterImageContent, setSelectCenterImageContent] = useState("");
 
     const [centerImagesContent, setcenterImagesContent] = useState(
         [
@@ -94,25 +94,18 @@ export const ChangeContentOneEffect = () => {
     const [centerImageOpacity, setCenterImageOpacity] = useState(1);
 
     const updateSelectCenterImage = id => {
-        Object.keys(centerImages).forEach(function(key) {
-            if(centerImages[key].id == id){
-               setTimeout(() => {
-                setSelectCenterImage("images/hub/hub1-8.png")
-               }, 500);
-
-               setTimeout(() => {
-                setSelectCenterImage(centerImages[key].image)
-               }, 1000);
-            }
-        });
+    
+        setCenterImageOpacity(0);
+        setSelectCenterImageContent("")
 
         Object.keys(centerImagesContent).forEach(function(key) {
             if(centerImagesContent[key].id == id){
-                setCenterImageOpacity(0);
-                setSelectCenterImageContent(centerImagesContent[key].image)
                 setTimeout(() => {
                     setCenterImageOpacity(1);
+                    setSelectCenterImageContent(centerImagesContent[key].image)
                 }, 2000);
+
+                console.log(icons);
             }
         });
     }

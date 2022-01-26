@@ -29,11 +29,9 @@ export const HomeMainContent = () => {
             <div className="row">
             <div className="col-sm-12">
                 <div className="heading-title">
-                <h3 className="title iq-tw-5 iq-mb-25">Bitcoin Features</h3>
+                <h3 className="title iq-tw-5 iq-mb-25">Por que escolher a <span style={{color:"#008C1E"}}>HP Telecom</span></h3>
                 <p>
-                    Lorem Ipsum has been the industry's standard dummy text ever since
-                    the 1500s, when an unknown printer took a galley of type and
-                    scrambled it to make a type specimen book.{" "}
+                    Contrate a ultravelocidade da fibra óptica para explorar ao máximo a navegação na internet.
                 </p>
                 </div>
             </div>

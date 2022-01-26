@@ -256,15 +256,20 @@ export const HomeBanner = () => {
                       fontWeight: 400,
                       color: "#ffffff",
                       letterSpacing: 0,
-                      fontFamily: "Raleway"
+                      fontFamily: "Raleway",
+                      position: "relative",
+                      top:"-130px",
+                      fontWeight:"bold"
                     }}
                   >
-                    Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum has been
-                    <br /> the industry's standard dummy text ever since the 1500s,
-                    Lorem Ipsum is simply dummy text of the
-                    <br /> printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard.{" "}
+                    <h1>
+                      <p>
+                      INTERNET PARA 
+                      </p>
+                      <p>
+                      CLIENTES <span style={{color:"#008C1E"}}>EXIGENTES</span> <span>!</span>
+                      </p>
+                    </h1>
                   </div>
                   {/* LAYER NR. 8 */}
                   <div
@@ -284,7 +289,7 @@ export const HomeBanner = () => {
                     data-paddingleft="[30,30,30,30]"
                     style={{}}
                   >
-                    View more
+                    ASSINE JÁ
                   </div>
                 </li>
                 {/* SLIDE  */}
