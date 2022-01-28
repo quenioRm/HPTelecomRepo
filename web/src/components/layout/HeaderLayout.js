@@ -22,9 +22,9 @@ export const HeaderLayout = () => {
             });
         }else{
             setLogoClass({
-                height : "40px",
-                position : "",
-                top : "",
+                height : "70px",
+                position : "relative",
+                top : "-10px",
                 left : ""
             });
         }
