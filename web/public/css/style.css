@@ -77,12 +77,17 @@ Design and Developed by: iqonicthemes.in
 /*---------------------------------------------------------------------
                                General
 -----------------------------------------------------------------------*/
-body { font-family: 'Gorditas'; font-weight: normal; font-style: normal; font-size: 16px; line-height: 24px; color: #666666; overflow-x: hidden; }
+@font-face {
+  font-family: GorditaFont;
+  src: url(../fonts/GorditaBold.otf);
+}
+
+body { font-family: 'GorditaFont'; font-weight: normal; font-style: normal; font-size: 16px; line-height: 24px; color: #666666; overflow-x: hidden; }
 a, .button { transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; color: #151d2e; }
 a:focus { text-decoration: none !important; }
 a:focus, a:hover { color: #008C1E; text-decoration: none !important; }
 a, .button, input { outline: medium none !important; color: #666666; }
-h1, h2, h3, h4, h5, h6 { font-family: 'Gorditas'; font-weight: normal; color: #151d2e; margin-top: 0px; margin-bottom: 0px; }
+h1, h2, h3, h4, h5, h6 { font-family: 'GorditaFont'; font-weight: normal; color: #151d2e; margin-top: 0px; margin-bottom: 0px; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; }
 h1 { font-size: 70px; line-height: 80px; }
 h2 { font-size: 54px; line-height: 64px; }
@@ -628,7 +633,7 @@ header .menu { display: inline-block; float: right; width: 100%; }
 header .iq-header { display: inline-block; width: 100%; float: left; }
 .menu li { display: inline-block; position: relative; float: left; line-height: normal; }
 .menu li:last-child a { padding-right: 0; }
-.menu li a { text-decoration: none; padding: 30px 25px; display: block; font-family: 'Gorditas'; color: #1a1a1a; text-transform: uppercase; font-size: 16px; transition: all 0.2s ease-in-out 0s; }
+.menu li a { text-decoration: none; padding: 30px 25px; display: block; font-family: 'GorditaFont'; color: #1a1a1a; text-transform: uppercase; font-size: 16px; transition: all 0.2s ease-in-out 0s; }
 .menu li a:hover, .menu li:hover>a, .menu li a.active { color: #008C1E; }
 .menu ul { visibility: hidden; opacity: 0; margin: 0; padding: 0; width: 175px; text-align: left; position: absolute; left: 0px; background: #fff; z-index: 99; -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1); transform: translate(0, 20px); transition: all 0.2s ease-out; }
 .menu ul li { display: block; float: none; background: none; margin: 0; padding: 0; }
@@ -930,7 +935,7 @@ header.fancy.menu-sticky .iq-header .row { background: transparent; margin-top: 
 .iq-feature3 .iq-icon span { font-size: 30px; }
 .iq-feature3 .fancy-content { display: table-cell; }
 .iq-feature3 .fancy-content p { padding: 0; margin: 0; }
-.iq-feature3.iq-bg .step { position: absolute; right: 0; top: 25px; font-size: 80px; color: #f7f7f7; z-index: -1; font-family: 'Gorditas', sans-serif; font-weight: 600; }
+.iq-feature3.iq-bg .step { position: absolute; right: 0; top: 25px; font-size: 80px; color: #f7f7f7; z-index: -1; font-family: 'GorditaFont', sans-serif; font-weight: 600; }
 .iq-feature3.iq-bg { padding: 20px 15px; position: relative; }
 .iq-feature3.iq-bg:before { position: absolute; content: ""; right: 0; top: 0; width: 0; height: 0; background: #f7f7f7; transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; z-index: -1; border-radius: 5px; }
 .iq-feature3:hover.iq-bg:before { width: 100%; height: 100%; }

@@ -2,6 +2,7 @@ import react, {useState, useEffect} from "react";
 
 export const HeaderLayout = () => {
 
+    const [logo, setLog] = useState("images/logotipo-descritivo-rgb-03.png")
     const [y, setY] = useState(0);
     const [logoClass, setLogoClass] = useState({
         height: "240px",
@@ -20,6 +21,7 @@ export const HeaderLayout = () => {
                 top : "-100px",
                 left : "-48px"
             });
+            setLog("images/logotipo-descritivo-rgb-03.png")
         }else{
             setLogoClass({
                 height : "70px",
@@ -27,6 +29,7 @@ export const HeaderLayout = () => {
                 top : "-10px",
                 left : ""
             });
+            setLog("images/logotipo-primario-rgb-01.png")
         }
       }
       setY(y);
@@ -108,7 +111,7 @@ export const HeaderLayout = () => {
                         <img
                         id="logo_img"
                         className="img-fluid"
-                        src="images/logotipo-primario-rgb-01.png"
+                        src={logo}
                         alt="logo"
                         style={{
                             height : logoClass.height,
