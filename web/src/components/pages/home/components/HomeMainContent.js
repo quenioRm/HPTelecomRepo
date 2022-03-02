@@ -1,26 +1,21 @@
 import react, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ChangeContentOneEffect } from "./ChangeContentOneEffect";
+import { HomeComents } from "./HomeComents";
 
 export const HomeMainContent = () => {
-
-    
 
     const { 
         handleMouseEnter,
         handleMouseLeave,
-        handleIconOff,
         updateSelectCenterImage,
-        iconsList,
         icons,
         centerImageOpacity,
-        centerImagesContent,
         selectCenterImageContent,
         selectCenterImage
 
     } = ChangeContentOneEffect()
 
-   
     return(
         <>
         {/* Parte 1 */}
@@ -322,85 +317,9 @@ export const HomeMainContent = () => {
         </div>
         </section>
         {/* Parte 2 */}
-          {/* Testimonial */}
-  <div
-    className="iq-news overview-block-ptb iq-bg iq-over-black-80 jarallax"
-    style={{
-      backgroundImage: 'url("images/bg/bg-7.jpg")',
-      backgroundPosition: "center center"
-    }}
-  >
-    <div className="container">
-      <div className="row justify-content-center">
-        <div className="col-lg-10 col-md-12 text-center">
-          <img src="images/speack.png" alt="#" />
-          <div className="iq-testimonial text-center">
-            <div
-              id="testimonial-slider"
-              className="owl-carousel owl-theme owl-loaded"
-              data-autoplay="true"
-              data-loop="true"
-              data-nav="false"
-              data-dots="true"
-              data-items={1}
-              data-items-laptop={1}
-              data-items-tab={1}
-              data-items-mobile={1}
-              data-items-mobile-sm={1}
-              data-margin={30}
-            >
-              <div className="testimonial iq-font-white">
-                <p className="description">
-                  Lorem Ipsum has been the industry's standard dummy text ever
-                  since the 1500s, when an unknown printer took a galley of type
-                  and scrambled it to make a type specimen book. It has survived
-                  not only five centuries, but also the leap into electronic
-                  typesetting, remaining essentially unchanged. It was
-                  popularised in the 1960s.
-                </p>
-                <h5 className="iq-tw-6 iq-font-yellow">Rinks Cooper</h5>
-                <span>
-                    CEO, CoinEx
-                    <img width={90} style={{maxWidth:"20%", position:"relative", left:"340px"}} src="images\another\estrelas-8.png"/>
-                </span>
-              </div>
-              <div className="testimonial iq-font-white">
-                <p className="description">
-                  Lorem Ipsum has been the industry's standard dummy text ever
-                  since the 1500s, when an unknown printer took a galley of type
-                  and scrambled it to make a type specimen book. It has survived
-                  not only five centuries, but also the leap into electronic
-                  typesetting, remaining essentially unchanged. It was
-                  popularised in the 1960s.
-                </p>
-                <h5 className="iq-tw-6 iq-font-yellow">JD Scot</h5>
-                <span>
-                    CEO, CoinEx
-                    <img width={90} style={{maxWidth:"20%", position:"relative", left:"340px"}} src="images\another\estrelas-8.png"/>
-                </span>
-              </div>
-              <div className="testimonial iq-font-white">
-                <p className="description">
-                  Lorem Ipsum has been the industry's standard dummy text ever
-                  since the 1500s, when an unknown printer took a galley of type
-                  and scrambled it to make a type specimen book. It has survived
-                  not only five centuries, but also the leap into electronic
-                  typesetting, remaining essentially unchanged. It was
-                  popularised in the 1960s.
-                </p>
-                <h5 className="iq-tw-6 iq-font-yellow">Haris Morgan</h5>
-                <span>
-                    CEO, CoinEx
-                    <img width={90} style={{maxWidth:"20%", position:"relative", left:"340px"}} src="images\another\estrelas-8.png"/>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  {/* Testimonial */}
+        
+        {/* Testimonial */}
+        <HomeComents />
         {/* parte 3 */}
         <section className="overview-block-ptb">
         <div className="container">
