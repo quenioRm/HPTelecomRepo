@@ -1,4 +1,5 @@
 import react, {useState, useEffect} from "react";
+import { Link } from "react-router-dom";
 
 export const HeaderLayout = () => {
 
@@ -138,9 +139,9 @@ export const HeaderLayout = () => {
                             </a>
                         </li>
                         <li>
-                            <a className="" href="#">
-                                PLANOS
-                            </a>
+                            <Link to="/Plans">
+                            PLANOS
+                            </Link>
                         </li>
                         <li>
                             <a className="" href="#">

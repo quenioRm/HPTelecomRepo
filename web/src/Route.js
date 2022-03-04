@@ -7,6 +7,7 @@ import { MainLayout } from "./components/layout/MainLayout";
 
 // Pages
 import { Home } from "./components/pages/home/Home";
+import { Plans } from "./components/pages/plans/Plans";
 
 export default () => {
   return (
@@ -15,6 +16,7 @@ export default () => {
       <MainLayout>
         <Switch>
           <Route exact path='/' exact component={Home} />
+          <Route exact path='/Plans' exact component={Plans} />
           <Route exact path='*' exact component={Home} />
         </Switch>
       </MainLayout>

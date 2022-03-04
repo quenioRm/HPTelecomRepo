@@ -3,8 +3,6 @@ import { PlanService } from "./services/PlanService";
 
 export const HomeMainPrices = () => {
 
-    let imageSrcFolder = "images/another/"
-
     const {
         plans,
         handlePlans        
@@ -28,87 +26,88 @@ export const HomeMainPrices = () => {
                       </div>
                   </div>
                   </div>
-                  <div className="row">
                     {plans.map((item, key) => (
-                        <div key={key} className="col-lg-3 col-md-6 col-sm-12">
-                            <div className="iq-pricing">
-                            <span className="icon">
-                                <img
-                                src={`images/another/${item.icon}`} 
-                                width={80}
-                                style={{
-                                    position:"relative",
-                                    top:"-8px"
-                                }}
-                                >
-                                </img>
-                            </span>
-                            <div className="pricing-header">
-                                <h3 className="title">{item.name}</h3>
-                                <span className="price-value">R$ {item.price.toFixed(2).replace('.', ',')}</span>
-                            </div>
-                            <ul className="pricing-content">
-
-                                {item.description1 ?
-                                    <li>
-                                        <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                                        {item.description1}
-                                    </li>
-                                    :
-                                    <></>
-                                }
-
-                                {item.description2 ?
-                                    <li>
-                                        <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                                        {item.description2}
-                                    </li>
-                                    :
-                                    <></>
-                                }
-
-                                {item.description3 ?
-                                    <li>
-                                        <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                                        {item.description3}
-                                    </li>
-                                    :
-                                    <></>
-                                }
-
-                                {item.description4 ?
-                                    <li>
-                                        <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                                        {item.description4}
-                                    </li>
-                                    :
-                                    <></>
-                                }
-
-                                <br>
-                                </br>
-                                <br>
-                                </br>
-
-                                {item.addTex ?
-                                    <li>
-                                        <i/>
-                                        <p>
-                                        {item.addTex}
-                                        </p>
-                                    </li>
-                                    :
-                                    <></>
-                                }
-
-                            </ul>
-                            <a className="button" href="#">
-                                Fale com um atendente
-                            </a>
-                            </div>
+                    <div className="row mt-5">
+                    <div key={key} className="col-lg-3 col-md-6 col-sm-12">
+                        <div className="iq-pricing">
+                        <span className="icon">
+                            <img
+                            src={`images/another/${item.icon}`} 
+                            width={80}
+                            style={{
+                                position:"relative",
+                                top:"-8px"
+                            }}
+                            >
+                            </img>
+                        </span>
+                        <div className="pricing-header">
+                            <h3 className="title">{item.name}</h3>
+                            <span className="price-value">R$ {item.price.toFixed(2).replace('.', ',')}</span>
                         </div>
+                        <ul className="pricing-content">
+
+                            {item.description1 ?
+                                <li>
+                                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
+                                    {item.description1}
+                                </li>
+                                :
+                                <></>
+                            }
+
+                            {item.description2 ?
+                                <li>
+                                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
+                                    {item.description2}
+                                </li>
+                                :
+                                <></>
+                            }
+
+                            {item.description3 ?
+                                <li>
+                                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
+                                    {item.description3}
+                                </li>
+                                :
+                                <></>
+                            }
+
+                            {item.description4 ?
+                                <li>
+                                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
+                                    {item.description4}
+                                </li>
+                                :
+                                <></>
+                            }
+
+                            <br>
+                            </br>
+                            <br>
+                            </br>
+
+                            {item.addTex ?
+                                <li>
+                                    <i/>
+                                    <p>
+                                    {item.addTex}
+                                    </p>
+                                </li>
+                                :
+                                <></>
+                            }
+
+                        </ul>
+                        <a className="button" href="#">
+                            Fale com um atendente
+                        </a>
+                        </div>
+                    </div>
+                    </div>
                     ))}
-                  </div>
+                  
               </div>
         </section>
     )

@@ -557,7 +557,7 @@ hr { margin: 0; padding: 0px; border-bottom: 1px solid #e0e0e0; border-top: 0px;
 .iq-over-black-40:before { background: rgba(0, 0, 0, 0.4); content: ""; height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
 .iq-over-black-50:before { background: rgba(0, 0, 0, 0.5); content: ""; height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
 .iq-over-black-60:before { background: rgba(0, 0, 0, 0.6); content: ""; height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
-.iq-over-black-70:before { background: rgba(0, 0, 0, 0.7); content: ""; height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
+.iq-over-black-70:before { background: #151d2e; content: ""; height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
 .iq-over-black-80:before { background: rgba(0, 0, 0, 0.8); content: ""; height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
 .iq-over-black-90:before { background: rgba(0, 0, 0, 0.9); content: ""; height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
 .iq-over-black-95:before { background: rgba(0, 0, 0, 0.95); content: ""; height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
