@@ -26,8 +26,8 @@ export const HomeMainPrices = () => {
                       </div>
                   </div>
                   </div>
+                  <div className="row">
                     {plans.map((item, key) => (
-                    <div className="row mt-5">
                     <div key={key} className="col-lg-3 col-md-6 col-sm-12">
                         <div className="iq-pricing">
                         <span className="icon">
@@ -105,9 +105,9 @@ export const HomeMainPrices = () => {
                         </a>
                         </div>
                     </div>
-                    </div>
+                    
                     ))}
-                  
+                  </div>
               </div>
         </section>
     )

@@ -31,7 +31,7 @@ export const Plans = () => {
                       </div>
                   </div>
                   </div>
-                <div className="row">
+                <div className="row mt-2">
                 {plans.map((item, key) => (
                     <div key={key} className="col-lg-3 col-md-6 col-sm-12">
                             <div className="iq-pricing">
@@ -110,7 +110,7 @@ export const Plans = () => {
                             </a>
                             </div>
                         </div>
-                    ))}
+                ))}
                 </div>
             </div>
         </section>
