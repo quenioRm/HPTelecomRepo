@@ -134,7 +134,7 @@ export const HeaderLayout = () => {
                     </a>
                     <ul className="menu text-right">
                         <li>
-                            <a className="active" href="#">
+                            <a className="active" href="/">
                                 HOME
                             </a>
                         </li>
