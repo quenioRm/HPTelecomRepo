@@ -15,6 +15,7 @@ namespace HPTelecom.CrossCutting.DependencyInjection
         {
             #region Web
             builder.Services.AddTransient<ICepAvailableService, CepAvailableService>();
+            builder.Services.AddTransient<IWebService, WebService>();
             #endregion
         }
 

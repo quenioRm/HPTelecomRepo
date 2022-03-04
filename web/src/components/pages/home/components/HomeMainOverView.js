@@ -1,9 +1,8 @@
-import react, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ChangeContentOneEffect } from "./ChangeContentOneEffect";
-import { HomeComents } from "./HomeComents";
 
-export const HomeMainContent = () => {
+export const HomeMainOverView = () => {
 
     const { 
         handleMouseEnter,
@@ -17,9 +16,7 @@ export const HomeMainContent = () => {
     } = ChangeContentOneEffect()
 
     return(
-        <>
-        {/* Parte 1 */}
-        <section className="overview-block-ptb iq-feature-aria">
+    <section className="overview-block-ptb iq-feature-aria grey-bg">
         <div className="container">
             <div className="row">
             <div className="col-sm-12">
@@ -55,10 +52,12 @@ export const HomeMainContent = () => {
                         </span>
                     </h4>
                     <p>
-                        Lorem Ipsum has been the industry's standard dummy text ever since
-                        the 1500s.{" "}
-                        <a href="#" className="iq-font-green">
-                        [ ... ]
+                        <a href="#" className="iq-font-green"
+                            onMouseEnter={() => handleMouseEnter(1)}
+                            onMouseLeave={() => handleMouseLeave(1)}
+                        >
+                            Temos disponível planos de altíssima performance e com velocidades reais. 
+                            Baixe conteúdos no limite máximo de sua velocidade sem se preocupar.
                         </a>
                     </p>
                 </div>
@@ -82,10 +81,12 @@ export const HomeMainContent = () => {
                         </span>
                     </h4>
                     <p>
-                        Lorem Ipsum has been the industry's standard dummy text ever since
-                        the 1500s.{" "}
-                        <a href="#" className="iq-font-green">
-                        [ ... ]
+                        <a href="#" className="iq-font-green"
+                        onMouseEnter={() => handleMouseEnter(2)}
+                        onMouseLeave={() => handleMouseLeave(2)}
+                        >
+                        Quem não tem qualidade, coloca fidelidade! E aqui na HP fidelizamos os 
+                        clientes através de nossos serviços e não através de um contrato.
                         </a>
                     </p>
                 </div>
@@ -110,10 +111,11 @@ export const HomeMainContent = () => {
                         </span>
                     </h4>
                     <p>
-                        Lorem Ipsum has been the industry's standard dummy text ever since
-                        the 1500s.{" "}
-                        <a href="#" className="iq-font-green">
-                        [ ... ]
+                        <a href="#" className="iq-font-green"
+                        onMouseEnter={() => handleMouseEnter(3)}
+                        onMouseLeave={() => handleMouseLeave(3)}
+                        >
+                        Para oferecer um suporte técnico rápido, temos uma equipe local em seu bairro para atender os chamados.
                         </a>
                     </p>
                 </div>
@@ -144,10 +146,12 @@ export const HomeMainContent = () => {
                     <p
                     style={{position:"relative" , top:"-60px"}}
                     >
-                        Lorem Ipsum has been the industry's standard dummy text ever since
-                        the 1500s.{" "}
-                        <a href="#" className="iq-font-green">
-                        [ ... ]
+                        <a href="#" className="iq-font-green"
+                        onMouseEnter={() => handleMouseEnter(4)}
+                        onMouseLeave={() => handleMouseLeave(4)}
+                        >
+                        Nossa equipe esta pronta para tirar todas dúvidas e sanar as dificuldades de nossos clientes,
+                        oferecendo um atendimento personalizado e humanizado.
                         </a>
                     </p>
                 </div>
@@ -194,10 +198,11 @@ export const HomeMainContent = () => {
                         <a href="services-details.html">Ping e latência</a>
                     </h4>
                     <p>
-                        Lorem Ipsum has been the industry's standard dummy text ever since
-                        the 1500s.{" "}
-                        <a href="#" className="iq-font-green">
-                        [ ... ]
+                        <a href="#" className="iq-font-green"
+                        onMouseEnter={() => handleMouseEnter(5)}
+                        onMouseLeave={() => handleMouseLeave(5)}
+                        >
+                        Jogue online, acesse sites, VPNs e servidores em tempo real com o melhor tempo de resposta.
                         </a>
                     </p>
                 </div>
@@ -221,8 +226,12 @@ export const HomeMainContent = () => {
                         <a href="services-details.html">Home office</a>
                     </h4>
                     <p>
-                        Lorem Ipsum has been the industry's standard dummy text ever since
-                        the 1500s.
+                        <a href="#" className="iq-font-green"
+                        onMouseEnter={() => handleMouseEnter(6)}
+                        onMouseLeave={() => handleMouseLeave(6)}
+                        >
+                        Temos um feedback único para quem trabalha de casa. Além de especialistas para ajudar na estabilidade da sua conexão.
+                        </a>
                     </p>
                 </div>
                 <div className="iq-feature2 iq-mtb-20 first-r"
@@ -256,8 +265,13 @@ export const HomeMainContent = () => {
                     <p
                     style={{position:"relative", top:"-105px"}}
                     >
-                        Lorem Ipsum has been the industry's standard dummy text ever since
-                        the 1500s.
+                        <a href="#" className="iq-font-green"
+                        onMouseEnter={() => handleMouseEnter(7)}
+                        onMouseLeave={() => handleMouseLeave(7)}     
+                        >
+                        A experiência única do 8K exige uma internet ultra veloz e uma consistência que poucos podem oferecer.
+                        Maratone sem medo e desfrute da qualidade máxima de seu dispositivo.
+                        </a>
                     </p>
                 </div>
                 <div className="iq-feature2 iq-mtb-20 first-r"
@@ -305,8 +319,13 @@ export const HomeMainContent = () => {
                             top:"-115px"
                         }}       
                     >
-                        Lorem Ipsum has been the industry's standard dummy text ever since
-                        the 1500s.
+                        <a href="#" className="iq-font-green"
+                        onMouseEnter={() => handleMouseEnter(8)}
+                        onMouseLeave={() => handleMouseLeave(8)} 
+                        >
+                        Clientes da HP Telecom ganham descontos exclusivos em vários estabelecimentos. 
+                        Cinema, farmácia, petshop e muitos outros.
+                        </a>
                     </p>
                 </div>
             </div>
@@ -315,207 +334,6 @@ export const HomeMainContent = () => {
             </div>
             </div>
         </div>
-        </section>
-        {/* Parte 2 */}
-        
-        {/* Testimonial */}
-        <HomeComents />
-        {/* parte 3 */}
-        <section className="overview-block-ptb">
-        <div className="container">
-            <div className="row">
-            <div className="col-sm-12">
-                <div className="heading-title">
-                <h3 className="title iq-tw-5 iq-mb-20">Bitcoin Pricing</h3>
-                <p>
-                    Here is 3 Easy Steps to Busy &amp; Sell Bitcoin. Lorem Ipsum has
-                    been the industry's standard dummy text ever since the 1500s, when
-                    an unknown printer took a galley of type and scrambled it to make a
-                    type specimen book.{" "}
-                </p>
-                </div>
-            </div>
-            </div>
-            <div className="row">
-            <div className="col-lg-3 col-md-6 col-sm-12">
-                <div className="iq-pricing">
-                <span className="icon">
-                    <img
-                    src="images\another\plano1-8.png"
-                    width={80}
-                    style={{
-                        position:"relative",
-                        top:"-8px"
-                    }}
-                    >
-                    </img>
-                </span>
-                <div className="pricing-header">
-                    <h3 className="title">Standard</h3>
-                    <span className="price-value">$09</span>
-                </div>
-                <ul className="pricing-content">
-                    <li>
-                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                    Photoshop
-                    </li>
-                    <li>
-                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                    HTML5 &amp; CSS 5
-                    </li>
-                    <li>
-                    <i aria-hidden="true" className="iq-mr-10 ion-close-round" />
-                    Wordpress
-                    </li>
-                    <li>
-                    <i aria-hidden="true" className="iq-mr-10 ion-close-round" />
-                    Javascript
-                    </li>
-                    <li>
-                    <i aria-hidden="true" className="iq-mr-10 ion-close-round" />
-                    Animation
-                    </li>
-                </ul>
-                <a className="button" href="#">
-                    Choose Package
-                </a>
-                </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-12">
-                <div className="iq-pricing">
-                <span className="icon">
-                    <img
-                    src="images\another\plano2-8.png"
-                    width={80}
-                    style={{
-                        position:"relative",
-                        top:"-8px"
-                    }}
-                    >
-                    </img>
-                </span>
-                <div className="pricing-header">
-                    <h3 className="title">Medium</h3>
-                    <span className="price-value">$29</span>
-                </div>
-                <ul className="pricing-content">
-                    <li>
-                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                    Photoshop
-                    </li>
-                    <li>
-                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                    HTML5 &amp; CSS 5
-                    </li>
-                    <li>
-                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                    Wordpress
-                    </li>
-                    <li>
-                    <i aria-hidden="true" className="iq-mr-10 ion-close-round" />
-                    Javascript
-                    </li>
-                    <li>
-                    <i aria-hidden="true" className="iq-mr-10 ion-close-round" />
-                    Animation
-                    </li>
-                </ul>
-                <a className="button" href="#">
-                    Choose Package
-                </a>
-                </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-12">
-                <div className="iq-pricing">
-                <span className="icon">
-                <img
-                    src="images\another\plano3-8.png"
-                    width={80}
-                    style={{
-                        position:"relative",
-                        top:"-8px"
-                    }}
-                    >
-                </img>
-                </span>
-                <div className="pricing-header">
-                    <h3 className="title">Premium</h3>
-                    <span className="price-value">$59</span>
-                </div>
-                <ul className="pricing-content">
-                    <li>
-                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                    Photoshop
-                    </li>
-                    <li>
-                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                    HTML5 &amp; CSS 5
-                    </li>
-                    <li>
-                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                    Wordpress
-                    </li>
-                    <li>
-                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                    Javascript
-                    </li>
-                    <li>
-                    <i aria-hidden="true" className="iq-mr-10 ion-close-round" />
-                    Animation
-                    </li>
-                </ul>
-                <a className="button" href="#">
-                    Choose Package
-                </a>
-                </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-12">
-                <div className="iq-pricing">
-                <span className="icon">
-                <img
-                    src="images\another\plano4-8.png"
-                    width={80}
-                    style={{
-                        position:"relative",
-                        top:"-8px"
-                    }}
-                    >
-                </img>
-                </span>
-                <div className="pricing-header">
-                    <h3 className="title">Ultimate</h3>
-                    <span className="price-value">$99</span>
-                </div>
-                <ul className="pricing-content">
-                    <li>
-                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                    Photoshop
-                    </li>
-                    <li>
-                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                    HTML5 &amp; CSS 5
-                    </li>
-                    <li>
-                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                    Wordpress
-                    </li>
-                    <li>
-                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                    Javascript
-                    </li>
-                    <li>
-                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                    Animation
-                    </li>
-                </ul>
-                <a className="button" href="#">
-                    Choose Package
-                </a>
-                </div>
-            </div>
-            </div>
-        </div>
-        </section>
-        </>
+    </section>
     )
 }

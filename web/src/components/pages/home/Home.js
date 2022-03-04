@@ -1,6 +1,6 @@
 import react, { useEffect } from "react";
 import { HomeBanner } from "./components/HomeBanner";
-import { HomeMainContent } from "./components/HomeMainContent";
+import { HomeMainContent } from "./components/HomeMainContents";
 
 export const Home = () => {
 

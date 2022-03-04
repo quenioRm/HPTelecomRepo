@@ -7669,24 +7669,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\queni\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\NoobNoob\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\queni\\source\\repos\\quenioRm\\HP\\HPTelecomApi\\HPTelecom.Service\\HPTelecom.Service.csproj",
+      "projectUniqueName": "C:\\Users\\NoobNoob\\source\\repos\\HP\\HPTelecomApi\\HPTelecom.Service\\HPTelecom.Service.csproj",
       "projectName": "HPTelecom.Service",
-      "projectPath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HP\\HPTelecomApi\\HPTelecom.Service\\HPTelecom.Service.csproj",
-      "packagesPath": "C:\\Users\\queni\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HP\\HPTelecomApi\\HPTelecom.Service\\obj\\",
+      "projectPath": "C:\\Users\\NoobNoob\\source\\repos\\HP\\HPTelecomApi\\HPTelecom.Service\\HPTelecom.Service.csproj",
+      "packagesPath": "C:\\Users\\NoobNoob\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\NoobNoob\\source\\repos\\HP\\HPTelecomApi\\HPTelecom.Service\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\queni\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\NoobNoob\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7700,8 +7695,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\queni\\source\\repos\\quenioRm\\HP\\HPTelecomApi\\HPTelecom.Domain\\HPTelecom.Domain.csproj": {
-              "projectPath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HP\\HPTelecomApi\\HPTelecom.Domain\\HPTelecom.Domain.csproj"
+            "C:\\Users\\NoobNoob\\source\\repos\\HP\\HPTelecomApi\\HPTelecom.Domain\\HPTelecom.Domain.csproj": {
+              "projectPath": "C:\\Users\\NoobNoob\\source\\repos\\HP\\HPTelecomApi\\HPTelecom.Domain\\HPTelecom.Domain.csproj"
             }
           }
         }
