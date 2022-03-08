@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import { setIconId } from "../../../../services/HpSession";
 
 export const ChangeContentOneEffect = () => {
 
@@ -13,7 +14,6 @@ export const ChangeContentOneEffect = () => {
         {id : 8, on: "images/hub/icons/8_Clube_on.png", off: "images/hub/icons/8_Clube_off.png" },
     ]
 
-    
     const [ icons , setIcons] = useState({
         1 :"images/hub/icons/1_velocidade_off.png",
         2 :"images/hub/icons/2_Sem difelidade_off.png" ,
@@ -25,7 +25,6 @@ export const ChangeContentOneEffect = () => {
         8 :"images/hub/icons/8_Clube_off.png"
     })
 
-
     const handleMouseEnter = id => {
 
         iconsList.map((icon, key) => {
@@ -36,11 +35,14 @@ export const ChangeContentOneEffect = () => {
                 })
             }
         })
+
         updateSelectCenterImage(id)
+        setIconId(id)
     }
 
     const handleMouseLeave = id => {
-        iconsList.map((icon, key) => {
+
+        iconsList.map((icon, key) => { 
             if(icon.id === id){
                 setIcons({
                     ...icons,
@@ -83,6 +85,9 @@ export const ChangeContentOneEffect = () => {
     const [centerImageOpacity, setCenterImageOpacity] = useState(1);
 
     const updateSelectCenterImage = async id => {
+
+        if(id == localStorage.getItem("iconId"))
+            return
     
         setCenterImageOpacity(0);
         setSelectCenterImageContent("")
@@ -92,7 +97,18 @@ export const ChangeContentOneEffect = () => {
                 setTimeout(() => {
                     setCenterImageOpacity(1);
                     setSelectCenterImageContent(centerImagesContent[key].image)
-                }, 2000);
+                }, 1000);
+            }
+        });
+    }
+
+    const handleInitialCenterContent = () => {
+        Object.keys(centerImagesContent).forEach(function(key) {
+            if(centerImagesContent[key].id == localStorage.getItem("iconId")){
+                setTimeout(() => {
+                    setCenterImageOpacity(1);
+                    setSelectCenterImageContent(centerImagesContent[key].image)
+                }, 1000);
             }
         });
     }
@@ -101,6 +117,7 @@ export const ChangeContentOneEffect = () => {
         handleMouseEnter,
         handleMouseLeave,
         updateSelectCenterImage,
+        handleInitialCenterContent,
         iconsList,
         icons,
         centerImageOpacity,

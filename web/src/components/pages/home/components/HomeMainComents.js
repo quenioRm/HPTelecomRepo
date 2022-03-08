@@ -70,8 +70,8 @@ export const HomeMainComents = () => {
                             </p>
                             <ul className="iq-media-blog iq-mt-10">
                             <li>
-                                <a href={item.author_url}>
-                                <i className="fa fa-google " />
+                                <a target="_blank" href={item.author_url}>
+                                    <i className="fa fa-google " />
                                 </a>
                             </li>
                             </ul>

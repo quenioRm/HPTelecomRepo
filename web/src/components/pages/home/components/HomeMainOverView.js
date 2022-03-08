@@ -8,15 +8,21 @@ export const HomeMainOverView = () => {
         handleMouseEnter,
         handleMouseLeave,
         updateSelectCenterImage,
+        handleInitialCenterContent,
         icons,
         centerImageOpacity,
         selectCenterImageContent,
-        selectCenterImage
+        selectCenterImage,
+        greenLink
 
     } = ChangeContentOneEffect()
+    
+    useEffect(() => {
+        handleInitialCenterContent()
+    }, [])
 
     return(
-    <section className="overview-block-ptb iq-feature-aria grey-bg">
+    <section className="overview-block-ptb iq-feature-aria grey-bg overviewHe">
         <div className="container">
             <div className="row">
             <div className="col-sm-12">
@@ -28,7 +34,7 @@ export const HomeMainOverView = () => {
                 </div>
             </div>
             </div>
-            <div className="row h-100">
+            <div className="row h-100 overviewChangePos">
             <div className="col-lg-4 col-md-12 text-right" style={{
                 zIndex:1
             }}>
@@ -39,20 +45,26 @@ export const HomeMainOverView = () => {
                     top:"85px"
                 }}
                 >
-                    <h4 className="iq-font-black iq-tw-5">
-                        <Link to="/">Alta velocidade</Link>
+                    <h4 className={localStorage.getItem("iconId") == 1 ? "iq-font-black iq-tw-5 aHover" 
+                    : "iq-font-black iq-tw-5"}>
+                        <Link 
+                        onMouseEnter={() => handleMouseEnter(1)}
+                        onMouseLeave={() => handleMouseLeave(1)}
+                        to="/">Alta velocidade</Link>
                         <span className="iq-icon iq-ml-10">
                         <img 
                             onMouseEnter={() => handleMouseEnter(1)}
                             onMouseLeave={() => handleMouseLeave(1)}
                             className="img-fluid"
-                            src={icons[1]}
+                            src={localStorage.getItem("iconId") == 1 ? 
+                            "images/hub/icons/1_velocidade_on.png" 
+                            : icons[1]}
                             alt=""
                         />
                         </span>
                     </h4>
                     <p>
-                        <a href="#" className="iq-font-green"
+                        <a href="#" className={greenLink}
                             onMouseEnter={() => handleMouseEnter(1)}
                             onMouseLeave={() => handleMouseLeave(1)}
                         >
@@ -68,14 +80,20 @@ export const HomeMainOverView = () => {
                     top:"50px"
                 }}
                 >
-                    <h4 className="iq-font-black iq-tw-5">
-                        <a href="services-details.html">Sem fidelidade</a>{" "}
+                    <h4 className={localStorage.getItem("iconId") == 2 ? "iq-font-black iq-tw-5 aHover" 
+                    : "iq-font-black iq-tw-5"}>
+                        <Link 
+                        onMouseEnter={() => handleMouseEnter(2)}
+                        onMouseLeave={() => handleMouseLeave(2)}
+                        to="/">Sem fidelidade</Link>
                         <span className="iq-icon iq-ml-10">
                         <img
                             onMouseEnter={() => handleMouseEnter(2)}
                             onMouseLeave={() => handleMouseLeave(2)}
                             className="img-fluid"
-                            src={icons[2]}
+                            src={localStorage.getItem("iconId") == 2 ? 
+                            "images/hub/icons/2_Sem difelidade_on.png" 
+                            : icons[2]}
                             alt=""
                         />
                         </span>
@@ -97,15 +115,21 @@ export const HomeMainOverView = () => {
                         top:"20px"
                     }}
                 >
-                    <h4 className="iq-font-black iq-tw-5">
-                        <a href="services-details.html">Técnicos locais</a>{" "}
+                    <h4 className={localStorage.getItem("iconId") == 3 ? "iq-font-black iq-tw-5 aHover" 
+                    : "iq-font-black iq-tw-5"}>
+                        <Link 
+                        onMouseEnter={() => handleMouseEnter(3)}
+                        onMouseLeave={() => handleMouseLeave(3)}
+                        to="/">Técnicos locais</Link>
                         <span className="iq-icon iq-ml-10"
                         >
                         <img
                             onMouseEnter={() => handleMouseEnter(3)}
                             onMouseLeave={() => handleMouseLeave(3)}
                             className="img-fluid"
-                            src={icons[3]}
+                            src={localStorage.getItem("iconId") == 3 ? 
+                            "images/hub/icons/3_suporte_on.png" 
+                            : icons[3]}
                             alt=""
                         />
                         </span>
@@ -125,20 +149,25 @@ export const HomeMainOverView = () => {
                         left: "-15px"
                     }}
                 >
-                    <h4 className="iq-font-black iq-tw-5">
-                        <a 
-                        style={{
-                            position:"relative",
-                            left: "-95px"
-                        }}
-                        href="/">Grande interatividade</a>{" "}
+                    <h4 className={localStorage.getItem("iconId") == 4 ? "iq-font-black iq-tw-5 aHover" 
+                    : "iq-font-black iq-tw-5"}>
+                        <Link 
+                            style={{
+                                position:"relative",
+                                left: "-95px"
+                            }}
+                            onMouseEnter={() => handleMouseEnter(4)}
+                            onMouseLeave={() => handleMouseLeave(4)}
+                        to="/">Grande interatividade</Link>
                         <span className="iq-icon iq-ml-10">
                         <img
                             style={{position:"relative" , top:"-55px"}}
                             onMouseEnter={() => handleMouseEnter(4)}
                             onMouseLeave={() => handleMouseLeave(4)}
                             className="img-fluid"
-                            src={icons[4]}
+                            src={localStorage.getItem("iconId") == 4 ? 
+                            "images/hub/icons/4_Chat_on.png" 
+                            : icons[4]}
                             alt=""
                         />
                         </span>
@@ -185,17 +214,23 @@ export const HomeMainOverView = () => {
                     left:"-65px"
                 }}
                 >
-                    <h4 className="iq-font-black iq-tw-5">
+                    <h4 className={localStorage.getItem("iconId") == 5 ? "iq-font-black iq-tw-5 aHover" 
+                    : "iq-font-black iq-tw-5"}>
                         <span className="iq-icon iq-mr-10">
                         <img
                             onMouseEnter={() => handleMouseEnter(5)}
                             onMouseLeave={() => handleMouseLeave(5)}
                             className="img-fluid"
-                            src={icons[5]}
+                            src={localStorage.getItem("iconId") == 5 ? 
+                            "images/hub/icons/5_Ping_on.png" 
+                            : icons[5]}
                             alt=""
                         />
                         </span>
-                        <a href="services-details.html">Ping e latência</a>
+                        <Link 
+                            onMouseEnter={() => handleMouseEnter(5)}
+                            onMouseLeave={() => handleMouseLeave(5)}
+                        to="/">Ping e latência</Link>
                     </h4>
                     <p>
                         <a href="#" className="iq-font-green"
@@ -213,17 +248,23 @@ export const HomeMainOverView = () => {
                         top:"20px"
                     }}
                 >
-                    <h4 className="iq-font-black iq-tw-5">
+                    <h4 className={localStorage.getItem("iconId") == 6 ? "iq-font-black iq-tw-5 aHover" 
+                    : "iq-font-black iq-tw-5"}>
                         <span className="iq-icon iq-mr-10">
                         <img
                             onMouseEnter={() => handleMouseEnter(6)}
                             onMouseLeave={() => handleMouseLeave(6)}
                             className="img-fluid"
-                            src={icons[6]}
+                            src={localStorage.getItem("iconId") == 6 ? 
+                            "images/hub/icons/6_Home Office_on.png" 
+                            : icons[6]}
                             alt=""
                         />
                         </span>
-                        <a href="services-details.html">Home office</a>
+                        <Link 
+                            onMouseEnter={() => handleMouseEnter(6)}
+                            onMouseLeave={() => handleMouseLeave(6)}
+                            to="/">Home office</Link>
                     </h4>
                     <p>
                         <a href="#" className="iq-font-green"
@@ -241,26 +282,30 @@ export const HomeMainOverView = () => {
                         left:"-65px"
                     }}              
                 >
-                    <h4 className="iq-font-black iq-tw-5">
+                    <h4 className={localStorage.getItem("iconId") == 7 ? "iq-font-black iq-tw-5 aHover" 
+                    : "iq-font-black iq-tw-5"}>
                         <span className="iq-icon iq-mr-10">
                         <img
                             onMouseEnter={() => handleMouseEnter(7)}
                             onMouseLeave={() => handleMouseLeave(7)}  
                             className="img-fluid"
-                            src={icons[7]}
+                            src={localStorage.getItem("iconId") == 7 ? 
+                            "images/hub/icons/7_UDH_on.png" 
+                            : icons[7]}
                             alt=""
                         />
                         </span>
-                        <a href="services-details.html"
-                            style={{position:"relative", left:"80px", top:"-80px"}}
-                        >
+                        <Link style={{position:"relative", left:"80px", top:"-80px"}}
+                            onMouseEnter={() => handleMouseEnter(7)}
+                            onMouseLeave={() => handleMouseLeave(7)}
+                            to="/">                        
                             <p>
                                 Assista online 
                             </p>
                             <p style={{position:"relative", top:"-20px"}}>
                                 em UHD
                             </p>
-                        </a>
+                        </Link>
                     </h4>
                     <p
                     style={{position:"relative", top:"-105px"}}
@@ -281,18 +326,24 @@ export const HomeMainOverView = () => {
                         top:"-135px"
                     }}              
                 >
-                    <h4 className="iq-font-black iq-tw-5">
+                    <h4 className={localStorage.getItem("iconId") == 8 ? "iq-font-black iq-tw-5 aHover" 
+                    : "iq-font-black iq-tw-5"}>
                         <span className="iq-icon iq-mr-10">
                         <img
                             onMouseEnter={() => handleMouseEnter(8)}
                             onMouseLeave={() => handleMouseLeave(8)} 
                             className="img-fluid"
-                            src={icons[8]}
+                            src={localStorage.getItem("iconId") == 8 ? 
+                            "images/hub/icons/8_Clube_on.png" 
+                            : icons[8]}
                             alt=""
                         />
                         </span>
-                        <a href="services-details.html">
-                            <p
+                        <Link 
+                            onMouseEnter={() => handleMouseEnter(8)}
+                            onMouseLeave={() => handleMouseLeave(8)}
+                            to="/">                        
+                           <p
                                 style={{
                                     position:"relative",
                                     left:"80px",
@@ -310,7 +361,7 @@ export const HomeMainOverView = () => {
                             >
                                 de descontos
                             </p>
-                        </a>
+                        </Link>
                     </h4>
                     <p
                         style={{
