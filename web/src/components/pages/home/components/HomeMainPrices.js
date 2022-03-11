@@ -5,11 +5,12 @@ export const HomeMainPrices = () => {
 
     const {
         plans,
-        handlePlans        
+        handleRelevantPlans        
     } = PlanService()
 
+
     useEffect(() => {
-        handlePlans(4)
+        handleRelevantPlans()
     },[])
 
     return(        
@@ -42,70 +43,50 @@ export const HomeMainPrices = () => {
                             </img>
                         </span>
                         <div className="pricing-header">
-                            <h3 className="title">{item.name}</h3>
-                            <span className="price-value">R$ {item.price.toFixed(2).replace('.', ',')}</span>
+                            <span style={{fontSize:"30px"}} className="planName">{item.name}</span>
+                            {/* <span className="price-value">R$ {item.price.toFixed(2).replace('.', ',')}</span> */}
                         </div>
-                        <ul className="pricing-content">
-
-                            {item.description1 ?
-                                <li>
-                                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                                    {item.description1}
-                                </li>
-                                :
-                                <></>
-                            }
-
-                            {item.description2 ?
-                                <li>
-                                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                                    {item.description2}
-                                </li>
-                                :
-                                <></>
-                            }
-
-                            {item.description3 ?
-                                <li>
-                                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                                    {item.description3}
-                                </li>
-                                :
-                                <></>
-                            }
-
-                            {item.description4 ?
-                                <li>
-                                    <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                                    {item.description4}
-                                </li>
-                                :
-                                <></>
-                            }
-
-                            <br>
-                            </br>
-                            <br>
-                            </br>
-
-                            {item.addTex ?
-                                <li>
-                                    <i/>
-                                    <p>
-                                    {item.addTex}
-                                    </p>
-                                </li>
-                                :
-                                <></>
-                            }
-
+                        <div className="desc-plano-top">
+                        <ul>
+                            <li>
+                                <img src="/images/plans/Download.png" />
+                                <span className="downloadFont">Download até {item.downSpeed} Mbps</span>
+                            </li>
+                            <li style={{position:'relative', top:'5px'}}>
+                                <img style={{position:"relative", left:"-1.4em"}} src="/images/plans/Upload.png" />
+                                <span> Upload até {item.upSpeed} Mbps</span>
+                            </li>
                         </ul>
+                        </div>
+                        <ul className="ulPlan"> 
+                            <li id="fidelidade">
+                                <span>{item.description1}</span>
+                            </li>
+                            <li id="wifi">
+                                <span>{item.description2}</span>
+                            </li>
+                            <li id="fibra">
+                                <span>{item.description3}</span>
+                            </li>
+                            <li id="clube">
+                                <span>{item.description4}</span>
+                            </li>
+                        </ul>
+
+                        <div class="vencimento">
+                            <p>Pagando antes do vencimento você ganha R$10 de desconto.</p>
+                        </div>
+
+                        <p>
+                            <h4 className="price-value2"> R$ {item.price.toFixed(2).replace('.', ',')}</h4>
+                            <h3 className="price-value"> R$ {(item.price - item.discount).toFixed(2).replace('.', ',')}</h3>
+                        </p>
+                        
                         <a className="button" href="#">
                             Fale com um atendente
                         </a>
                         </div>
                     </div>
-                    
                     ))}
                   </div>
               </div>

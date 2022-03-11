@@ -15,8 +15,19 @@ export const PlanService = () => {
         });
     }
 
+    const handleRelevantPlans = async () => {
+        await Api.get("Web/GetRelevantPlans")
+        .then((response) =>{
+            setPlans(response.data);
+        })
+        .catch((err) => {
+
+        });
+    }
+
     return{
         plans,
-        handlePlans
+        handlePlans,
+        handleRelevantPlans
     }
 }
