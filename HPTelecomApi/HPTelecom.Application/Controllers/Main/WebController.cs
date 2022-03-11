@@ -30,5 +30,21 @@ namespace HPTelecom.Application.Controllers.Main
                 return StatusCode((int)HttpStatusCode.BadRequest, e.Message);
             }
         }
+
+        [HttpGet]
+        [AllowAnonymous]
+        [Route("GetRelevantPlans")]
+        public async Task<object> GetRelevantPlans()
+        {
+            try
+            {
+                var output = await _webService.GetRelevantPlans();
+                return Ok(output);
+            }
+            catch (ArgumentException e)
+            {
+                return StatusCode((int)HttpStatusCode.BadRequest, e.Message);
+            }
+        }
     }
 }

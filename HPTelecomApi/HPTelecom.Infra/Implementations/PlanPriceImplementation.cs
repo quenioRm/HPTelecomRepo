@@ -21,5 +21,10 @@ namespace HPTelecom.Infra.Implementations
 
             return await _dbset.ToListAsync();
         }
+
+        public async Task<List<PlanPriceEntity>> GetRelevantPrices()
+        {
+            return await _dbset.Where(x => x.relevant == 1).ToListAsync();
+        }
     }
 }

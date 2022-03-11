@@ -4,7 +4,7 @@ import { PlanService } from "../home/components/services/PlanService";
 
 export const Plans = () => {
     
-    const pageName = "Planos"
+    const pageName = ""
 
     const {
         plans,
@@ -34,82 +34,63 @@ export const Plans = () => {
                 <div className="row mt-2">
                 {plans.map((item, key) => (
                     <div key={key} className="col-lg-3 col-md-6 col-sm-12">
-                            <div className="iq-pricing">
-                            <span className="icon">
-                                <img
-                                src={`images/another/${item.icon}`} 
-                                width={80}
-                                style={{
-                                    position:"relative",
-                                    top:"-8px"
-                                }}
-                                >
-                                </img>
-                            </span>
-                            <div className="pricing-header">
-                                <h3 className="title">{item.name}</h3>
-                                <span className="price-value">R$ {item.price.toFixed(2).replace('.', ',')}</span>
-                            </div>
-                            <ul className="pricing-content">
+                    <div className="iq-pricing">
+                    <span className="icon">
+                        <img
+                        src={`images/another/${item.icon}`} 
+                        width={80}
+                        style={{
+                            position:"relative",
+                            top:"-8px"
+                        }}
+                        >
+                        </img>
+                    </span>
+                    <div className="pricing-header">
+                        <span style={{fontSize:"30px"}} className="planName">{item.name}</span>
+                        {/* <span className="price-value">R$ {item.price.toFixed(2).replace('.', ',')}</span> */}
+                    </div>
+                    <div className="desc-plano-top">
+                    <ul>
+                        <li>
+                            <img src="/images/plans/Download.png" />
+                            <span className="downloadFont">Download até {item.downSpeed} Mbps</span>
+                        </li>
+                        <li style={{position:'relative', top:'5px'}}>
+                            <img style={{position:"relative", left:"-1.4em"}} src="/images/plans/Upload.png" />
+                            <span> Upload até {item.upSpeed} Mbps</span>
+                        </li>
+                    </ul>
+                    </div>
+                    <ul className="ulPlan"> 
+                        <li id="fidelidade">
+                            <span>{item.description1}</span>
+                        </li>
+                        <li id="wifi">
+                            <span>{item.description2}</span>
+                        </li>
+                        <li id="fibra">
+                            <span>{item.description3}</span>
+                        </li>
+                        <li id="clube">
+                            <span>{item.description4}</span>
+                        </li>
+                    </ul>
 
-                                {item.description1 ?
-                                    <li>
-                                        <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                                        {item.description1}
-                                    </li>
-                                    :
-                                    <></>
-                                }
+                    <div class="vencimento">
+                        <p>Pagando antes do vencimento você ganha R$10 de desconto.</p>
+                    </div>
 
-                                {item.description2 ?
-                                    <li>
-                                        <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                                        {item.description2}
-                                    </li>
-                                    :
-                                    <></>
-                                }
-
-                                {item.description3 ?
-                                    <li>
-                                        <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                                        {item.description3}
-                                    </li>
-                                    :
-                                    <></>
-                                }
-
-                                {item.description4 ?
-                                    <li>
-                                        <i aria-hidden="true" className="iq-mr-10 ion-checkmark-round" />
-                                        {item.description4}
-                                    </li>
-                                    :
-                                    <></>
-                                }
-
-                                <br>
-                                </br>
-                                <br>
-                                </br>
-
-                                {item.addTex ?
-                                    <li>
-                                        <i/>
-                                        <p>
-                                        {item.addTex}
-                                        </p>
-                                    </li>
-                                    :
-                                    <></>
-                                }
-
-                            </ul>
-                            <a className="button" href="#">
-                                Fale com um atendente
-                            </a>
-                            </div>
-                        </div>
+                    <p>
+                        <h4 className="price-value2"> R$ {item.price.toFixed(2).replace('.', ',')}</h4>
+                        <h3 className="price-value"> R$ {(item.price - item.discount).toFixed(2).replace('.', ',')}</h3>
+                    </p>
+                    
+                    <a className="button" href="#">
+                        Fale com um atendente
+                    </a>
+                    </div>
+                </div>
                 ))}
                 </div>
             </div>

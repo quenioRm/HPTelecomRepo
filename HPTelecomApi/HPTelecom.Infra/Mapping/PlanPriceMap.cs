@@ -25,6 +25,9 @@ namespace HPTelecom.Infra.Mapping
                 .HasColumnType("decimal(10, 2)")
                 .IsRequired();
 
+            builder.Property(e => e.discount)
+                .HasColumnType("decimal(10, 2)");
+
             builder.Property(e => e.description1)
                 .IsRequired()
                 .HasMaxLength(250);
@@ -49,6 +52,9 @@ namespace HPTelecom.Infra.Mapping
 
             builder.Property(e => e.addTex)
                 .HasColumnType("text");
+
+            builder.Property(e => e.relevant)
+                .HasColumnType("int");
 
             builder.Property(e => e.createdAt)
                 .HasColumnType("datetime")

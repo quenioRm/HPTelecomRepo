@@ -3,5 +3,6 @@
     public interface IWebService
     {
         Task<object> GetPlans(int takeCount);
+        Task<object> GetRelevantPlans();
     }
 }

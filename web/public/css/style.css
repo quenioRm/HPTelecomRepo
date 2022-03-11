@@ -1395,9 +1395,9 @@ header.fancy.menu-sticky .iq-header .row { background: transparent; margin-top: 
 .iq-footer hr { border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
 
 /*Menu*/
-.iq-footer .footer-menu li { margin: 0; }
+.iq-footer .footer-menu li { margin: 0; line-height: 1.0em;}
 .iq-footer .footer-menu li a { font-weight: 500; background: rgba(255, 255, 255, 0); padding: 8px 0; display: block; color: #ffffff; }
-.iq-footer .footer-menu li a:hover { background: rgba(255, 255, 255, 0.2); color: #008C1E; padding: 8px 15px; }
+.iq-footer .footer-menu li a:hover { color: #008C1E; padding: 8px 15px; }
 
 /*Copyright*/
 .iq-footer .iq-copyright a { color: #008C1E; }
@@ -1927,4 +1927,14 @@ footer.iq-footer-4 .newsletter-form .input-group .form-control { border: 1px sol
 
 #clube{
   list-style-image: url(../images/plans/card.png);
+}
+
+.footerForU{
+  color: rgb(0, 140, 30);
+}
+
+.footerRow{
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
 }

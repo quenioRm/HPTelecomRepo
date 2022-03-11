@@ -5,11 +5,10 @@ export const FooterLayout = () => {
         <>
         <footer className="iq-footer">
             <div
-            className="footer-top iq-bg iq-bg-fixed iq-over-black-80"
             style={{ backgroundImage: "url(images/bg/bg-13.jpg)" }}
             >
             <div className="container">
-                <div className="row">
+                <div className="footerRow">
                 <div className="col-lg-3 col-md-6 col-sm-12 iq-mtb-60">
                     <div className="logo">
                     <img
@@ -32,28 +31,48 @@ export const FooterLayout = () => {
                     </div>
                 </div>
                 <div className="col-lg-2 col-md-6 col-sm-12 iq-mtb-60 footer-menu">
-                    {/* <h5 className="small-title iq-tw-5 iq-font-white">Menu</h5>
+                    <h5 className="small-title iq-tw-5 iq-font-white footerForU">Para você</h5>
                     <ul className="iq-pl-0">
-                    <li>
-                        <a href="# ">Home</a>
-                    </li>
-                    <li>
-                        <a href="# ">About Us</a>
-                    </li>
-                    <li>
-                        <a href="# ">Services</a>
-                    </li>
-                    <li>
-                        <a href="# ">Faqs</a>
-                    </li>
-                    <li>
-                        <a href="# ">Contact Us</a>
-                    </li>
-                    </ul> */}
+                        <li>
+                            <a href="# ">- Planos</a>
+                        </li>
+                        <li>
+                            <a href="# ">About Us</a>
+                        </li>
+                        <li>
+                            <a href="# ">Services</a>
+                        </li>
+                        <li>
+                            <a href="# ">Faqs</a>
+                        </li>
+                        <li>
+                            <a href="# ">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div className="col-lg-2 col-md-6 col-sm-12 iq-mtb-60 footer-menu">
+                    <h5 className="small-title iq-tw-5 iq-font-white footerForU">Institucional</h5>
+                    <ul className="iq-pl-0">
+                        <li>
+                            <a href="# ">- Planos</a>
+                        </li>
+                        <li>
+                            <a href="# ">About Us</a>
+                        </li>
+                        <li>
+                            <a href="# ">Services</a>
+                        </li>
+                        <li>
+                            <a href="# ">Faqs</a>
+                        </li>
+                        <li>
+                            <a href="# ">Contact Us</a>
+                        </li>
+                    </ul>
                 </div>
                 <div className="col-lg-3 col-md-6 col-sm-12 iq-contact iq-mtb-60">
-                    <h5 className="small-title iq-tw-5 iq-font-white">
-                    Contact CoinEx
+                    <h5 className="small-title iq-tw-5 iq-font-white footerForU">
+                    Fale Conosco
                     </h5>
                     <div className="iq-mb-30">
                     <div className="blog">
@@ -79,44 +98,57 @@ export const FooterLayout = () => {
                     </div>
                     </div>
                 </div>
+                <div className="col-lg-3 col-md-6 col-sm-12 iq-contact iq-mtb-60">
+                    <h5 className="small-title iq-tw-5 iq-font-white footerForU">
+                    Endereço
+                    </h5>
+                    <div className="iq-mb-30">
+                    <div className="blog">
+                        <i className="ion-ios-telephone-outline" />
+                        <div className="content ">
+                        <div className="iq-tw-6 title ">Phone</div> +0123 456 789
+                        </div>
+                    </div>
+                    </div>
+                </div>
                 </div>
             </div>
             </div>
             <div className="footer-bottom iq-ptb-20 ">
-            <div className="container">
-                <div className="row">
-                <div className="col-sm-6">
-                    <div className="iq-copyright iq-mt-10 iq-font-white">
-                    Copyright <span id="copyright"> </span>{" "}
-                    <a href="#">HP Telecom</a> Todos os direitos reservados{" "}
+                <div className="container">
+                    <div className="row">
+                    <div className="col-sm-6">
+                        <div className="iq-copyright iq-mt-10 iq-font-white">
+                        Copyright <span id="copyright"> </span>{" "}
+                        <a href="#">HP Telecom</a> Todos os direitos reservados{" "}
+                        </div>
+                    </div>
+                    <div className="col-sm-6">
+                        <ul className="iq-media-blog ">
+                        <li>
+                            <a href="# ">
+                            <i className="fa fa-twitter " />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                            <i className="fa fa-facebook " />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                            <i className="fa fa-google " />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="# ">
+                            <i className="fa fa-github " />
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
                     </div>
                 </div>
-                <div className="col-sm-6">
-                    <ul className="iq-media-blog ">
-                    <li>
-                        <a href="# ">
-                        <i className="fa fa-twitter " />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="# ">
-                        <i className="fa fa-facebook " />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="# ">
-                        <i className="fa fa-google " />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="# ">
-                        <i className="fa fa-github " />
-                        </a>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </div>
             </div>
         </footer>
         {/*=================================

@@ -16,5 +16,11 @@ namespace HPTelecom.Service.Services
             var plans = await _planPriceRepository.GetAll(takeCount);
             return plans;
         }
+
+        public async Task<object> GetRelevantPlans()
+        {
+            var plans = await _planPriceRepository.GetRelevantPrices();
+            return plans;
+        }
     }
 }

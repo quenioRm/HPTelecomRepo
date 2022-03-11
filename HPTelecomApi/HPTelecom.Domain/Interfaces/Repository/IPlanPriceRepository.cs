@@ -6,5 +6,6 @@ namespace HPTelecom.Domain.Interfaces.Repository
     public interface IPlanPriceRepository : IRepository<PlanPriceEntity, int>
     {
         Task<List<PlanPriceEntity>> GetAll(int? takeCount);
+        Task<List<PlanPriceEntity>> GetRelevantPrices();
     }
 }
