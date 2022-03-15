@@ -6,7 +6,5 @@ namespace HPTelecom.Domain.Entities
     {
         [Key]
         public T Id { get; set; }
-        public DateTime createdAt { get; set; }
-        public DateTime updatedAt { get; set; }
     }
 }

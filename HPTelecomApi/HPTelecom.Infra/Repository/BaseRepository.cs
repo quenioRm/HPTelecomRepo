@@ -31,7 +31,6 @@ namespace HPTelecom.Infra.Repository
 
         public async Task<T> InsertAsync(T item)
         {
-            item.createdAt = DateTime.Now;
             _dbset.Add(item);
 
             await _context.SaveChangesAsync();
@@ -60,7 +59,6 @@ namespace HPTelecom.Infra.Repository
             if (result == null)
                 return null;
 
-            item.updatedAt = DateTime.Now;
             _context.Entry(result).CurrentValues.SetValues(item);
 
             await _context.SaveChangesAsync();

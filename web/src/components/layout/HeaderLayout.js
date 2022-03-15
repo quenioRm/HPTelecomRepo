@@ -149,9 +149,9 @@ export const HeaderLayout = () => {
                             </a>
                         </li>
                         <li>
-                            <a className="" href="#">
-                                QUEM SOMOS 
-                            </a>
+                            <Link to="/About">
+                            QUEM SOMOS 
+                            </Link>
                         </li>
                         <li>
                             <a className="" href="#">

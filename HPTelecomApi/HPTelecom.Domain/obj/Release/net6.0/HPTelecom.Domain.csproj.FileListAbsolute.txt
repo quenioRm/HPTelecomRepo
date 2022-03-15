@@ -1,0 +1,12 @@
+C:\Users\queni\source\repos\quenioRm\HP\HPTelecomApi\HPTelecom.Domain\bin\Release\net6.0\HPTelecom.Domain.deps.json
+C:\Users\queni\source\repos\quenioRm\HP\HPTelecomApi\HPTelecom.Domain\bin\Release\net6.0\HPTelecom.Domain.dll
+C:\Users\queni\source\repos\quenioRm\HP\HPTelecomApi\HPTelecom.Domain\bin\Release\net6.0\HPTelecom.Domain.pdb
+C:\Users\queni\source\repos\quenioRm\HP\HPTelecomApi\HPTelecom.Domain\obj\Release\net6.0\HPTelecom.Domain.csproj.AssemblyReference.cache
+C:\Users\queni\source\repos\quenioRm\HP\HPTelecomApi\HPTelecom.Domain\obj\Release\net6.0\HPTelecom.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\queni\source\repos\quenioRm\HP\HPTelecomApi\HPTelecom.Domain\obj\Release\net6.0\HPTelecom.Domain.AssemblyInfoInputs.cache
+C:\Users\queni\source\repos\quenioRm\HP\HPTelecomApi\HPTelecom.Domain\obj\Release\net6.0\HPTelecom.Domain.AssemblyInfo.cs
+C:\Users\queni\source\repos\quenioRm\HP\HPTelecomApi\HPTelecom.Domain\obj\Release\net6.0\HPTelecom.Domain.csproj.CoreCompileInputs.cache
+C:\Users\queni\source\repos\quenioRm\HP\HPTelecomApi\HPTelecom.Domain\obj\Release\net6.0\HPTelecom.Domain.dll
+C:\Users\queni\source\repos\quenioRm\HP\HPTelecomApi\HPTelecom.Domain\obj\Release\net6.0\refint\HPTelecom.Domain.dll
+C:\Users\queni\source\repos\quenioRm\HP\HPTelecomApi\HPTelecom.Domain\obj\Release\net6.0\HPTelecom.Domain.pdb
+C:\Users\queni\source\repos\quenioRm\HP\HPTelecomApi\HPTelecom.Domain\obj\Release\net6.0\ref\HPTelecom.Domain.dll

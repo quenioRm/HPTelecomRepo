@@ -1396,13 +1396,13 @@ header.fancy.menu-sticky .iq-header .row { background: transparent; margin-top: 
 
 /*Menu*/
 .iq-footer .footer-menu li { margin: 0; line-height: 1.0em;}
-.iq-footer .footer-menu li a { font-weight: 500; background: rgba(255, 255, 255, 0); padding: 8px 0; display: block; color: #ffffff; }
+.iq-footer .footer-menu li a { font-weight: 500; background: rgba(255, 255, 255, 0); padding: 8px 0; display: block; color: #ffffff; font-family: 'GorditaFontMedium'; font-size: 14px; }
 .iq-footer .footer-menu li a:hover { color: #008C1E; padding: 8px 15px; }
 
 /*Copyright*/
 .iq-footer .iq-copyright a { color: #008C1E; }
 .iq-footer .iq-copyright a:hover { color: #ffffff; }
-.iq-footer .footer-bottom { background: #000000; }
+.iq-footer .footer-bottom { background: #1D3840; }
 
 /*Social Media*/
 .iq-footer .iq-media-blog { margin: 0; padding: 0; text-align: right; }
@@ -1412,10 +1412,10 @@ header.fancy.menu-sticky .iq-header .row { background: transparent; margin-top: 
 
 /*Contact*/
 .iq-footer .iq-contact .blog { color: #ffffff; }
-.iq-footer .iq-contact .blog .title { font-size: 20px; }
-.iq-footer .iq-contact .blog span { font-size: 20px; }
+.iq-footer .iq-contact .blog .title { font-size: 14px; font-family: 'GorditaFont'; }
+.iq-footer .iq-contact .blog span { font-size: 14px; font-family: 'GorditaFont'; }
 .iq-footer .iq-contact .blog i { color: #008C1E; font-size: 40px; line-height: 40px; vertical-align: middle; margin-right: 15px; display: table; float: left; }
-.iq-footer .iq-contact .blog .content { display: table-cell; }
+.iq-footer .iq-contact .blog .content { display: table-cell; font-size: 14px;}
 .iq-footer .call-back { background: rgba(255, 255, 255, 0.2); padding: 30px; }
 .iq-footer .call-back .form-control { border: none; border-radius: 0; height: 45px !important; }
 
@@ -1937,4 +1937,17 @@ footer.iq-footer-4 .newsletter-form .input-group .form-control { border: 1px sol
   display: flex;
   margin-right: -15px;
   margin-left: -15px;
+}
+
+.footerHeader{
+  font-family: 'GorditaFont';
+  font-size: 22px;
+}
+
+.forceUpdateColor{
+  color: white;
+}
+
+.forceUpdateColor:hover{
+  color: #008C1E;
 }

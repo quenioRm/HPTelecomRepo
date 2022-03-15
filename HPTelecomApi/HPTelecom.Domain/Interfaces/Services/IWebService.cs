@@ -4,5 +4,6 @@
     {
         Task<object> GetPlans(int takeCount);
         Task<object> GetRelevantPlans();
+        Task<object> GetPromos();
     }
 }

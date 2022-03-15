@@ -21,8 +21,8 @@ export const HomeMainPrices = () => {
                       <div className="heading-title">
                       <h3 className="title iq-tw-5 iq-mb-20">Escolha um dos nossos planos e seja <span style={{color:"#008C1E"}}>HP Telecom</span></h3>
                       <p>
-                      Não sabe qual plano contratar? Tem dúvidas de qual possa atender melhor a sua demanda? 
-                      Fale conosco e te recomendaremos o melhor plano com base no seu perfil de utilização.
+                        Não sabe qual plano contratar? Tem dúvidas de qual possa atender melhor a sua demanda? 
+                        Fale conosco e te recomendaremos o melhor plano com base no seu perfil de utilização.
                       </p>
                       </div>
                   </div>
@@ -73,15 +73,14 @@ export const HomeMainPrices = () => {
                             </li>
                         </ul>
 
-                        <div class="vencimento">
+                        <div className="vencimento">
                             <p>Pagando antes do vencimento você ganha R$10 de desconto.</p>
                         </div>
 
-                        <p>
+                        <div>
                             <h4 className="price-value2"> R$ {item.price.toFixed(2).replace('.', ',')}</h4>
                             <h3 className="price-value"> R$ {(item.price - item.discount).toFixed(2).replace('.', ',')}</h3>
-                        </p>
-                        
+                        </div>
                         <a className="button" href="#">
                             Fale com um atendente
                         </a>
