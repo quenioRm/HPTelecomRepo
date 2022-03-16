@@ -97,6 +97,11 @@ Design and Developed by: iqonicthemes.in
   src: url(../fonts/Gordita\ Black.otf);
 }
 
+@font-face{
+  font-family: GorditaFontRegular;
+  src: url(../fonts/Gordita\ Regular.otf);
+}
+
 body { font-family: 'GorditaFont'; font-weight: normal; font-style: normal; font-size: 16px; line-height: 24px; color: #666666; overflow-x: hidden; }
 a, .button { transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -webkit-transition: all 0.5s ease-in-out; color: #151d2e; }
 a:focus { text-decoration: none !important; }
@@ -1950,4 +1955,141 @@ footer.iq-footer-4 .newsletter-form .input-group .form-control { border: 1px sol
 
 .forceUpdateColor:hover{
   color: #008C1E;
+}
+
+
+.aboutImg1{
+  /* Group */
+  position: absolute;
+  left: 14.79%;
+  right: 82.03%;
+  top: 13.99%;
+  bottom: 84.38%;
+
+  transform: matrix(0.96, -0.26, 0.28, 0.96, 0, 0);
+}
+
+.aboutImg2{
+  position: relative;
+  left: -290px;
+  right: 78.48%;
+  top: -20px;
+  bottom: 80.48%;
+
+  transform: rotate(10deg);
+}
+
+.aboutImg3{
+  position: relative;
+  left: 17.36%;
+  right: 78.48%;
+  bottom: 80.48%;
+
+  transform: matrix(0.97, -0.21, 0.23, 0.98, 0, 0);
+}
+
+.aboutImg4{
+  position: relative;
+  left: -230px;
+  right: 78.48%;
+  bottom: 81.2%;
+
+  transform: matrix(0.99, 0.16, -0.17, 0.99, 0, 0);
+}
+
+.aboutText1{
+  position: absolute;
+  width: 673px;
+  height: 248px;
+  left: 723px;
+  top: 549px;
+
+  font-family: 'Gordita';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.aboutText1Title{
+  font-family: 'GorditaFont';
+  color: #000000;
+}
+
+.aboutText1Title p {
+  font-family: 'GorditaFontRegular';
+  font-size: 14px;
+  color: #918d8d;
+  text-align: center;
+}
+
+.aboutText2Title{
+  font-family: 'GorditaFont';
+  color: #000000;
+  text-align: center;
+}
+
+.aboutText2Title p {
+  font-family: 'GorditaFontRegular';
+  font-size: 14px;
+  color: #918d8d;
+}
+
+.aboutText2{
+  font-family: 'GorditaFont';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.aboutImg5{
+  position: relative;
+  left: 50px;
+  bottom: 11.2%;
+  width: 623.36px;
+  height: 548.56px;
+}
+
+.aboutImg6{
+  position: relative;
+  left: -90px;
+  right: 78.48%;
+  top: -590px;
+  bottom: 80.48%;
+}
+
+.aboutImg7{
+  position: relative;
+  left: 290px;
+  right: 78.48%;
+  top: -630px;
+  bottom: 80.48%;
+}
+
+.aboutRectangle{
+  position: relative;
+  left: -400px;
+  width: 1938px;
+  height: 412px;
+}
+
+.aboutRectangleImg{
+  position: relative;
+  left: 220px;
+  top: 50px;
+  width: 1438px;
+  height: 312px;
+}
+
+.aboutRectangle1{
+  position: relative;
+  left: -400px;
+  width: 1938px;
+  height: 412px;
 }

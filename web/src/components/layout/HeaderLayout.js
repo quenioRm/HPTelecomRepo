@@ -1,7 +1,10 @@
 import react, {useState, useEffect} from "react";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 export const HeaderLayout = () => {
+
+    const location = useLocation()
 
     const [logo, setLog] = useState("images/logotipo-descritivo-rgb-03.png")
     const [y, setY] = useState(0);
@@ -41,7 +44,11 @@ export const HeaderLayout = () => {
   
       window.addEventListener("scroll", (e) => handleNavigation(e));
     }, []);
-  
+
+        
+    function scrollWin() {
+        window.scrollTo(0, 500);
+    }
 
     return(
         <>
@@ -134,12 +141,14 @@ export const HeaderLayout = () => {
                     </a>
                     <ul className="menu text-right">
                         <li>
-                            <a className="active" href="/">
+                            <a className={location.pathname == "/"
+                            ? 'active' : ''} href="/">
                                 HOME
                             </a>
                         </li>
                         <li>
-                            <Link to="/Plans">
+                            <Link to="/Plans" className={location.pathname == "/Plans"
+                            ? 'active' : ''} >
                             PLANOS
                             </Link>
                         </li>
@@ -149,12 +158,13 @@ export const HeaderLayout = () => {
                             </a>
                         </li>
                         <li>
-                            <Link to="/About">
+                            <Link to="/About" className={location.pathname == "/About"
+                            ? 'active' : ''}>
                             QUEM SOMOS 
                             </Link>
                         </li>
                         <li>
-                            <a className="" href="#">
+                            <a className="" onClick={() => scrollWin()} href="#">
                                 CONTATO
                             </a>
                         </li>
