@@ -153,19 +153,46 @@ export const HeaderLayout = () => {
                             </Link>
                         </li>
                         <li>
-                            <a className="" href="#">
-                                CONTRATO
-                            </a>
-                        </li>
-                        <li>
                             <Link to="/About" className={location.pathname == "/About"
                             ? 'active' : ''}>
                             QUEM SOMOS 
                             </Link>
                         </li>
                         <li>
-                            <a className="" onClick={() => scrollWin()} href="#">
-                                CONTATO
+                            <Link to="#">
+                            CONTATO
+                            </Link>
+                        </li>
+
+                        <li className="nav-item dropdown">
+                                <a
+                                    className="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="navbarDropdown1"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                >
+                                    Dropdown
+                                </a>
+                                <div style={{backgroundColor:"black", borderColor:"white", position:"relative", left:"30px"}} className="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                    <a className="dropdown-item" href="#">
+                                    Action
+                                    </a>
+                                    <a className="dropdown-item" href="#">
+                                    Another action
+                                    </a>
+                                    <div className="dropdown-divider" />
+                                    <a className="dropdown-item" href="#">
+                                    Something else here
+                                    </a>
+                                </div>
+                                </li>
+                        
+                        <li>
+                            <a className="" target="_blank" href="https://cda.hptelecom.com.br/central_assinante_web/login">
+                                ÁREA DO CLIENTE
                             </a>
                         </li>
                     </ul>
