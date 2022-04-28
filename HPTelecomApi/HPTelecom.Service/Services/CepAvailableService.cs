@@ -21,7 +21,11 @@ namespace HPTelecom.Service.Services
             var result = await _cepAvailableRepository.FindCep(cepAvailableDto.Cep);
             if (result == null)
             {
-                output.AddError(nameof(cepAvailableDto.Cep), "Não existe disponibilidade em sua região, por favor aguarde ou contate o suporte.");
+                output.Result = new
+                {
+                    code = "general_error",
+                    message = "Não temos disponibilidade para sua região, por favor contate o suporte."
+                };
                 return output;
             }
 

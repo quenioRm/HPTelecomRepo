@@ -5,6 +5,6 @@ namespace HPTelecom.Domain.Entities
     {
         public string cep { get; set; }
         public DateTime createdAt { get; set; }
-        public DateTime updatedAt { get; set; }
+        public DateTime? updatedAt { get; set; }
     }
 }
