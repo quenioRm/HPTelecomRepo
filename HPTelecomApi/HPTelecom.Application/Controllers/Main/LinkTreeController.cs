@@ -37,5 +37,26 @@ namespace HPTelecom.Application.Controllers.Main
                 return StatusCode((int)HttpStatusCode.BadRequest, e.Message);
             }
         }
+
+        [HttpPost]
+        [AllowAnonymous]
+        [Route("CheckAvailability")]
+        public async Task<object> CheckAvailability([FromForm] CheckAvailabilityDto form)
+        {
+            try
+            {
+                var output = await _cepAvailableService.CheckAvailability(form);
+                if (!output.IsValid)
+                {
+                    return ValidationProblem(output);
+                }
+
+                return Ok(output.Result);
+            }
+            catch (ArgumentException e)
+            {
+                return StatusCode((int)HttpStatusCode.BadRequest, e.Message);
+            }
+        }
     }
 }

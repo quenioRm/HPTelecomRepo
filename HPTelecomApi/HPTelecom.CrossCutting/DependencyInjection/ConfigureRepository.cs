@@ -19,6 +19,7 @@ namespace HPTelecom.CrossCutting.DependencyInjection
             builder.Services.AddScoped<ICepAvailableRepository, CepAvailableImplementation>();
             builder.Services.AddScoped<IPlanPriceRepository, PlanPriceImplementation>();
             builder.Services.AddScoped<IPromotionsRepository, PromotionsImplementation>();
+            builder.Services.AddScoped<ICheckAvailabilityRepository, CheckAvailabilityImplementation>();
             #endregion
 
             builder.Services.AddDbContext<HPTelecomContext>(

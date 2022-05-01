@@ -120,12 +120,24 @@ export const HomePage = () => {
                     <a target="_blank" href="https://www.hptelecom.com.br/home">
                         <div className="circle">
                         <img
-                            src="/assets/images/icons/assets_nosso-site.png"
+                            src="/assets/images/icons/area-do-cliente-8.png"
                             alt="image"
                             className="img-fluid"
                         />
                         </div>
-                        <span>Website</span>
+                        <span>Área do cliente</span>
+                    </a>
+                    </div>
+                    <div className="item col-4">
+                    <a target="_blank" href="https://www.hptelecom.com.br/home">
+                        <div className="circle">
+                        <img
+                            src="/assets/images/icons/e-mail-8.png"
+                            alt="image"
+                            className="img-fluid"
+                        />
+                        </div>
+                        <span>E-Mail</span>
                     </a>
                     </div>
                 </div>

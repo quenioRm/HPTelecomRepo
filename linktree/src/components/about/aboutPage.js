@@ -50,7 +50,7 @@ export const AboutPage = () => {
                 </p>
 
                 <p>
-                Missão:
+                <span className="title">Missão: </span>
                 Levar conexão de qualidade, através de um 
                 atendimento e um serviço de excelência, ao máximo 
                 de pessoas que conseguirmos, com o intuito de 
@@ -58,7 +58,7 @@ export const AboutPage = () => {
                 </p>
 
                 <p>
-                Visão:
+                <span className="title">Visão: </span>
                 Proporcionar uma realidade onde a conexão que 
                 oferecemos às pessoas possa contribuir para a 
                 inclusão digital e social, promovendo um mundo 
@@ -66,7 +66,7 @@ export const AboutPage = () => {
                 </p>
 
                 <p>
-                Valores:
+                <span className="title">Valores: </span>
                 Qualidade: Do atendimento até o pós-venda, da instalação ao suporte, de um 
                 simples problema a uma solução incrível. Enxergamos qualidade na 
                 prestação de serviço como um todo, sempre buscando a satisfação do 
@@ -74,42 +74,49 @@ export const AboutPage = () => {
                 </p>
 
                 <p>
-                Comprometimento: Com o cliente, dando todo o suporte necessário em sua jornada aqui na 
+                <span className="title">Comprometimento: </span>
+                Com o cliente, dando todo o suporte necessário em sua jornada aqui na 
                 empresa. Entrega de um serviço redondo do jeito que foi contratado. 
                 </p>
 
                 <p>
-                Acessibilidade: Através de uma conexão com funcionamento pleno e boa acessibilidade 
+                <span className="title">Acessibilidade: </span>
+                Através de uma conexão com funcionamento pleno e boa acessibilidade 
                 promovemos a inclusão de pessoas em um ambiente digital para que 
                 tenham sucesso em suas demandas profissionais, de entretenimento ou 
                 lazer. 
                 </p>
 
                 <p>
-                Inovação: Entender a necessidade do cliente e propor soluções que o atendam, 
+                <span className="title">Inovação: </span> 
+                Entender a necessidade do cliente e propor soluções que o atendam, 
                 sempre de forma conectada e inteligente. 
                 </p>
 
                 <p>
-                Excelência: A excelência está no pleno funcionamento da conexão, no suporte e no 
+                <span className="title">Excelência: </span> 
+                A excelência está no pleno funcionamento da conexão, no suporte e no 
                 atendimento rápido para a resolução de problemas, sempre com um 
                 sorriso no rosto e uma simpatia de tocar o coração. A excelência está 
                 desde a contratação do serviço até a entrega do que foi prometido.
                 </p>
 
                 <p>
-                Tecnologia: Respiramos tecnologia, e prezamos por levar a inovação ao maior 
+                <span className="title">Tecnologia: </span> 
+                Respiramos tecnologia, e prezamos por levar a inovação ao maior 
                 número de pessoas possível.
                 </p> 
 
                 <p>
-                Ética: Respeitamos pessoas, cuidamos de clientes, valorizamos parceiros, 
+                <span className="title">Ética: </span> 
+                Respeitamos pessoas, cuidamos de clientes, valorizamos parceiros, 
                 sempre de forma justa e correta para o bem das relações pessoais e 
                 comerciais. 
                 </p>
 
                 <p>
-                Humano: Enxergamos além do serviço: percebemos quem são nossos clientes e 
+                <span className="title">Humano: </span> 
+                Enxergamos além do serviço: percebemos quem são nossos clientes e 
                 quais são suas necessidades, levando atendimento atencioso e 
                 humanizado.
                 </p>

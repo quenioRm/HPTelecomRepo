@@ -9,6 +9,8 @@ const HomeService = (callback, validate) => {
 
     const [values, setValues] = useState({
         Cep: "",
+        Name:"",
+        Telephone : ""
     });
 
     const handleChange = e => {
@@ -54,12 +56,14 @@ const HomeService = (callback, validate) => {
                         icon:'error',
                         title: '<p><h4 style="font-family:Gordita-Bold" class="font-weight-bold">Que pena...</h4></p>',
                         showCloseButton: true,
+                        showConfirmButton: false,
                         background :"#fff0",
                         color:"white",
                         html:
-                        '<span style="margin:0" style="font-family:Gordita-Light">'+ response.data.message +'<span/> <br><br/>' +
-                        '<input name="Nome" id="swal-input1" placeholder="Nome" class="swal2-input">' +
-                        '<input name="Telefone" id="swal-input2" placeholder="Telefone" class="swal2-input">',
+                        '<span style="margin:0" style="font-family:Gordita-Light">'+ response.data.message +'<span/> <br><br/>'+
+                        '<br><br/><a style="font-family:Gordita-Light;color:white" href="/Callme" class="green-button">Avise-me</a>',
+                        // '<input name="Nome" id="swal-input1" placeholder="Nome" class="swal2-input">' +
+                        // '<input name="Telefone" id="swal-input2" placeholder="Telefone" class="swal2-input">',
                         focusConfirm: false,
                         preConfirm: () => {
                             return [
@@ -80,25 +84,32 @@ const HomeService = (callback, validate) => {
           if(err.response){
             var errors = err.response.data.errors;
             setErrors(validate(errors));
-            var res = validate(errors)
-            if(res){
-                Swal.fire({
-                    icon: 'error',
-                    title: '<p><h4 style="font-family:Gordita-Bold" class="font-weight-bold">Oops...</h4></p>',
-                    html: '<span style="font-family:Gordita-Light">'+ res.Cep +'<span/>',
-                    background :"#fff0",
-                    color:"white",
-                    showConfirmButton: false,
-                    showCloseButton: true
-                })
-            }
           }
         });
     };
 
+    const handleCheckAvailable = async e => {
+        e.preventDefault()
+
+        const form_data = new FormData();
+        form_data.append('Cep', values.Cep);
+        form_data.append('Name', values.Name);
+        form_data.append('Telephone', values.Telephone);
+
+        await Api.post("/LinkTree/CheckAvailability", form_data)
+        .then((response) =>{
+            
+        })
+        .catch((err) => {
+            var errors = err.response.data.errors;
+            setErrors(validate(errors));
+        });
+    }
+
     return { 
         handleChange, 
         handleSubmitCheckCep,
+        handleCheckAvailable,
         values, 
         errors,
         cepMessage
