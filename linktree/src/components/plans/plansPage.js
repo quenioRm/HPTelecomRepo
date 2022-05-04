@@ -13,7 +13,7 @@ export const PlansPage = () => {
         focusOnSelect: true,
         dots: false,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 10000,
         responsive: [
             {
                 breakpoint: 768,
@@ -52,7 +52,7 @@ export const PlansPage = () => {
                   <div key={key} className="col-lg-3 col-md-4 col-sm-6 col-xs-12 package-list">
                     <div className="package-icon">
                         <img
-                        src="./assets/images/velocidade_60.svg"
+                        src={"/assets/images/" + item.icon}
                         alt="image"
                         className="img-fluid"
                         />

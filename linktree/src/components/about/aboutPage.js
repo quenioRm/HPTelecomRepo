@@ -49,25 +49,34 @@ export const AboutPage = () => {
                 Bem-vindo ao universo HP Telecom.
                 </p>
 
+                <p style={{textAlign:"center"}}>
+                <span className="title" style={{fontSize:"20px", fontWeight:"bold"}}>Missão</span>
+                </p>
+
                 <p>
-                <span className="title">Missão: </span>
                 Levar conexão de qualidade, através de um 
                 atendimento e um serviço de excelência, ao máximo 
                 de pessoas que conseguirmos, com o intuito de 
                 promover a inclusão digital e social.
                 </p>
 
+                <p style={{textAlign:"center"}}>
+                <span className="title" style={{fontSize:"20px", fontWeight:"bold"}}>Visão</span>
+                </p>
                 <p>
-                <span className="title">Visão: </span>
                 Proporcionar uma realidade onde a conexão que 
                 oferecemos às pessoas possa contribuir para a 
                 inclusão digital e social, promovendo um mundo 
                 mais conectado.
                 </p>
 
+                <p style={{textAlign:"center"}}>
+                <span className="title" style={{fontSize:"20px", fontWeight:"bold"}}>Valores</span>
+                </p>
+                
                 <p>
-                <span className="title">Valores: </span>
-                Qualidade: Do atendimento até o pós-venda, da instalação ao suporte, de um 
+                <span className="title">Qualidade: </span>
+                Do atendimento até o pós-venda, da instalação ao suporte, de um 
                 simples problema a uma solução incrível. Enxergamos qualidade na 
                 prestação de serviço como um todo, sempre buscando a satisfação do 
                 cliente em primeiro lugar.

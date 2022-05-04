@@ -45,7 +45,7 @@
 }
 
 @font-face {
-    font-family: 'Gordita-Regular';
+    font-family: 'Gordita';
     src: url('../fonts/Gordita-Regular.woff2') format('woff2'),
         url('../fonts/Gordita-Regular.woff') format('woff');
     font-weight: normal;
@@ -148,6 +148,23 @@ body {
 
 .content .container div:not(.intro) {
     font-family: 'Gordita-Light';
+}
+
+.custom-font {
+    font-family: "Gordita-Bold", "Open Sans", sans-serif;
+}
+
+.custom-button {
+    display: block;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    background: #3ea438;
+    width: 30%;
+    padding: .5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
 }
 
 iframe,
@@ -600,6 +617,17 @@ button.green-button {
     font-size: 12px;
     color: #838383;
     font-style: italic;
+}
+
+.content .container .credit-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 8.5%;
+    right: 0;
+    background: url('../images/card-small.png') no-repeat top right;
+    width: 90px;
+    height: 90px;
 }
 
 /*.content .container .about .about-item .company-icons .icon img {
