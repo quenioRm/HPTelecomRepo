@@ -29,7 +29,7 @@ namespace HPTelecom.Service.Services
                 output.Result = new
                 {
                     code = "general_error",
-                    message = "Não temos disponibilidade para sua região, por favor contate o suporte."
+                    message = "Não temos disponibilidade para o seu endereço, gostaria de saber quando tivermos cobertura em sua rua?"
                 };
                 return output;
             }

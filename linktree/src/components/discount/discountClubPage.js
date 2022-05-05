@@ -21,7 +21,7 @@ export const DiscountClubPage = () => {
                     Como funciona o
                 </h4>
                 <h4 className="font-weight-bold mb-4 d-block text-center custom-font">
-                    o <span className="green">clube de descountos</span> ?
+                    <span className="green">clube de descountos</span> ?
                 </h4>
                 <div className="col-8 text-center pr-0 pl-0 m-0 m-auto mb-5">
                     <p>
@@ -34,8 +34,8 @@ export const DiscountClubPage = () => {
                 />
                 <div className="col-8 text-center pr-0 pl-0 m-0 m-auto mb-5">
                     <p>
-                    *accompanhe os canais oficiais <br />
-                    para potenciais mudancas
+                    *acompanhe os canais oficiais <br />
+                    para potênciais mudancas
                     </p>
                 </div>
                 <img

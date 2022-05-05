@@ -12,6 +12,7 @@ import { AboutPage } from "./components/about/aboutPage";
 import { PlansPage } from "./components/plans/plansPage";
 import { DiscountClubPage } from "./components/discount/discountClubPage";
 import { HomeCallMeFormPage } from "./components/home/homeCallMeFormPage";
+import { HomeSendMailFormPage } from "./components/home/homeSendMailFormPage";
 
 export default () => {
   return (
@@ -25,6 +26,7 @@ export default () => {
           <Route exact path='/Plans' component={PlansPage} />
           <Route exact path='/DiscountClub' component={DiscountClubPage} />
           <Route exact path='/Callme' component={HomeCallMeFormPage} />
+          <Route exact path='/SendMail' component={HomeSendMailFormPage} />
           <Route exact path='*' component={HomePage} />
         </Switch>
       </MainLayout>

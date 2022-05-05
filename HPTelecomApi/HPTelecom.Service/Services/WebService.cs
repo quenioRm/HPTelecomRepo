@@ -1,5 +1,7 @@
-﻿using HPTelecom.Domain.Interfaces.Repository;
+﻿using HPTelecom.Domain.Interfaces.Dtos;
+using HPTelecom.Domain.Interfaces.Repository;
 using HPTelecom.Domain.Interfaces.Services;
+using HPTelecom.Domain.Notification;
 
 namespace HPTelecom.Service.Services
 {
@@ -7,13 +9,16 @@ namespace HPTelecom.Service.Services
     {
         private IPlanPriceRepository _planPriceRepository;
         private IPromotionsRepository _promotionsRepository;
+        private IMailSenderService _mailSenderService;
         public WebService(
             IPlanPriceRepository planPriceRepository, 
-            IPromotionsRepository promotionsRepository
+            IPromotionsRepository promotionsRepository,
+            IMailSenderService mailSenderService
             )
         {
             _planPriceRepository = planPriceRepository;
             _promotionsRepository = promotionsRepository;
+            _mailSenderService = mailSenderService;
         }
 
         public async Task<object> GetPlans(int takeCount)
@@ -41,6 +46,21 @@ namespace HPTelecom.Service.Services
             }
 
             return promo;
+        }
+
+        public async Task<Output<object>> SendMail(SendMailDto form)
+        {
+            var output = new Output<object>();
+
+            await _mailSenderService.SendMail(form.Name + " - " + form.Telephone, form.Text);
+
+            output.Result = new
+            {
+                code = "general_success",
+                message = "E-mail enviado com sucesso."
+            };
+
+            return output;
         }
     }
 }

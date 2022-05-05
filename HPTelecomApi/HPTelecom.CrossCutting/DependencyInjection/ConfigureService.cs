@@ -17,6 +17,10 @@ namespace HPTelecom.CrossCutting.DependencyInjection
             builder.Services.AddTransient<ICepAvailableService, CepAvailableService>();
             builder.Services.AddTransient<IWebService, WebService>();
             #endregion
+
+            #region Email
+            builder.Services.AddTransient<IMailSenderService, MailSenderService>();
+            #endregion
         }
 
         public static void ConfigureControllerService(WebApplicationBuilder builder)

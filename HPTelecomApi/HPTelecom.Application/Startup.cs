@@ -23,6 +23,7 @@ namespace HPTelecom.Application
             ConfigureRepository.ConfigureDependenciesRepository(builder);
             ConfigureService.ConfigureControllerService(builder);
             ConfigureService.ConfigureDependenciesService(builder);
+            ConfigureEmailService.ConfigureSmtpClient(builder);
 
             builder.Services.AddCors(opt =>
             {

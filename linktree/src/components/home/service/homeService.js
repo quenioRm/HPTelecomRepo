@@ -10,7 +10,8 @@ const HomeService = (callback, validate) => {
     const [values, setValues] = useState({
         Cep: "",
         Name:"",
-        Telephone : ""
+        Telephone : "",
+        Text : ""
     });
 
     const handleChange = e => {
@@ -106,10 +107,29 @@ const HomeService = (callback, validate) => {
         });
     }
 
+    const handleSendMail = async e => {
+        e.preventDefault()
+
+        const form_data = new FormData();
+        form_data.append('Name', values.Name);
+        form_data.append('Telephone', values.Telephone);
+        form_data.append('Text', values.Text);
+
+        await Api.post("/LinkTree/SendMail", form_data)
+        .then((response) =>{
+            
+        })
+        .catch((err) => {
+            var errors = err.response.data.errors;
+            setErrors(validate(errors));
+        });
+    }
+
     return { 
         handleChange, 
         handleSubmitCheckCep,
         handleCheckAvailable,
+        handleSendMail,
         values, 
         errors,
         cepMessage

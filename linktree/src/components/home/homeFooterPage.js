@@ -25,7 +25,7 @@ export const HomeFooterPage = () => {
                         />
                     </a>
                     </li>
-                    <li>
+                    {/* <li>
                     <a href="#">
                         <img
                         src="./assets/images/icons/assets_twitter.png"
@@ -42,8 +42,8 @@ export const HomeFooterPage = () => {
                         className="img-fluid"
                         />
                     </a>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                     <a href="#">
                         <img
                         src="./assets/images/icons/assets_e-mail.png"
@@ -51,7 +51,7 @@ export const HomeFooterPage = () => {
                         className="img-fluid"
                         />
                     </a>
-                    </li>
+                    </li> */}
                 </ul>
                 </div>
             </div>

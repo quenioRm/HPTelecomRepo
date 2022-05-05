@@ -24,7 +24,7 @@ export const HomePage = () => {
                     alt="logo"
                     className="img-fluid"
                 />
-                <span>Internet Para pessoas exigentes</span>
+                <span>Internet para pessoas exigentes</span>
                 </div>
                 <div className="menu">
                 <div className="row">
@@ -117,7 +117,7 @@ export const HomePage = () => {
                     </a>
                     </div>
                     <div className="item col-4">
-                    <a target="_blank" href="https://www.hptelecom.com.br/home">
+                    <a target="_blank" href="https://cda.hptelecom.com.br/central_assinante_web/login">
                         <div className="circle">
                         <img
                             src="/assets/images/icons/area-do-cliente-8.png"
@@ -129,7 +129,7 @@ export const HomePage = () => {
                     </a>
                     </div>
                     <div className="item col-4">
-                    <a target="_blank" href="https://www.hptelecom.com.br/home">
+                    <a href="/SendMail">
                         <div className="circle">
                         <img
                             src="/assets/images/icons/e-mail-8.png"

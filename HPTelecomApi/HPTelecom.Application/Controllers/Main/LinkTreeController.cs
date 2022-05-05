@@ -11,10 +11,12 @@ namespace HPTelecom.Application.Controllers.Main
     public class LinkTreeController : Controller
     {
         private readonly ICepAvailableService _cepAvailableService;
+        private readonly IWebService _webService;
 
-        public LinkTreeController(ICepAvailableService cepAvailableService)
+        public LinkTreeController(ICepAvailableService cepAvailableService, IWebService webService)
         {
             _cepAvailableService = cepAvailableService;
+            _webService = webService;
         }
 
         [HttpPost]
@@ -46,6 +48,27 @@ namespace HPTelecom.Application.Controllers.Main
             try
             {
                 var output = await _cepAvailableService.CheckAvailability(form);
+                if (!output.IsValid)
+                {
+                    return ValidationProblem(output);
+                }
+
+                return Ok(output.Result);
+            }
+            catch (ArgumentException e)
+            {
+                return StatusCode((int)HttpStatusCode.BadRequest, e.Message);
+            }
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        [Route("SendMail")]
+        public async Task<object> SendMail([FromForm] SendMailDto form)
+        {
+            try
+            {
+                var output = await _webService.SendMail(form);
                 if (!output.IsValid)
                 {
                     return ValidationProblem(output);
