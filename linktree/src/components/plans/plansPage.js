@@ -70,15 +70,25 @@ export const PlansPage = () => {
                             Upload {item.upSpeed} Mbps
                             </li>
                             <li>
-                            <i className="fa fa-bolt" />
-                            {item.description1}
+                                <img
+                                    src="./assets/images/nofidelity.png"
+                                    alt="image"
+                                    className="img-fluid d-inline-block"
+                                    style={{ paddingRight: 10 }}
+                                />
+                                {item.description1}
                             </li>
                             <li>
                             <i className="fa fa-wifi" />
                             {item.description2}
                             </li>
                             <li>
-                            <i className="fa fa-plug" />
+                            <img
+                                src="./assets/images/fiber.png"
+                                alt="image"
+                                className="img-fluid d-inline-block"
+                                style={{ paddingRight: 10 }}
+                            />
                             {item.description3}
                             </li>
                             <li>

@@ -48,7 +48,7 @@ export const FooterLayout = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="col-lg-3 col-md-6 col-sm-12 iq-mtb-60 footer-menu">
+                <div style={{position:"relative", left:"-60px"}} className="col-lg-3 col-md-6 col-sm-12 iq-mtb-60 footer-menu">
                     <h5 className="small-title iq-tw-5 iq-font-white footerForU footerHeader">Institucional</h5>
                     <ul className="iq-pl-0">
                         <li>
@@ -65,7 +65,7 @@ export const FooterLayout = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="col-lg-3 col-md-6 col-sm-12 iq-contact iq-mtb-60">
+                <div style={{position:"relative", left:"-80px"}} className="col-lg-3 col-md-6 col-sm-12 iq-contact iq-mtb-60">
                     <h5 className="small-title iq-tw-5 iq-font-white footerForU footerHeader">
                     Fale Conosco
                     </h5>
@@ -98,7 +98,7 @@ export const FooterLayout = () => {
                             </div>
                     </div>
                 </div>
-                <div className="col-lg-4 col-md-6 col-sm-12 iq-contact iq-mtb-60">
+                <div style={{position:"relative", left:"-90px"}} className="col-lg-4 col-md-6 col-sm-12 iq-contact iq-mtb-60">
                     <h5 className="small-title iq-tw-5 iq-font-white footerForU footerHeader">
                     Endereço
                     </h5>

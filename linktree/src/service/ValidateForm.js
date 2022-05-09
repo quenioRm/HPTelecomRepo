@@ -17,7 +17,7 @@ export default function ValidateForm(values) {
       Swal.fire({
          icon: 'error',
          title: '<p><h4 style="font-family:Gordita-Bold" class="font-weight-bold">Oops...</h4></p>',
-         html: '<span style="font-family:Gordita-Light;font-weight-bold">'+ errors +'<span/>',
+         html: '<span style="font-family:Gordita-Light;font-weight: bold">'+ errors +'<span/>',
          background :"#fff0",
          color:"white",
          showConfirmButton: false,
