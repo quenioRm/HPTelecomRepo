@@ -1,7 +1,10 @@
 ﻿using HPTelecom.Domain.Interfaces.Dtos;
+using HPTelecom.Domain.Interfaces.Dtos.Models;
 using HPTelecom.Domain.Interfaces.Repository;
 using HPTelecom.Domain.Interfaces.Services;
 using HPTelecom.Domain.Notification;
+using Newtonsoft.Json;
+using System.Net;
 
 namespace HPTelecom.Service.Services
 {
@@ -61,6 +64,23 @@ namespace HPTelecom.Service.Services
             };
 
             return output;
+        }
+
+        public Task<GoogleMapsReview> GetGoogleComents()
+        {
+            string result = "";
+
+            using (var client = new HttpClient(new HttpClientHandler { AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate }))
+            {
+                client.BaseAddress = new Uri("https://maps.googleapis.com/maps/api/place/details/");
+                HttpResponseMessage response = client.GetAsync("json?key=AIzaSyA4DJHYNhaxuLr-5yeGf5LTM9xD2kWJhqY&placeid=ChIJUTT-FhpPzpQRHXCBRIkB6yw").Result;
+                response.EnsureSuccessStatusCode();
+                result = response.Content.ReadAsStringAsync().Result;
+            }
+
+            var output = JsonConvert.DeserializeObject<GoogleMapsReview>(result);
+
+            return Task.FromResult(output);
         }
     }
 }

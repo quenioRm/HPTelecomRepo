@@ -62,5 +62,21 @@ namespace HPTelecom.Application.Controllers.Main
                 return StatusCode((int)HttpStatusCode.BadRequest, e.Message);
             }
         }
+
+        [HttpGet]
+        [AllowAnonymous]
+        [Route("GetGoogleComents")]
+        public async Task<object> GetGoogleComents()
+        {
+            try
+            {
+                var output = await _webService.GetGoogleComents();
+                return Ok(output);
+            }
+            catch (ArgumentException e)
+            {
+                return StatusCode((int)HttpStatusCode.BadRequest, e.Message);
+            }
+        }
     }
 }

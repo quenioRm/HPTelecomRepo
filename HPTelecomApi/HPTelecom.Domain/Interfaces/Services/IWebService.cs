@@ -1,4 +1,5 @@
 ﻿using HPTelecom.Domain.Interfaces.Dtos;
+using HPTelecom.Domain.Interfaces.Dtos.Models;
 using HPTelecom.Domain.Notification;
 
 namespace HPTelecom.Domain.Interfaces.Services
@@ -9,5 +10,6 @@ namespace HPTelecom.Domain.Interfaces.Services
         Task<object> GetRelevantPlans();
         Task<object> GetPromos();
         Task<Output<object>> SendMail(SendMailDto form);
+        Task<GoogleMapsReview> GetGoogleComents();
     }
 }

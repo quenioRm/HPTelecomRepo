@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from "react";
-import ApiGoogle from "../../service/ApiGoogle";
+import Api from "../../service/Api";
 
 export const ComentPage = () => {
 
@@ -8,10 +8,10 @@ export const ComentPage = () => {
     useEffect(() => {
         async function Get(){
             if(reviews == null){
-                await ApiGoogle.get("/json?key=AIzaSyA4DJHYNhaxuLr-5yeGf5LTM9xD2kWJhqY&placeid=ChIJUTT-FhpPzpQRHXCBRIkB6yw")
+                await Api.get("/Web/GetGoogleComents")
                 .then((response) => {
                         setReviews(response.data.result.reviews);
-                        console.log(reviews)
+                        console.log(response)
                     }).catch((err) =>{
                 })
             }
@@ -32,7 +32,7 @@ export const ComentPage = () => {
                 </div>
                 {reviews ?
                 reviews.map((item, key) => (
-                 <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-left pl-1 mb-4 review">
+                 <div key={key} className="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-left pl-1 mb-4 review">
                     <div className="row">
                         <div className="col-9 review-title">
                         5.00 <span>{item.author_name}:</span>
