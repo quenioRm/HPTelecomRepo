@@ -82,5 +82,29 @@ namespace HPTelecom.Service.Services
 
             return Task.FromResult(output);
         }
+
+        public async Task<Output<object>> SendPurchaseRequestMail(SendPurchaseRequestDto form)
+        {
+            var output = new Output<object>();
+
+            var plan = await _planPriceRepository.FindPlan(form.PlanId);
+
+            var message = "Fez a solicitação de contato para aquisição do plano " + plan.name + "- R$" +
+                          plan.price + ", para o cep :" + form.Cep + " e seu contato de telefone é " + form.Telephone;
+
+            await _mailSenderService.SendPurchaseRequestMail(
+                form.Name,
+                "Aquisição de plano de internet",
+                form.Text,
+                message);
+
+            output.Result = new
+            {
+                code = "general_success",
+                message = "E-mail enviado com sucesso, aguarde pois iremos entrar em contato."
+            };
+
+            return output;
+        }
     }
 }

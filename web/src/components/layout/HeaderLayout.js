@@ -1,4 +1,4 @@
-import react, {useState, useEffect} from "react";
+import react, {useState, useEffect, useRef} from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
@@ -48,6 +48,14 @@ export const HeaderLayout = () => {
         
     function scrollWin() {
         window.scrollTo(0, 500);
+    }
+
+    function ScrollToFooter(){
+        const divRef = useRef(null);
+
+        useEffect(() => {
+          divRef.current.scrollIntoView({ behavior: 'smooth' });
+        });
     }
 
     return(
@@ -159,7 +167,7 @@ export const HeaderLayout = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="#">
+                            <Link to="#" id="down" href="#down">
                             CONTATO
                             </Link>
                         </li>

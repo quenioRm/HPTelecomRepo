@@ -11,5 +11,6 @@ namespace HPTelecom.Domain.Interfaces.Services
         Task<object> GetPromos();
         Task<Output<object>> SendMail(SendMailDto form);
         Task<GoogleMapsReview> GetGoogleComents();
+        Task<Output<object>> SendPurchaseRequestMail(SendPurchaseRequestDto form);
     }
 }

@@ -59,6 +59,13 @@ $(document).ready(function() {
         return false;
     });
 
+    $('#down').on('click', function() {
+        $('down').tooltip('hide');
+        $('body,html').animate({
+            scrollTop: $(document).height()-$(window).height()
+        }, 800);
+        return false;
+    });
 
     /*------------------------
     Charts

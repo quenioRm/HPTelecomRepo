@@ -37,7 +37,7 @@ namespace HPTelecom.Service.Services
             output.Result = new
             {
                 code = "general_success",
-                message = "Temos disponibilidade para sua região, por favor contate o suporte."
+                message = "Temos disponibilidade para sua região, por favor, contate um de nossos canais de atendimento!"
             };
 
             return output;

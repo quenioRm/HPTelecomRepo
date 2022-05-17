@@ -42,22 +42,23 @@ namespace HPTelecom.Service.Services
             }
         }
 
-        public async Task SendAccountCode(string recipientEmail, string recipientName, int code, string subject, string message)
+        public async Task SendPurchaseRequestMail(string recipientName, string subject,
+            string text,  string? message)
         {
             using (var scope = _serviceProvider.CreateScope())
             {
                 //var file = _rootFolder + @"\emails\SendAccountActivationCode.cshtml";
-                var file = $"{Directory.GetCurrentDirectory()}/wwwroot/emails/SendAccountActivationCode.cshtml";
+                var file = $"{Directory.GetCurrentDirectory()}/wwwroot/emails/RequestEmail.cshtml";
                 var mailer = scope.ServiceProvider.GetRequiredService<IFluentEmail>();
                 var email = mailer
-                    .To(recipientEmail, recipientName)
+                    .To(_configuration["SmptMail:Email"], "HP Telecom")
                     .Subject(subject)
                     .UsingTemplateFromFile(file,
                     new
                     {
                         Name = recipientName,
                         Message = message,
-                        Code = code
+                        Text = text
                     });
 
                 await email.SendAsync();

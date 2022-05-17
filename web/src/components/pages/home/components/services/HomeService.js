@@ -43,7 +43,9 @@ const HomeService = (callback, validate) => {
                 Swal.fire({
                     icon: 'success',
                     title: '<h4 style="font-family:Gordita-Bold; color:white" class="font-weight-bold">Ebaa</h4>',
-                    html: '<span style="font-family:Gordita-Light">'+ response.data.message +'<span/> <br><br/> <a style="font-family:Gordita-Light;color:white" target="_blank" href="https://api.whatsapp.com/send?1=pt_BR&phone=551128762641" class="btn btn-success">Whatsapp <i class="fa fa-whatsapp pl-2"></i></a>',
+                    html: '<span style="font-family:Gordita-Light">'+ response.data.message +'<span/> <br><br/>'+ 
+                    '<a style="font-family:Gordita-Light;color:white;position:relative;left:-20px" target="_blank" href="https://api.whatsapp.com/send?1=pt_BR&phone=551128762641" class="btn btn-success">Whatsapp <i class="fa fa-whatsapp pl-2"></i></a>'+
+                    '<a style="font-family:Gordita-Light;color:white;position:relative;left:20px" href="/CallMeNewInvoce" class="btn btn-success">Fale conosco</a>',
                     background :"#fff0",
                     color:"white",
                     showConfirmButton: false,

@@ -7,5 +7,6 @@ namespace HPTelecom.Domain.Interfaces.Repository
     {
         Task<List<PlanPriceEntity>> GetAll(int? takeCount);
         Task<List<PlanPriceEntity>> GetRelevantPrices();
+        Task<PlanPriceEntity> FindPlan(int id);
     }
 }
