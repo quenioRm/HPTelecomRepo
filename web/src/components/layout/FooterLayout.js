@@ -110,7 +110,7 @@ export const FooterLayout = () => {
                         </i>
                         <div className="content ">
                             <p>
-                                <div className="iq-tw-6 title" style={{fontWeight:"normal"}}></div> <a className="forceUpdateColor" target="_blank" href="https://www.google.com.br/maps/dir//HP+Telecom+-+Av.+Manuel+Alves+Soares,+638+-+Sala+3+-+Parque+Colonial,+S%C3%A3o+Paulo+-+SP,+04821-270/@-23.726327,-46.6883989,17z/data=!4m16!1m6!3m5!1s0x94ce4f1a16fe3451:0x2ceb01894481701d!2sHP+Telecom!8">Av. Manuel Alves Soares, 638 - sala 3, Parque Colonial - Cep: 04821-270</a>
+                                <div className="iq-tw-6 title" style={{fontWeight:"normal"}}></div> <a className="forceUpdateColor" target="_blank" href="https://www.google.com.br/maps/dir//HP+Telecom+-+Av.+Manuel+Alves+Soares,+638+-+Sala+3+-+Parque+Colonial,+S%C3%A3o+Paulo+-+SP,+04821-270/@-23.726327,-46.6883989,17z/data=!4m16!1m6!3m5!1s0x94ce4f1a16fe3451:0x2ceb01894481701d!2sHP+Telecom!8m2!3d-23.7263319!4d-46.6862102!4m8!1m0!1m5!1m1!1s0x94ce4f1a16fe3451:0x2ceb01894481701d!2m2!1d-46.6862102!2d-23.7263319!3e2">Av. Manuel Alves Soares, 638 - sala 3, Parque Colonial - Cep: 04821-270</a>
                             </p>
                             <p>
                                 <div className="iq-tw-6 title "></div> CNPJ - 28.973.552/0001-03
@@ -144,14 +144,14 @@ export const FooterLayout = () => {
                             </a>
                         </li>
                         <li>
-                            <a style={{border:"transparent"}} href="# ">
+                            <a style={{border:"transparent"}} href="https://www.facebook.com/HPTelecom">
                                 <i style={{position: "relative", top:"-4px"}}>
                                     <img src="/images/footer/facebok-8.png" style={{width:"100%"}}></img>
                                 </i>
                             </a>
                         </li>
                         <li>
-                            <a style={{border:"transparent"}} href="# ">
+                            <a style={{border:"transparent"}} href="https://www.instagram.com/hp_internet/">
                                 <i style={{position: "relative", top:"-4px"}}>
                                     <img src="/images/footer/instagram-8.png" style={{width:"100%"}}></img>
                                 </i>
