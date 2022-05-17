@@ -100,9 +100,9 @@ export const PlansPage = () => {
                         <p style={{fontFamily:"Gordita-Light"}}>{item.addTex}</p>
                     </div>
                     <div className="package-price">
-                        <span className="sale">R$ {(item.price - item.discount).toFixed(2).replace('.', ',')}</span>
+                        <span className="sale">R$ {item.price.toFixed(2).replace('.', ',')}</span>
                         <span style={{fontFamily:"Gordita-Regular"}} className="price">
-                        R$ {item.price.toFixed(2).replace('.', ',')}<span>/mes</span>
+                        R$ {(item.price - item.discount).toFixed(2).replace('.', ',')}<span>/mes</span>
                         </span>
                         <h6 className="font-weight-light">No Boleto via e-mail</h6>
                     </div>

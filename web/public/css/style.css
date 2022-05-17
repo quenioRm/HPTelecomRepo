@@ -2102,3 +2102,51 @@ footer.iq-footer-4 .newsletter-form .input-group .form-control { border: 1px sol
   color:rgb(0, 140, 30);
 }
 
+/* Bootstrap-changess */
+/* .close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #faf8f8;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+} */
+
+/* .modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 0.3rem;
+    outline: 0;
+    background-color: black;
+    /* border-block-color: green; */
+/* }
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: #099c35;
+} */ */
+
+.swal2-html-container {
+    z-index: 1;
+    justify-content: center;
+    margin: 0 !important;
+    padding: 0;
+    overflow: auto;
+    color: inherit;
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-word;
+}

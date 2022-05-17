@@ -164,7 +164,7 @@ export const HeaderLayout = () => {
                             </Link>
                         </li>
 
-                        <li className="nav-item dropdown">
+                        {/* <li className="nav-item dropdown">
                                 <a
                                     className="nav-link dropdown-toggle"
                                     href="#"
@@ -188,7 +188,7 @@ export const HeaderLayout = () => {
                                     Something else here
                                     </a>
                                 </div>
-                                </li>
+                            </li> */}
                         
                         <li>
                             <a className="" target="_blank" href="https://cda.hptelecom.com.br/central_assinante_web/login">

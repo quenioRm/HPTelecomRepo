@@ -1,6 +1,14 @@
-import react from "react";
+import react, {useState} from "react";
+import { HomeCepCheck } from "./HomeCepCheck";
 
 export const HomeBanner = () => {
+
+    const [showCep, setShowCep] = useState(false);
+
+    const toggleSignin = () => {
+        setShowCep(!showCep);
+    }
+
     return(
         <>
         {/* Banner */}
@@ -272,7 +280,7 @@ export const HomeBanner = () => {
                     </h1>
                   </div>
                   {/* LAYER NR. 8 */}
-                  <div 
+                  <div onClick={toggleSignin}
                     className="tp-caption rev-btn button white tp-resizeme"
                     id="slide-42-layer-18"
                     data-x={30}
@@ -299,6 +307,10 @@ export const HomeBanner = () => {
                   >
                     ASSINE JÁ
                   </div>
+                  <HomeCepCheck 
+                      isOpen={showCep}
+                      toggle={toggleSignin}
+                  />
                 </li>
                 
                 <li
@@ -828,7 +840,7 @@ export const HomeBanner = () => {
                   >
                   </div>
                   {/* LAYER NR. 14 */}
-                  <div 
+                  <div onClick={toggleSignin}
                     className="tp-caption rev-btn button white tp-resizeme"
                     id="slide-42-layer-18"
                     data-x={30}

@@ -16,7 +16,7 @@ export const PlanService = () => {
     }
 
     const handleRelevantPlans = async () => {
-        await Api.get("Web/GetRelevantPlans")
+        await Api.get("Web/GetPlans/" + "4")
         .then((response) =>{
             setPlans(response.data);
         })

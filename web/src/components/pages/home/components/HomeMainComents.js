@@ -1,21 +1,23 @@
 import React, { useEffect, useState } from "react";
 import OwlCarousel from 'react-owl-carousel';
-import ApiGoogle from "../../../../services/ApiGoogle";
+import Api from "../../../../services/Api";
 
 export const HomeMainComents = () => {
 
     const [reviews, setReviews] = useState(null);
 
-    useEffect(async () => {
-        if(reviews == null){
-            await ApiGoogle.get("/json?key=AIzaSyA4DJHYNhaxuLr-5yeGf5LTM9xD2kWJhqY&placeid=ChIJUTT-FhpPzpQRHXCBRIkB6yw")
-            .then((response) => {
-                    setReviews(response.data.result.reviews);
-                    console.log(reviews)
-                }).catch((err) =>{
-            })
+    useEffect(() => {
+        async function Get(){
+            if(reviews == null){
+                await Api.get("/Web/GetGoogleComents")
+                .then((response) => {
+                        setReviews(response.data.result.reviews)
+                    }).catch((err) =>{
+                })
+            }
         }
-    })
+        Get()
+    },[])
 
 
     return(

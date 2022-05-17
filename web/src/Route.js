@@ -9,6 +9,7 @@ import { MainLayout } from "./components/layout/MainLayout";
 import { Home } from "./components/pages/home/Home";
 import { Plans } from "./components/pages/plans/Plans";
 import { About } from "./components/pages/about/About";
+import { CallMe } from "./components/pages/callme/CallMe";
 
 export default () => {
   return (
@@ -19,6 +20,7 @@ export default () => {
           <Route exact path='/' exact component={Home} />
           <Route exact path='/Plans' exact component={Plans} />
           <Route exact path='/About' exact component={About} />
+          <Route exact path='/CallMe' exact component={CallMe} />
           <Route exact path='*' exact component={Home} />
         </Switch>
       </MainLayout>

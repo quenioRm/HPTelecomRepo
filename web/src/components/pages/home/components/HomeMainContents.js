@@ -1,8 +1,7 @@
-import react, {useEffect} from "react";
+import react, {useEffect, useState} from "react";
 import { HomeMainComents } from "./HomeMainComents";
 import { HomeMainOverView } from "./HomeMainOverView";
 import { HomeMainPrices } from "./HomeMainPrices";
-import { HomePromotion } from "./HomePromotion";
 
 export const HomeMainContent = () => {
 
@@ -15,7 +14,7 @@ export const HomeMainContent = () => {
         {/* Prices */}
         <HomeMainPrices />    
         {/*  */}
-        <HomePromotion />
+        {/* <HomePromotion /> */}
         </>
     )
 }

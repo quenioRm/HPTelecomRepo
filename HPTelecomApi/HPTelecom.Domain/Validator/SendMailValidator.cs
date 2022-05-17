@@ -22,7 +22,7 @@ namespace HPTelecom.Domain.Validator
                 .WithName("Nome");
 
             RuleFor(p => p.Telephone)
-               .NotEmpty()
+               .NotEmpty().WithMessage("O campo {PropertyName} é obrigatório")
                .NotNull().WithMessage("O campo {PropertyName} é obrigatório")
                .MinimumLength(10).WithMessage("O Campo telefone não deve ter menos de 10 caracteres.")
                .MaximumLength(20).WithMessage("O Campo telefone não deve ter menos de 20 caracteres.")
@@ -36,6 +36,10 @@ namespace HPTelecom.Domain.Validator
 
             RuleFor(x => x.Text).NotEmpty()
                 .WithMessage("O campo {PropertyName} é obrigatório")
+                .WithName("Mensagem");
+
+            RuleFor(x => x.Text).MinimumLength(100)
+                .WithMessage("O campo {PropertyName} necessita de no mínimo 100 caracteres!")
                 .WithName("Mensagem");
         }
     }

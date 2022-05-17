@@ -52,13 +52,13 @@ export const FooterLayout = () => {
                     <h5 className="small-title iq-tw-5 iq-font-white footerForU footerHeader">Institucional</h5>
                     <ul className="iq-pl-0">
                         <li>
-                            <a href="# ">- Trabalhe conosco</a>
+                            <a target="_blank" href="https://www.linkedin.com/company/hp-telecom">- Trabalhe conosco</a>
                         </li>
                         <li>
                             <a href="# ">- Contrato</a>
                         </li>
                         <li>
-                            <a href="# ">- Privacidade</a>
+                            <a target="_blank" href="https://docs.google.com/document/d/1_QgSaMT8rjzekjxaD79MfTVg1jPqVntg6f3alN9Jozc/edit?usp=sharing">- Privacidade</a>
                         </li>
                         <li>
                             <a href="# ">- Quem somos</a>
@@ -85,7 +85,8 @@ export const FooterLayout = () => {
                                 <img src="/images/footer/whatsapp-8.png" style={{width:"100%"}}></img>
                             </i>
                             <div className="content ">
-                            <div className="iq-tw-6 title">WhatsApp</div> <Link className="forceUpdateColor" to="www.google.com">11 2876-2641</Link>
+                            <div className="iq-tw-6 title">WhatsApp</div> 
+                            <a target="_blank" className="forceUpdateColor" href="https://api.whatsapp.com/send?phone=551128762641">11 2876-2641</a>
                             </div>
                         </div>
                     </div>
@@ -109,7 +110,7 @@ export const FooterLayout = () => {
                         </i>
                         <div className="content ">
                             <p>
-                                <div className="iq-tw-6 title" style={{fontWeight:"normal"}}></div> Av. Manuel Alves Soares, 638 - sala 3, Parque Colonial - Cep: 04821-270
+                                <div className="iq-tw-6 title" style={{fontWeight:"normal"}}></div> <a className="forceUpdateColor" target="_blank" href="https://www.google.com.br/maps/dir//HP+Telecom+-+Av.+Manuel+Alves+Soares,+638+-+Sala+3+-+Parque+Colonial,+S%C3%A3o+Paulo+-+SP,+04821-270/@-23.726327,-46.6883989,17z/data=!4m16!1m6!3m5!1s0x94ce4f1a16fe3451:0x2ceb01894481701d!2sHP+Telecom!8">Av. Manuel Alves Soares, 638 - sala 3, Parque Colonial - Cep: 04821-270</a>
                             </p>
                             <p>
                                 <div className="iq-tw-6 title "></div> CNPJ - 28.973.552/0001-03
@@ -157,7 +158,7 @@ export const FooterLayout = () => {
                             </a>
                         </li>
                         <li>
-                            <a style={{border:"transparent"}} href="# ">
+                            <a style={{border:"transparent"}} href="https://www.linkedin.com/company/hp-telecom">
                                 <i style={{position: "relative", top:"-4px"}}>
                                     <img src="/images/footer/linkedin-8.png" style={{width:"100%"}}></img>
                                 </i>

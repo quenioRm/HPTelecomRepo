@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const Api = axios.create({
-    baseURL: "http://45.168.116.101/",
+    baseURL: "https://api.hptelecom.com.br/",
 });
 
 export default Api;
