@@ -40,9 +40,9 @@ export const FooterLayout = () => {
                         <li>
                             <a href="# ">- Área do cliente</a>
                         </li>
-                        <li>
+                        {/* <li>
                             <a href="# ">- Perguntas frequentes</a>
-                        </li>
+                        </li> */}
                         <li>
                             <a href="# ">- 2º Via da conta</a>
                         </li>
@@ -55,19 +55,19 @@ export const FooterLayout = () => {
                             <a target="_blank" href="https://www.linkedin.com/company/hp-telecom">- Trabalhe conosco</a>
                         </li>
                         <li>
-                            <a href="# ">- Contrato</a>
+                            <a href="#">- Contrato</a>
                         </li>
                         <li>
                             <a target="_blank" href="https://docs.google.com/document/d/1_QgSaMT8rjzekjxaD79MfTVg1jPqVntg6f3alN9Jozc/edit?usp=sharing">- Privacidade</a>
                         </li>
                         <li>
-                            <a href="# ">- Quem somos</a>
+                            <a href="/About">- Quem somos</a>
                         </li>
                     </ul>
                 </div>
                 <div style={{position:"relative", left:"-80px"}} className="col-lg-3 col-md-6 col-sm-12 iq-contact iq-mtb-60">
                     <h5 className="small-title iq-tw-5 iq-font-white footerForU footerHeader">
-                    Fale Conosco
+                    <a href="mailto:contato@hptelecom.com.br" target="_blank">Fale conosco</a>
                     </h5>
                     <div className="iq-mb-30">
                     <div className="blog">
@@ -130,35 +130,35 @@ export const FooterLayout = () => {
                     <div className="row">
                     <div className="col-sm-6">
                         <div className="iq-copyright iq-mt-10 iq-font-white">
-                        Copyright <span id="copyright"> </span>{" "}
-                        <a href="#">HP Telecom</a> Todos os direitos reservados{" "}
+                        Todos os direitos reservados <span id="copyright"> </span>{" "}
+                        <a href="#">HP Telecom</a> {" "}
                         </div>
                     </div>
                     <div className="col-sm-6">
                         <ul className="iq-media-blog ">
-                        <li>
+                        {/* <li>
                             <a style={{border:"transparent"}} href="# ">
                                 <i style={{position: "relative", top:"-4px"}} >
                                     <img src="/images/footer/twitter-8.png" style={{width:"100%"}}></img>
                                 </i>
                             </a>
-                        </li>
+                        </li> */}
                         <li>
-                            <a style={{border:"transparent"}} href="https://www.facebook.com/HPTelecom">
+                            <a style={{border:"transparent"}} target="_blank" href="https://www.facebook.com/HPTelecom">
                                 <i style={{position: "relative", top:"-4px"}}>
                                     <img src="/images/footer/facebok-8.png" style={{width:"100%"}}></img>
                                 </i>
                             </a>
                         </li>
                         <li>
-                            <a style={{border:"transparent"}} href="https://www.instagram.com/hp_internet/">
+                            <a style={{border:"transparent"}} target="_blank" href="https://www.instagram.com/hp_internet/">
                                 <i style={{position: "relative", top:"-4px"}}>
                                     <img src="/images/footer/instagram-8.png" style={{width:"100%"}}></img>
                                 </i>
                             </a>
                         </li>
                         <li>
-                            <a style={{border:"transparent"}} href="https://www.linkedin.com/company/hp-telecom">
+                            <a style={{border:"transparent"}} target="_blank" href="https://www.linkedin.com/company/hp-telecom">
                                 <i style={{position: "relative", top:"-4px"}}>
                                     <img src="/images/footer/linkedin-8.png" style={{width:"100%"}}></img>
                                 </i>

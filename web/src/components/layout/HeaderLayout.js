@@ -199,7 +199,7 @@ export const HeaderLayout = () => {
                             </li> */}
                         
                         <li>
-                            <a className="" target="_blank" href="https://cda.hptelecom.com.br/central_assinante_web/login">
+                            <a className="" target="_blank" href="https://cda.hptelecom.com.br/central_assinante_web/">
                                 ÁREA DO CLIENTE
                             </a>
                         </li>
