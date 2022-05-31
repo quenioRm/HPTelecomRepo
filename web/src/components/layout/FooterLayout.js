@@ -35,15 +35,15 @@ export const FooterLayout = () => {
                     <h5 className="small-title iq-tw-5 iq-font-white footerForU footerHeader">Para você</h5>
                     <ul className="iq-pl-0">
                         <li>
-                            <a href="# ">- Planos</a>
+                            <a href="/Plans">- Planos</a>
                         </li>
                         <li>
-                            <a href="# ">- Área do cliente</a>
+                            <a href="https://cda.hptelecom.com.br/central_assinante_web/" target="_blank">- Área do cliente</a>
                         </li>
-                        {/* <li>
+                        {<li hidden>
                             <a href="# ">- Perguntas frequentes</a>
-                        </li> */}
-                        <li>
+                        </li>}
+                        <li hidden>
                             <a href="# ">- 2º Via da conta</a>
                         </li>
                     </ul>
@@ -55,7 +55,7 @@ export const FooterLayout = () => {
                             <a target="_blank" href="https://www.linkedin.com/company/hp-telecom">- Trabalhe conosco</a>
                         </li>
                         <li>
-                            <a href="#">- Contrato</a>
+                            <a href="https://drive.google.com/file/d/13RW5zmQRpBEoEcxki59-x5B_Z4Ko11bN/view?usp=sharing" target="_blank">- Contrato</a>
                         </li>
                         <li>
                             <a target="_blank" href="https://docs.google.com/document/d/1_QgSaMT8rjzekjxaD79MfTVg1jPqVntg6f3alN9Jozc/edit?usp=sharing">- Privacidade</a>
@@ -75,7 +75,7 @@ export const FooterLayout = () => {
                             <img src="/images/footer/telefone-8.png" style={{width:"100%"}}></img>
                         </i>
                         <div className="content ">
-                        <div className="iq-tw-6 title ">Telefone</div> 11 2876-2641
+                        <div className="iq-tw-6 title ">Telefone</div> <a href="tel:+55112876264" target="_blank" className="forceUpdateColor">11 2876-2641</a>
                         </div>
                     </div>
                     </div>
@@ -95,7 +95,7 @@ export const FooterLayout = () => {
                                 <img src="/images/footer/email-8.png" style={{width:"100%"}}></img>
                             </i>
                             <div className="content ">
-                                <div className="iq-tw-6 title ">Email</div> contato@hptelecom.com.br
+                                <div className="iq-tw-6 title ">Email</div> <a href="mailto:contato@hptelecom.com.br" target="_blank" className="forceUpdateColor">contato@hptelecom.com.br</a>
                             </div>
                     </div>
                 </div>
@@ -131,7 +131,7 @@ export const FooterLayout = () => {
                     <div className="col-sm-6">
                         <div className="iq-copyright iq-mt-10 iq-font-white">
                         Todos os direitos reservados <span id="copyright"> </span>{" "}
-                        <a href="#">HP Telecom</a> {" "}
+                        <a href="/About"><strong>HP Telecom LTDA</strong></a> {" "}
                         </div>
                     </div>
                     <div className="col-sm-6">

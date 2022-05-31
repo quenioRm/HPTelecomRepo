@@ -275,7 +275,7 @@ export const HomeBanner = () => {
                       INTERNET PARA 
                       </p>
                       <p>
-                      CLIENTES <span style={{color:"#008C1E"}}>EXIGENTES</span> <span>!</span>
+                      PESSOAS <span style={{color:"#008C1E"}}>EXIGENTES</span> <span>!</span>
                       </p>
                     </h1>
                   </div>

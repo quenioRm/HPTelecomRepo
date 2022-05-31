@@ -26,11 +26,11 @@ export const HomeMainComents = () => {
         <div className="row">
             <div className="col-sm-12">
                 <div className="heading-title">
-                <h2 className="title  iq-mb-25">Escolha um dos nossos planos e seja <span style={{color:"#008C1E"}}>HP Telecom</span></h2>
+                <h2 className="title  iq-mb-25">O que estão falando da <span style={{color:"#008C1E"}}>HP Telecom</span> ?</h2>
                 <p>
-                atualizar:  Não sabe qual plano contratar ou ainda tem dúvidas de qual possa atender melhor o que você 
-                realmente precisa? <span style={{color:"#008C1E"}}>Fale com nossa equipe de especialistas</span>, vamos te dar um suporte personalizado de acordo 
-                com a sua necessidade.
+                Se você ainda tem alguma dúvida, veja o que os nossos clientes costumam falar dos nossos serviços.
+                <br/>Aqui a opinião do cliente, <span style={{color:"#008C1E"}}>vale ouro</span>!
+
                 </p>
                 </div>
             </div>
