@@ -81,7 +81,7 @@ export const HomeMainPrices = () => {
                             <h4 className="price-value2"> R$ {item.price.toFixed(2).replace('.', ',')}</h4>
                             <h3 className="price-value"> R$ {(item.price - item.discount).toFixed(2).replace('.', ',')}</h3>
                         </div>
-                        <a className="button" href="#">
+                        <a className="button" href="https://api.whatsapp.com/send?phone=551128762641" target="_blank">
                             Fale com um atendente
                         </a>
                         </div>
