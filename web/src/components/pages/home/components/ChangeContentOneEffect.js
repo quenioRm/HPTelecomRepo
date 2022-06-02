@@ -69,6 +69,7 @@ export const ChangeContentOneEffect = () => {
 
     const [selectCenterImageContent, setSelectCenterImageContent] = useState("");
 
+            //image inside cell phone
     const [centerImagesContent, setcenterImagesContent] = useState(
         [
             {id : 1, image: "images/hub/hub-centro-1-8.png"},
