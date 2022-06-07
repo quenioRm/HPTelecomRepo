@@ -33,7 +33,7 @@ export const HomePage = () => {
                         <div className="circle">
                         <img
                             src="/assets/images/icons/assets_disponibilidade.png?v=1"
-                            alt="image"
+                            alt="disponibilidade"
                             className="img-fluid"
                         />
                         </div>
@@ -49,7 +49,7 @@ export const HomePage = () => {
                         <div className="circle">
                         <img
                             src="/assets/images/icons/assets_recommends.png"
-                            alt="image"
+                            alt="Avaliação"
                             className="img-fluid"
                         />
                         </div>
@@ -61,7 +61,7 @@ export const HomePage = () => {
                         <div className="circle">
                         <img
                             src="/assets/images/icons/assets_nosso-whatsapp.png"
-                            alt="image"
+                            alt="WhatsApp"
                             className="img-fluid"
                         />
                         </div>
@@ -73,7 +73,7 @@ export const HomePage = () => {
                         <div className="circle">
                         <img
                             src="/assets/images/icons/assets_quem-somos.png"
-                            alt="image"
+                            alt="Quem somos"
                             className="img-fluid"
                         />
                         </div>
@@ -85,7 +85,7 @@ export const HomePage = () => {
                         <div className="circle">
                         <img
                             src="/assets/images/icons/assets_planos.png"
-                            alt="image"
+                            alt="planos"
                             className="img-fluid"
                         />
                         </div>
@@ -93,11 +93,11 @@ export const HomePage = () => {
                     </a>
                     </div>
                     <div className="item col-4">
-                    <a href="#" onClick={Call}>
+                    <a href="tel:+551128762641">
                         <div className="circle">
                         <img
                             src="/assets/images/icons/assets_contato.png"
-                            alt="image"
+                            alt="contato"
                             className="img-fluid"
                         />
                         </div>
@@ -109,7 +109,7 @@ export const HomePage = () => {
                         <div className="circle">
                         <img
                             src="/assets/images/icons/assets_clube-de-desconto.png"
-                            alt="image"
+                            alt="clube de descontos"
                             className="img-fluid"
                         />
                         </div>
@@ -121,7 +121,7 @@ export const HomePage = () => {
                         <div className="circle">
                         <img
                             src="/assets/images/icons/area-do-cliente-8.png"
-                            alt="image"
+                            alt="Area do cliente"
                             className="img-fluid"
                         />
                         </div>
@@ -133,7 +133,7 @@ export const HomePage = () => {
                         <div className="circle">
                         <img
                             src="/assets/images/icons/e-mail-8.png"
-                            alt="image"
+                            alt="E-mail"
                             className="img-fluid"
                         />
                         </div>

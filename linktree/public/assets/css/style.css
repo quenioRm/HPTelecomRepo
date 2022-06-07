@@ -757,9 +757,8 @@ button.green-button {
   }
 
   .content .container .packages .package-list {
-    padding-right: 10px !important;
-    margin: 0.5rem;
-    background: white;
+    padding: 10px !important;
+    background: rgb(255, 255, 255);
     color: #333;
     border-radius: 10px;
     box-shadow: 0px 0px 5px #333;
