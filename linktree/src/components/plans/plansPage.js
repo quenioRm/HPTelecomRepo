@@ -46,14 +46,14 @@ export const PlansPage = () => {
         <>
         <main className="content">
             <div className="container text-center">
-                <div className="packages">
+                <div className="packages"> 
                 <Slider {...settings}>
                 {plans.map((item, key) => (
                   <div key={key} className="col-lg-3 col-md-4 col-sm-6 col-xs-12 package-list">
-                    <div className="package-icon">
+                    <div className="package-icon" >
                         <img
                         src={"/assets/images/" + item.icon}
-                        alt="image"
+                        alt="velocimentro"
                         className="img-fluid"
                         />
                     </div>
@@ -63,12 +63,13 @@ export const PlansPage = () => {
                         <ul style={{fontFamily:"Gordita-Regular"}} className="p-0 m-0 m-auto">
                             <li>
                             <i className="fa fa-download" />
-                            Download {item.downSpeed} Mbps
+                            <strong>Download {item.downSpeed} Mbps</strong>
                             </li>
-                            <li>
+                            <li style={{fontFamily:"Gordita-Light"}}>
                             <i className="fa fa-arrow-up" />
                             Upload {item.upSpeed} Mbps
                             </li>
+                            <br/>
                             <li>
                                 <img
                                     src="./assets/images/nofidelity.png"
@@ -101,12 +102,12 @@ export const PlansPage = () => {
                     </div>
                     <div className="package-price">
                         <span className="sale">R$ {item.price.toFixed(2).replace('.', ',')}</span>
-                        <span style={{fontFamily:"Gordita-Regular"}} className="price">
-                        R$ {(item.price - item.discount).toFixed(2).replace('.', ',')}<span>/mes</span>
+                        <span style={{fontFamily:"Gordita"}} className="price">
+                            R${(item.price - item.discount).toFixed(2).replace('.', ',')}<span>/mes</span>
                         </span>
                         <h6 className="font-weight-light">No Boleto via e-mail</h6>
                     </div>
-                    <a href="#" className="button">
+                    <a href="https://api.whatsapp.com/send?phone=551128762641" target="_blank" className="button">
                         Contratar
                     </a>
                     </div>
