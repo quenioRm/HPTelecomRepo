@@ -23,10 +23,11 @@ export const Plans = () => {
                   <div className="row">
                   <div className="col-sm-12">
                       <div className="heading-title">
-                      <h3 className="title iq-tw-5 iq-mb-20">Escolha um dos nossos planos e seja <span style={{color:"#008C1E"}}>HP Telecom</span></h3>
+                      <h3 className="title iq-tw-5 iq-mb-20">Internet <span style={{color:"#008C1E"}}>100%</span> Fibra Óptica</h3>
                       <p>
-                      Não sabe qual plano contratar? Tem dúvidas de qual possa atender melhor a sua demanda? 
-                      Fale conosco e te recomendaremos o melhor plano com base no seu perfil de utilização.
+                      Não sabe qual é o melhor plano para sua casa? Tem dúvidas de qual possa atender melhor a demanda da sua empresa? 
+                      <br/>
+                      Fale conosco e te recomendaremos o melhor plano com base no seu perfil.
                       </p>
                       </div>
                   </div>
