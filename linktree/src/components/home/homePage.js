@@ -37,13 +37,27 @@ export const HomePage = () => {
                             className="img-fluid"
                         />
                         </div>
-                        <span style={{position: "relative",left:"-1.0em"}}>Disponibilidade</span>
+                        <span>Cobertura</span>
                     </a>
                     <HomeCepCheck 
                         isOpen={showCep}
                         toggle={toggleSignin}
                     />
+
                     </div>
+                    <div className="item col-4">
+                    <a href="/DiscountClub">
+                        <div className="circle">
+                        <img
+                            src="/assets/images/icons/assets_clube-de-desconto.png"
+                            alt="clube de descontos"
+                            className="img-fluid"
+                        />
+                        </div>
+                        <span>Clube de descontos</span>
+                    </a>
+                    </div>
+
                     <div className="item col-4">
                     <a href="/Coments">
                         <div className="circle">
@@ -65,7 +79,7 @@ export const HomePage = () => {
                             className="img-fluid"
                         />
                         </div>
-                        <span>Atendimento</span>
+                        <span>Nosso WhatsApp</span>
                     </a>
                     </div>
                     <div className="item col-4">
@@ -102,18 +116,6 @@ export const HomePage = () => {
                         />
                         </div>
                         <span>Contato</span>
-                    </a>
-                    </div>
-                    <div className="item col-4">
-                    <a href="/DiscountClub">
-                        <div className="circle">
-                        <img
-                            src="/assets/images/icons/assets_clube-de-desconto.png"
-                            alt="clube de descontos"
-                            className="img-fluid"
-                        />
-                        </div>
-                        <span>Clube de descontos</span>
                     </a>
                     </div>
                     <div className="item col-4">

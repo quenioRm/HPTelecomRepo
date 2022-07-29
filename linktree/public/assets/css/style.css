@@ -281,21 +281,17 @@ header:after {
 
 .footer .social-icons {
     display: block;
-    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
 
 .social-icons ul li {
-    display: inline-block;
+    display:inline-flex;
     transition: 0.2s all ease;
-    font-size: 1.5em;
     margin: 5px;
-    border: 1px solid #035b1a;
-    background: linear-gradient(90deg, rgba(2, 151, 37, 1) 0%, rgba(2, 197, 56, 1) 49%);
-    width: 40px;
-    height: 40px;
+    border: 3px solid rgba(2, 151, 37, 1);
     border-radius: 50%;
+    width: 45px;
 }
 
 .social-icons ul li .fa {

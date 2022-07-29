@@ -11,7 +11,7 @@ export const HomeFooterPage = () => {
                     <a target="_blank" href="https://www.instagram.com/hp_internet/">
                         <img
                         src="./assets/images/icons/assets_instagram.png"
-                        alt="image"
+                        alt="Instagram"
                         className="img-fluid"
                         />
                     </a>
@@ -20,7 +20,7 @@ export const HomeFooterPage = () => {
                     <a target="_blank" href="https://www.facebook.com/HPTelecom">
                         <img
                         src="./assets/images/icons/assets_facebook.png"
-                        alt="image"
+                        alt="Facebook"
                         className="img-fluid"
                         />
                     </a>
