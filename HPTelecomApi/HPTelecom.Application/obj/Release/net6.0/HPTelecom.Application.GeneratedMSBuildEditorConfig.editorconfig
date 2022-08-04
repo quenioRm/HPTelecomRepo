@@ -8,13 +8,13 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HPTelecom.Application
 build_property.RootNamespace = HPTelecom.Application
-build_property.ProjectDir = C:\Users\queni\source\repos\quenioRm\HP\HPTelecomApi\HPTelecom.Application\
+build_property.ProjectDir = C:\Users\queni\Source\Repos\quenioRm\HPTelecomRepo\HPTelecomApi\HPTelecom.Application\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\queni\source\repos\quenioRm\HP\HPTelecomApi\HPTelecom.Application
+build_property.MSBuildProjectDirectory = C:\Users\queni\Source\Repos\quenioRm\HPTelecomRepo\HPTelecomApi\HPTelecom.Application
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/queni/source/repos/quenioRm/HP/HPTelecomApi/HPTelecom.Application/wwwroot/emails/RequestEmail.cshtml]
+[C:/Users/queni/Source/Repos/quenioRm/HPTelecomRepo/HPTelecomApi/HPTelecom.Application/wwwroot/emails/RequestEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = d3d3cm9vdFxlbWFpbHNcUmVxdWVzdEVtYWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

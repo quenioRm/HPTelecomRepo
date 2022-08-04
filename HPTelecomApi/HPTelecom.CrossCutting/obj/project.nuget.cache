@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mfwTucKCwWS73CBbnY0HwtZhkyvikzs1V7cPwLFIRWyksV9iwS09XCvzl5gCwBZ6zy7OmEXEwdF9rgP9LupLSA==",
+  "dgSpecHash": "kgDpf1jhWlDooeTWak2JEXN7+8DxJui9ea4elRbiC1Rd+z+0grTtx3m48DbLfgZPDoI1/1MC6+RGnEqnGMT5+w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HP\\HPTelecomApi\\HPTelecom.CrossCutting\\HPTelecom.CrossCutting.csproj",
+  "projectFilePath": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.CrossCutting\\HPTelecom.CrossCutting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\queni\\.nuget\\packages\\fluentemail.core\\3.0.2\\fluentemail.core.3.0.2.nupkg.sha512",
     "C:\\Users\\queni\\.nuget\\packages\\fluentemail.razor\\3.0.2\\fluentemail.razor.3.0.2.nupkg.sha512",

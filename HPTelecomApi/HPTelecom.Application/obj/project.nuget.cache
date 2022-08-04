@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k2A034Kppx5fUY51YbWkWnPVhHWWYK+U4eMKpGjJYY6jGBXr5u6vdhlPlC6O50+Lj9hdm6ZDW414AGzDvQA4nQ==",
+  "dgSpecHash": "yRU/+1Qq/65CGA5v923mIRbzFMHuxARWjLF5Ezkkaj3JtMDqfCjORvtII0+KrmiGJmNWTawxz5cHA45sgLNBbQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HP\\HPTelecomApi\\HPTelecom.Application\\HPTelecom.Application.csproj",
+  "projectFilePath": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\HPTelecom.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\queni\\.nuget\\packages\\fluentemail.core\\3.0.2\\fluentemail.core.3.0.2.nupkg.sha512",
     "C:\\Users\\queni\\.nuget\\packages\\fluentemail.razor\\3.0.2\\fluentemail.razor.3.0.2.nupkg.sha512",

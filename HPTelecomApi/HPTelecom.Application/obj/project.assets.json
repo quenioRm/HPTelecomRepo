@@ -5465,24 +5465,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\queni\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\queni\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\queni\\source\\repos\\quenioRm\\HP\\HPTelecomApi\\HPTelecom.Application\\HPTelecom.Application.csproj",
+      "projectUniqueName": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\HPTelecom.Application.csproj",
       "projectName": "HPTelecom.Application",
-      "projectPath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HP\\HPTelecomApi\\HPTelecom.Application\\HPTelecom.Application.csproj",
+      "projectPath": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\HPTelecom.Application.csproj",
       "packagesPath": "C:\\Users\\queni\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HP\\HPTelecomApi\\HPTelecom.Application\\obj\\",
+      "outputPath": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\queni\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5496,8 +5491,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\queni\\source\\repos\\quenioRm\\HP\\HPTelecomApi\\HPTelecom.CrossCutting\\HPTelecom.CrossCutting.csproj": {
-              "projectPath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HP\\HPTelecomApi\\HPTelecom.CrossCutting\\HPTelecom.CrossCutting.csproj"
+            "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.CrossCutting\\HPTelecom.CrossCutting.csproj": {
+              "projectPath": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.CrossCutting\\HPTelecom.CrossCutting.csproj"
             }
           }
         }
@@ -5539,7 +5534,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

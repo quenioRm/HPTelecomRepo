@@ -73,7 +73,7 @@ namespace HPTelecom.Service.Services
             using (var client = new HttpClient(new HttpClientHandler { AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate }))
             {
                 client.BaseAddress = new Uri("https://maps.googleapis.com/maps/api/place/details/");
-                HttpResponseMessage response = client.GetAsync("json?key=AIzaSyA4DJHYNhaxuLr-5yeGf5LTM9xD2kWJhqY&placeid=ChIJUTT-FhpPzpQRHXCBRIkB6yw").Result;
+                HttpResponseMessage response = client.GetAsync("json?language=pt&key=AIzaSyA4DJHYNhaxuLr-5yeGf5LTM9xD2kWJhqY&placeid=ChIJUTT-FhpPzpQRHXCBRIkB6yw").Result;
                 response.EnsureSuccessStatusCode();
                 result = response.Content.ReadAsStringAsync().Result;
             }
