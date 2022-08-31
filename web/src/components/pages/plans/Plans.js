@@ -32,7 +32,7 @@ export const Plans = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="row mt-2">
+                    <div className="row content-box-plan">
                         {plans.map((item, key) => (
                             <div key={key} className="col-lg-3 col-md-6 col-sm-12" class="box-plan">
                                 <span className="icon" class="icon-p">
@@ -80,18 +80,21 @@ export const Plans = () => {
 
                                     <div class="line-divisor"></div>
 
-                                    <div className="vencimento">
-                                        <p>Pagando antes do vencimento você <br /> ganha R$10 de desconto.</p>
+                                    <div>
+                                        <h4 className="price-value2"> R$ {item.price.toFixed(2).replace('.', ',')}
+                                        </h4>
+
+                                        <div className="vencimento">
+                                            <p>Pagando antes do vencimento você ganha R$10 de desconto.</p>
+                                        </div>
+
+                                        <h3 className="price-value"> R$ {(item.price - item.discount).toFixed(2).replace('.', ',')} <span class="mes-pay">/mês</span></h3>
                                     </div>
 
-                                    <div>
-                                        <h4 className="price-value2"> R$ {item.price.toFixed(2).replace('.', ',')}</h4>
-                                        <br />
-                                        <h3 className="price-value"> R$ {(item.price - item.discount).toFixed(2).replace('.', ',')}</h3>
-                                    </div>
+                                    <br />
 
                                     <a className="button" href="https://api.whatsapp.com/send?phone=551128762641" target="_blank">
-                                        Fale com um atendente
+                                        Assine já
                                     </a>
                                 </div>
                             </div>

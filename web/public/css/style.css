@@ -4573,6 +4573,12 @@ header.fancy.menu-sticky .iq-header .row {
 /*---------------------------------------------------------------------
                         Pricing
 -----------------------------------------------------------------------*/
+
+.content-box-plan {
+  display: flex;
+  justify-content: center;
+  
+}
 .iq-pricing {
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
   padding: 50px 15px;
@@ -4588,32 +4594,14 @@ header.fancy.menu-sticky .iq-header .row {
 
 .iq-pricing:hover {
   color: #fff;
-}
-
-.iq-pricing:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: #008C1E;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  z-index: -1;
-  transform: rotateY(70deg);
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.iq-pricing:hover:after {
-  opacity: 1;
-  transform: rotateY(0deg);
+  background-color: #008930;
 }
 
 .box-plan {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px;
+  margin: 0 20px;
 }
 
 .iq-pricing .icon {
@@ -4644,10 +4632,17 @@ header.fancy.menu-sticky .iq-header .row {
 
 .iq-pricing .price-value {
   font-family: 'GorditaFont';
-  display: inline-block;
   font-size: 40px;
-  font-weight: 600;
-  transition: all 0.3s ease-in-out 0s;
+  color: #04CC3A;
+  
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.mes-pay {
+  font-size: 16px;
+  color: #000;
 }
 
 .iq-pricing .price-value2 {
@@ -4656,13 +4651,9 @@ header.fancy.menu-sticky .iq-header .row {
   font-size: 40px;
   font-weight: 600;
   transition: all 0.3s ease-in-out 0s;
-  color: #008C1E;
-  font-size: 1.7em;
-  text-decoration: line-through 3px black;
-}
-
-.iq-pricing:hover .price-value {
-  border-bottom-color: #fff;
+  color: #000;
+  font-size: 25px;
+  margin: auto;
 }
 
 .iq-pricing:hover .price-value2 {
@@ -7338,7 +7329,10 @@ footer.iq-footer-4 .newsletter-form .input-group .form-control {
 
 .vencimento {
   font-family: 'GorditaFontMedium';
-  font-size: 11px;
+  font-size: 12px;
+  max-width: 250px;
+  line-height: 19px;
+  margin-top: 7px;
 }
 
 .vencimento:hover {
