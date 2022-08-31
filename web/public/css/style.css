@@ -4739,16 +4739,14 @@ header.fancy.menu-sticky .iq-header .row {
   font-size: 12px;
 }
 
-@media only screen and (max-width:990px) {
-  .iq-pricing {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (max-width:767px) {
-  .iq-pricing {
-    margin-bottom: 50px;
-  }
+.line-divisor {
+  background: linear-gradient(270deg, #04CB3A 0%, #008930 100%);
+  width: 90%;
+  height: 5px;
+  display: flex;
+  margin: 15px 0 10px 0;
+  align-self: center;
+  align-content: center;
 }
 
 /*Pricing Small*/

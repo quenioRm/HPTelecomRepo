@@ -78,6 +78,8 @@ export const Plans = () => {
                                         </li>
                                     </ul>
 
+                                    <div class="line-divisor"></div>
+
                                     <div className="vencimento">
                                         <p>Pagando antes do vencimento você <br /> ganha R$10 de desconto.</p>
                                     </div>
