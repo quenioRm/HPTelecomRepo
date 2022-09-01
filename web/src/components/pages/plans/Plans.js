@@ -80,6 +80,54 @@ export const Plans = () => {
 
                                     <div class="line-divisor"></div>
 
+                                    <div class="container-new-list">
+                                        <div class="container-bt">
+                                        </div>
+                                        <ul>
+
+                                            <li>
+                                                <div class="list-bt">
+                                                    <input id="btn1" type="checkbox" name="" value=""></input>
+                                                    Apenas internet
+                                                </div>
+                                                
+                                            </li>
+
+                                            <br />
+
+                                            <li>
+                                                <div class="list-bt">
+                                                    <input id="btn1" type="checkbox" name="" value=""></input>
+                                                    Telefone ilimitado
+                                                </div>
+                                                (<span style={{ color: "#04CB3A", fontSize: "13px" }}><strong>Ganhe + X Mega</strong></span>)
+
+                                            </li>
+
+                                            <br />
+
+                                            <li>
+                                                <div class="list-bt" >
+                                                    <input id="btn1" type="checkbox" name="" value=""></input>
+                                                    Tv ( 91 canais) + VOD <br />
+
+                                                </div>
+                                                (<span style={{ color: "#04CB3A", fontSize: "13px" }}><strong>Ganhe + X Mega</strong></span>)
+                                            </li>
+
+                                            <br />
+
+                                            <li>
+                                                <div class="list-bt">
+                                                    <input class="botao" id="btn1" type="checkbox" name="" value=""></input>
+                                                    Tv (91 canais)  + VOD + <br /> Telefone Ilimitado
+                                                </div>
+                                                (<span style={{ color: "#04CB3A", fontSize: "13px" }}><strong>Ganhe + X Mega</strong></span>)
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                        <br/>
                                     <div>
                                         <h4 className="price-value2"> R$ {item.price.toFixed(2).replace('.', ',')}
                                         </h4>
@@ -96,9 +144,13 @@ export const Plans = () => {
                                     <a className="button" href="https://api.whatsapp.com/send?phone=551128762641" target="_blank">
                                         Assine já
                                     </a>
+                                    <br/>
+                                <a href="">(<span style={{color: "#04CB3A"}}>confira todos os canais</span>)</a>
+
                                 </div>
                             </div>
                         ))}
+                        
                     </div>
                 </div>
             </section>
