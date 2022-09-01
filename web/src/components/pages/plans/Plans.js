@@ -57,8 +57,8 @@ export const Plans = () => {
                                                 <img src="/images/plans/Download.png" />
                                                 <span className="downloadFont">Download até {item.downSpeed} Mbps</span>
                                             </li>
-                                            <li style={{ position: 'relative', top: '5px' }}>
-                                                <img style={{ position: "relative", left: "-1.4em" }} src="/images/plans/Upload.png" />
+                                            <li>
+                                                <img src="/images/plans/Upload.png" />
                                                 <span> Upload até {item.upSpeed} Mbps</span>
                                             </li>
                                         </ul>
