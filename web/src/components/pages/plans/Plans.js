@@ -144,7 +144,7 @@ export const Plans = () => {
                                         Assine já
                                     </a>
                                     <br/>
-                                <a href="">(<span style={{color: "#000"}}>confira todos os canais</span>)</a>
+                                <a href="">(<span class="channel">confira todos os canais</span>)</a>
 
                                 </div>
                             </div>

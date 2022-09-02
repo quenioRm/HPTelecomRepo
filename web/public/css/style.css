@@ -4581,7 +4581,7 @@ header.fancy.menu-sticky .iq-header .row {
 }
 .iq-pricing {
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
-  padding: 50px 15px 25px 15px;
+  padding: 60px 15px 25px 15px;
   text-align: center;
   
   transition: all 0.3s ease-in-out 0s;
@@ -4589,6 +4589,10 @@ header.fancy.menu-sticky .iq-header .row {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+}
+
+.pricing-header {
+  margin-bottom: 20px;
 }
 
 .iq-pricing:hover {
@@ -4609,10 +4613,6 @@ header.fancy.menu-sticky .iq-header .row {
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
   margin: auto;
   border-radius: 50%;
-}
-
-.iq-pricing .pricing-header {
-  margin-bottom: 30px;
 }
 
 .iq-pricing .title {
@@ -4686,78 +4686,6 @@ input:checked[type="checkbox"]:before {
   color: #000;
 }
 
-.iq-pricing .price-value2 {
-  font-family: 'GorditaFont';
-  display: inline-block;
-  font-size: 40px;
-  font-weight: 600;
-  transition: all 0.3s ease-in-out 0s;
-  color: #000;
-  font-size: 25px;
-  margin: auto;
-}
-
-.iq-pricing:hover .price-value2 {
-  border-bottom-color: white;
-  color: white;
-}
-
-.iq-pricing .pricing-content {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 20px 0;
-}
-
-.iq-pricing .pricing-content li {
-  line-height: 40px;
-}
-
-.iq-pricing .pricing-signup {
-  display: inline-block;
-  padding: 9px 23px;
-  background: #008C1E;
-  font-size: 14px;
-  font-weight: 600;
-  color: #fff;
-  text-transform: uppercase;
-  position: relative;
-  transition: all 0.25s ease-in-out 0s;
-}
-
-.iq-pricing:hover .pricing-signup {
-  background: #fff;
-  color: #008C1E;
-}
-
-.iq-pricing .pricing-signup:before,
-.iq-pricing .pricing-signup:after {
-  content: "";
-  height: 100%;
-  position: absolute;
-  top: 0;
-  border-top: 18px solid transparent;
-  border-bottom: 18px solid transparent;
-  transition: all 0.25s ease-in-out 0s;
-}
-
-.iq-pricing .pricing-signup:before {
-  left: -12px;
-  border-right: 12px solid #008C1E;
-}
-
-.iq-pricing .pricing-signup:after {
-  right: -12px;
-  border-left: 12px solid #008C1E;
-}
-
-.iq-pricing:hover .pricing-signup:before {
-  border-right-color: #fff;
-}
-
-.iq-pricing:hover .pricing-signup:after {
-  border-left-color: #fff;
-}
-
 .iq-pricing:hover .button {
   background: #151d2e;
 }
@@ -4767,9 +4695,14 @@ input:checked[type="checkbox"]:before {
   color: #151d2e;
 }
 
-.iq-pricing .pricing-content li i {
-  font-size: 12px;
+.channel {
+  color: #04CB3A;
 }
+
+.iq-pricing:hover .channel {
+  color: #fff;
+}
+
 
 .line-divisor {
   background: linear-gradient(270deg, #04CB3A 0%, #008930 100%);
