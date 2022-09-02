@@ -40,8 +40,7 @@ export const Plans = () => {
                                         src={`images/another/${item.icon}`}
                                         width={80}
                                         style={{
-                                            position: "relative",
-                                            top: "-8px"
+                                            margin: "auto"
                                         }}
                                     >
                                     </img>
