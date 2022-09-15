@@ -99,7 +99,7 @@ export const Plans = () => {
                                                     <input id="btn1" type="checkbox" name="" value=""></input>
                                                     Telefone ilimitado
                                                 </div>
-                                                (<span style={{ color: "#04CB3A", fontSize: "13px" }}><strong>Ganhe + X Mega</strong></span>)
+                                                (<span class="bonus">Ganhe + X Mega</span>)
 
                                             </li>
 
@@ -111,7 +111,7 @@ export const Plans = () => {
                                                     Tv ( 91 canais) + VOD <br />
 
                                                 </div>
-                                                (<span style={{ color: "#04CB3A", fontSize: "13px" }}><strong>Ganhe + X Mega</strong></span>)
+                                                (<span class="bonus">Ganhe + X Mega</span>)
                                             </li>
 
                                             <br />
@@ -121,7 +121,7 @@ export const Plans = () => {
                                                     <input class="botao" id="btn1" type="checkbox" name="" value=""></input>
                                                     Tv (91 canais)  + VOD + <br /> Telefone Ilimitado
                                                 </div>
-                                                (<span style={{ color: "#04CB3A", fontSize: "13px" }}><strong>Ganhe + X Mega</strong></span>)
+                                                (<span class="bonus" >Ganhe + X Mega</span>)
                                             </li>
 
                                         </ul>

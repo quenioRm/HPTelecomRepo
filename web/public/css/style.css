@@ -4623,14 +4623,32 @@ header.fancy.menu-sticky .iq-header .row {
   margin: 0 0 10px 0;
 }
 
+.bonus {
+  color: #008D1E;
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+.iq-pricing:hover .bonus {
+  
+  color: #fff;
+}
+
+
 .iq-pricing .price-value {
   font-family: 'GorditaFont';
   font-size: 40px;
-  color: #04CC3A;
+  color: #008D1E;
   
   display: flex;
   gap: 5px;
   justify-content: center;
+}
+
+
+.iq-pricing:hover .price-value {
+  
+  color: #fff;
 }
 
 .list-bt {
@@ -4640,6 +4658,12 @@ header.fancy.menu-sticky .iq-header .row {
   position: relative;
   left: -18px;
   gap: 10px;
+  color: #000;
+}
+
+.iq-pricing:hover .list-bt {
+  font-weight: bolder;
+  font-size: 14px;
 }
 
 .botao {
@@ -4696,7 +4720,7 @@ input:checked[type="checkbox"]:before {
 }
 
 .channel {
-  color: #04CB3A;
+  color: #008D1E;
 }
 
 .iq-pricing:hover .channel {
