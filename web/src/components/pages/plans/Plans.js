@@ -47,7 +47,7 @@ export const Plans = () => {
                                 </span>
                                 <div className="iq-pricing">
                                     <div className="pricing-header">
-                                        <span style={{ fontSize: "30px" }} className="planName">{item.name}</span>
+                                        <span style={{ fontSize: "40px" }} className="planName">{item.name}</span>
                                         {/* <span className="price-value">R$ {item.price.toFixed(2).replace('.', ',')}</span> */}
                                     </div>
                                     <div className="desc-plano-top">
@@ -68,9 +68,6 @@ export const Plans = () => {
                                         </li>
                                         <li id="wifi">
                                             <span>{item.description2}</span>
-                                        </li>
-                                        <li id="fibra">
-                                            <span>{item.description3}</span>
                                         </li>
                                         <li id="clube">
                                             <span>{item.description4}</span>
@@ -117,11 +114,23 @@ export const Plans = () => {
                                             <br />
 
                                             <li>
-                                                <div class="list-bt">
-                                                    <input class="botao" id="btn1" type="checkbox" name="" value=""></input>
-                                                    Tv (91 canais)  + VOD + <br /> Telefone Ilimitado
+
+                                            <div class="list-bt" >
+                                                     
+                                                         <div class="seila">
+                                                             <div class="icon-turbo">
+                                                                 <img hidde class="turbo" src="/images/plans/fire.gif" />
+                                                                 <img class="turbo icon-velocidade" src="/images/plans/turbo.svg" />
+                                                             </div>
+                                                         
+                                                    <div>Turbo*
+                                                        <br />
+                                                    (<span class="bonus">saiba mais</span>)
+                                                    </div>
+                                                    
+                                                     </div>
+
                                                 </div>
-                                                (<span class="bonus" >Ganhe + X Mega</span>)
                                             </li>
 
                                         </ul>
@@ -144,7 +153,7 @@ export const Plans = () => {
                                         Assine já
                                     </a>
                                     <br/>
-                                <a href="">(<span class="channel">confira todos os canais</span>)</a>
+                                <a href="" style={{ marginTop: "10px" }}>(<span class="channel">confira todos os canais</span>)</a>
 
                                 </div>
                             </div>

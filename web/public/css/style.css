@@ -4639,7 +4639,7 @@ header.fancy.menu-sticky .iq-header .row {
   font-family: 'GorditaFont';
   font-size: 40px;
   color: #008D1E;
-  
+  margin-bottom: 20px;
   display: flex;
   gap: 5px;
   justify-content: center;
@@ -4659,6 +4659,7 @@ header.fancy.menu-sticky .iq-header .row {
   left: -18px;
   gap: 10px;
   color: #000;
+  line-height: auto;
 }
 
 .iq-pricing:hover .list-bt {
@@ -4703,6 +4704,33 @@ input[type="checkbox"]:before {
 
 input:checked[type="checkbox"]:before {
   left: 20px;
+}
+
+.seila{
+  position: relative;
+  left: -20px;
+  display: flex;
+  gap: 10px;
+}
+
+.icon-turbo{
+  width: 60px;
+  height: 60px;
+  position: relative;
+  bottom: 40px;
+
+}
+
+.icon-velocidade{
+  position: relative;
+  bottom: 82px;
+}
+
+.turbo{
+  display: block;
+  width: 80px;
+  height: 80px;
+  
 }
 
 .mes-pay {
