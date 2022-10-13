@@ -117,13 +117,15 @@ export const Plans = () => {
 
                                             <div class="list-bt" >
                                                      
-                                                         <div class="seila">
+                                                         <div class="content-turbo">
                                                              <div class="icon-turbo">
                                                                  <img hidde class="turbo" src="/images/plans/fire.gif" />
                                                                  <img class="turbo icon-velocidade" src="/images/plans/turbo.svg" />
                                                              </div>
                                                          
-                                                    <div>Turbo*
+                                                    <div>Turbo das 1h as 6h
+                                                        <br />
+                                                        (<span class="bonus">999 mega no Turbo</span>)
                                                         <br />
                                                     (<span class="bonus">saiba mais</span>)
                                                     </div>
