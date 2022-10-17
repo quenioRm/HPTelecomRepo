@@ -79,25 +79,81 @@ export const PlansPage = () => {
                                 />
                                 {item.description1}
                             </li>
+                            
                             <li>
                             <i className="fa fa-wifi" />
                             {item.description2}
                             </li>
-                            <li>
-                            <img
-                                src="./assets/images/fiber.png"
-                                alt="image"
-                                className="img-fluid d-inline-block"
-                                style={{ paddingRight: 10 }}
-                            />
-                            {item.description3}
-                            </li>
+
                             <li>
                             <i className="fa fa-credit-card" />
                             {item.description4}
                             </li>
                         </ul>
                         </div>
+                        <div class="line-divisor"></div>
+
+                        <div class="container-new-list">
+                                        <div class="container-bt">
+                                        </div>
+                                        <ul style={{listStyle:"none"}}>
+
+                                            <li>
+                                                <div class="list-bt">
+                                                    <input id="btn1" type="checkbox" name="" value=""></input>
+                                                    Apenas internet
+                                                </div>
+                                                
+                                            </li>
+
+                                            <br />
+
+                                            <li>
+                                                <div class="list-bt">
+                                                    <input id="btn1" type="checkbox" name="" value=""></input>
+                                                    Telefone ilimitado
+                                                </div>
+                                                (<span class="bonus">Ganhe + X Mega</span>)
+
+                                            </li>
+
+                                            <br />
+
+                                            <li>
+                                                <div class="list-bt" >
+                                                    <input id="btn1" type="checkbox" name="" value=""></input>
+                                                    Tv ( 91 canais) + VOD <br />
+
+                                                </div>
+                                                (<span class="bonus">Ganhe + X Mega</span>)
+                                            </li>
+
+                                            <br />
+
+                                            <li>
+
+                                            <div class="list-bt" >
+                                                     
+                                                         <div class="content-turbo">
+                                                             <div class="icon-turbo">
+                                                                 <img hidde class="turbo" src="./assets/images/fire.gif" />
+                                                                 <img class="turbo icon-velocidade" src="./assets/images/turbo.svg" />
+                                                             </div>
+                                                         
+                                                    <div>Turbo das 1h as 6h
+                                                        <br />
+                                                        (<span class="bonus">999 mega no Turbo</span>)
+                                                        <br />
+                                                    (<span class="bonus">saiba mais</span>)
+                                                    </div>
+                                                    
+                                                     </div>
+
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
                         <p style={{fontFamily:"Gordita-Light"}}>{item.addTex}</p>
                     </div>
                     <div className="package-price">
