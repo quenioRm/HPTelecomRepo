@@ -4660,6 +4660,7 @@ header.fancy.menu-sticky .iq-header .row {
   gap: 10px;
   color: #000;
   line-height: auto;
+  font-weight: 900;
 }
 
 .iq-pricing:hover .list-bt {
