@@ -455,6 +455,14 @@ button.green-button {
     font-size: 14px;
 }
 
+.price-plan{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+
 .container-new-list{
     margin-top: 20px;
     font-size: 14px;
