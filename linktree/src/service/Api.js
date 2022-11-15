@@ -2,7 +2,7 @@ import axios from "axios";
 import Swal from "sweetalert2";
 
 const Api = axios.create({
-  baseURL: "https://api.hptelecom.com.br/"
+  baseURL: "https://localhost:7001/"
 });
 
 Api.interceptors.response.use(function (response) {

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Layout
 import { MainLayout } from "./components/layout/mainLayout";
@@ -13,6 +13,7 @@ import { PlansPage } from "./components/plans/plansPage";
 import { DiscountClubPage } from "./components/discount/discountClubPage";
 import { HomeCallMeFormPage } from "./components/home/homeCallMeFormPage";
 import { HomeSendMailFormPage } from "./components/home/homeSendMailFormPage";
+
 
 export default () => {
   return (
