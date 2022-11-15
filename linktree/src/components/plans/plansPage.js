@@ -28,14 +28,14 @@ export const PlansPage = () => {
 
     const [plans, setPlans] = useState([]);
     const [plan, setPlan] = useState([]);
-    const [index, setIndex] = useState(1)
+    const [index, setIndex] = useState(0)
 
     useEffect(() => {
         async function Get() {
             await Api.get("/Web/GetNewPlans")
                 .then((response) => {
                     setPlans(response.data)
-                    setPlan(response.data[0])
+                    setPlan(response.data[index])
                 })
                 .catch((err) => {
 
@@ -49,15 +49,18 @@ export const PlansPage = () => {
         e.preventDefault();
         if(index < (plans.length - 1))
             setIndex(count => count + 1);
-
-        setPlan(plans[index]);
+        
+        if(index >= 0)
+            setPlan(plans[index]);
     };
    
     //decrease counter
     const goToBack = (e) => {
         e.preventDefault();
-        setIndex(count => (count - 1 >= 0 ? count - 1 : 0));
-        setPlan(plans[index]);
+        if(index >= 0){
+            setIndex(index - 1);
+            setPlan(plans[index]);
+        }
     };
 
     return (
@@ -164,27 +167,27 @@ export const PlansPage = () => {
                                                 }
                                                 <br />
 
-                                                <li>
-
-                                                    <div className="list-bt" >
-
-                                                        <div className="content-turbo">
-                                                            <div className="icon-turbo">
-                                                                <img className="turbo" src="./assets/images/fire.gif" />
-                                                                <img className="turbo icon-velocidade" src="./assets/images/turbo.svg" />
+                                                {plan.InternetDescription !== null || plan.InternetDescription === "" ?
+                                                    <li>
+                                                        <div className="list-bt" >
+                                                            <div className="content-turbo">
+                                                                <div className="icon-turbo">
+                                                                    <img className="turbo" src="./assets/images/fire.gif" />
+                                                                    <img className="turbo icon-velocidade" src="./assets/images/turbo.svg" />
+                                                                </div>
+    
+                                                                <div><span style={{ fontFamily: "Gordita", fontWeight: "500" }}>
+                                                                    Turbo das 1h as 6h</span> <br /> (<span className="bonus">999 mega no Turbo</span>)
+                                                                    <br />
+                                                                    (<span className="bonus">saiba mais</span>)
+                                                                </div>
+    
                                                             </div>
-
-                                                            <div><span style={{ fontFamily: "Gordita", fontWeight: "500" }}>
-                                                                Turbo das 1h as 6h</span> <br /> (<span className="bonus">999 mega no Turbo</span>)
-                                                                <br />
-                                                                (<span className="bonus">saiba mais</span>)
-                                                            </div>
-
                                                         </div>
-
-                                                    </div>
-                                                </li>
-
+                                                    </li>
+                                                    :
+                                                    <></>
+                                                }
                                             </ul>
                                         </div>
                                         <p style={{ fontFamily: "Gordita", fontWeight: "500", fontSize: "14px" }}>Pagando até o vencimento <br />  você ganha R$10 de desconto</p>
