@@ -28,7 +28,7 @@ export const PlansPage = () => {
 
     const [plans, setPlans] = useState([]);
     const [plan, setPlan] = useState([]);
-    const [index, setIndex] = useState(0)
+    const [index, setIndex] = useState(0);
 
     useEffect(() => {
         async function Get() {
