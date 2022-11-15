@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uIEWD6Djulwz1wEVc3ElHkpPcfjjn7mjikO26J1r/j1paJ9iykgatbsxVqarPQUCLaHCR6sCfS43DCfm4yK5nQ==",
+  "dgSpecHash": "q0+BFISW9G5u7or6rJNnpv/ogOZ3OQVzoqA7rFNdmuhmFLxPrmu7xzAoPZkZc7vwwBOWlj6Jl91GQ3/VU30/tA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Domain\\HPTelecom.Domain.csproj",
+  "projectFilePath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Domain\\HPTelecom.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\queni\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\queni\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",

@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\launcherBanner\\slide1.jpg",
+      "PackagePath": "staticwebassets\\launcherBanner\\slide1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\launcherBanner\\slide2.jpg",
+      "PackagePath": "staticwebassets\\launcherBanner\\slide2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\launcherBanner\\slide3.jpg",
+      "PackagePath": "staticwebassets\\launcherBanner\\slide3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\launcherBanner\\slide4.jpg",
+      "PackagePath": "staticwebassets\\launcherBanner\\slide4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\launcherBanner\\slide5.jpg",
+      "PackagePath": "staticwebassets\\launcherBanner\\slide5.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.HPTelecom.Application.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.HPTelecom.Application.props",
+      "PackagePath": "build\\HPTelecom.Application.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.HPTelecom.Application.props",
+      "PackagePath": "buildMultiTargeting\\HPTelecom.Application.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.HPTelecom.Application.props",
+      "PackagePath": "buildTransitive\\HPTelecom.Application.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

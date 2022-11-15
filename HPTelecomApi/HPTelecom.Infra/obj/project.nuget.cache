@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VvM4NTFtcXe1dyk30MWEP9zg8mn/ozQmRGxFs20iRAunohtPPvmnO2BDHdSKmltJAqVZvDr1gIEAfiIUUDWB3Q==",
+  "dgSpecHash": "P6DCjBg9axPPqoLi3YUMCnW/zUzcUkYPGz0MiCqfZ6pnjqscbE5QOJuZzn4LQoMPBHEjQ7ZN6zBxqFCf6Hm4AQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Infra\\HPTelecom.Infra.csproj",
+  "projectFilePath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Infra\\HPTelecom.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\queni\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\queni\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

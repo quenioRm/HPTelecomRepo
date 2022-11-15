@@ -18,6 +18,38 @@ namespace HPTelecom.Application.Controllers.Main
 
         [HttpGet]
         [AllowAnonymous]
+        [Route("FindPlan")]
+        public async Task<object> FindPlan(int id)
+        {
+            try
+            {
+                var output = await _webService.FindPlan(id);
+                return Ok(output);
+            }
+            catch (ArgumentException e)
+            {
+                return StatusCode((int)HttpStatusCode.BadRequest, e.Message);
+            }
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        [Route("GetNewPlans")]
+        public async Task<object> GetNewPlans()
+        {
+            try
+            {
+                var output = await _webService.GetNewPlans();
+                return Ok(output);
+            }
+            catch (ArgumentException e)
+            {
+                return StatusCode((int)HttpStatusCode.BadRequest, e.Message);
+            }
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
         [Route("GetPlans/{takeCount}")]
         public async Task<object> GetPlans(int takeCount)
         {

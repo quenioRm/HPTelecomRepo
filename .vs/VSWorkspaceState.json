@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\HPTelecomApi",
+    "\\HPTelecomApi\\HPTelecom.Application"
   ],
+  "SelectedNode": "\\HPTelecomApi\\HPTelecom.Application\\appsettings.json",
   "PreviewInSolutionExplorer": false
 }

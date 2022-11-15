@@ -6,6 +6,8 @@ namespace HPTelecom.Domain.Interfaces.Services
 {
     public interface IWebService
     {
+        Task<object> FindPlan(int id);
+        Task<object> GetNewPlans();
         Task<object> GetPlans(int takeCount);
         Task<object> GetRelevantPlans();
         Task<object> GetPromos();

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aDTH58xWDiTIdlAs5PBXPoBW/R+y89G3ZGs4Wu39TFvcHHeLOWO3DwS2orsliN2BByki7ZTTl5lvZ5UjWs3evQ==",
+  "dgSpecHash": "3o3hyJcq9onVAvvLYQCIKlgRhWQJP7+L3yy64tR+aErAHYZW1PcY0fODHoHnBzs+qsVGRaNkkPChwGGrI/k6SA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Service\\HPTelecom.Service.csproj",
+  "projectFilePath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Service\\HPTelecom.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\queni\\.nuget\\packages\\fluentemail.core\\3.0.2\\fluentemail.core.3.0.2.nupkg.sha512",
     "C:\\Users\\queni\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",

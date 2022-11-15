@@ -24,6 +24,16 @@ namespace HPTelecom.Service.Services
             _mailSenderService = mailSenderService;
         }
 
+        public async Task<object> FindPlan(int id)
+        {
+            return await _planPriceRepository.Find(id);
+        }
+
+        public async Task<object> GetNewPlans()
+        {
+            return await _planPriceRepository.GetNewPlans();
+        }
+
         public async Task<object> GetPlans(int takeCount)
         {
             var plans = await _planPriceRepository.GetAll(takeCount);

@@ -14,6 +14,16 @@ namespace HPTelecom.Infra.Implementations
         {
         }
 
+        public async Task<PlanPriceEntity> Find(int id)
+        {
+            return await _dbset.Where(x => x.Id == id).FirstOrDefaultAsync();
+        }
+
+        public async Task<List<PlanPriceEntity>> GetNewPlans()
+        {
+            return await _dbset.ToListAsync();
+        }
+
         public async Task<List<PlanPriceEntity>> GetAll(int? takeCount)
         {
             if(takeCount > 0)

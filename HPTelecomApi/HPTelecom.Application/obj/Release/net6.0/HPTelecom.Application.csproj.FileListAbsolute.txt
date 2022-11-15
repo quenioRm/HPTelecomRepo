@@ -804,3 +804,8 @@ C:\Users\queni\Source\Repos\quenioRm\HPTelecomRepo\HPTelecomApi\HPTelecom.Applic
 C:\Users\queni\Source\Repos\quenioRm\HPTelecomRepo\HPTelecomApi\HPTelecom.Application\obj\Release\net6.0\HPTelecom.Application.pdb
 C:\Users\queni\Source\Repos\quenioRm\HPTelecomRepo\HPTelecomApi\HPTelecom.Application\obj\Release\net6.0\HPTelecom.Application.genruntimeconfig.cache
 C:\Users\queni\Source\Repos\quenioRm\HPTelecomRepo\HPTelecomApi\HPTelecom.Application\obj\Release\net6.0\ref\HPTelecom.Application.dll
+C:\Users\queni\source\repos\quenioRm\HPTelecomRepo\HPTelecomApi\HPTelecom.Application\obj\Release\net6.0\staticwebassets\msbuild.HPTelecom.Application.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\queni\source\repos\quenioRm\HPTelecomRepo\HPTelecomApi\HPTelecom.Application\obj\Release\net6.0\staticwebassets\msbuild.build.HPTelecom.Application.props
+C:\Users\queni\source\repos\quenioRm\HPTelecomRepo\HPTelecomApi\HPTelecom.Application\obj\Release\net6.0\staticwebassets\msbuild.buildMultiTargeting.HPTelecom.Application.props
+C:\Users\queni\source\repos\quenioRm\HPTelecomRepo\HPTelecomApi\HPTelecom.Application\obj\Release\net6.0\staticwebassets\msbuild.buildTransitive.HPTelecom.Application.props
+C:\Users\queni\source\repos\quenioRm\HPTelecomRepo\HPTelecomApi\HPTelecom.Application\obj\Release\net6.0\staticwebassets.pack.json

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xTyNQ9OJmpa2WFbvPFESipUXGPTvVIf9AKuAqYBpmRY=",
+  "Hash": "b4n5jpJ0RLbZJrJy1kPAQizNDPFn/QZ+Vtzsdk6wmRw=",
   "Source": "HPTelecom.Application",
   "BasePath": "_content/HPTelecom.Application",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "HPTelecom.Application\\wwwroot",
       "Source": "HPTelecom.Application",
-      "ContentRoot": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\",
       "BasePath": "_content/HPTelecom.Application",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\launcherBanner\\slide1.jpg",
+      "Identity": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\launcherBanner\\slide1.jpg",
       "SourceId": "HPTelecom.Application",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\",
       "BasePath": "_content/HPTelecom.Application",
       "RelativePath": "launcherBanner/slide1.jpg",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\launcherBanner\\slide1.jpg"
     },
     {
-      "Identity": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\launcherBanner\\slide2.jpg",
+      "Identity": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\launcherBanner\\slide2.jpg",
       "SourceId": "HPTelecom.Application",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\",
       "BasePath": "_content/HPTelecom.Application",
       "RelativePath": "launcherBanner/slide2.jpg",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\launcherBanner\\slide2.jpg"
     },
     {
-      "Identity": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\launcherBanner\\slide3.jpg",
+      "Identity": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\launcherBanner\\slide3.jpg",
       "SourceId": "HPTelecom.Application",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\",
       "BasePath": "_content/HPTelecom.Application",
       "RelativePath": "launcherBanner/slide3.jpg",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\launcherBanner\\slide3.jpg"
     },
     {
-      "Identity": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\launcherBanner\\slide4.jpg",
+      "Identity": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\launcherBanner\\slide4.jpg",
       "SourceId": "HPTelecom.Application",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\",
       "BasePath": "_content/HPTelecom.Application",
       "RelativePath": "launcherBanner/slide4.jpg",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\launcherBanner\\slide4.jpg"
     },
     {
-      "Identity": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\launcherBanner\\slide5.jpg",
+      "Identity": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\launcherBanner\\slide5.jpg",
       "SourceId": "HPTelecom.Application",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Application\\wwwroot\\",
       "BasePath": "_content/HPTelecom.Application",
       "RelativePath": "launcherBanner/slide5.jpg",
       "AssetKind": "All",

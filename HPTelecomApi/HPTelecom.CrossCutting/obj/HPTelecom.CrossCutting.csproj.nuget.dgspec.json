@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.CrossCutting\\HPTelecom.CrossCutting.csproj": {}
+    "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.CrossCutting\\HPTelecom.CrossCutting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.CrossCutting\\HPTelecom.CrossCutting.csproj": {
+    "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.CrossCutting\\HPTelecom.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.CrossCutting\\HPTelecom.CrossCutting.csproj",
+        "projectUniqueName": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.CrossCutting\\HPTelecom.CrossCutting.csproj",
         "projectName": "HPTelecom.CrossCutting",
-        "projectPath": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.CrossCutting\\HPTelecom.CrossCutting.csproj",
+        "projectPath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.CrossCutting\\HPTelecom.CrossCutting.csproj",
         "packagesPath": "C:\\Users\\queni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.CrossCutting\\obj\\",
+        "outputPath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\queni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +32,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Infra\\HPTelecom.Infra.csproj": {
-                "projectPath": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Infra\\HPTelecom.Infra.csproj"
+              "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Infra\\HPTelecom.Infra.csproj": {
+                "projectPath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Infra\\HPTelecom.Infra.csproj"
               },
-              "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Service\\HPTelecom.Service.csproj": {
-                "projectPath": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Service\\HPTelecom.Service.csproj"
+              "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Service\\HPTelecom.Service.csproj": {
+                "projectPath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Service\\HPTelecom.Service.csproj"
               }
             }
           }
@@ -114,7 +118,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -123,21 +128,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Domain\\HPTelecom.Domain.csproj": {
+    "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Domain\\HPTelecom.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Domain\\HPTelecom.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Domain\\HPTelecom.Domain.csproj",
         "projectName": "HPTelecom.Domain",
-        "projectPath": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Domain\\HPTelecom.Domain.csproj",
+        "projectPath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Domain\\HPTelecom.Domain.csproj",
         "packagesPath": "C:\\Users\\queni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Domain\\obj\\",
+        "outputPath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\queni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -186,7 +195,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -195,21 +205,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Infra\\HPTelecom.Infra.csproj": {
+    "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Infra\\HPTelecom.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Infra\\HPTelecom.Infra.csproj",
+        "projectUniqueName": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Infra\\HPTelecom.Infra.csproj",
         "projectName": "HPTelecom.Infra",
-        "projectPath": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Infra\\HPTelecom.Infra.csproj",
+        "projectPath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Infra\\HPTelecom.Infra.csproj",
         "packagesPath": "C:\\Users\\queni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Infra\\obj\\",
+        "outputPath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Infra\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\queni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -223,8 +237,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Domain\\HPTelecom.Domain.csproj": {
-                "projectPath": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Domain\\HPTelecom.Domain.csproj"
+              "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Domain\\HPTelecom.Domain.csproj": {
+                "projectPath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Domain\\HPTelecom.Domain.csproj"
               }
             }
           }
@@ -260,7 +274,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -269,21 +284,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Service\\HPTelecom.Service.csproj": {
+    "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Service\\HPTelecom.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Service\\HPTelecom.Service.csproj",
+        "projectUniqueName": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Service\\HPTelecom.Service.csproj",
         "projectName": "HPTelecom.Service",
-        "projectPath": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Service\\HPTelecom.Service.csproj",
+        "projectPath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Service\\HPTelecom.Service.csproj",
         "packagesPath": "C:\\Users\\queni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Service\\obj\\",
+        "outputPath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Service\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\queni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -297,8 +316,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Domain\\HPTelecom.Domain.csproj": {
-                "projectPath": "C:\\Users\\queni\\Source\\Repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Domain\\HPTelecom.Domain.csproj"
+              "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Domain\\HPTelecom.Domain.csproj": {
+                "projectPath": "C:\\Users\\queni\\source\\repos\\quenioRm\\HPTelecomRepo\\HPTelecomApi\\HPTelecom.Domain\\HPTelecom.Domain.csproj"
               }
             }
           }
@@ -324,7 +343,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -333,7 +353,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
