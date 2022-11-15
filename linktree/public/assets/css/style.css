@@ -557,13 +557,30 @@ button.green-button {
     bottom: 78px;
   }
   
-  .turbo{
-    display: block;
-    width: 80px;
-    height: 80px;
+.turbo-info{
+    margin: auto;
+    display: inline;
+    width: 200px;
+    height: 200px;
     
   }
 
+.turbo-move{
+    display: inline;
+    position: relative;
+    bottom: 205px;
+}
+
+.info-content{
+    display: flex;
+    width: 300%;
+}
+  
+.turbo{
+    display: block;
+    width: 80px;
+    height: 80px;
+}
   .channel {
     color: #008D1E;
     font-family: "Gordita";
@@ -880,3 +897,11 @@ button.green-button {
       color: #099c35;
       font-size: 15px;
   }
+
+  .center{
+    text-align: center;
+  }
+
+.icon-info{
+    margin: 10px;
+}

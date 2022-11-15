@@ -179,6 +179,49 @@ export const PlansPage = () => {
                         </Slider>
                     </div>
                 </div>
+
+                <div class="content center">
+                    <div>
+                        <h2>Internet 100% fibra óptica</h2>
+                        <div class="info-content">
+                            <div>
+                                <img class="icon-info" src="./assets/images/icons/card.svg" alt="Clube de desconto"/>
+                                <h4>
+                                    Clube de desconto
+                                </h4>
+                                <p>Uma descrição aqui do que é o Clube desconto e o que o cliente tem a ganhar em escolher um plano com ele, ou montar um plano com ele.</p>
+                            </div>
+                            <div>
+                            <img class="turbo-info" src="./assets/images/fire.gif" />
+                            <img class="turbo-info turbo-move" src="./assets/images/turbo.svg" />
+                                <h4>
+                                    Turbo
+                                </h4>
+                                <p>Tenho que pensar em um texto legal para poder fazer uma boa descrição do que é o Turbo.
+                                <br />
+                                <br />
+                                *conexões cabeadas</p>
+                            </div>
+                            <div>
+                                <img class="icon-info" src="./assets/images/icons/wifi6.svg" alt="wifi 6"/>
+                                <h4>
+                                    Wi-Fi 6
+                                </h4>
+                                <p>Uma descrição aqui do que é o Wi-Fi 6 e o que o cliente tem a ganhar em escolher um plano com ele, ou montar um plano com ele.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div >
+                        <h2>Canais</h2>
+                    </div>
+                    <div >
+                        <h2>Os melhores filmes e séries</h2>
+                        <h3>E muito mais...</h3>
+                    </div>
+                    <div >
+                        <h2>Como você quer assinar com a gente?</h2>
+                    </div>
+                </div>
             </main>
         </>
     )
