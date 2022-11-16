@@ -44,35 +44,35 @@ export const PlansPage = () => {
 
     return (
         <>
-            <main className="content">
-                <div className="container text-center">
-                    <div className="packages">
+            <main classNameName="content">
+                <div classNameName="container text-center">
+                    <div classNameName="packages">
                         <Slider {...settings}>
                             {plans.map((item, key) => (
-                                <div key={key} className="col-lg-3 col-md-4 col-sm-6 col-xs-12 package-list">
-                                    <div className="package-icon" >
+                                <div key={key} classNameName="col-lg-3 col-md-4 col-sm-6 col-xs-12 package-list">
+                                    <div classNameName="package-icon" >
                                         <img
                                             src={"/assets/images/" + item.icon}
                                             alt="velocimentro"
-                                            className="img-fluid"
+                                            classNameName="img-fluid"
                                         />
                                     </div>
-                                    <div className="package-info">
-                                        <div class="price-plan">
-                                            <img class="plus" src="./assets/images/icons/minus.svg"
+                                    <div classNameName="package-info">
+                                        <div className="price-plan">
+                                            <img className="plus" src="./assets/images/icons/minus.svg"
                                                 alt="menos"/>
-                                            <h1 style={{ fontFamily: "Gordita", fontSize:"40px" }} className="font-weight-bold">{item.name}</h1>
-                                            <img class="plus" src="./assets/images/icons/plus.svg"
+                                            <h1 style={{ fontFamily: "Gordita", fontSize:"40px" }} classNameName="font-weight-bold">{item.name}</h1>
+                                            <img className="plus" src="./assets/images/icons/plus.svg"
                                                 alt="mais"/>
                                         </div>
-                                        <div className="desc">
-                                            <ul style={{ fontFamily: "Gordita-Regular" }} className="p-0 m-0 m-auto">
+                                        <div classNameName="desc">
+                                            <ul style={{ fontFamily: "Gordita-Regular" }} classNameName="p-0 m-0 m-auto">
                                                 <li>
-                                                    <i className="fa fa-download" />
+                                                    <i classNameName="fa fa-download" />
                                                     <strong>Download {item.downSpeed} Mbps</strong>
                                                 </li>
                                                 <li style={{ fontFamily: "Gordita-Light" }}>
-                                                    <i className="fa fa-arrow-up" />
+                                                    <i classNameName="fa fa-arrow-up" />
                                                     Upload {item.upSpeed} Mbps
                                                 </li>
                                                 <br />
@@ -80,32 +80,32 @@ export const PlansPage = () => {
                                                     <img
                                                         src="./assets/images/nofidelity.png"
                                                         alt="image"
-                                                        className="img-fluid d-inline-block"
+                                                        classNameName="img-fluid d-inline-block"
                                                         style={{ paddingRight: 10 }}
                                                     />
                                                     {item.description1}
                                                 </li>
 
                                                 <li>
-                                                    <i className="fa fa-wifi" />
+                                                    <i classNameName="fa fa-wifi" />
                                                     {item.description2}
                                                 </li>
 
                                                 <li>
-                                                    <i className="fa fa-credit-card" />
+                                                    <i classNameName="fa fa-credit-card" />
                                                     {item.description4}
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="line-divisor"></div>
+                                        <div className="line-divisor"></div>
 
-                                        <div class="container-new-list">
-                                            <div class="container-bt">
+                                        <div className="container-new-list">
+                                            <div className="container-bt">
                                             </div>
                                             <ul>
 
                                                 <li>
-                                                    <div class="list-bt" style={{ fontFamily: "Gordita", fontWeight: "500" }}>
+                                                    <div className="list-bt" style={{ fontFamily: "Gordita", fontWeight: "500" }}>
                                                         <input id="btn1" type="checkbox" name="" value=""></input>
                                                         Apenas internet
                                                     </div>
@@ -115,40 +115,40 @@ export const PlansPage = () => {
                                                 <br />
 
                                                 <li>
-                                                    <div class="list-bt" style={{ fontFamily: "Gordita", fontWeight: "500" }}>
+                                                    <div className="list-bt" style={{ fontFamily: "Gordita", fontWeight: "500" }}>
                                                         <input id="btn1" type="checkbox" name="" value=""></input>
                                                         Telefone ilimitado
                                                     </div>
-                                                    (<span class="bonus">Ganhe + X Mega</span>)
+                                                    (<span className="bonus">Ganhe + X Mega</span>)
 
                                                 </li>
 
                                                 <br />
 
                                                 <li>
-                                                    <div class="list-bt" style={{ fontFamily: "Gordita", fontWeight: "500" }}>
+                                                    <div className="list-bt" style={{ fontFamily: "Gordita", fontWeight: "500" }}>
                                                         <input id="btn1" type="checkbox" name="" value=""></input>
                                                         Tv (91 canais) + VOD <br />
 
                                                     </div>
-                                                    (<span class="bonus">Ganhe + X Mega</span>)
+                                                    (<span className="bonus">Ganhe + X Mega</span>)
                                                 </li>
 
                                                 <br />
 
                                                 <li>
 
-                                                    <div class="list-bt" >
+                                                    <div className="list-bt" >
 
-                                                        <div class="content-turbo">
-                                                            <div class="icon-turbo">
-                                                                <img hidde class="turbo" src="./assets/images/fire.gif" />
-                                                                <img class="turbo icon-velocidade" src="./assets/images/turbo.svg" />
+                                                        <div classNameName="content-turbo">
+                                                            <div className="icon-turbo">
+                                                                <img hidde className="turbo" src="./assets/images/fire.gif" />
+                                                                <img className="turbo icon-velocidade" src="./assets/images/turbo.svg" />
                                                             </div>
 
-                                                            <div><span style={{ fontFamily: "Gordita", fontWeight: "500" }}>Turbo das 1h as 6h</span> <br /> (<span class="bonus">999 mega no Turbo</span>)
+                                                            <div><span style={{ fontFamily: "Gordita", fontWeight: "500" }}>Turbo das 1h as 6h</span> <br /> (<span className="bonus">999 mega no Turbo</span>)
                                                                 <br />
-                                                                (<span class="bonus">saiba mais</span>)
+                                                                (<span className="bonus">saiba mais</span>)
                                                             </div>
 
                                                         </div>
@@ -160,18 +160,18 @@ export const PlansPage = () => {
                                         </div>
                                         <p style={{ fontFamily: "Gordita", fontWeight: "500", fontSize: "14px" }}>Pagando até o vencimento <br />  você ganha R$10 de desconto</p>
                                     </div>
-                                    <div className="package-price">
-                                        <span className="sale">R$ {item.price.toFixed(2).replace('.', ',')}</span>
-                                        <span style={{ fontFamily: "Gordita", fontWeight: "900", color: "#008D1E", fontSize: "40px" }} className="price">
+                                    <div classNameName="package-price">
+                                        <span classNameName="sale">R$ {item.price.toFixed(2).replace('.', ',')}</span>
+                                        <span style={{ fontFamily: "Gordita", fontWeight: "900", color: "#008D1E", fontSize: "40px" }} classNameName="price">
                                             R${(item.price - item.discount).toFixed(2).replace('.', ',')}<span style={{ color: "#000", fontWeight: "500" }}>/mês</span>
                                         </span>
                                     </div>
-                                    <a href="https://api.whatsapp.com/send?phone=551128762641" target="_blank" className="button">
+                                    <a href="https://api.whatsapp.com/send?phone=551128762641" target="_blank" classNameName="button">
                                         Contratar
                                     </a>
 
                                     <a href="#">
-                                        <h6>(<span className="channel">Confira todos os canais</span>)</h6>
+                                        <h6>(<span classNameName="channel">Confira todos os canais</span>)</h6>
                                     </a>
 
                                 </div>
@@ -180,20 +180,20 @@ export const PlansPage = () => {
                     </div>
                 </div>
 
-                <div class="content center">
+                <div className="content center">
                     <div>
                         <h2>Internet 100% fibra óptica</h2>
-                        <div class="info-content">
+                        <div className="info-content">
                             <div>
-                                <img class="icon-info" src="./assets/images/icons/card.svg" alt="Clube de desconto"/>
+                                <img className="icon-info" src="./assets/images/icons/card.svg" alt="Clube de desconto"/>
                                 <h4>
                                     Clube de desconto
                                 </h4>
                                 <p>Uma descrição aqui do que é o Clube desconto e o que o cliente tem a ganhar em escolher um plano com ele, ou montar um plano com ele.</p>
                             </div>
                             <div>
-                            <img class="turbo-info" src="./assets/images/fire.gif" />
-                            <img class="turbo-info turbo-move" src="./assets/images/turbo.svg" />
+                            <img className="turbo-info" src="./assets/images/fire.gif" />
+                            <img className="turbo-info turbo-move" src="./assets/images/turbo.svg" />
                                 <h4>
                                     Turbo
                                 </h4>
@@ -203,7 +203,7 @@ export const PlansPage = () => {
                                 *conexões cabeadas</p>
                             </div>
                             <div>
-                                <img class="icon-info" src="./assets/images/icons/wifi6.svg" alt="wifi 6"/>
+                                <img className="icon-info" src="./assets/images/icons/wifi6.svg" alt="wifi 6"/>
                                 <h4>
                                     Wi-Fi 6
                                 </h4>
