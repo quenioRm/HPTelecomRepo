@@ -64,7 +64,8 @@ export const PlansPage = () => {
     }, [])
     
     useEffect(() => {
-        toggle();
+        toggle(false);
+        setIsInternetOnly(!isInternetOnly);
         if(index < 0)
             setIndex(0);
      
@@ -88,6 +89,11 @@ export const PlansPage = () => {
  
 
     const handleChange = ({target}) => {
+        if(isInternetOnly === true){
+            toggle(false);
+            return;
+        }
+
         if (target.checked){
            target.removeAttribute('checked');
            target.parentNode.style.textDecoration = "";
@@ -100,52 +106,73 @@ export const PlansPage = () => {
     }
 
     const handleInternetCheckboxChange = ({target}) => {
-     
         if (target.checked){
+            toggle(false);
             target.removeAttribute('checked');
             target.parentNode.style.textDecoration = "";
             setVariants({
-                downSpeed: variants.downSpeed ? variants.downSpeed + plan.downSpeed : plan.downSpeed,
-                upSpeed: variants.upSpeed ? variants.upSpeed + plan.upSpeed :plan.upSpeed,
-                price: variants.price ? variants.price + plan.price : plan.price
+                downSpeed: plan.downSpeed,
+                upSpeed: plan.upSpeed,
+                price: plan.price
             });
         }else{
+            toggle(true);
             target.setAttribute('checked', true);
             target.parentNode.style.textDecoration = "line-through";
+
+            let downSpeed = plan.downSpeed;
+            let upSpeed = plan.upSpeed;
+            let price = plan.price;
+
+            plansAdd.forEach(x => {
+                downSpeed += x.downSpeedBonus;
+                upSpeed += x.upSpeedBonus;
+                price += x.price;
+            })
+
             setVariants({
-                downSpeed: variants.downSpeed ? variants.downSpeed - plan.downSpeed : 0,
-                upSpeed: variants.upSpeed ? variants.upSpeed - plan.upSpeed : 0,
-                price: variants.price ? variants.price - plan.price : 0
+                downSpeed: downSpeed,
+                upSpeed: upSpeed,
+                price: price
             });
+            
         }
 
         setIsInternetOnly(!isInternetOnly);
     }
 
-    function toggle() {
+    function toggle(status) {
         plansAdd.forEach(x => { 
-            document.getElementById(x.Id).checked = false;
+            document.getElementById(x.Id).checked = status;
+            // ChangePlan(x.Id, status);
         })
     }
 
     function ChangePlan(id, status){
+
+        let downSpeed = variants.downSpeed;
+        let upSpeed = variants.upSpeed;
+        let price = variants.price;
+        
         plansAdd.forEach(x => {
             if(x.Id === parseInt(id)){
                 if(status === true){
-                    setVariants({
-                        downSpeed: variants.downSpeed + x.downSpeedBonus,
-                        upSpeed: variants.upSpeed + x.upSpeedBonus,
-                        price: variants.price + x.price
-                    });
+                    downSpeed += x.downSpeedBonus;
+                    upSpeed += x.upSpeedBonus;
+                    price += x.price;
                 }else{
-                    setVariants({
-                        downSpeed: variants.downSpeed - x.downSpeedBonus,
-                        upSpeed: variants.upSpeed - x.upSpeedBonus,
-                        price: variants.price - x.price
-                    });
+                    downSpeed -= x.downSpeedBonus;
+                    upSpeed -= x.upSpeedBonus;
+                    price -= x.price;
                 }
             }
         })
+
+        setVariants({
+            downSpeed: downSpeed,
+            upSpeed: upSpeed,
+            price: price
+        });
     }
 
     return (
@@ -167,7 +194,7 @@ export const PlansPage = () => {
                                         <div className="price-plan">
                                             <img className="plus" onClick={() => setIndex(index - 1)} src="./assets/images/icons/minus.svg"
                                                 alt="menos"/>
-                                            <h1 style={{ fontFamily: "Gordita", fontSize:"40px" }} className="font-weight-bold">{variants.downSpeed} Megas</h1>
+                                            <h1 style={{ fontFamily: "Gordita", fontSize:"40px" }} className="font-weight-bold">{plan.downSpeed} Megas</h1>
                                             <img className="plus" onClick={() => setIndex(index + 1)} src="./assets/images/icons/plus.svg"
                                                 alt="mais"/>
                                         </div>
@@ -175,11 +202,11 @@ export const PlansPage = () => {
                                             <ul style={{ fontFamily: "Gordita-Regular" }} className="p-0 m-0 m-auto">
                                                 <li>
                                                     <i className="fa fa-download" />
-                                                    <strong>Download {variants.downSpeed} Mbps</strong>
+                                                    <strong>Download {plan.downSpeed} Mbps</strong>
                                                 </li>
                                                 <li style={{ fontFamily: "Gordita-Light" }}>
                                                     <i className="fa fa-arrow-up" />
-                                                    Upload {variants.upSpeed} Mbps
+                                                    Upload {plan.upSpeed} Mbps
                                                 </li>
                                                 <br />
                                                 <li>
@@ -229,14 +256,14 @@ export const PlansPage = () => {
                                                             ></input>
                                                             {item.name}
                                                         </div>
-                                                        {isInternetOnly && item.downSpeedBonus > 0?
+                                                        {item.downSpeedBonus > 0?
                                                         (<span className="bonus">Ganhe + {item.downSpeedBonus} Mega</span>)
                                                         :<><br /></>}
                                                     </li>
                                                 ))}
 
                                                 <br />
-                                                {plan.turboMessageShow === 1 && isInternetOnly ?
+                                                {plan.turboMessageShow === 1 ?
                                                 <li>
                                                     <div className="list-bt" >
                                                         <div className="content-turbo">
@@ -259,16 +286,22 @@ export const PlansPage = () => {
                                                 }
                                             </ul>
                                         </div>
-                                        {isInternetOnly ?
+                                        
                                         <p style={{ fontFamily: "Gordita", fontWeight: "500", fontSize: "14px" }}>Pagando até o vencimento <br />  você ganha R$10 de desconto</p>
-                                        :<></>
-                                        }
+                                        
                                         
                                     </div>
+                                    
+                                    <div>
+                                        <h3 style={{ fontFamily: "Gordita", fontWeight: "bold", fontSize: "20px" }}>Você irá receber</h3>
+                                        <span style={{ fontFamily: "Gordita", fontWeight: "900", color: "#008D1E", fontSize: "20px" }} className="price">{variants.downSpeed} Megas</span>
+                                    </div>
+                                    <br />
+
                                     <div className="package-price">
                                         <span className="sale">R$ {(variants.price - 0).toFixed(2).replace('.', ',')}</span>
                                         <span style={{ fontFamily: "Gordita", fontWeight: "900", color: "#008D1E", fontSize: "40px" }} className="price">
-                                        R${(variants.price - (isInternetOnly ? plan.discount : 0)).toFixed(2).replace('.', ',')}<span style={{ color: "#000", fontWeight: "500" }}>/mês</span>
+                                        R${(variants.price - (variants.price > 0 ? plan.discount : 0)).toFixed(2).replace('.', ',')}<span style={{ color: "#000", fontWeight: "500" }}>/mês</span>
                                         </span>
                                     </div>
                                     <a href="https://api.whatsapp.com/send?phone=551128762641" target="_blank" className="button" rel="noreferrer">
