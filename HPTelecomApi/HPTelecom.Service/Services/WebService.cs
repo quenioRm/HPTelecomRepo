@@ -13,15 +13,21 @@ namespace HPTelecom.Service.Services
         private IPlanPriceRepository _planPriceRepository;
         private IPromotionsRepository _promotionsRepository;
         private IMailSenderService _mailSenderService;
+        private IPlanPriceNewRepository _priceNewRepository;
+        private IPlanPriceNewAddRepository _priceNewAddRepository;
         public WebService(
             IPlanPriceRepository planPriceRepository, 
             IPromotionsRepository promotionsRepository,
-            IMailSenderService mailSenderService
+            IMailSenderService mailSenderService,
+            IPlanPriceNewRepository priceNewRepository,
+            IPlanPriceNewAddRepository priceNewAddRepository
             )
         {
             _planPriceRepository = planPriceRepository;
             _promotionsRepository = promotionsRepository;
             _mailSenderService = mailSenderService;
+            _priceNewRepository = priceNewRepository;
+            _priceNewAddRepository = priceNewAddRepository;
         }
 
         public async Task<object> FindPlan(int id)
@@ -31,7 +37,14 @@ namespace HPTelecom.Service.Services
 
         public async Task<object> GetNewPlans()
         {
-            return await _planPriceRepository.GetNewPlans();
+            var prices = await _priceNewRepository.GetAllAsync();
+            var pricesAdd = await _priceNewAddRepository.GetAllAsync();
+
+            return new
+            {
+                prices,
+                pricesAdd
+            };
         }
 
         public async Task<object> GetPlans(int takeCount)

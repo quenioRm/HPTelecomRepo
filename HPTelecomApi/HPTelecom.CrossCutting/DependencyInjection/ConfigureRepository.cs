@@ -20,6 +20,8 @@ namespace HPTelecom.CrossCutting.DependencyInjection
             builder.Services.AddScoped<IPlanPriceRepository, PlanPriceImplementation>();
             builder.Services.AddScoped<IPromotionsRepository, PromotionsImplementation>();
             builder.Services.AddScoped<ICheckAvailabilityRepository, CheckAvailabilityImplementation>();
+            builder.Services.AddScoped<IPlanPriceNewRepository, PlanPriceNewImplementation>();
+            builder.Services.AddScoped<IPlanPriceNewAddRepository, PlanPriceNewAddImplementation>();
             #endregion
 
             builder.Services.AddDbContext<HPTelecomContext>(

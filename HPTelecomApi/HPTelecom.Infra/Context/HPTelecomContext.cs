@@ -10,6 +10,8 @@ namespace HPTelecom.Infra.Context
         public DbSet<PlanPriceEntity> planPrice { get; set; }
         public DbSet<PromotionsEntity> promotions { get; set; }
         public DbSet<CheckAvailabilityEntity> checkAvailability { get; set; }
+        public DbSet<PlanPriceNewEntity> PriceNewEntities { get; set; }
+        public DbSet<PlanPriceNewAddEntity> PlanPriceNewAdds { get; set; }
 
         public HPTelecomContext(DbContextOptions<HPTelecomContext> options) : base(options)
         {
@@ -24,6 +26,8 @@ namespace HPTelecom.Infra.Context
             modelBuilder.Entity<PlanPriceEntity>(new PlanPriceMap().Configure);
             modelBuilder.Entity<PromotionsEntity>(new PromotionsMap().Configure);
             modelBuilder.Entity<CheckAvailabilityEntity>(new CheckAvailabilityMap().Configure);
+            modelBuilder.Entity<PlanPriceNewEntity>(new PlanPriceNewMap().Configure);
+            modelBuilder.Entity<PlanPriceNewAddEntity>(new PlanPriceNewAddMap().Configure);
         }
     }
 }
