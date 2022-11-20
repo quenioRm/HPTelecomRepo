@@ -27,15 +27,34 @@ export const PlansPage = () => {
     };
 
     const [plans, setPlans] = useState([]);
-    const [plan, setPlan] = useState([]);
+    const [plansAdd, setPlansAdd] = useState([]);
+    const [plan, setPlan] = useState({
+        name: "",
+        icon: "",
+        price: "",
+        discount: "",
+        firstDescription: "",
+        secondDescription: "",
+        thirdDescription: "",
+        fourthDescription: "",
+        downSpeed: "",
+        upSpeed: "",
+        turboMessageShow: ""
+    });
     const [index, setIndex] = useState(0);
+    const [isInternetOnly, setIsInternetOnly] = useState(true);
+    const [variants, setVariants] = useState({
+        downSpeed: 0,
+        upSpeed: 0,
+        price: 0
+    });
 
     useEffect(() => {
         async function Get() {
             await Api.get("/Web/GetNewPlans")
                 .then((response) => {
-                    setPlans(response.data)
-                    setPlan(response.data[index])
+                    setPlans(response.data.prices);
+                    setPlansAdd(response.data.pricesAdd);
                 })
                 .catch((err) => {
 
@@ -43,58 +62,124 @@ export const PlansPage = () => {
         }
         Get()
     }, [])
-
-    //increase counter
-    const goToNext = (e) => {
-        e.preventDefault();
-        if(index < (plans.length - 1))
-            setIndex(count => count + 1);
-        
-        if(index >= 0)
-            setPlan(plans[index]);
-    };
-   
-    //decrease counter
-    const goToBack = (e) => {
-        e.preventDefault();
+    
+    useEffect(() => {
+        toggle();
+        if(index < 0)
+            setIndex(0);
+     
+            
         if(index >= 0){
-            setIndex(index - 1);
-            setPlan(plans[index]);
+           if(plans.length >= 0){
+            if(index <= (plans.length -1)){
+                setPlan(plans[index]);
+                setVariants({
+                    downSpeed: plan.downSpeed,
+                    upSpeed: plan.upSpeed,
+                    price: plan.price
+                });
+            }else{
+                setIndex(plans.length -1);
+            }
+           }
         }
-    };
+    },[index, plans, plan])
+
+ 
+
+    const handleChange = ({target}) => {
+        if (target.checked){
+           target.removeAttribute('checked');
+           target.parentNode.style.textDecoration = "";
+           ChangePlan(target.name, true);
+        } else {
+           target.setAttribute('checked', true);
+           target.parentNode.style.textDecoration = "line-through";
+           ChangePlan(target.name, false);
+        }
+    }
+
+    const handleInternetCheckboxChange = ({target}) => {
+     
+        if (target.checked){
+            target.removeAttribute('checked');
+            target.parentNode.style.textDecoration = "";
+            setVariants({
+                downSpeed: variants.downSpeed ? variants.downSpeed + plan.downSpeed : plan.downSpeed,
+                upSpeed: variants.upSpeed ? variants.upSpeed + plan.upSpeed :plan.upSpeed,
+                price: variants.price ? variants.price + plan.price : plan.price
+            });
+        }else{
+            target.setAttribute('checked', true);
+            target.parentNode.style.textDecoration = "line-through";
+            setVariants({
+                downSpeed: variants.downSpeed ? variants.downSpeed - plan.downSpeed : 0,
+                upSpeed: variants.upSpeed ? variants.upSpeed - plan.upSpeed : 0,
+                price: variants.price ? variants.price - plan.price : 0
+            });
+        }
+
+        setIsInternetOnly(!isInternetOnly);
+    }
+
+    function toggle() {
+        plansAdd.forEach(x => { 
+            document.getElementById(x.Id).checked = false;
+        })
+    }
+
+    function ChangePlan(id, status){
+        plansAdd.forEach(x => {
+            if(x.Id === parseInt(id)){
+                if(status === true){
+                    setVariants({
+                        downSpeed: variants.downSpeed + x.downSpeedBonus,
+                        upSpeed: variants.upSpeed + x.upSpeedBonus,
+                        price: variants.price + x.price
+                    });
+                }else{
+                    setVariants({
+                        downSpeed: variants.downSpeed - x.downSpeedBonus,
+                        upSpeed: variants.upSpeed - x.upSpeedBonus,
+                        price: variants.price - x.price
+                    });
+                }
+            }
+        })
+    }
 
     return (
         <>
             <main className="content">
                 <div className="container text-center">
-                    <div className="packages">
-                        <Slider {...settings}>
+                <div className="packages">
+                <Slider {...settings}>
                             <>
-                            <div key="plan" className="col-lg-3 col-md-4 col-sm-6 col-xs-12 package-list">
+                            <div key="plan" className="package-list center">
                                     <div className="package-icon" >
                                         <img
                                             src={"/assets/images/" + plan.icon}
-                                            alt="velocimentro"
+                                            alt="Velocimentro"
                                             className="img-fluid"
                                         />
                                     </div>
                                     <div className="package-info">
                                         <div className="price-plan">
-                                            <img className="plus" onClick={goToBack} src="./assets/images/icons/minus.svg"
+                                            <img className="plus" onClick={() => setIndex(index - 1)} src="./assets/images/icons/minus.svg"
                                                 alt="menos"/>
-                                            <h1 style={{ fontFamily: "Gordita", fontSize:"40px" }} className="font-weight-bold">{plan.name}</h1>
-                                            <img className="plus" onClick={goToNext} src="./assets/images/icons/plus.svg"
+                                            <h1 style={{ fontFamily: "Gordita", fontSize:"40px" }} className="font-weight-bold">{variants.downSpeed} Megas</h1>
+                                            <img className="plus" onClick={() => setIndex(index + 1)} src="./assets/images/icons/plus.svg"
                                                 alt="mais"/>
                                         </div>
                                         <div className="desc">
                                             <ul style={{ fontFamily: "Gordita-Regular" }} className="p-0 m-0 m-auto">
                                                 <li>
                                                     <i className="fa fa-download" />
-                                                    <strong>Download {plan.description1} Mbps</strong>
+                                                    <strong>Download {variants.downSpeed} Mbps</strong>
                                                 </li>
                                                 <li style={{ fontFamily: "Gordita-Light" }}>
                                                     <i className="fa fa-arrow-up" />
-                                                    Upload {plan.upSpeed} Mbps
+                                                    Upload {variants.upSpeed} Mbps
                                                 </li>
                                                 <br />
                                                 <li>
@@ -104,17 +189,17 @@ export const PlansPage = () => {
                                                         className="img-fluid d-inline-block"
                                                         style={{ paddingRight: 10 }}
                                                     />
-                                                    {plan.description1}
+                                                    {plan.firstDescription}
                                                 </li>
 
                                                 <li>
                                                     <i className="fa fa-wifi" />
-                                                    {plan.description2}
+                                                    {plan.secondDescription}
                                                 </li>
 
                                                 <li>
                                                     <i className="fa fa-credit-card" />
-                                                    {plan.description4}
+                                                    {plan.fourthDescription}
                                                 </li>
                                             </ul>
                                         </div>
@@ -124,78 +209,66 @@ export const PlansPage = () => {
                                             <div className="container-bt">
                                             </div>
                                             <ul>
-                                                {plan.isInternetOnly ?
-                                                    <li>
+                                                <li>
+                                                    <div className="list-bt" style={{ fontFamily: "Gordita", fontWeight: "500" }}>
+                                                        <input id="btn1" type="checkbox" name="interNetOnly" 
+                                                         onChange={handleInternetCheckboxChange}
+                                                         defaultChecked={isInternetOnly}
+                                                         value="true">
+                                                        
+                                                        </input>
+                                                        Apenas internet
+                                                    </div>
+                                                </li>
+                                                <br/>
+                                                {plansAdd.map((item) => (
+                                                    <li key={item.Id}>
                                                         <div className="list-bt" style={{ fontFamily: "Gordita", fontWeight: "500" }}>
-                                                            <input id="btn1" type="checkbox" name="" value="false"></input>
-                                                            Apenas internet
+                                                            <input id={item.Id}type="checkbox" name={item.Id} value="false"
+                                                            onChange={handleChange}
+                                                            ></input>
+                                                            {item.name}
                                                         </div>
-
+                                                        {isInternetOnly && item.downSpeedBonus > 0?
+                                                        (<span className="bonus">Ganhe + {item.downSpeedBonus} Mega</span>)
+                                                        :<><br /></>}
                                                     </li>
-                                                    :
-                                                    <></>
-                                                }
-                                                
-                                                <br />
-
-                                                {plan.isPhoneUnlimited === 1 ?
-                                                    <li>
-                                                        <div className="list-bt" style={{ fontFamily: "Gordita", fontWeight: "500" }}>
-                                                            <input id="btn1" type="checkbox" name="" value="false"></input>
-                                                            Telefone ilimitado
-                                                        </div>
-                                                        (<span className="bonus">Ganhe + X Mega</span>)
-
-                                                    </li>
-                                                    :
-                                                    <></>
-                                                }
+                                                ))}
 
                                                 <br />
-
-                                                {plan.isTvOnly === 1 ?
-                                                    <li>
-                                                        <div className="list-bt" style={{ fontFamily: "Gordita", fontWeight: "500" }}>
-                                                            <input id="btn1" type="checkbox" name="" value="false"></input>
-                                                            Tv (91 canais) + VOD <br />
-
-                                                        </div>
-                                                        (<span className="bonus">Ganhe + X Mega</span>)
-                                                    </li>
-                                                    :
-                                                    <></>
-                                                }
-                                                <br />
-
-                                                {plan.InternetDescription !== null || plan.InternetDescription === "" ?
-                                                    <li>
-                                                        <div className="list-bt" >
-                                                            <div className="content-turbo">
-                                                                <div className="icon-turbo">
-                                                                    <img className="turbo" src="./assets/images/fire.gif" />
-                                                                    <img className="turbo icon-velocidade" src="./assets/images/turbo.svg" />
-                                                                </div>
-    
-                                                                <div><span style={{ fontFamily: "Gordita", fontWeight: "500" }}>
-                                                                    Turbo das 1h as 6h</span> <br /> (<span className="bonus">999 mega no Turbo</span>)
-                                                                    <br />
-                                                                    (<span className="bonus">saiba mais</span>)
-                                                                </div>
-    
+                                                {plan.turboMessageShow === 1 && isInternetOnly ?
+                                                <li>
+                                                    <div className="list-bt" >
+                                                        <div className="content-turbo">
+                                                            <div className="icon-turbo">
+                                                                <img className="turbo" src="./assets/images/fire.gif" />
+                                                                <img className="turbo icon-velocidade" src="./assets/images/turbo.svg" />
                                                             </div>
+
+                                                            <div><span style={{ fontFamily: "Gordita", fontWeight: "500" }}>
+                                                                Turbo das 1h as 6h</span> <br /> (<span className="bonus">999 mega no Turbo</span>)
+                                                                <br />
+                                                                (<span className="bonus">saiba mais</span>)
+                                                            </div>
+
                                                         </div>
-                                                    </li>
-                                                    :
-                                                    <></>
+                                                    </div>
+                                                </li>
+                                                :
+                                                <></>
                                                 }
                                             </ul>
                                         </div>
+                                        {isInternetOnly ?
                                         <p style={{ fontFamily: "Gordita", fontWeight: "500", fontSize: "14px" }}>Pagando até o vencimento <br />  você ganha R$10 de desconto</p>
+                                        :<></>
+                                        }
+                                        
                                     </div>
                                     <div className="package-price">
-                                        <span className="sale">R$ {(plan.price - 0).toFixed(2).replace('.', ',')}</span>
+                                        <span className="sale">R$ {(variants.price - 0).toFixed(2).replace('.', ',')}</span>
                                         <span style={{ fontFamily: "Gordita", fontWeight: "900", color: "#008D1E", fontSize: "40px" }} className="price">
-                                        R${(plan.price - plan.discount).toFixed(2).replace('.', ',')}<span style={{ color: "#000", fontWeight: "500" }}>/mês</span>
+                                        R${(variants.price - (isInternetOnly ? plan.discount : 0)).toFixed(2).replace('.', ',')}<span style={{ color: "#000", fontWeight: "500" }}>/mês</span>
                                         </span>
                                     </div>
                                     <a href="https://api.whatsapp.com/send?phone=551128762641" target="_blank" className="button" rel="noreferrer">
@@ -208,49 +281,6 @@ export const PlansPage = () => {
                                 </div>
                             </>
                         </Slider>
-                    </div>
-                </div>
-
-                <div className="content center">
-                    <div>
-                        <h2>Internet 100% fibra óptica</h2>
-                        <div className="info-content">
-                            <div>
-                                <img className="icon-info" src="./assets/images/icons/card.svg" alt="Clube de desconto"/>
-                                <h4>
-                                    Clube de desconto
-                                </h4>
-                                <p>Uma descrição aqui do que é o Clube desconto e o que o cliente tem a ganhar em escolher um plano com ele, ou montar um plano com ele.</p>
-                            </div>
-                            <div>
-                            <img className="turbo-info" src="./assets/images/fire.gif" />
-                            <img className="turbo-info turbo-move" src="./assets/images/turbo.svg" />
-                                <h4>
-                                    Turbo
-                                </h4>
-                                <p>Tenho que pensar em um texto legal para poder fazer uma boa descrição do que é o Turbo.
-                                <br />
-                                <br />
-                                *conexões cabeadas</p>
-                            </div>
-                            <div>
-                                <img className="icon-info" src="./assets/images/icons/wifi6.svg" alt="wifi 6"/>
-                                <h4>
-                                    Wi-Fi 6
-                                </h4>
-                                <p>Uma descrição aqui do que é o Wi-Fi 6 e o que o cliente tem a ganhar em escolher um plano com ele, ou montar um plano com ele.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div >
-                        <h2>Canais</h2>
-                    </div>
-                    <div >
-                        <h2>Os melhores filmes e séries</h2>
-                        <h3>E muito mais...</h3>
-                    </div>
-                    <div >
-                        <h2>Como você quer assinar com a gente?</h2>
                     </div>
                 </div>
             </main>

@@ -905,3 +905,8 @@ button.green-button {
 .icon-info{
     margin: 10px;
 }
+
+.center {
+    margin: auto;
+    width: 100%;
+}
