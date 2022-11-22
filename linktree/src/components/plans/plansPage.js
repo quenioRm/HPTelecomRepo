@@ -235,7 +235,7 @@ export const PlansPage = () => {
                                         <div className="container-new-list">
                                             <div className="container-bt">
                                             </div>
-                                            <ul>
+                                            <ul className="list-service">
                                                 <li>
                                                     <div className="list-bt" style={{ fontFamily: "Gordita", fontWeight: "500" }}>
                                                         <input id="btn1" type="checkbox" name="interNetOnly" 
@@ -286,9 +286,7 @@ export const PlansPage = () => {
                                                 }
                                             </ul>
                                         </div>
-                                        
-                                        <p style={{ fontFamily: "Gordita", fontWeight: "500", fontSize: "14px" }}>Pagando até o vencimento <br />  você ganha R$10 de desconto</p>
-                                        
+                                                                               
                                         
                                     </div>
                                     
@@ -300,12 +298,14 @@ export const PlansPage = () => {
 
                                     <div className="package-price">
                                         <span className="sale">R$ {(variants.price - 0).toFixed(2).replace('.', ',')}</span>
+                                        <p style={{ fontFamily: "Gordita", fontWeight: "500", fontSize: "14px" }}>Pagando até o vencimento <br />  você ganha R$10 de desconto</p>
+
                                         <span style={{ fontFamily: "Gordita", fontWeight: "900", color: "#008D1E", fontSize: "40px" }} className="price">
                                         R${(variants.price - (variants.price > 0 ? plan.discount : 0)).toFixed(2).replace('.', ',')}<span style={{ color: "#000", fontWeight: "500" }}>/mês</span>
                                         </span>
                                     </div>
                                     <a href="https://api.whatsapp.com/send?phone=551128762641" target="_blank" className="button" rel="noreferrer">
-                                        Contratar
+                                        <strong>Assine já</strong>
                                     </a>
 
                                     <a href="#">

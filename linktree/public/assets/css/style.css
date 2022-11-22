@@ -182,19 +182,17 @@ a:hover {
 }
 
 header {
-    position: relative;
-    top: 0;
-    left: 0;
     z-index: 90;
     width: 100%;
     transition: 0.2s all ease;
-    background: black;
-    color: #efefef;
+    background: rgb(0, 0, 0);
     padding: 1rem;
 }
+
 header .container .row .fa {
-    font-size: 2em;
+    font-size: 2.5em;
 }
+
 header:after {
     content: "";
     display: block;
@@ -207,16 +205,16 @@ header:after {
     width: 100%;
     height: 10px;
     border-bottom: 2px solid #0b0b0b;
+    color: #000;
 }
 
 .content {
     margin-top: 1rem;
-    padding: 1rem;
 }
 
 .content .container .intro {
     display: block;
-    margin-bottom: 30px;
+
 }
 
 .content .container .intro img {
@@ -286,13 +284,13 @@ header:after {
 }
 
 .social-icons ul li {
-    display:inline-flex;
+    display: inline-flex;
     transition: 0.2s all ease;
     margin: 5px;
     border: 3px solid rgba(2, 151, 37, 1);
     border-radius: 50%;
     width: 45px;
-    
+
 }
 
 .social-icons ul li .fa {
@@ -347,12 +345,12 @@ header:after {
     background: #efefef;
 }
 
+/*Começo dos planos*/
+
 .content .container .packages .package-list {
-    margin: 0.5rem;
+    padding: 10px;
     background: white;
     color: #333;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px #333;
     font-size: 1.4em;
 }
 
@@ -361,19 +359,19 @@ header:after {
     text-align: center;
     font-size: 2em;
     background: white;
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
-    margin: 0 auto;
+    margin: auto;
     position: relative;
     top: -20px;
 }
 
 .content .container .packages .package-list .package-info {
-    display: block;
-    position: relative;
-    top: -20px;
+    display: flex;
+    flex-direction: column;
 }
+
 
 /*.content .container .packages .package-list .package-info h1 {
     font-size: 3.5rem;
@@ -416,7 +414,7 @@ header:after {
     color: #035b1a;
     font-family: Gordita;
     font-weight: 500;
-    font-size:20px;
+    font-size: 20px;
 }
 
 .content .container .packages .package-list .package-price .price {
@@ -424,46 +422,24 @@ header:after {
     font-size: 1.5em;
     font-weight: 500;
 }
+
 .content .container .packages .package-list .package-price .price span {
     font-size: 0.5em;
     font-weight: normal;
 }
 
-.content .container .packages .package-list .button,
-.green-button {
-    display: block;
-    transition: 0.2s all ease;
-    width: 40%;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0.5rem;
-    font-size: 14px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px black;
-    color: white;
-    background: rgb(2, 151, 37);
-    background: linear-gradient(90deg, rgba(2, 151, 37, 1) 0%, rgba(2, 197, 56, 1) 49%);
-    margin-bottom: 20px;
-}
-
-button.green-button {
-    width: 30% !important;
-    border: none;
-}
-
-.green-button .fa {
-    font-size: 14px;
-}
-
-.price-plan{
+.price-plan {
     display: flex;
     justify-content: center;
+    width: 100%;
     gap: 15px;
 }
 
+.plus {
+    width: 60px;
+}
 
-
-.container-new-list{
+.container-new-list {
     margin-top: 20px;
     font-size: 14px;
     font-family: "Gordita";
@@ -476,34 +452,42 @@ button.green-button {
     height: 5px;
     margin: auto;
     align-self: center;
-  }
+}
 
-  ul{
+ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    
-    
-  }
+}
 
-  .list-bt {
+.list-service {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    
+    margin: 0 0 10px 0;
+}
+
+.list-service li {
+    padding: 5px;
+}
+
+.list-bt {
+    display: flex;
     justify-content: center;
     position: relative;
     left: -20px;
     gap: 10px;
     color: #000;
-  }
+}
 
-  .bonus {
+.bonus {
     color: #008D1E;
-    font-size: 10px;
-    font-weight: bolder;
+    font-size: 12px;
+    font-family: "Gordita";
     margin: auto;
-  }
+}
 
-  input[type="checkbox"]{
+input[type="checkbox"] {
     position: relative;
     width: 35px;
     height: 15px;
@@ -513,13 +497,13 @@ button.green-button {
     border-radius: 20px;
     box-shadow: inset 0 0 5px rgba(85, 85, 85, 0.2);
     transition: .3s;
-  }
-  
-  input:checked[type="checkbox"] {
+}
+
+input:checked[type="checkbox"] {
     background: #04CB3A;
-  }
-  
-  input[type="checkbox"]:before {
+}
+
+input[type="checkbox"]:before {
     content: '';
     position: absolute;
     width: 15px;
@@ -531,62 +515,90 @@ button.green-button {
     transform: scale(1);
     box-shadow: 0 2px 5px rgba(254, 7, 7, 0.2);
     transition: .3s;
-  }
-  
-  input:checked[type="checkbox"]:before {
+}
+
+input:checked[type="checkbox"]:before {
     left: 20px;
-  }
-  
-  .content-turbo{
+}
+
+.content-turbo {
     position: relative;
     display: flex;
     gap: 5px;
     left: -10px;
-  }
-  
-  .icon-turbo{
+}
+
+.icon-turbo {
     width: 60px;
     height: 60px;
     position: relative;
     bottom: 40px;
-  
-  }
-  
-  .icon-velocidade{
+
+}
+
+.icon-velocidade {
     position: relative;
     bottom: 78px;
-  }
-  
-.turbo-info{
+}
+
+.turbo-info {
     margin: auto;
     display: inline;
     width: 200px;
     height: 200px;
-    
-  }
 
-.turbo-move{
+}
+
+.turbo-move {
     display: inline;
     position: relative;
     bottom: 205px;
 }
 
-.info-content{
+.info-content {
     display: flex;
     width: 300%;
 }
-  
-.turbo{
+
+.turbo {
     display: block;
     width: 80px;
     height: 80px;
 }
-  .channel {
+
+.channel {
     color: #008D1E;
     font-family: "Gordita";
     font-weight: 500;
     font-size: 14px;
-  }
+}
+
+.content .container .packages .package-list .button,
+.green-button {
+    display: block;
+    transition: 0.2s all ease;
+    width: 40%;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    padding: 0.5rem;
+    font-size: 14px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.479);
+    color: white;
+    background: rgb(2, 151, 37);
+    background: #008D1E;
+}
+
+.button .green-button {
+    width: 30% !important;
+    border: none;
+}
+
+.green-button .fa {
+    font-size: 14px;
+}
+
+/*Começo do Clube de desconto */
 
 .content .container .packages .package-list .button:hover,
 .green-button:hover {
@@ -664,6 +676,7 @@ button.green-button {
 .content .container .about .about-item:nth-child(3) {
     max-width: 100%;
 }
+
 .content .container .about .about-item:not(:nth-child(3)) {
     margin-bottom: 1rem;
 }
@@ -794,6 +807,7 @@ button.green-button {
     position: relative;
     top: -5px;
 }
+
 .status-icon {
     font-size: 5em;
     width: 35%;
@@ -837,7 +851,7 @@ button.green-button {
     pointer-events: auto;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.2);
+    border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 0.3rem;
     outline: 0;
     background-color: black;
@@ -866,43 +880,44 @@ button.green-button {
 }
 
 /* unvisited link */
-  a:link {
+a:link {
     color: #11df48;
-  }
-  
-  /* visited link */
-  a:visited {
-    color: #11df48;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: #11df48;
-  }
-  
-  /* selected link */
-  a:active {
-    color: #11df48;
-  }
+}
 
-  .content .container .packages .package-list {
-    padding: 10px !important;
+/* visited link */
+a:visited {
+    color: #11df48;
+}
+
+/* mouse over link */
+a:hover {
+    color: #11df48;
+}
+
+/* selected link */
+a:active {
+    color: #11df48;
+}
+
+.content .container .packages .package-list {
+    margin: 5px 0 0 0;
     background: #fff;
     color: #333;
     border-radius: 8px;
     box-shadow: 0px 0px 5px #333;
-  }
+    padding: ;
+}
 
-  .title{
-      color: #099c35;
-      font-size: 15px;
-  }
+.title {
+    color: #099c35;
+    font-size: 15px;
+}
 
-  .center{
+.center {
     text-align: center;
-  }
+}
 
-.icon-info{
+.icon-info {
     margin: 10px;
 }
 
