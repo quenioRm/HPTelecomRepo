@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import Api from "../../service/Api";
+import Beneficios from "../../components/plans/Beneficios";
+import '../stylesheets/plans.css'
 
 export const PlansPage = () => {
 
@@ -314,6 +316,9 @@ export const PlansPage = () => {
                                 </div>
                             </>
                         </Slider>
+                        
+                        <Beneficios />
+
                     </div>
                 </div>
             </main>
