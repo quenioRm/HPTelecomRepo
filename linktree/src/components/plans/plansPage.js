@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import Api from "../../service/Api";
 import LoadingSpinner from "../spinner/LoadingSpinner";
 import "./plans.css";
+import Benefits from "./Benefits"
 
 export const PlansPage = () => {
 
@@ -313,10 +314,7 @@ export const PlansPage = () => {
                                                 <></>
                                                 }
                                             </ul>
-                                        </div>
-                                        
-                                        <p style={{ fontFamily: "Gordita", fontWeight: "500", fontSize: "14px" }}>Pagando até o vencimento <br />  você ganha R$10 de desconto</p>
-                                        
+                                        </div>                                  
                                         
                                     </div>
                                     {isInternetOnly === false? 
@@ -330,6 +328,9 @@ export const PlansPage = () => {
 
                                     <div className="package-price">
                                         <span className="sale">R$ {(variants.price - 0).toFixed(2).replace('.', ',')}</span>
+                                        
+                                        <p style={{ fontFamily: "Gordita", fontWeight: "500", fontSize: "14px" }}>Pagando até o vencimento <br />  você ganha R$10 de desconto</p>
+
                                         <span style={{ fontFamily: "Gordita", fontWeight: "900", color: "#008D1E", fontSize: "40px" }} className="price">
                                         R${(variants.price - (variants.price > 0 ? plan.discount : 0)).toFixed(2).replace('.', ',')}<span style={{ color: "#000", fontWeight: "500" }}>/mês</span>
                                         </span>
@@ -345,6 +346,8 @@ export const PlansPage = () => {
                             </>
                         </Slider>
                     </div>
+
+                    <Benefits />
                 </div>
             </main>
         </>

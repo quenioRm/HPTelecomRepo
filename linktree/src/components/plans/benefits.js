@@ -1,14 +1,14 @@
 import React from "react";
-import '../stylesheets/beneficios.css';
+import './benefits.css';
 
-function Beneficios() {
+function Benefits() {
     return (
-        <section className="container-beneficios">
+        <section className="container-Benefits">
             
                 <h2>Internet 100% fibra óptica</h2>
                 <div className="divisor"></div>
 
-                <div className="carrossel-beneficios">
+                <div className="carrossel-Benefits">
                     <div className="grade">
                         <div className="slides">
                             <div className="slide primeira">
@@ -18,14 +18,14 @@ function Beneficios() {
                             </div>
                         </div>
 
-                        <div hidden className="slide">
-                            <img src={('../../../public/assets/images/icons/card.svg')} alt='Turbo na Conexão' />
-                            <h5>Turbo</h5>
+                        <div className="slide">
+                            <img src={('../../../public/assets/images/icons/card.svg')} alt='Wi-Fi 6' />
+                            <h5>Wi-Fi 6</h5>
                             <p>Uma descrição aqui do que é o Clube desconto e o que o cliente tem a ganhar em escolher um plano com ele, ou montar um plano com ele.</p>
                         </div>
                         <div className="slide">
-                            <img src={('../../../public/assets/images/icons/card.svg')} alt=' Wi-Fi' />
-                            <h5>Wi-Fi 6</h5>
+                            <img src={('../../../public/assets/images/icons/card.svg')} alt='Clube de desconto' />
+                            <h5>Clube de desconto</h5>
                             <p>Uma descrição aqui do que é o Clube desconto e o que o cliente tem a ganhar em escolher um plano com ele, ou montar um plano com ele.</p>
                         </div>
                     </div>
@@ -74,4 +74,4 @@ function Beneficios() {
 
             )
 }
-            export default Beneficios;
+            export default Benefits;
