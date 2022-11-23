@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import Api from "../../service/Api";
+import LoadingSpinner from "../spinner/LoadingSpinner";
 
 export const PlansPage = () => {
 
@@ -48,13 +49,16 @@ export const PlansPage = () => {
         upSpeed: 0,
         price: 0
     });
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
+        // setIsLoading(true);
         async function Get() {
             await Api.get("/Web/GetNewPlans")
                 .then((response) => {
                     setPlans(response.data.prices);
                     setPlansAdd(response.data.pricesAdd);
+                    setIsLoading(false);
                 })
                 .catch((err) => {
 
@@ -89,18 +93,36 @@ export const PlansPage = () => {
  
 
     const handleChange = ({target}) => {
-        if(isInternetOnly === true){
-            toggle(false);
-            return;
+        if(document.getElementById("isInternetOnly").checked === true){
+            setIsInternetOnly(false);
+            document.getElementById("isInternetOnly").checked = false;
+        }else{
+            var checkboxes = document.querySelectorAll('input[type=checkbox]:checked')
+            
+            let falseCount = 0;
+
+            for (var i = 0; i < checkboxes.length; i++) {
+               if(checkboxes[i].id !== "isInternetOnly"){
+                    if(checkboxes[i].checked === true){
+                        falseCount++;
+                    }
+                        
+               }   
+            }
+
+            if(falseCount === 0){
+                setIsInternetOnly(true);
+                document.getElementById("isInternetOnly").checked = true;
+            }
         }
 
         if (target.checked){
            target.removeAttribute('checked');
-           target.parentNode.style.textDecoration = "";
+        //    target.parentNode.style.textDecoration = "";
            ChangePlan(target.name, true);
         } else {
            target.setAttribute('checked', true);
-           target.parentNode.style.textDecoration = "line-through";
+        //    target.parentNode.style.textDecoration = "line-through";
            ChangePlan(target.name, false);
         }
     }
@@ -109,7 +131,7 @@ export const PlansPage = () => {
         if (target.checked){
             toggle(false);
             target.removeAttribute('checked');
-            target.parentNode.style.textDecoration = "";
+            // target.parentNode.style.textDecoration = "";
             setVariants({
                 downSpeed: plan.downSpeed,
                 upSpeed: plan.upSpeed,
@@ -118,7 +140,7 @@ export const PlansPage = () => {
         }else{
             toggle(true);
             target.setAttribute('checked', true);
-            target.parentNode.style.textDecoration = "line-through";
+            // target.parentNode.style.textDecoration = "line-through";
 
             let downSpeed = plan.downSpeed;
             let upSpeed = plan.upSpeed;
@@ -153,7 +175,8 @@ export const PlansPage = () => {
         let downSpeed = variants.downSpeed;
         let upSpeed = variants.upSpeed;
         let price = variants.price;
-        
+
+
         plansAdd.forEach(x => {
             if(x.Id === parseInt(id)){
                 if(status === true){
@@ -182,6 +205,7 @@ export const PlansPage = () => {
                 <div className="packages">
                 <Slider {...settings}>
                             <>
+                            {isLoading ? <LoadingSpinner /> :
                             <div key="plan" className="package-list center">
                                     <div className="package-icon" >
                                         <img
@@ -238,7 +262,7 @@ export const PlansPage = () => {
                                             <ul>
                                                 <li>
                                                     <div className="list-bt" style={{ fontFamily: "Gordita", fontWeight: "500" }}>
-                                                        <input id="btn1" type="checkbox" name="interNetOnly" 
+                                                        <input id="isInternetOnly" type="checkbox" name="interNetOnly" 
                                                          onChange={handleInternetCheckboxChange}
                                                          defaultChecked={isInternetOnly}
                                                          value="true">
@@ -291,11 +315,13 @@ export const PlansPage = () => {
                                         
                                         
                                     </div>
-                                    
+                                    {isInternetOnly === false? 
                                     <div>
                                         <h3 style={{ fontFamily: "Gordita", fontWeight: "bold", fontSize: "20px" }}>Você irá receber</h3>
                                         <span style={{ fontFamily: "Gordita", fontWeight: "900", color: "#008D1E", fontSize: "20px" }} className="price">{variants.downSpeed} Megas</span>
                                     </div>
+                                    :<></>
+                                    }
                                     <br />
 
                                     <div className="package-price">
@@ -311,7 +337,7 @@ export const PlansPage = () => {
                                     <a href="#">
                                         <h6>(<span className="channel">Confira todos os canais</span>)</h6>
                                     </a>
-                                </div>
+                                </div>}
                             </>
                         </Slider>
                     </div>
