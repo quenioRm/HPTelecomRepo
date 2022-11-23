@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import Api from "../../service/Api";
 import LoadingSpinner from "../spinner/LoadingSpinner";
+import "./plans.css";
 
 export const PlansPage = () => {
 
@@ -69,7 +70,8 @@ export const PlansPage = () => {
     
     useEffect(() => {
         toggle(false);
-        setIsInternetOnly(!isInternetOnly);
+        // setIsInternetOnly(!isInternetOnly);
+        
         if(index < 0)
             setIndex(0);
      
@@ -88,6 +90,8 @@ export const PlansPage = () => {
             }
            }
         }
+
+        // document.getElementById("isInternetOnly").checked = true;
     },[index, plans, plan])
 
  
