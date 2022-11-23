@@ -41,7 +41,10 @@ export const PlansPage = () => {
         fourthDescription: "",
         downSpeed: "",
         upSpeed: "",
-        turboMessageShow: ""
+        turboMessageShow: "",
+        addPlanIsShow: "",
+        addPlanAddPackage: "",
+        addPlanaddidiscount: ""
     });
     const [index, setIndex] = useState(0);
     const [isInternetOnly, setIsInternetOnly] = useState(true);
@@ -74,7 +77,6 @@ export const PlansPage = () => {
         
         if(index < 0)
             setIndex(0);
-     
             
         if(index >= 0){
            if(plans.length >= 0){
@@ -132,6 +134,10 @@ export const PlansPage = () => {
     }
 
     const handleInternetCheckboxChange = ({target}) => {
+        if(plan.addPlanIsShow === 0){
+            document.getElementById("isInternetOnly").checked = true;
+            return;
+        }
         if (target.checked){
             toggle(false);
             target.removeAttribute('checked');
@@ -168,10 +174,12 @@ export const PlansPage = () => {
     }
 
     function toggle(status) {
-        plansAdd.forEach(x => { 
-            document.getElementById(x.Id).checked = status;
-            // ChangePlan(x.Id, status);
-        })
+        if(plan.addPlanIsShow === 1){
+            plansAdd.forEach(x => { 
+                document.getElementById(x.Id).checked = status;
+                // ChangePlan(x.Id, status);
+            })
+        }
     }
 
     function ChangePlan(id, status){
@@ -184,13 +192,13 @@ export const PlansPage = () => {
         plansAdd.forEach(x => {
             if(x.Id === parseInt(id)){
                 if(status === true){
-                    downSpeed += x.downSpeedBonus;
-                    upSpeed += x.upSpeedBonus;
-                    price += x.price;
+                    downSpeed += plan.addPlanAddPackage === 1 ? x.downSpeedBonus : 0;
+                    upSpeed += plan.addPlanAddPackage === 1 ? x.upSpeedBonus : 0;
+                    price += x.price + plan.addPlanaddidiscount;
                 }else{
-                    downSpeed -= x.downSpeedBonus;
-                    upSpeed -= x.upSpeedBonus;
-                    price -= x.price;
+                    downSpeed -= plan.addPlanAddPackage === 1 ?  x.downSpeedBonus : 0;
+                    upSpeed -= plan.addPlanAddPackage === 1 ? x.upSpeedBonus : 0;
+                    price -= x.price + plan.addPlanaddidiscount;
                 }
             }
         })
@@ -277,6 +285,7 @@ export const PlansPage = () => {
                                                 </li>
                                                 <br/>
                                                 {plansAdd.map((item) => (
+                                                    plan.addPlanIsShow === 1 ?
                                                     <li key={item.Id}>
                                                         <div className="list-bt" style={{ fontFamily: "Gordita", fontWeight: "500" }}>
                                                             <input id={item.Id}type="checkbox" name={item.Id} value="false"
@@ -284,10 +293,11 @@ export const PlansPage = () => {
                                                             ></input>
                                                             {item.name}
                                                         </div>
-                                                        {item.downSpeedBonus > 0?
+                                                        {item.downSpeedBonus > 0 && plan.addPlanAddPackage === 1?
                                                         (<span className="bonus">Ganhe + {item.downSpeedBonus} Mega</span>)
                                                         :<><br /></>}
                                                     </li>
+                                                    :<></>
                                                 ))}
 
                                                 <br />
