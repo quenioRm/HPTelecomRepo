@@ -339,7 +339,7 @@ export const PlansPage = () => {
                                         Contratar
                                     </a>
 
-                                    <a href="#">
+                                    <a href="#canais">
                                         <h6>(<span className="channel">Confira todos os canais</span>)</h6>
                                     </a>
                                 </div>}

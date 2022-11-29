@@ -1,6 +1,8 @@
 .content .container .packages .package-list {
     padding: 10px;
     background: white;
+
+    
     color: #333;
     font-size: 1.4em;
 }
@@ -86,8 +88,18 @@
     gap: 15px;
 }
 
-.plus {
-    width: 60px;
+.price-plan .plus {
+    width: 60x;
+    background: linear-gradient(rgba(0, 0, 0, 0.26),#fff);
+    margin: auto;
+    padding: auto;
+    border-radius: 50px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.479);
+    cursor: pointer;
+}
+
+.price-plan .plus:active {
+    background-color: #008D1E;
 }
 
 .container-new-list {
@@ -234,9 +246,9 @@ input:checked[type="checkbox"]:before {
     padding: 0.5rem;
     font-size: 14px;
     border-radius: 15px;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.479);
+    box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.479);
     color: white;
-    background: rgb(2, 151, 37);
+
     background: #008D1E;
 }
 

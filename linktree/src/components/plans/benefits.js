@@ -12,22 +12,25 @@ function Benefits() {
                     <div className="grade">
                         <div className="slides">
                             <div className="slide primeira">
-                                <img src={('../../../public/assets/images/icons/card.svg')} alt='Clube de desconto' />
+                                <img src={require('./img/card.png')} alt='Clube de desconto' />
                                 <h5>Clube de desconto</h5>
-                                <p>Uma descrição aqui do que é o Clube desconto e o que o cliente tem a ganhar em escolher um plano com ele, ou montar um plano com ele.</p>
+                                <p>Descontos em várias lojas, cinema e restaurante por toda SP. E olha que não falamos das compras por app de entrega ainda.</p>
                             </div>
                         </div>
 
                         <div className="slide">
-                            <img src={('../../../public/assets/images/icons/card.svg')} alt='Wi-Fi 6' />
+                            <img src={require('./img/wifi6.png')} alt='Wi-Fi 6' />
                             <h5>Wi-Fi 6</h5>
-                            <p>Uma descrição aqui do que é o Clube desconto e o que o cliente tem a ganhar em escolher um plano com ele, ou montar um plano com ele.</p>
+                            <p>Já imaginou a sua internet com o que tem mais atual quando o assunto é conexão?
+                                <br />Já estamos no Wi-Fi 6, faça parte da ultravelocidade.
+                            </p>
                         </div>
                         <div className="slide">
-                            <img src={('../../../public/assets/images/icons/card.svg')} alt='Clube de desconto' />
+                            <img src={require('./img/card.png')} alt='Clube de desconto' />
                             <h5>Clube de desconto</h5>
-                            <p>Uma descrição aqui do que é o Clube desconto e o que o cliente tem a ganhar em escolher um plano com ele, ou montar um plano com ele.</p>
+                            <p>Descontos em várias lojas, cinema e restaurante por toda SP. E olha que não falamos das compras por app de entrega ainda.</p>
                         </div>
+                        
                     </div>
                 </div>
 

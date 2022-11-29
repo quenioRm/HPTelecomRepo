@@ -1,5 +1,5 @@
 *{
-    --verde: #008D1E;
+    --cor-1: #008D1E;
 }
 
 .container-Benefits {
@@ -21,39 +21,41 @@
 
 .carrossel-Benefits {
     width: 300px;
-    height: 215px;
-    margin: 0 auto;
+    height: auto;
+    margin: 10px calc(100% - 105%);
     display: flex;
-    overflow: hidden;
+    overflow: hidden ;
+}
+
+.carrossel-Benefits img {
+    width: 90px;
 }
 
 .grade {
-    padding: auto;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    transition: all .5s ease;
-    animation: carrossel-beneficios 10s infinite;
-    animation-delay: carrossel-beneficios 1000s;
-    
+    animation: carrossel-beneficios 8s infinite;    
 }
 
 @keyframes carrossel-beneficios {
 
     0%{
         transform: translateX(0%);
-        animation-delay: 1000s;
+        animation-delay: 1s;
     }
 
     50%{
         transform: translateX(calc((-100%/3)*1)) ;
-        animation-delay: 1000s;
+        animation-delay: 1s;
     }
 
     100%{
         transform: translateX(calc((-100%/3)*2)) ;
-        animation-delay: 1000s;
+        animation-delay: 1s;
     }
+
+    
 }
 
 .grade p {
@@ -66,9 +68,10 @@
 
 .divisor {
     margin: auto;
+    margin-bottom: 20px;
     width: 56px;
     height: 2px;
-    background: var(--verde);
+    background: var(--cor-1);
 }
 
 #canais {
@@ -80,7 +83,7 @@
 .plus {
     font-size: 1.3rem;
     font-weight: bold;
-    color: var(--verde);
+    color: var(--cor-1);
 }
 
 .contatos-para-assinar {
