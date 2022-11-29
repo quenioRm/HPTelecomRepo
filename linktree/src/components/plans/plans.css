@@ -88,20 +88,6 @@
     gap: 15px;
 }
 
-.price-plan .plus {
-    width: 60x;
-    background: linear-gradient(rgba(0, 0, 0, 0.26),#fff);
-    margin: auto;
-    padding: auto;
-    border-radius: 50px;
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.479);
-    cursor: pointer;
-}
-
-.price-plan .plus:active {
-    background-color: #008D1E;
-}
-
 .container-new-list {
     margin-top: 20px;
     font-size: 14px;

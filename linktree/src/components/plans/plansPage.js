@@ -347,7 +347,7 @@ export const PlansPage = () => {
                         </Slider>
                     </div>
 
-                    <Benefits />
+                    <Benefits/>
                 </div>
             </main>
         </>

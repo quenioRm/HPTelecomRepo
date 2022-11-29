@@ -1,7 +1,7 @@
 import React from "react";
 import './benefits.css';
 
-function Benefits() {
+function Benefits(props) {
     return (
         <section className="container-Benefits">
             
@@ -9,7 +9,7 @@ function Benefits() {
                 <div className="divisor"></div>
 
                 <div className="carrossel-Benefits">
-                    <div className="grade">
+                    <div className="grade"> 
                         <div className="slides">
                             <div className="slide primeira">
                                 <img src={require('./img/card.png')} alt='Clube de desconto' />
@@ -37,35 +37,65 @@ function Benefits() {
                 <div id="canais">
                     <h2>Canais</h2>
                     <div className="divisor"></div>
-                    <p>Confira abaixo alguns dos principais canais</p>
-                    
+
                     <h5>Canais abertos</h5>
-                    <img src={('../../../public/assets/images/icons/card.svg')} alt='Canais abertos' />
-                    <span className="plus">+</span>
-                    <h5>Canais fechados</h5>
-                    <img src={('../../../public/assets/images/icons/card.svg')} alt='Canais fechados' />
+                    <div className="container-canais">
+                        <div className="carrossel-canais">
+                            <img src={require('./img/canal-band.png')} alt='Canal Globo' />
+                            <img src={require('./img/canal-globo.png')} alt='Canal Globo' />
+                            <img src={require('./img/canal-sbt.png')} alt='Canal Globo' />
+                        </div>
+                    </div>
+
+                    <a href="#">Veja todos os canais fechados</a>
+
+                        <span className="plus">+</span>
+                        <h5>Canais fechados</h5>
+                        <div className="container-canais">
+                            <div className="carrossel-canais">
+                                <img src={require('./img/canal-warner.png')} alt='Canal Globo' />
+                                <img src={require('./img/canal-discovery.png')} alt='Canal Globo' />
+                                <img src={require('./img/canal-espn.png')} alt='Canal Globo' />
+                            </div>
+                        </div>
+
+                        <a href="#">Veja todos os canais fechados</a>
+                    
+                </div>
+                
+                <div>
+                    <h5>Alô, <br /> quem fala?</h5>
+                <img src={require('./img/combo-telefone.png')} alt='Canal Globo' /> 
+
+                <p>Fale a vontade</p>
+
+                <h5>O combo perfeito</h5>
+                <p>Monte um completo completo e desfrute  de toda experiência que só é possível com a <span style={{color: "#008D1E"}}>Hayp</span>.</p>
                 </div>
 
                 <div className="contatos-para-assinar">
-                    <h2>Assine agora mesmo</h2>
+                    <h2>Perguntas frequentes</h2>
                     <div className="divisor"></div>
-                    <p>Como você quer assinar ?</p>
                     
-                    <div className="links-contato">
-                        <a href="tel:1128762641">
-                            <img src={('../../../public/assets/images/icons/card.svg')} alt='Telefone' />
-                            <p>Ligue agora</p>
-                        </a>
-                        <a href="">
-                            <img src={('../../../public/assets/images/icons/card.svg')} alt='gmail' />
-                            <p>Mande um E-mail</p>
-                        </a>
-                        <a href="https://api.whatsapp.com/send?phone=551128762641">
-                            <img src={('../../../public/assets/images/icons/card.svg')} alt='WhatsApp' />
-                            <p>Mande uma mensagem</p>
-                        </a>
-                    </div>
+                    <div>
+                        <ul className="perguntas">
+                            <li className="lista-perguntas">
+                            Eu posso contratar um combo para o meu comércio?
+                            </li>
 
+                            <li className="lista-perguntas">
+                            Eu posso contratar um combo para o meu comércio?
+                            </li>
+
+                            <li className="lista-perguntas">
+                            Eu posso contratar um combo para o meu comércio?
+                            </li>
+
+                            <li className="lista-perguntas">
+                            Eu posso contratar um combo para o meu comércio?
+                            </li>
+                        </ul>
+                    </div>
 
                 </div>
                 
