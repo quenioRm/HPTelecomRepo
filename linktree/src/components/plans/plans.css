@@ -1,7 +1,7 @@
 .content .container .packages .package-list {
     padding: 10px;
     background: white;
-
+    margin: 0 auto;
     
     color: #333;
     font-size: 1.4em;
