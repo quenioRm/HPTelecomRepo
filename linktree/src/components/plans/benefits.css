@@ -1,5 +1,7 @@
 *{
     --cor-1: #008D1E;
+
+    scroll-behavior: smooth;
 }
 
 .tittle-benefits-1 {
@@ -14,6 +16,7 @@
 .tittle-benefits-2 {
     font-family: gordita-bold;
     font-size: 40px;
+    margin: 30px;
 }
 
 
@@ -104,6 +107,7 @@
 .container-canais {
     width: 115%;
     overflow: hidden;
+    margin: 10px 0;
 }
 
 .container-canais-aberto {

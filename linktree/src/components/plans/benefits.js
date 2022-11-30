@@ -55,8 +55,6 @@ function Benefits(props) {
 
                     <a href="#">Veja todos os canais abertos</a>
 
-                        <span className="plus">+</span>
-
                         <div className="container-canais">
                             <h5 className="tittle-benefits-1">Canais fechados</h5>
                             <div className="container-canais-fechados">

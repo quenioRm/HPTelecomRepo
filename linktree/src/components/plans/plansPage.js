@@ -276,7 +276,9 @@ export const PlansPage = () => {
                                                         Apenas internet
                                                     </div>
                                                 </li>
+                                                
                                                 <br/>
+                                                
                                                 {plansAdd.map((item) => (
                                                     <li key={item.Id}>
                                                         <div className="list-bt" style={{ fontFamily: "Gordita", fontWeight: "500" }}>
