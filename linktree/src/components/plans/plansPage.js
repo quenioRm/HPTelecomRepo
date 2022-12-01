@@ -351,6 +351,8 @@ export const PlansPage = () => {
 
                     <Benefits/>
                 </div>
+
+                 
             </main>
         </>
     )

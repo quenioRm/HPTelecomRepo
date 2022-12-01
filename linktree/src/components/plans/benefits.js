@@ -6,7 +6,7 @@ function Benefits(props) {
     return (
         <section className="container-Benefits">
             
-                <h2 className="tittle-benefits-1">Internet 100% fibra óptica</h2>
+                <h2 className="tittle-benefits-1">Internet 100% <br /> fibra óptica</h2>
                 <div className="divisor"></div>
 
                 <div className="carrossel-Benefits">
@@ -63,8 +63,7 @@ function Benefits(props) {
                                     <img src={require('./img/canal-discovery.png')} alt='Canal Discovery' />
                                     <img src={require('./img/canal-espn.png')} alt='Canal ESPN' />
                                     <img src={require('./img/canal-tlc.png')} alt='Canal TLC' />
-                                    <img src={require('./img/canal-discovery.png')} alt='Canal Discovery' />
-                                    <img src={require('./img/canal-espn.png')} alt='Canal ESPN' />
+                                    <img src={require('./img/canal-animal.png')} alt='Canal animal planet' />
                                 </div>
                             </div>
                         </div>
@@ -83,28 +82,31 @@ function Benefits(props) {
                 <p>Monte um completo completo e desfrute  de toda experiência que só é possível com a <span className="name-marca">Hayp</span>.</p>
                 </div>
 
-                <div className="contatos-para-assinar">
+                <div className="contatos-para-assinar" hidden>
                     <h2 className="tittle-benefits-1">Perguntas frequentes</h2>
                     <div className="divisor"></div>
 
                     <Perguntas_Frequentes
                     perguntas = "Posso contratar apenas a  internet ?"
+                    resposta = "Não sei o que colocar aqui dentro, mas vamos colocar alguma coisa"
                     />
 
                     <Perguntas_Frequentes
-                    perguntas = "Eu posso contratar um combo 
-                    para o meu comércio ?"
+                    perguntas = "Eu posso contratar um combo para o meu comércio ?"
+                    resposta = "Não sei o que colocar aqui dentro, mas vamos colocar alguma coisa"
                     />
 
                     <Perguntas_Frequentes
                     perguntas = "No céu tem pão ?"
+                    resposta = "Não sei o que colocar aqui dentro, mas vamos colocar alguma coisa"
                     />
 
                 </div>
                 
                 
-
+                
             </section>
+
 
             
 

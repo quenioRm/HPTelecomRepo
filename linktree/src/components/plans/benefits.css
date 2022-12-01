@@ -1,243 +1,236 @@
-*{
-    --cor-1: #008D1E;
+* {
+  --cor-1: #008D1E;
 
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .tittle-benefits-1 {
-    
-    font-weight: bold;
-    margin: 5px;
-    padding: 5px;
-    font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 1.5rem;
 
 }
 
 .tittle-benefits-2 {
-    font-family: gordita-bold;
-    font-size: 40px;
-    margin: 30px;
+  font-family: gordita-bold;
+  font-size: 40px;
+  margin: 30px 0 20px 0;
 }
 
 
 /*Começo dos beneficios */
 
 .container-Benefits {
-    max-width: 90%;
-    margin: 20px auto 20px auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  max-width: 90%;
+  margin: 20px auto 20px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .container-Benefits img {
-    margin: 5px;
-    padding: 5px;
+  margin: 5px;
+  padding: 5px;
 }
 
 .carrossel-Benefits {
-    width: 300px;
-    height: auto;
-    margin: 10px auto;
-    display: flex;
-    overflow: hidden ;
+  width: 300px;
+  height: auto;
+  margin: 10px auto;
+  display: flex;
+  overflow: hidden;
 }
 
 .carrossel-Benefits img {
-    width: 90px;
+  width: 90px;
 }
 
 .grade {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: carrossel-beneficios 8s infinite;    
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: carrossel-beneficios 8s infinite;
 }
 
 @keyframes carrossel-beneficios {
 
-    0%{
-        transform: translateX(0%);
-        animation-delay: 1s;
-    }
+  0% {
+    transform: translateX(0%);
+    animation-delay: 1s;
+  }
 
-    50%{
-        transform: translateX(calc((-100%/3)*1)) ;
-        animation-delay: 1s;
-    }
+  50% {
+    transform: translateX(calc((-100%/3)*1));
+    animation-delay: 1s;
+  }
 
-    100%{
-        transform: translateX(calc((-100%/3)*2)) ;
-        animation-delay: 1s;
-    }
+  100% {
+    transform: translateX(calc((-100%/3)*2));
+    animation-delay: 1s;
+  }
 
-    
+
 }
 
 .grade p {
-    margin: 0 auto;
-    width: 300px;
-    padding: 0 20px;
+  margin: 0 auto;
+  width: 300px;
+  padding: 0 20px;
 }
 
 
 
 .divisor {
-    margin: auto;
-    margin-bottom: 20px;
-    width: 56px;
-    height: 2px;
-    background: var(--cor-1);
+  margin: auto;
+  margin-bottom: 20px;
+  width: 56px;
+  height: 2px;
+  background: var(--cor-1);
 }
 
 /*Começo dos canais */
 
 #canais {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-Benefits a {
-    color: #fff;
-    text-decoration: underline var(--cor-1);
+  font-size: 16px;
+  color: #fff;
+  text-decoration: underline var(--cor-1);
 }
 
 .container-canais {
-    width: 115%;
-    overflow: hidden;
-    margin: 10px 0;
+  width: 115%;
+  overflow: hidden;
+  margin: 10px 0;
 }
 
 .container-canais-aberto {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    animation: carrossel-canais-aberto 9s infinite;
-    
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  animation: carrossel-canais-aberto 9s infinite;
+
 }
 
 @keyframes carrossel-canais-aberto {
 
-    0%{
-        transform: translateX(0%);
-        
-    }
+  0% {
+    transform: translateX(0%);
 
-    25%{
-        transform: translateX(-80%) ;
-        
-    }
+  }
 
-    75%{
-        transform: translateX(calc(-85%*2)) ;
-        
-    }
+  25% {
+    transform: translateX(-85%);
 
-    100%{
-        transform: translateX(0%) ;
-        
-    }
+  }
+
+  50% {
+    transform: translateX(calc(-85%*2));
+
+  }
+
+  75% {
+    transform: translateX(0%);
+
+  }
 }
 
 .container-canais-fechados {
-    width: 90%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    animation: carrossel-canais-fechados 10s infinite;
-    
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  animation: carrossel-canais-fechados 10s infinite;
+
 }
 
 @keyframes carrossel-canais-fechados {
 
-    0%{
-        transform: translateX(0%);
-        
-    }
+  0% {
+    transform: translateX(0%);
 
-    20%{
-        transform: translateX(-100%) ;
-        
-    }
+  }
 
-    40%{
-        transform: translateX(calc(-100%*2)) ;
-        
-    }
+  20% {
+    transform: translateX(-100%);
 
-    60%{
-        transform: translateX(calc(-104%*3)) ;
-        
-    }
+  }
 
-    80% {
-        transform: translateX(0%)
-    }
+  40% {
+    transform: translateX(calc(-100%*2));
 
+  }
+
+  60% {
+    transform: translateX(calc(-100%*3));
+
+  }
+
+  80% {
+    transform: translateX(calc(-100%*4))
+  }
+
+  100% {
+    transform: translateX(0%)
+  }
 
 }
 
 .carrossel-canais {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-     
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
 }
 
 .plus {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: var(--cor-1);
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--cor-1);
 }
 
 /*Começo dos combos telefones*/
 
 .name-marca {
-    font-family: gordita-bold;
-    color: var(--cor-1);
-} 
-
-
-
-.links-contato {
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.links-contato a {
-    color: #fff;
+  font-family: gordita-bold;
+  color: var(--cor-1);
 }
 
 .perguntas {
-    display: flex;
+  display: flex;
 
-    position: relative;
-    padding: 10px;
+  position: relative;
+  padding: 10px;
+}
+
+.tittle-pergunta {
+  font-weight: bold;
 }
 
 .perguntas img {
-    position: absolute;
-    
-    width: 20px;
-    right: 5%;
-    bottom: 15%;
-    
+  position: absolute;
+
+  width: 20px;
+  right: 5%;
+  bottom: 15%;
+
 }
 
 .lista-perguntas {
-    text-align: left;
-    margin: 5px;
-    background: #1D3840;
-    width: 100%;
-    padding: 20px;
-    border-radius: 5px;
-    
+  text-align: left;
+  margin: 5px;
+  background: #1D3840;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+
 }
 
-.lista-perguntas::after:active{
-    transform: translate(360);
+.saber-mais {
+  cursor: pointer;
 }

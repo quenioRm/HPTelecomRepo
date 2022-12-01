@@ -1,3 +1,4 @@
+
 .content .container .packages .package-list {
     padding: 10px;
     background: white;
@@ -246,3 +247,7 @@ input:checked[type="checkbox"]:before {
 .green-button .fa {
     font-size: 14px;
 }
+
+
+/*Barra de contato*/
+
