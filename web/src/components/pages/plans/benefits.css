@@ -1,0 +1,140 @@
+* {
+  --cor-1: #008D1E;
+
+  scroll-behavior: smooth;
+}
+
+.tittle-benefits-1 {
+  font-weight: bold;
+  padding: 5px;
+  font-size: 1.5rem;
+
+}
+
+.tittle-benefits-2 {
+  margin: 20px 0;
+}
+/*Começo dos beneficios */
+
+.container-Benefits {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  margin: 40px auto;
+  padding: 40px auto;
+}
+.carrossel-Benefits {
+  width: auto;
+  height: auto;
+  margin: 10px auto;
+  display: flex;
+  overflow: hidden;
+}
+
+.grade {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.grade p {
+  margin: 0 auto;
+  width: 300px;
+  padding: 0 20px;
+}
+
+.divisor {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 56px;
+  height: 2px;
+  background: var(--cor-1);
+}
+
+/*Começo dos canais */
+
+.carrossel-canais {
+  margin: 0 auto 30px auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+
+}
+
+.container-Benefits a {
+  font-size: 16px;
+  padding: 20px 0;
+  text-decoration: underline var(--cor-1) 2px;
+  
+}
+
+.container-canais-aberto {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-canais {
+  animation: carrossel-canas 5s;
+
+}
+
+@keyframes carrossel-canais {
+
+  0% {
+    transform: translateX(0%);
+
+  }
+
+  25% {
+    transform: translateX(-5%);
+
+  }
+
+  50% {
+    transform: translateX(calc(-5%*2));
+
+  }
+
+  75% {
+    transform: translateX(0%);
+
+  }
+}
+
+/*Começo dos combos telefones*/
+
+.name-marca {
+  font-family: gordita-bold;
+  color: var(--cor-1);
+}
+
+.perguntas {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+  color: #fff;
+}
+
+.tittle-pergunta {
+  font-weight: bold;
+}
+
+.lista-perguntas {
+  text-align: left;
+  background: #1D3840;
+  width: 40%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.saber-mais {
+  cursor: pointer;
+}

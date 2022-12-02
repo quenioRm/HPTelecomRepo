@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { BreadCrumb } from "../../layout/BreadCrumb";
 import { PlanService } from "../home/components/services/PlanService";
+import Benefits from "./Benefits";
 
 export const Plans = () => {
 
@@ -163,6 +164,8 @@ export const Plans = () => {
                         
                     </div>
                 </div>
+
+                <Benefits />
             </section>
         </>
     )
