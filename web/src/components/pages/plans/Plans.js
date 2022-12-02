@@ -117,7 +117,7 @@ export const Plans = () => {
 
                                             <div class="list-bt" >
                                                      
-                                                         <div class="content-turbo">
+                                                         <div hidden class="content-turbo">
                                                              <div class="icon-turbo">
                                                                  <img hidde class="turbo" src="/images/plans/fire.gif" />
                                                                  <img class="turbo icon-velocidade" src="/images/plans/turbo.svg" />
