@@ -9,6 +9,8 @@ function Benefits(props) {
                 <h2 className="tittle-benefits-1">Principais benefícios</h2>
                 <div className="divisor"></div>
 
+                
+                {/*Beneficios*/}
                 <div className="carrossel-Benefits">
                     <div className="grade"> 
                         <div className="slides">
@@ -26,7 +28,7 @@ function Benefits(props) {
                                 <br />Já estamos no Wi-Fi 6, faça parte da ultravelocidade.
                             </p>
                         </div>
-                        <div className="slide">
+                        <div hidden className="slide">
                             <img src={require('./img/card.png')} alt='Clube de desconto' />
                             <h5>Clube de desconto</h5>
                             <p>Descontos em várias lojas, cinema e restaurante por toda SP. E olha que não falamos das compras por app de entrega ainda.</p>
@@ -35,6 +37,7 @@ function Benefits(props) {
                     </div>
                 </div>
 
+                {/*Começo dos Canais*/}
                 <div id="canais">
                     <h2 className="tittle-benefits-2">Canais</h2>
                     <div className="divisor"></div>
@@ -67,18 +70,20 @@ function Benefits(props) {
                         <a href="#">Veja todos os canais fechados</a>
                     
                 </div>
-                
+
+                {/*Começo do Combo de telefone*/}
                 <div>
                     <h5 className="tittle-benefits-2">Alô, <br /> quem fala?</h5>
-                <img src={require('./img/combo-telefone.png')} alt='Canal Globo' /> 
+                <img src={require('./img/combo-telefone.png')} alt='Combo completo' /> 
 
                 <p>Fale a vontade</p>
 
                 <h5 className="tittle-benefits-1">O combo perfeito</h5>
                 <p>Monte um completo completo e desfrute  de toda experiência que só é possível com a <span className="name-marca">Hayp</span>.</p>
-                </div>
+                </div>                
 
-                <div className="contatos-para-assinar">
+                {/*Começo para as perguntas frequentes*/}
+                <div hidden className="contatos-para-assinar">
                     <h2 className="tittle-benefits-1">Perguntas frequentes</h2>
                     <div className="divisor"></div>
 
