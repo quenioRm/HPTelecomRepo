@@ -20,7 +20,7 @@ export default () => {
   <Router>
     <Route>
       <MainLayout>
-        <Switch>
+        <Switch>    
           <Route exact path='/' component={HomePage} />
           <Route exact path='/Coments' component={ComentPage} />
           <Route exact path='/About' component={AboutPage} />
