@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { BreadCrumb } from "../../layout/BreadCrumb";
 import { PlanService } from "../home/components/services/PlanService";
 import Benefits from "./Benefits";
+import './plans.css';
 
 export const Plans = () => {
 
@@ -26,9 +27,10 @@ export const Plans = () => {
                             <div className="heading-title">
                                 <h3 className="title iq-tw-5 iq-mb-20">Internet <span style={{ color: "#008C1E" }}>100%</span> Fibra Óptica</h3>
                                 <p>
-                                    Não sabe qual é o melhor plano para sua casa? Tem dúvidas de qual possa atender melhor a demanda da sua empresa?
+                                    Não sabe qual é o melhor plano para sua casa?<br />Tem dúvidas de qual possa atender melhor a demanda da sua empresa?
                                     <br />
-                                    Fale conosco e te recomendaremos o melhor plano com base no seu perfil.
+                                    <br />
+                                    <span style={{ color: "#008C1E" }}>Mande uma mensagem</span> que vamos te ajudar a escolher o melhor plano com base no seu perfil.
                                 </p>
                             </div>
                         </div>
