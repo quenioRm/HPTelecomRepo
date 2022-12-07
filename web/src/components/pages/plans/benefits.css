@@ -6,9 +6,10 @@
 
 .tittle-benefits-1 {
   font-weight: bold;
-  padding: 5px;
-  font-size: 1.5rem;
-
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 40px;
+  
 }
 
 .tittle-benefits-2 {
@@ -25,20 +26,18 @@
   margin: 40px auto;
   padding: 40px auto;
 }
-.carrossel-Benefits {
-  width: auto;
-  height: auto;
-  margin: 10px auto;
-  display: flex;
-  overflow: hidden;
-}
+
 
 .grade {
-  margin: 0 auto;
+  margin: 25px 0 20px 0;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: flex-end;
   gap: 50px;
+}
+
+.grade img {
+  margin: 30px 0;
 }
 
 .grade p {
@@ -50,20 +49,32 @@
 .divisor {
   margin: auto;
   margin-bottom: 20px;
-  width: 56px;
-  height: 2px;
+  width: 80px;
+  height: 5px;
   background: var(--cor-1);
 }
 
 /*Começo dos canais */
 
+#canais {
+  margin: 10px 0;
+}
+
+.carrossel-canais-aberto {
+  margin: 0 auto 30px auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+  overflow-x: scroll;
+}
+
 .carrossel-canais {
   margin: 0 auto 30px auto;
   display: flex;
-  align-items: center;
-  gap: 20px;
   justify-content: center;
-
+  gap: 10px;
+  
+  overflow-x: scroll;
 }
 
 .container-Benefits a {
@@ -78,11 +89,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.container-canais {
-  animation: carrossel-canas 5s;
-
 }
 
 @keyframes carrossel-canais {
@@ -109,6 +115,10 @@
 }
 
 /*Começo dos combos telefones*/
+
+.combo-telefone {
+  margin: 20px 0;
+}
 
 .name-marca {
   font-family: GorditaFont;
