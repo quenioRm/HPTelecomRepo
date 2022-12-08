@@ -1,0 +1,10 @@
+header {
+    display: flex;
+    justify-content: center;}
+
+.icon-home {
+    background-image: url(../../../public/assets/images/icons/home.svg);
+    width: 30px;
+    height: 30px;
+
+}

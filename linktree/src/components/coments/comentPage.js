@@ -1,5 +1,6 @@
 import React,{useEffect, useState} from "react";
 import Api from "../../service/Api";
+import './coments.css';
 
 export const ComentPage = () => {
 
@@ -36,25 +37,25 @@ export const ComentPage = () => {
                         <div className="col-9 review-title">
                         5.00 <span>{item.author_name}:</span>
                         <div className="stars">
-                            <i className="fa fa-star text-warning" />
-                            <i className="fa fa-star text-warning" />
-                            <i className="fa fa-star text-warning" />
-                            <i className="fa fa-star text-warning" />
-                            <i className="fa fa-star text-warning" />
+                            <i className="fa fa-star text-warning star" />
+                            <i className="fa fa-star text-warning star" />
+                            <i className="fa fa-star text-warning star" />
+                            <i className="fa fa-star text-warning star" />
+                            <i className="fa fa-star text-warning star" />
                         </div>
                         </div>
                         <div className="col-3 review-img text-right">
                         <div className="review-circle">
                             <img
                             src={item.profile_photo_url}
-                            alt="image"
+                            alt="Cliente que fez a avaliação"
                             className="img-fluid"
                             />
                         </div>
                         </div>
                     </div>
-                    <div className="col-12 text-left review-text pl-0 pr-0 mt-2">
-                        <p>
+                    <div>
+                        <p className="avaliacao">
                         {item.text}
                         </p>
                     </div>
