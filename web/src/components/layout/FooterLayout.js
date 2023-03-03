@@ -15,12 +15,13 @@ export const FooterLayout = () => {
                     <img
                         id="logo_img_2"
                         className="img-fluid"
-                        src="images/logotipo-primario-rgb-01.png"
+                        src="images/logotipo-descritivo-rgb-03.png"
                         alt="#"
                         style={{
                             position:"relative",
                             top:"-50px",
-                            left:"-35px"
+                            left:"-35px",
+                            
                         }}
                     />
                     {/* <div className="iq-font-white iq-mt-15 ">

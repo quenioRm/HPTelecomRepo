@@ -26,7 +26,7 @@ export const HomeMainComents = () => {
         <div className="row">
             <div className="col-sm-12">
                 <div className="heading-title">
-                <h2 className="title  iq-mb-25">O que estão falando da <span style={{color:"#008C1E"}}>HP Telecom</span> ?</h2>
+                <h2 className="title  iq-mb-25">O que estão falando da <span style={{color:"#008C1E"}}>sobre o nosso trabalho</span> ?</h2>
                 <p>
                 Se você ainda tem alguma dúvida, veja o que os nossos clientes costumam falar dos nossos serviços.
                 <br/>Aqui a opinião do cliente, <span style={{color:"#008C1E"}}>vale ouro</span>!

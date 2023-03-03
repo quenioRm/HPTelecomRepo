@@ -1,4 +1,4 @@
-import react, {useState, useEffect, useRef} from "react";
+import react, { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
@@ -10,62 +10,62 @@ export const HeaderLayout = () => {
     const [y, setY] = useState(0);
     const [logoClass, setLogoClass] = useState({
         height: "240px",
-        position : "relative",
-        top : "-100px",
-        left : "-48px"
+        position: "relative",
+        top: "-100px",
+        left: "-48px"
     });
 
     const handleNavigation = (e) => {
-      const window = e.currentTarget;
-       if (y < window.scrollY) {
-        if(window.scrollY <= 20){
-            setLogoClass({
-                height: "240px",
-                position : "relative",
-                top : "-100px",
-                left : "-48px"
-            });
-            setLog("images/logotipo-descritivo-rgb-03.png")
-        }else{
-            setLogoClass({
-                height : "70px",
-                position : "relative",
-                top : "-10px",
-                left : ""
-            });
-            setLog("images/logotipo-primario-rgb-01.png")
+        const window = e.currentTarget;
+        if (y < window.scrollY) {
+            if (window.scrollY <= 20) {
+                setLogoClass({
+                    height: "240px",
+                    position: "relative",
+                    top: "-100px",
+                    left: "-48px"
+                });
+                setLog("images/logotipo-descritivo-rgb-03.png")
+            } else {
+                setLogoClass({
+                    height: "70px",
+                    position: "relative",
+                    top: "-10px",
+                    left: ""
+                });
+                setLog("images/logotipo-primario-rgb-01.png")
+            }
         }
-      }
-      setY(y);
+        setY(y);
     };
-  
+
     useEffect(() => {
-      setY(window.scrollY);
-  
-      window.addEventListener("scroll", (e) => handleNavigation(e));
+        setY(window.scrollY);
+
+        window.addEventListener("scroll", (e) => handleNavigation(e));
     }, []);
 
-        
+
     function scrollWin() {
         window.scrollTo(0, 500);
     }
 
-    function ScrollToFooter(){
+    function ScrollToFooter() {
         const divRef = useRef(null);
 
         useEffect(() => {
-          divRef.current.scrollIntoView({ behavior: 'smooth' });
+            divRef.current.scrollIntoView({ behavior: 'smooth' });
         });
     }
 
-    return(
+    return (
         <>
-        {/* Header */}
-        <header className="transparent">
-            <div className="topbar">
-            <div className="container">
-                <div className="row">
-                {/* <div className="col-lg-6 col-md-6 col-sm-6">
+            {/* Header */}
+            <header className="transparent">
+                <div className="topbar">
+                    <div className="container">
+                        <div className="row">
+                            {/* <div className="col-lg-6 col-md-6 col-sm-6">
                     <div className="topbar-left">
                     <ul className="list-inline">
                         <li className="list-inline-item">
@@ -115,102 +115,85 @@ export const HeaderLayout = () => {
                     </ul>
                     </div>
                 </div> */}
-                </div>
-            </div>
-            </div>
-            <div className="iq-header">
-            <div className="container">
-                <div className="row">
-                <div className="col-md-12">
-                    <div className="logo">
-                    <a href="/">
-                        <img
-                        id="logo_img"
-                        className="img-fluid"
-                        src={logo}
-                        alt="logo"
-                        style={{
-                            height : logoClass.height,
-                            position : logoClass.position,
-                            top : logoClass.top,
-                            left : logoClass.left
-                        }}
-                        />
-                    </a>
+                        </div>
                     </div>
-                    <nav>
-                    {" "}
-                    <a
-                        id="resp-menu"
-                        className="responsive-menu"
-                        href="#"
-                    >
-                        <i className="fa fa-reorder" /> Menu
-                    </a>
-                    <ul className="menu text-right">
-                        <li>
-                            <a className={location.pathname == "/"
-                            ? 'active' : ''} href="/">
-                                HOME
-                            </a>
-                        </li>
-                        <li>
-                            <Link to="/Plans" className={location.pathname == "/Plans"
-                            ? 'active' : ''} >
-                            PLANOS
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/About" className={location.pathname == "/About"
-                            ? 'active' : ''}>
-                            QUEM SOMOS 
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="#" id="down" href="#down">
-                            CONTATO
-                            </Link>
-                        </li>
-
-                        {/* <li className="nav-item dropdown">
-                                <a
-                                    className="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="navbarDropdown1"
-                                    role="button"
-                                    data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                >
-                                    Dropdown
-                                </a>
-                                <div style={{backgroundColor:"black", borderColor:"white", position:"relative", left:"30px"}} className="dropdown-menu" aria-labelledby="navbarDropdown1">
-                                    <a className="dropdown-item" href="#">
-                                    Action
-                                    </a>
-                                    <a className="dropdown-item" href="#">
-                                    Another action
-                                    </a>
-                                    <div className="dropdown-divider" />
-                                    <a className="dropdown-item" href="#">
-                                    Something else here
+                </div>
+                <div className="iq-header">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-md-12">
+                                <div className="logo">
+                                    <a href="/">
+                                        <img
+                                            id="logo_img"
+                                            className="img-fluid"
+                                            src={logo}
+                                            alt="Logo da Hayp Telecom"
+                                            style={{
+                                                height: logoClass.height,
+                                                position: logoClass.position,
+                                                top: logoClass.top,
+                                                left: logoClass.left
+                                            }}
+                                        />
                                     </a>
                                 </div>
-                            </li> */}
-                        
-                        <li>
-                            <a className="" target="_blank" href="https://cda.hptelecom.com.br/central_assinante_web/">
-                                ÁREA DO CLIENTE
-                            </a>
-                        </li>
-                    </ul>
-                    </nav>
+                                <nav>
+                                    {" "}
+                                    <a
+                                        id="resp-menu"
+                                        className="responsive-menu"
+                                        href="#"
+                                    >
+                                        <i className="fa fa-reorder" /> Menu
+                                    </a>
+                                    <ul className="menu text-right">
+                                        <li>
+                                            <a className={location.pathname == "/"
+                                                ? 'active' : ''} href="/">
+                                                HOME
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <Link to="/Plans" className={location.pathname == "/Plans"
+                                                ? 'active' : ''} >
+                                                PLANOS
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/About" className={location.pathname == "/About"
+                                                ? 'active' : ''}>
+                                                QUEM SOMOS
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link to="#" id="down" href="#down">
+                                                CONTATO
+                                            </Link>
+                                            {<ul className="nav-item dropdown">
+                                                <li><a href="#">Contato</a></li>
+                                                <li><a href="#">Contato</a></li>
+                                                <li><a href="#">Contato</a></li>
+                                                <li><a href="#">Contato</a></li>
+                                                <li><a href="#">Contato</a></li>
+                                                <li><a href="#">Contato</a></li>
+
+                                            </ul>}
+                                        </li>
+
+                                        <li>
+                                            <a className="" target="_blank" href="https://cda.hptelecom.com.br/central_assinante_web/">
+                                                ÁREA DO CLIENTE
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                </div>
-            </div>
-            </div>
-        </header>
-        {/* Header End */}
+            </header>
+            {/* Header End */}
         </>
     )
 }

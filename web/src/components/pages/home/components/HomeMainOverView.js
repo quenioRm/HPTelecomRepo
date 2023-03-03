@@ -27,7 +27,7 @@ export const HomeMainOverView = () => {
             <div className="row">
             <div className="col-sm-12">
                 <div className="heading-title">
-                <h3 className="title iq-tw-5 iq-mb-25">Por que escolher a <span style={{color:"#008C1E"}}>HP Telecom</span></h3>
+                <h3 className="title iq-tw-5 iq-mb-25">Por que escolher a <span style={{color:"#008C1E"}}>Hayp</span></h3>
                 <p>
                     Contrate a ultravelocidade da fibra óptica para explorar ao máximo a navegação na internet.
                 </p>
@@ -374,7 +374,7 @@ export const HomeMainOverView = () => {
                         onMouseEnter={() => handleMouseEnter(8)}
                         onMouseLeave={() => handleMouseLeave(8)} 
                         >
-                        Clientes da HP Telecom ganham descontos exclusivos em vários estabelecimentos. 
+                        Clientes da Hayp ganham descontos exclusivos em vários estabelecimentos. 
                         Cinema, farmácia, petshop e muitos outros.
                         </a>
                     </p>
