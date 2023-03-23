@@ -21,10 +21,10 @@ export const HomePage = () => {
                 <div className="intro">
                 <img
                     src="/assets/images/logo.png?v=1"
-                    alt="logo"
+                    alt="Logo da Hayp Telecom"
                     className="img-fluid"
                 />
-                <span>Internet para pessoas exigentes</span>
+                <span>Simplifique sua rotina, assine Hayp</span>
                 </div>
                 <div className="menu">
                 <div className="row">

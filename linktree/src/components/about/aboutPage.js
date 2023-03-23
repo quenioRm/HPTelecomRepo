@@ -26,7 +26,7 @@ export const AboutPage = () => {
                 </div>
                 <div className="col-lg-4 col-md-5 col-sm-7 col-xs-12 text-left pl-1">
                 <h5 className="font-weight-bold mb-3 d-block text-left smiley dark-green">
-                    Porque somos HP telecom
+                    Porque somos Hayp
                 </h5>
                 <p className="text-white text-left font-weight-light mt-0">
                 <p>
@@ -46,7 +46,7 @@ export const AboutPage = () => {
                 Porque acreditamos em um mundo conectado e que fazemos parte dele.
                 Reconhecemos o poder da conexão. 
 
-                Bem-vindo ao universo HP Telecom.
+                Bem-vindo ao universo Hayp.
                 </p>
 
                 <p style={{textAlign:"center"}}>

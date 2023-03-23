@@ -14,7 +14,7 @@ export const DiscountClubPage = () => {
                 <div className="page-about text-center m-0 m-auto">
                 <div className="col-8 text-center pr-0 pl-0 m-0 m-auto mb-4">
                     <p>
-                    Clientes da HP Telecom podem ganhar descontos exclusivos em vários estabelecimentos, cinemas, farmácias, lojas online e muitos outros.
+                    Clientes da Hayp podem ganhar descontos exclusivos em vários estabelecimentos, cinemas, farmácias, lojas online e muitos outros.
                     </p>
                 </div>
                 <h4 className="font-weight-bold mb-0 d-block text-center custom-font">
