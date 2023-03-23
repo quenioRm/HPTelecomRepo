@@ -87,7 +87,7 @@ export const Plans = () => {
                         <h3 className="price-value"> R$ {(item.price - item.discount).toFixed(2).replace('.', ',')}</h3>
                     </p>
                     
-                    <a className="button" href="https://api.whatsapp.com/send?phone=551128762641" target="_blank">
+                    <a className="button" href={"https://wa.me/551128762641?text=Ol%C3%A1%2C+vi+este+plano+de+"+item.name+"+no+seu+site+e+gostaria+de+saber+mais"} target="_blank">
                         Fale com um atendente
                     </a>
                     </div>

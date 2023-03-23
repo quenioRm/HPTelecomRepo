@@ -108,7 +108,7 @@ export const PlansPage = () => {
                         </span>
                         <h6 className="font-weight-light">No Boleto via e-mail</h6>
                     </div>
-                    <a href={"https://wa.me/551128762641?text=Ol%C3%A1%2C+vi+o+planos+de+"+item.name+"+no+seu+site+e+gostaria+de+saber+mais"} target="_blank" className="button">
+                    <a href={"https://wa.me/551128762641?text=Ol%C3%A1%2C+vi+este+plano+de+"+item.name+"+no+seu+site+e+gostaria+de+saber+mais"} target="_blank" className="button">
                         Contratar
                     </a>
                     </div>

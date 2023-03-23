@@ -131,7 +131,7 @@ export const FooterLayout = () => {
                     <div className="col-sm-6">
                         <div className="iq-copyright iq-mt-10 iq-font-white">
                         Todos os direitos reservados <span id="copyright"> </span>{" "}
-                        <a href="/About"><strong>HP Telecom LTDA</strong></a> {" "}
+                        <a href="/About"><strong>Hayp Telecom LTDA</strong></a> {" "}
                         </div>
                     </div>
                     <div className="col-sm-6">

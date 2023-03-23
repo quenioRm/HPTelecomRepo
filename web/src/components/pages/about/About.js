@@ -13,7 +13,7 @@ export const About = () => {
                     <div className="row">
                     <div className="col-sm-12">
                         <div className="heading-title">
-                        <h3 className="title iq-tw-5 iq-mb-20">Manifesto <span style={{color:"#008C1E"}}>HP Telecom</span></h3>
+                        <h3 className="title iq-tw-5 iq-mb-20">Manifesto <span style={{color:"#008C1E"}}>Hayp</span></h3>
                         </div>
                     </div>
                     </div>
@@ -47,7 +47,7 @@ export const About = () => {
                             <div className="col">
                                 <span className="aboutText2Title">
                                     <p style={{fontFamily:'GorditaFont', color:'#000000'}} className="aboutText2Title">
-                                        Por que somos <span style={{color:"#008C1E"}}>HP Telecom</span>!
+                                        Por que somos <span style={{color:"#008C1E"}}>Hayp</span>!
                                     </p>
                                     <p>
                                     Levamos conexão acessível, de qualidade com grande velocidade e 
@@ -71,7 +71,7 @@ export const About = () => {
                                     Reconhecemos o poder da conexão. 
                                     </p>
                                     <p style={{fontFamily:'GorditaFont', color:'#000000'}}>
-                                    Bem-vindo ao universo <span style={{color:"#008C1E"}}>HP Telecom</span>.
+                                    Bem-vindo ao universo <span style={{color:"#008C1E"}}>Hayp</span>.
                                     </p>
                                 </span>
                             </div>
