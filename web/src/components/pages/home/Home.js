@@ -10,7 +10,7 @@ export const Home = () => {
     // console.log("My screen resolution is: " + width )
 
     if(width <= 800){
-        window.location.href = 'https://links.hptelecom.com.br/'
+        window.location.href = 'https://links.hayp.com.br/'
     }
 
     return(
