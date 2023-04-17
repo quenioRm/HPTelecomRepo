@@ -47,7 +47,7 @@ export const DiscountClubPage = () => {
                     Você também terá um cartão fisico e um digital para poder facilitar ainda mais o seu acesso. <br />
                     </p>
                 </div>
-                <a target="_blank" href="https://api.whatsapp.com/send?1=pt_BR&phone=551128762641" className="custom-button" style={{color:"white"}}>
+                <a target="_blank" href="https://clubecerto.com.br/hotsite/?utm_cc=acessodireto&ent=HPTELECOM" className="custom-button" style={{color:"white"}}>
                     saiba mais
                 </a>
                 <div>
