@@ -8,7 +8,7 @@ export const HomeFooterPage = () => {
                 <div className="social-icons">
                 <ul className="text-center p-0 m-0 m-auto">
                     <li>
-                    <a target="_blank" href="https://www.instagram.com/hp_internet/">
+                    <a target="_blank" href="https://www.instagram.com/haypoficial/">
                         <img
                         src="./assets/images/icons/assets_instagram.png"
                         alt="Instagram"
@@ -17,7 +17,7 @@ export const HomeFooterPage = () => {
                     </a>
                     </li>
                     <li>
-                    <a target="_blank" href="https://www.facebook.com/HPTelecom">
+                    <a target="_blank" href="https://www.facebook.com/HaypTelecom">
                         <img
                         src="./assets/images/icons/assets_facebook.png"
                         alt="Facebook"
