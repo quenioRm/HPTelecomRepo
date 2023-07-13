@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="Pt-br">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="canonical" href="https://hayp.com.br">
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" />
     <meta name="theme-color" content="#000000" />
-    <meta name="description" content="HP Telecom agora é Hayp - Internet 100% fibra óptica, perfeita para sua casa ou comércio. Com uma equipe de especialistas sempre preparada para te atender."/>
+    <meta name="description"
+        content="HP Telecom agora é Hayp - Internet 100% fibra óptica, perfeita para sua casa ou comércio. Com uma equipe de especialistas sempre preparada para te atender." />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -51,8 +53,9 @@
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/custom.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!-- loading -->
@@ -77,7 +80,7 @@
         <a class="top" id="top" href="#top"> <i class="ion-ios-upload-outline"></i> </a>
     </div>
     <!-- back-to-top End -->
-    
+
     <!-- jquery-min JavaScript -->
     <script src="js/jquery-min.js "></script>
     <!-- popper JavaScript -->
@@ -90,7 +93,7 @@
     <script src="js/all-plugins.js "></script>
     <!-- particles JavaScript -->
     <script src="js/particles.js "></script>
-    
+
     <!-- REVOLUTION JS FILES -->
     <script src="revslider/js/jquery.themepunch.tools.min.js"></script>
     <script src="revslider/js/jquery.themepunch.revolution.min.js"></script>
@@ -107,88 +110,88 @@
     <!-- Custom JavaScript -->
     <script src="js/custom.js "></script>
     <script>
-    var revapi2,
-        tpj = jQuery;
-    tpj(document).ready(function() {
-        if (tpj("#rev_slider_2_1").revolution == undefined) {
-            revslider_showDoubleJqueryError("#rev_slider_2_1");
-        } else {
-            revapi2 = tpj("#rev_slider_2_1").show().revolution({
-                sliderType: "standard",
-                jsFileLocation: "//localhost/revslider-standalone/revslider/public/assets/js/",
-                sliderLayout: "fullwidth",
-                dottedOverlay: "none",
-                delay: 9000,
-                navigation: {
-                    keyboardNavigation: "off",
-                    keyboard_direction: "horizontal",
-                    mouseScrollNavigation: "off",
-                    mouseScrollReverse: "default",
-                    onHoverStop: "off",
-                    arrows: {
-                        style: "persephone",
-                        enable: true,
-                        hide_onmobile: false,
-                        hide_onleave: false,
-                        tmp: '',
-                        left: {
-                            h_align: "left",
-                            v_align: "center",
-                            h_offset: 20,
-                            v_offset: 0
-                        },
-                        right: {
-                            h_align: "right",
-                            v_align: "center",
-                            h_offset: 20,
-                            v_offset: 0
+        var revapi2,
+            tpj = jQuery;
+        tpj(document).ready(function () {
+            if (tpj("#rev_slider_2_1").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_2_1");
+            } else {
+                revapi2 = tpj("#rev_slider_2_1").show().revolution({
+                    sliderType: "standard",
+                    jsFileLocation: "//localhost/revslider-standalone/revslider/public/assets/js/",
+                    sliderLayout: "fullwidth",
+                    dottedOverlay: "none",
+                    delay: 9000,
+                    navigation: {
+                        keyboardNavigation: "off",
+                        keyboard_direction: "horizontal",
+                        mouseScrollNavigation: "off",
+                        mouseScrollReverse: "default",
+                        onHoverStop: "off",
+                        arrows: {
+                            style: "persephone",
+                            enable: true,
+                            hide_onmobile: false,
+                            hide_onleave: false,
+                            tmp: '',
+                            left: {
+                                h_align: "left",
+                                v_align: "center",
+                                h_offset: 20,
+                                v_offset: 0
+                            },
+                            right: {
+                                h_align: "right",
+                                v_align: "center",
+                                h_offset: 20,
+                                v_offset: 0
+                            }
                         }
+                    },
+                    visibilityLevels: [1240, 1024, 778, 480],
+                    gridwidth: 1170,
+                    gridheight: 790,
+                    lazyType: "none",
+                    parallax: {
+                        type: "mouse",
+                        origo: "enterpoint",
+                        speed: 400,
+                        speedbg: 0,
+                        speedls: 0,
+                        levels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 47, 48, 49, 50, 51, 55],
+                    },
+                    shadow: 0,
+                    spinner: "spinner0",
+                    stopLoop: "off",
+                    stopAfterLoops: -1,
+                    stopAtSlide: -1,
+                    shuffle: "off",
+                    autoHeight: "off",
+                    disableProgressBar: "on",
+                    hideThumbsOnMobile: "off",
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    debugMode: false,
+                    fallbacks: {
+                        simplifyAll: "off",
+                        nextSlideOnWindowFocus: "off",
+                        disableFocusListener: false,
                     }
-                },
-                visibilityLevels: [1240, 1024, 778, 480],
-                gridwidth: 1170,
-                gridheight: 790,
-                lazyType: "none",
-                parallax: {
-                    type: "mouse",
-                    origo: "enterpoint",
-                    speed: 400,
-                    speedbg: 0,
-                    speedls: 0,
-                    levels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 47, 48, 49, 50, 51, 55],
-                },
-                shadow: 0,
-                spinner: "spinner0",
-                stopLoop: "off",
-                stopAfterLoops: -1,
-                stopAtSlide: -1,
-                shuffle: "off",
-                autoHeight: "off",
-                disableProgressBar: "on",
-                hideThumbsOnMobile: "off",
-                hideSliderAtLimit: 0,
-                hideCaptionAtLimit: 0,
-                hideAllCaptionAtLilmit: 0,
-                debugMode: false,
-                fallbacks: {
-                    simplifyAll: "off",
-                    nextSlideOnWindowFocus: "off",
-                    disableFocusListener: false,
-                }
-            });
-        }
-    }); /*ready*/
+                });
+            }
+        }); /*ready*/
     </script>
     // <!-- Código de rastreamento Hotjar para https://www.hptelecom.com.br/ -->
     <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:2893888,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2893888, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
             a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
 
 
@@ -196,31 +199,32 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-190639228-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'UA-190639228-1');
+        gtag('config', 'UA-190639228-1');
     </script>
-
-
 
     <!-- Meta Pixel Code -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '343304724500982');
-    fbq('track', 'PageView');
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '235995959266658');
+        fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=343304724500982&ev=PageView&noscript=1"
-    /></noscript>
+            src="https://www.facebook.com/tr?id=235995959266658&ev=PageView&noscript=1" /></noscript>
     <!-- End Meta Pixel Code -->
-  </body>
+</body>
+
 </html>
