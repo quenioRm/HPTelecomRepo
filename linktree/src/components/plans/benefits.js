@@ -36,7 +36,7 @@ function Benefits(props) {
       </div>
 
       <div id="canais">
-        <h2 className="tittle-benefits-2">Canais</h2>
+        <h2 className="tittle-benefits-2">De um Hayp na sua Tv</h2>
         <div className="divisor"></div>
 
         <h5 className="tittle-benefits-1">Canais abertos</h5>
@@ -75,8 +75,8 @@ function Benefits(props) {
       </div>
 
       <div>
-        <h5 className="tittle-benefits-2">Alô, <br /> quem fala?</h5>
-        <img src={require('./img/combo-telefone.png')} alt='Canal Globo' />
+        <h5 className="tittle-benefits-2">Combo <br /> completo <span>!!!</span></h5>
+        <img src={require('./img/combo-telefone.png')} alt='Combo completo' />
 
         <p>Fale a vontade</p>
 
