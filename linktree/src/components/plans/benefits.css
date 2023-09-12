@@ -6,7 +6,7 @@
 }
 
 .tittle-benefits-1 {
-  font-weight: bold;
+  font-family: gordita-bold;
   padding: 5px;
   font-size: 1.5rem;
 
@@ -17,7 +17,6 @@
   font-size: 40px;
   margin: 30px 0 20px 0;
 }
-
 
 /*Começo dos beneficios */
 
@@ -35,15 +34,19 @@
 }
 
 .carrossel-Benefits {
-  width: 300px;
+  width: auto;
   height: auto;
   margin: 10px auto;
   display: flex;
-  overflow: hidden;
+  
+}
+
+.carrossel-Benefits h5{
+  font-family: gordita-bold;
 }
 
 .carrossel-Benefits img {
-  width: 90px;
+  width: 100px;
 }
 
 .grade {
@@ -51,7 +54,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: carrossel-beneficios 8s infinite;
+  animation: carrossel-beneficios 20s infinite;
+}
+
+.slide{
+  width: 300px;
 }
 
 @keyframes carrossel-beneficios {
@@ -61,13 +68,28 @@
     animation-delay: 1s;
   }
 
+  25% {
+    transform: translateX(calc((-100%/5.2)*1));
+    animation-delay: 1s;
+  }
+
   50% {
-    transform: translateX(calc((-100%/3)*1));
+    transform: translateX(calc((-100%/5.2)*2));
+    animation-delay: 1s;
+  }
+
+  75% {
+    transform: translateX(calc((-100%/5.1)*3));
     animation-delay: 1s;
   }
 
   100% {
-    transform: translateX(calc((-100%/3)*2));
+    transform: translateX(calc((-100%/5.1)*4));
+    animation-delay: 1s;
+  }
+
+  125% {
+    transform: translateX(calc((-100%/5.2)*4));
     animation-delay: 1s;
   }
 
@@ -191,7 +213,7 @@
 
 .plus {
   font-size: 1.3rem;
-  font-weight: bold;
+  font-family: gordita-bold;
   color: var(--cor-1);
 }
 
@@ -207,6 +229,7 @@
   font-weight: bold;
   margin: 20px 0 10px 0 ;
   line-height: 120%;
+  font-family: gordita-bold;
 
 }
 
@@ -246,7 +269,7 @@
   margin: auto;
   width: 150px;
   border-radius: 5px;
-  font-weight: bold;
+  font-family: gordita-bold;
 }
 
 .saber-mais {

@@ -223,7 +223,7 @@ export const PlansPage = () => {
                                             <div className="price-plan">
                                                 <img className="plus" onClick={() => setIndex(index - 1)} src="./assets/images/icons/minus.svg"
                                                     alt="menos" />
-                                                <h1 style={{ fontFamily: "Gordita", fontSize: "40px" }} className="font-weight-bold">{plan.downSpeed} Megas</h1>
+                                                <h1 style={{ fontFamily: "Gordita", fontSize: "40px" }} className="font-weight-bold">{plan.downSpeed} Mega</h1>
                                                 <img className="plus" onClick={() => setIndex(index + 1)} src="./assets/images/icons/plus.svg"
                                                     alt="mais" />
                                             </div>

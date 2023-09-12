@@ -26,17 +26,34 @@ function Benefits(props) {
               <br />Já estamos no Wi-Fi 6, faça parte da ultravelocidade.
             </p>
           </div>
+          
           <div className="slide">
-            <img src={require('./img/card.png')} alt='Clube de desconto' />
-            <h5>Clube de desconto</h5>
+            <img src={require('./img/365.png')} alt='Pacote Microsoft 365' />
+            <h5>Pacote Microsoft 365</h5>
             <p>Descontos em várias lojas, cinema e restaurante por toda SP. E olha que não falamos das compras por app de entrega ainda.</p>
+          </div>
+
+          <div className="slide">
+            <img src={require('./img/cofrinho.png')} alt='Sem multa por cancelamento' />
+            <h5>Sem multa por cancelamento</h5>
+            <p>Já imaginou a sua internet com o que tem mais atual quando o assunto é conexão?
+              <br />Já estamos no Wi-Fi 6, faça parte da ultravelocidade.
+            </p>
+          </div>
+
+          <div className="slide">
+            <img src={require('./img/card.png')} alt='Wi-Fi 6' />
+            <h5>Clube de desconto</h5>
+            <p>Já imaginou a sua internet com o que tem mais atual quando o assunto é conexão?
+              <br />Já estamos no Wi-Fi 6, faça parte da ultravelocidade.
+            </p>
           </div>
 
         </div>
       </div>
 
       <div id="canais">
-        <h2 className="tittle-benefits-2">De um HAYP na sua Tv</h2>
+        <h2 className="tittle-benefits-2">De um <spam className="name-marca">HAYP</spam> na sua Tv</h2>
         <div className="divisor"></div>
 
         <h5 className="tittle-benefits-1">Canais abertos</h5>
@@ -78,11 +95,8 @@ function Benefits(props) {
       </div>
 
       <div>
-        <h5 className="tittle-benefits-2"> O Combo <br /> completo <span>!!!</span></h5>
+        <h5 className="tittle-benefits-2">Combo <br /> completo <span>!!!</span></h5>
         <img src={require('./img/combo-telefone.png')} alt='Combo completo' />
-
-        
-        <p>Agora você pode montar o seu combo de <spam className="name-marca">Internet</spam>, <spam className="name-marca">Tv</spam> e/ou <spam className="name-marca">Fixo</spam> com a Hayp. <span className="name-marca">HAYP</span>.</p>
 
         <h5>
           Todos os combos recebem <br/> <spam className="name-marca">Bônus de Mega</spam>
@@ -93,7 +107,7 @@ function Benefits(props) {
             <p className="combo-assinando">Assinando</p>
             <img src={require('./img/combo-simples.png')} alt='Combo simples' />
             <p>
-            Você ganha mais 100 mega de bônus
+            Você ganha mais <spam className="name-marca">100 Mega</spam> de bônus
             </p>
             </div>
 
@@ -101,7 +115,7 @@ function Benefits(props) {
             <p className="combo-assinando">Assinando o <br/> <spam className="name-marca" >combo completo</spam></p>
             <img src={require('./img/combo-completo.png')} alt='Combo Completo' />
             <p >
-            Você ganha mais 200 mega de bônus
+            Você ganha mais <spam className="name-marca">200 Mega</spam> de bônus
             </p>
             </div>
         </div>
