@@ -36,7 +36,7 @@ function Benefits(props) {
       </div>
 
       <div id="canais">
-        <h2 className="tittle-benefits-2">De um Hayp na sua Tv</h2>
+        <h2 className="tittle-benefits-2">De um HAYP na sua Tv</h2>
         <div className="divisor"></div>
 
         <h5 className="tittle-benefits-1">Canais abertos</h5>
@@ -55,7 +55,6 @@ function Benefits(props) {
 
         <a href="/canais">Veja todos os canais abertos</a>
 
-
         <div className="container-canais">
           <h5 className="tittle-benefits-1">Canais fechados</h5>
           <div className="container-canais-fechados">
@@ -70,18 +69,46 @@ function Benefits(props) {
           </div>
         </div>
 
-        <a href="/Coments">Veja todos os canais fechados</a>
+        <a href="#" style={{ marginBottom: '20px' }}>Veja todos os canais fechados</a>
+
+        <div id="bt-assinar">
+          <a href="https://api.whatsapp.com/send?phone=551128762641" target="_blanck">Assine agora</a>
+        </div>
 
       </div>
 
       <div>
-        <h5 className="tittle-benefits-2">Combo <br /> completo <span>!!!</span></h5>
+        <h5 className="tittle-benefits-2"> O Combo <br /> completo <span>!!!</span></h5>
         <img src={require('./img/combo-telefone.png')} alt='Combo completo' />
 
-        <p>Fale a vontade</p>
+        
+        <p>Agora você pode montar o seu combo de <spam className="name-marca">Internet</spam>, <spam className="name-marca">Tv</spam> e/ou <spam className="name-marca">Fixo</spam> com a Hayp. <span className="name-marca">HAYP</span>.</p>
 
-        <h5 className="tittle-benefits-1">O combo perfeito</h5>
-        <p>Monte um completo completo e desfrute  de toda experiência que só é possível com a <span className="name-marca">Hayp</span>.</p>
+        <h5>
+          Todos os combos recebem <br/> <spam className="name-marca">Bônus de Mega</spam>
+        </h5>
+
+        <div>
+          <div>
+            <p className="combo-assinando">Assinando</p>
+            <img src={require('./img/combo-simples.png')} alt='Combo simples' />
+            <p>
+            Você ganha mais 100 mega de bônus
+            </p>
+            </div>
+
+          <div>
+            <p className="combo-assinando">Assinando o <br/> <spam className="name-marca" >combo completo</spam></p>
+            <img src={require('./img/combo-completo.png')} alt='Combo Completo' />
+            <p >
+            Você ganha mais 200 mega de bônus
+            </p>
+            </div>
+        </div>
+
+        <div id="bt-assinar">
+          <a href="#">Assine agora</a>
+        </div>
       </div>
 
       <div className="contatos-para-assinar" hidden>
@@ -105,12 +132,7 @@ function Benefits(props) {
 
       </div>
 
-
-
     </section>
-
-
-
 
   )
 }

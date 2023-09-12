@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import Api from "../../service/Api";
 import LoadingSpinner from "../spinner/LoadingSpinner";
 import "./plans.css";
-import Benefits from "./Benefits"
+import Benefits from "./Benefits";
 
 export const PlansPage = () => {
 
@@ -68,72 +68,72 @@ export const PlansPage = () => {
         }
         Get()
     }, [])
-    
+
     useEffect(() => {
         toggle(false);
         // setIsInternetOnly(!isInternetOnly);
-        
-        if(index < 0)
+
+        if (index < 0)
             setIndex(0);
-     
-            
-        if(index >= 0){
-           if(plans.length >= 0){
-            if(index <= (plans.length -1)){
-                setPlan(plans[index]);
-                setVariants({
-                    downSpeed: plan.downSpeed,
-                    upSpeed: plan.upSpeed,
-                    price: plan.price
-                });
-            }else{
-                setIndex(plans.length -1);
+
+
+        if (index >= 0) {
+            if (plans.length >= 0) {
+                if (index <= (plans.length - 1)) {
+                    setPlan(plans[index]);
+                    setVariants({
+                        downSpeed: plan.downSpeed,
+                        upSpeed: plan.upSpeed,
+                        price: plan.price
+                    });
+                } else {
+                    setIndex(plans.length - 1);
+                }
             }
-           }
         }
 
         // document.getElementById("isInternetOnly").checked = true;
-    },[index, plans, plan])
+    }, [index, plans, plan])
 
- 
 
-    const handleChange = ({target}) => {
-        if(document.getElementById("isInternetOnly").checked === true){
+
+    const handleChange = ({ target }) => {
+        if (document.getElementById("isInternetOnly").checked === true) {
             setIsInternetOnly(false);
             document.getElementById("isInternetOnly").checked = false;
-        }else{
+        } else {
             var checkboxes = document.querySelectorAll('input[type=checkbox]:checked')
-            
+
             let falseCount = 0;
 
             for (var i = 0; i < checkboxes.length; i++) {
-               if(checkboxes[i].id !== "isInternetOnly"){
-                    if(checkboxes[i].checked === true){
+                if (checkboxes[i].id !== "isInternetOnly") {
+                    if (checkboxes[i].checked === true) {
                         falseCount++;
                     }
-                        
-               }   
+
+                }
             }
 
-            if(falseCount === 0){
+            if (falseCount === 0) {
                 setIsInternetOnly(true);
                 document.getElementById("isInternetOnly").checked = true;
             }
         }
 
-        if (target.checked){
-           target.removeAttribute('checked');
-        //    target.parentNode.style.textDecoration = "";
-           ChangePlan(target.name, true);
+        if (target.checked) {
+            target.removeAttribute('checked');
+            //    target.parentNode.style.textDecoration = "";
+            ChangePlan(target.name, true);
         } else {
-           target.setAttribute('checked', true);
-        //    target.parentNode.style.textDecoration = "line-through";
-           ChangePlan(target.name, false);
+            target.setAttribute('checked', true);
+            //    target.parentNode.style.textDecoration = "line-through";
+            ChangePlan(target.name, false);
         }
     }
 
-    const handleInternetCheckboxChange = ({target}) => {
-        if (target.checked){
+    const handleInternetCheckboxChange = ({ target }) => {
+        if (target.checked) {
             toggle(false);
             target.removeAttribute('checked');
             // target.parentNode.style.textDecoration = "";
@@ -142,7 +142,7 @@ export const PlansPage = () => {
                 upSpeed: plan.upSpeed,
                 price: plan.price
             });
-        }else{
+        } else {
             toggle(true);
             target.setAttribute('checked', true);
             // target.parentNode.style.textDecoration = "line-through";
@@ -162,20 +162,20 @@ export const PlansPage = () => {
                 upSpeed: upSpeed,
                 price: price
             });
-            
+
         }
 
         setIsInternetOnly(!isInternetOnly);
     }
 
     function toggle(status) {
-        plansAdd.forEach(x => { 
+        plansAdd.forEach(x => {
             document.getElementById(x.Id).checked = status;
             // ChangePlan(x.Id, status);
         })
     }
 
-    function ChangePlan(id, status){
+    function ChangePlan(id, status) {
 
         let downSpeed = variants.downSpeed;
         let upSpeed = variants.upSpeed;
@@ -183,12 +183,12 @@ export const PlansPage = () => {
 
 
         plansAdd.forEach(x => {
-            if(x.Id === parseInt(id)){
-                if(status === true){
+            if (x.Id === parseInt(id)) {
+                if (status === true) {
                     downSpeed += x.downSpeedBonus;
                     upSpeed += x.upSpeedBonus;
                     price += x.price;
-                }else{
+                } else {
                     downSpeed -= x.downSpeedBonus;
                     upSpeed -= x.upSpeedBonus;
                     price -= x.price;
@@ -207,152 +207,152 @@ export const PlansPage = () => {
         <>
             <main className="content">
                 <div className="container text-center">
-                <div className="packages">
-                <Slider {...settings}>
+                    <div className="packages">
+                        <Slider {...settings}>
                             <>
-                            {isLoading ? <LoadingSpinner /> :
-                            <div key="plan" className="package-list center">
-                                    <div className="package-icon" >
-                                        <img
-                                            src={"/assets/images/" + plan.icon}
-                                            alt="Velocimentro"
-                                            className="img-fluid"
-                                        />
-                                    </div>
-                                    <div className="package-info">
-                                        <div className="price-plan">
-                                            <img className="plus" onClick={() => setIndex(index - 1)} src="./assets/images/icons/minus.svg"
-                                                alt="menos"/>
-                                            <h1 style={{ fontFamily: "Gordita", fontSize:"40px" }} className="font-weight-bold">{plan.downSpeed} Megas</h1>
-                                            <img className="plus" onClick={() => setIndex(index + 1)} src="./assets/images/icons/plus.svg"
-                                                alt="mais"/>
+                                {isLoading ? <LoadingSpinner /> :
+                                    <div key="plan" className="package-list center">
+                                        <div className="package-icon" >
+                                            <img
+                                                src={"/assets/images/" + plan.icon}
+                                                alt="Velocimentro"
+                                                className="img-fluid"
+                                            />
                                         </div>
-                                        <div className="desc">
-                                            <ul style={{ fontFamily: "Gordita-Regular" }} className="p-0 m-0 m-auto">
-                                                <li>
-                                                    <i className="fa fa-download" />
-                                                    <strong>Download {plan.downSpeed} Mbps</strong>
-                                                </li>
-                                                <li style={{ fontFamily: "Gordita-Light" }}>
-                                                    <i className="fa fa-arrow-up" />
-                                                    Upload {plan.upSpeed} Mbps
-                                                </li>
-                                                <br />
-                                                <li>
-                                                    <img
-                                                        src="./assets/images/nofidelity.png"
-                                                        alt="image"
-                                                        className="img-fluid d-inline-block"
-                                                        style={{ paddingRight: 10 }}
-                                                    />
-                                                    {plan.firstDescription}
-                                                </li>
-
-                                                <li>
-                                                    <i className="fa fa-wifi" />
-                                                    {plan.secondDescription}
-                                                </li>
-
-                                                <li>
-                                                    <i className="fa fa-credit-card" />
-                                                    {plan.fourthDescription}
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div className="line-divisor"></div>
-
-                                        <div className="container-new-list">
-                                            <div className="container-bt">
+                                        <div className="package-info">
+                                            <div className="price-plan">
+                                                <img className="plus" onClick={() => setIndex(index - 1)} src="./assets/images/icons/minus.svg"
+                                                    alt="menos" />
+                                                <h1 style={{ fontFamily: "Gordita", fontSize: "40px" }} className="font-weight-bold">{plan.downSpeed} Megas</h1>
+                                                <img className="plus" onClick={() => setIndex(index + 1)} src="./assets/images/icons/plus.svg"
+                                                    alt="mais" />
                                             </div>
-                                            <ul>
-                                                <li>
-                                                    <div className="list-bt" style={{ fontFamily: "Gordita", fontWeight: "500" }}>
-                                                        <input id="isInternetOnly" type="checkbox" name="interNetOnly" 
-                                                         onChange={handleInternetCheckboxChange}
-                                                         defaultChecked={isInternetOnly}
-                                                         value="true">
-                                                        
-                                                        </input>
-                                                        Apenas internet
-                                                    </div>
-                                                </li>
-                                                
-                                                <br/>
-                                                
-                                                {plansAdd.map((item) => (
-                                                    <li key={item.Id}>
-                                                        <div className="list-bt" style={{ fontFamily: "Gordita", fontWeight: "500" }}>
-                                                            <input id={item.Id}type="checkbox" name={item.Id} value="false"
-                                                            onChange={handleChange}
-                                                            ></input>
-                                                            {item.name}
-                                                        </div>
-                                                        {item.downSpeedBonus > 0?
-                                                        (<span className="bonus">Ganhe + {item.downSpeedBonus} Mega</span>)
-                                                        :<><br /></>}
+                                            <div className="desc">
+                                                <ul style={{ fontFamily: "Gordita-Regular" }} className="p-0 m-0 m-auto">
+                                                    <li>
+                                                        <i className="fa fa-download" />
+                                                        <strong>Download {plan.downSpeed} Mbps</strong>
                                                     </li>
-                                                ))}
+                                                    <li style={{ fontFamily: "Gordita-Light" }}>
+                                                        <i className="fa fa-arrow-up" />
+                                                        Upload {plan.upSpeed} Mbps
+                                                    </li>
+                                                    <br />
+                                                    <li>
+                                                        <img
+                                                            src="./assets/images/nofidelity.png"
+                                                            alt="image"
+                                                            className="img-fluid d-inline-block"
+                                                            style={{ paddingRight: 10 }}
+                                                        />
+                                                        {plan.firstDescription}
+                                                    </li>
 
-                                                <br />
-                                                {plan.turboMessageShow === 1 ?
-                                                <li>
-                                                    <div className="list-bt" >
-                                                        <div className="content-turbo">
-                                                            <div className="icon-turbo">
-                                                                <img className="turbo" src="./assets/images/fire.gif" />
-                                                                <img className="turbo icon-velocidade" src="./assets/images/turbo.svg" />
-                                                            </div>
+                                                    <li>
+                                                        <i className="fa fa-wifi" />
+                                                        {plan.secondDescription}
+                                                    </li>
 
-                                                            <div><span style={{ fontFamily: "Gordita", fontWeight: "500" }}>
-                                                                Turbo das 1h as 6h</span> <br /> (<span className="bonus">999 mega no Turbo</span>)
-                                                                <br />
-                                                                (<span className="bonus">saiba mais</span>)
-                                                            </div>
+                                                    <li>
+                                                        <i className="fa fa-credit-card" />
+                                                        {plan.fourthDescription}
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div className="line-divisor"></div>
 
+                                            <div className="container-new-list">
+                                                <div className="container-bt">
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <div className="list-bt" style={{ fontFamily: "Gordita", fontWeight: "500" }}>
+                                                            <input id="isInternetOnly" type="checkbox" name="interNetOnly"
+                                                                onChange={handleInternetCheckboxChange}
+                                                                defaultChecked={isInternetOnly}
+                                                                value="true">
+
+                                                            </input>
+                                                            Apenas internet
                                                         </div>
-                                                    </div>
-                                                </li>
-                                                :
-                                                <></>
-                                                }
-                                            </ul>
-                                        </div>                                  
-                                        
-                                    </div>
-                                    {isInternetOnly === false? 
-                                    <div>
-                                        <h3 style={{ fontFamily: "Gordita", fontWeight: "bold", fontSize: "20px" }}>Você irá receber</h3>
-                                        <span style={{ fontFamily: "Gordita", fontWeight: "900", color: "#008D1E", fontSize: "20px" }} className="price">{variants.downSpeed} Megas</span>
-                                    </div>
-                                    :<></>
-                                    }
-                                    <br />
+                                                    </li>
 
-                                    <div className="package-price">
-                                        <span className="sale">R$ {(variants.price - 0).toFixed(2).replace('.', ',')}</span>
-                                        
-                                        <p style={{ fontFamily: "Gordita", fontWeight: "500", fontSize: "14px" }}>Pagando até o vencimento <br />  você ganha R$10 de desconto</p>
+                                                    <br />
 
-                                        <span style={{ fontFamily: "Gordita", fontWeight: "900", color: "#008D1E", fontSize: "40px" }} className="price">
-                                        R${(variants.price - (variants.price > 0 ? plan.discount : 0)).toFixed(2).replace('.', ',')}<span style={{ color: "#000", fontWeight: "500" }}>/mês</span>
-                                        </span>
-                                    </div>
-                                    <a href="https://api.whatsapp.com/send?phone=551128762641" target="_blank" className="button" rel="noreferrer">
-                                        Contratar
-                                    </a>
+                                                    {plansAdd.map((item) => (
+                                                        <li key={item.Id}>
+                                                            <div className="list-bt" style={{ fontFamily: "Gordita", fontWeight: "500" }}>
+                                                                <input id={item.Id} type="checkbox" name={item.Id} value="false"
+                                                                    onChange={handleChange}
+                                                                ></input>
+                                                                {item.name}
+                                                            </div>
+                                                            {item.downSpeedBonus > 0 ?
+                                                                (<span className="bonus">Ganhe + {item.downSpeedBonus} Mega</span>)
+                                                                : <><br /></>}
+                                                        </li>
+                                                    ))}
 
-                                    <a href="#canais">
-                                        <h6>(<span className="channel">Confira todos os canais</span>)</h6>
-                                    </a>
-                                </div>}
+                                                    <br />
+                                                    {plan.turboMessageShow === 1 ?
+                                                        <li>
+                                                            <div className="list-bt" >
+                                                                <div className="content-turbo">
+                                                                    <div className="icon-turbo">
+                                                                        <img className="turbo" src="./assets/images/fire.gif" />
+                                                                        <img className="turbo icon-velocidade" src="./assets/images/turbo.svg" />
+                                                                    </div>
+
+                                                                    <div><span style={{ fontFamily: "Gordita", fontWeight: "500" }}>
+                                                                        Turbo das 1h as 6h</span> <br /> (<span className="bonus">999 mega no Turbo</span>)
+                                                                        <br />
+                                                                        (<span className="bonus">saiba mais</span>)
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        :
+                                                        <></>
+                                                    }
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                        {isInternetOnly === false ?
+                                            <div>
+                                                <h3 style={{ fontFamily: "Gordita", fontWeight: "bold", fontSize: "20px" }}>Você irá receber</h3>
+                                                <span style={{ fontFamily: "Gordita", fontWeight: "900", color: "#008D1E", fontSize: "20px" }} className="price">{variants.downSpeed} Mega</span>
+                                            </div>
+                                            : <></>
+                                        }
+                                        <br />
+
+                                        <div className="package-price">
+                                            <span className="sale">R$ {(variants.price - 0).toFixed(2).replace('.', ',')}</span>
+
+                                            <p style={{ fontFamily: "Gordita", fontWeight: "500", fontSize: "14px" }}>Pagando até o vencimento <br />  você ganha R$10 de desconto</p>
+
+                                            <span style={{ fontFamily: "Gordita", fontWeight: "900", color: "#008D1E", fontSize: "40px" }} className="price">
+                                                R${(variants.price - (variants.price > 0 ? plan.discount : 0)).toFixed(2).replace('.', ',')}<span style={{ color: "#000", fontWeight: "500" }}>/mês</span>
+                                            </span>
+                                        </div>
+                                        <a href="https://api.whatsapp.com/send?phone=551128762641" target="_blank" className="button" rel="noreferrer">
+                                            Contratar
+                                        </a>
+
+                                        <a href="#canais">
+                                            <h6>(<span className="channel">Confira todos os canais</span>)</h6>
+                                        </a>
+                                    </div>}
                             </>
                         </Slider>
                     </div>
 
-                    <Benefits/>
+                    <Benefits />
                 </div>
 
-                 
+
             </main>
         </>
     )
