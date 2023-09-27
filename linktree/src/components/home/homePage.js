@@ -24,7 +24,7 @@ export const HomePage = () => {
                     alt="logo"
                     className="img-fluid"
                 />
-                <span>Internet para pessoas exigentes</span>
+                <span>Simplifique sua rotina, assine HAYP</span>
                 </div>
                 <div className="menu">
                 <div className="row">
