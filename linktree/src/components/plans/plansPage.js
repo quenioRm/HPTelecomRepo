@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import Api from "../../service/Api";
 import LoadingSpinner from "../spinner/LoadingSpinner";
 import "./plans.css";
-import Benefits from "./Benefits";
+import Benefits from "./beneficios/Benefits";
 
 export const PlansPage = () => {
 
