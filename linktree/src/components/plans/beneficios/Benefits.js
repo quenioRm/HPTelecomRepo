@@ -63,7 +63,7 @@ function Benefits(props) {
               <img src={require('./img/canal-band.png')} alt='Canal Band' />
               <img src={require('./img/canal-globo.png')} alt='Canal Globo' />
               <img src={require('./img/canal-sbt.png')} alt='Canal SBT' />
-              <img src={require('./img/canal-band.png')} alt='Canal Band' />
+              <img src={require('./img/canal-record.png')} alt='Canal Band' />
               <img src={require('./img/canal-globo.png')} alt='Canal Globo' />
               <img src={require('./img/canal-sbt.png')} alt='Canal SBT' />
             </div>

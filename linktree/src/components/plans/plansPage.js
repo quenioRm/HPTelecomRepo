@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Slider from "react-slick";
 import Api from "../../service/Api";
 import LoadingSpinner from "../spinner/LoadingSpinner";
@@ -133,6 +133,7 @@ export const PlansPage = () => {
     }
 
     const handleInternetCheckboxChange = ({ target }) => {
+
         if (target.checked) {
             toggle(false);
             target.removeAttribute('checked');
@@ -177,9 +178,9 @@ export const PlansPage = () => {
 
     function ChangePlan(id, status) {
 
-        let downSpeed = variants.downSpeed;
+        let downSpeed = variants.downSpeed; // variação final de Download
         let upSpeed = variants.upSpeed;
-        let price = variants.price;
+        let price = variants.price; //variação de preço depois do vencimento
 
 
         plansAdd.forEach(x => {
@@ -202,6 +203,12 @@ export const PlansPage = () => {
             price: price
         });
     }
+    
+    function contact(plan) {
+        
+    };
+    
+    const planContact = "https://wa.me/551128762641?text=Ol%C3%A1%2C+vi+este+plano+de+"+plan.downSpeed+"+MEGAS+no+seu+site+e+gostaria+de+saber+mais";
 
     return (
         <>
@@ -284,6 +291,7 @@ export const PlansPage = () => {
                                                             <div className="list-bt" style={{ fontFamily: "Gordita", fontWeight: "500" }}>
                                                                 <input id={item.Id} type="checkbox" name={item.Id} value="false"
                                                                     onChange={handleChange}
+                                                                    
                                                                 ></input>
                                                                 {item.name}
                                                             </div>
@@ -337,7 +345,7 @@ export const PlansPage = () => {
                                                 R${(variants.price - (variants.price > 0 ? plan.discount : 0)).toFixed(2).replace('.', ',')}<span style={{ color: "#000", fontWeight: "500" }}>/mês</span>
                                             </span>
                                         </div>
-                                        <a href="https://api.whatsapp.com/send?phone=551128762641" target="_blank" className="button" rel="noreferrer">
+                                        <a href={planContact} target="_blank" className="button" rel="noreferrer">
                                             Contratar
                                         </a>
 
