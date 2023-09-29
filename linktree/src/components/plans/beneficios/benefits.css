@@ -18,6 +18,11 @@
   margin: 30px 0 20px 0;
 }
 
+.tittle-benefits-3{
+  margin: 30px 0 20px 0;
+  font-family: gordita-bold;
+}
+
 /*Começo dos beneficios */
 
 .container-Benefits {
@@ -25,7 +30,9 @@
   margin: 20px auto 20px auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   overflow: hidden;
+  
 }
 
 .container-Benefits img {
@@ -54,8 +61,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: carrossel-beneficios 30s infinite;
+  animation: carrossel-beneficios 10s infinite;
+  animation-delay: 5s;
 
+  
+  overflow: hidden;
 }
 
 .slide{
@@ -66,7 +76,6 @@
 
   0% {
     transform: translateX(0%);
-    animation-delay: 1s;
   }
 
   20% {
@@ -79,11 +88,17 @@
     
   }
 
-  65% {
-    transform: translateX(-60%);
+  60% {
+    transform: translateX(-20%);
     
   }
 
+  80% {
+    transform: translateX(0%);
+    
+  }
+
+  
 
 
 }
@@ -112,22 +127,23 @@
   align-items: center;
 }
 
+.carrossel-canais {
+  display: flex;
+  align-items: center;
+  gap: -5px;
+
+  width: 310px;
+
+}
+
 .container-Benefits a {
   font-size: 16px;
   color: #fff;
   text-decoration: underline var(--cor-1);
 }
 
-.container-canais {
-  width: 115%;
-  overflow: hidden;
-  margin: 10px 0;
-}
-
 .container-canais-aberto {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  
   animation: carrossel-canais-aberto 15s infinite;
 
 }
@@ -140,17 +156,17 @@
   }
 
   25% {
-    transform: translateX(-65%);
+    transform: translateX(-100%);
 
   }
 
   50% {
-    transform: translateX(-135%);
+    transform: translateX(-200%);
     
   }
 
   75% {
-    transform: translateX(-225%);
+    transform: translateX(-300%);
   }
 
 
@@ -158,7 +174,7 @@
 }
 
 .container-canais-fechados {
-  width: 90%;
+  width: 310px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -173,36 +189,29 @@
 
   }
 
-  16% {
-    transform: translateX(-70%);
+  20% {
+    transform: translateX(-100%);
 
   }
 
-  32% {
-    transform: translateX(-155%);
+  40% {
+    transform: translateX(-200%);
 
   }
 
 
-  48% {
-    transform: translateX(-245%);
+  60% {
+    transform: translateX(-300%);
     
   }
 
-  64% {
-    transform: translateX(-330%);
-  }
-
   80% {
-    transform: translateX(-415%);
+    transform: translateX(-400%);
   }
 
-}
-
-.carrossel-canais {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
+  90% {
+    transform: translateX(-500%);
+  }
 
 }
 
@@ -217,6 +226,13 @@
 .name-marca {
   font-family: gordita-bold;
   color: var(--cor-2);
+
+}
+
+.name-marca-destaque{
+  font-family: gordita-bold;
+  color: var(--cor-2);
+  font-size: 20px;
 }
 
 .combo-assinando{
@@ -258,13 +274,17 @@
 
 }
 
-#bt-assinar{
+.bt-assinar{
   background-color: var(--cor-1);
   padding: 10px;
-  margin: auto;
-  width: 150px;
+  margin: 10px auto;
   border-radius: 5px;
+  
+}
+
+.bt-assinar a {
   font-family: gordita-bold;
+  width: auto;
 }
 
 .saber-mais {

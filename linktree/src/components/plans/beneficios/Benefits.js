@@ -6,7 +6,7 @@ function Benefits(props) {
   return (
     <section className="container-Benefits">
 
-      <h2 className="tittle-benefits-1">Internet 100% <br /> fibra óptica</h2>
+      <h2 className="tittle-benefits-1">Alguns benefícios</h2>
       <div className="divisor"></div>
 
       <div className="carrossel-Benefits">
@@ -15,42 +15,46 @@ function Benefits(props) {
             <div className="slide primeira">
               <img src={require('./img/card.png')} alt='Clube de desconto' />
               <h5>Clube de desconto</h5>
-              <p>Descontos em várias lojas, cinema e restaurante por toda SP. E olha que não falamos das compras por app de entrega ainda.</p>
+              <p>Economize em suas compras com nosso Clube de Desconto exclusivo, aproveitando ofertas especiais em diversos produtos e serviços.</p>
             </div>
           </div>
 
           <div className="slide">
             <img src={require('./img/wifi6.png')} alt='Wi-Fi 6' />
             <h5>Wi-Fi 6</h5>
-            <p>Já imaginou a sua internet com o que tem mais atual quando o assunto é conexão?
-              <br />Já estamos no Wi-Fi 6, faça parte da ultravelocidade.
+            <p>Desfrute de uma conexão de internet ultrarrápida e estável com nossa tecnologia Wi-Fi 6, proporcionando uma experiência online mais fluida.
             </p>
           </div>
           
           <div className="slide">
-            <img src={require('./img/365.png')} alt='Pacote Microsoft 365' />
-            <h5>Pacote Microsoft 365</h5>
-            <p>Descontos em várias lojas, cinema e restaurante por toda SP. E olha que não falamos das compras por app de entrega ainda.</p>
+            <img src={require('./img/card.png')} alt='Pacote Microsoft 365' />
+            <h5>Clube de descontos</h5>
+            <p>Economize em suas compras com nosso Clube de Desconto exclusivo, aproveitando ofertas especiais em diversos produtos e serviços.</p>
           </div>
 
           <div className="slide">
             <img src={require('./img/cofrinho.png')} alt='Sem multa por cancelamento' />
             <h5>Sem multa por cancelamento</h5>
-            <p>Já imaginou a sua internet com o que tem mais atual quando o assunto é conexão?
-              <br />Já estamos no Wi-Fi 6, faça parte da ultravelocidade.
+            <p>Oferecemos a flexibilidade de cancelar nossos serviços a qualquer momento, sem custos adicionais, para que você tenha total controle sobre sua assinatura.
             </p>
           </div>
 
           <div className="slide">
-            <img src={require('./img/card.png')} alt='Wi-Fi 6' />
-            <h5>Clube de desconto</h5>
-            <p>Já imaginou a sua internet com o que tem mais atual quando o assunto é conexão?
-              <br />Já estamos no Wi-Fi 6, faça parte da ultravelocidade.
+            <img src={require('./img/instalacao.png')} alt='Wi-Fi 6' />
+            <h5>Instalação personalizada</h5>
+            <p>Nossa equipe de especialistas está pronta para personalizar a instalação de acordo com suas necessidades, garantindo que sua experiência seja adaptada às suas preferências.
             </p>
           </div>
 
+
         </div>
+
+        
       </div>
+
+      <div className="bt-assinar">
+          <a href="https://api.whatsapp.com/send?phone=551128762641" target="_blanck">Saiba mais</a>
+        </div>
 
       <div id="canais">
         <h2 className="tittle-benefits-2">De um <spam className="name-marca">HAYP</spam> na sua Tv</h2>
@@ -88,39 +92,34 @@ function Benefits(props) {
 
         <a href="#" style={{ marginBottom: '20px' }}>Veja todos os canais fechados</a>
 
-        <div id="bt-assinar">
+        <div className="bt-assinar">
           <a href="https://api.whatsapp.com/send?phone=551128762641" target="_blanck">Assine agora</a>
         </div>
 
       </div>
 
       <div>
-        <h5 className="tittle-benefits-2">Combo <br /> completo <span>!!!</span></h5>
-        <img src={require('./img/combo-telefone.png')} alt='Combo completo' />
-
-        <h5>
-          Todos os combos recebem <br/> <spam className="name-marca">Bônus de Mega</spam>
-        </h5>
+        <h5 className="tittle-benefits-3"> Monte um combo e ganhe <br />  <span style={{color: "#04CB3A" }}>MEGAS de bônus</span>!!</h5>
 
         <div>
           <div>
             <p className="combo-assinando">Assinando</p>
             <img src={require('./img/combo-simples.png')} alt='Combo simples' />
             <p>
-            Você ganha mais <spam className="name-marca">100 Mega</spam> de bônus
+            Você ganha mais <spam className="name-marca-destaque">100 Mega</spam> de bônus
             </p>
             </div>
 
           <div>
-            <p className="combo-assinando">Assinando o <br/> <spam className="name-marca" >combo completo</spam></p>
+            <p className="combo-assinando">Assinando o <br/> <spam className="name-marca-destaque" >combo completo</spam></p>
             <img src={require('./img/combo-completo.png')} alt='Combo Completo' />
             <p >
-            Você ganha mais <spam className="name-marca">200 Mega</spam> de bônus
+            Você ganha mais <spam className="name-marca-destaque">200 Mega</spam> de bônus
             </p>
             </div>
         </div>
 
-        <div id="bt-assinar">
+        <div className="bt-assinar">
           <a href="#">Assine agora</a>
         </div>
       </div>
