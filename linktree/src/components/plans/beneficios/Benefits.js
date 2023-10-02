@@ -18,31 +18,31 @@ function Benefits(props) {
               <p>Economize em suas compras com nosso Clube de Desconto exclusivo, aproveitando ofertas especiais em diversos produtos e serviços.</p>
             </div>
           </div>
-
-          <div className="slide">
-            <img src={require('./img/wifi6.png')} alt='Wi-Fi 6' />
-            <h5>Wi-Fi 6</h5>
-            <p>Desfrute de uma conexão de internet ultrarrápida e estável com nossa tecnologia Wi-Fi 6, proporcionando uma experiência online mais fluida.
-            </p>
-          </div>
           
           <div className="slide">
             <img src={require('./img/card.png')} alt='Pacote Microsoft 365' />
             <h5>Clube de descontos</h5>
-            <p>Economize em suas compras com nosso Clube de Desconto exclusivo, aproveitando ofertas especiais em diversos produtos e serviços.</p>
+            <p hidden>Economize em suas compras com nosso Clube de Desconto exclusivo, aproveitando ofertas especiais em diversos produtos e serviços.</p>
           </div>
 
-          <div className="slide">
+          <div className="slide" >
             <img src={require('./img/cofrinho.png')} alt='Sem multa por cancelamento' />
             <h5>Sem multa por cancelamento</h5>
-            <p>Oferecemos a flexibilidade de cancelar nossos serviços a qualquer momento, sem custos adicionais, para que você tenha total controle sobre sua assinatura.
+            <p hidden>Oferecemos a flexibilidade de cancelar nossos serviços a qualquer momento, sem custos adicionais, para que você tenha total controle sobre sua assinatura.
             </p>
           </div>
 
           <div className="slide">
             <img src={require('./img/instalacao.png')} alt='Wi-Fi 6' />
-            <h5>Instalação personalizada</h5>
-            <p>Nossa equipe de especialistas está pronta para personalizar a instalação de acordo com suas necessidades, garantindo que sua experiência seja adaptada às suas preferências.
+            <h5>Instalação <br /> personalizada</h5>
+            <p hidden>Nossa equipe de especialistas está pronta para personalizar a instalação de acordo com suas necessidades, garantindo que sua experiência seja adaptada às suas preferências.
+            </p>
+          </div>
+
+          <div className="slide">
+            <img src={require('./img/365.png')} alt='Wi-Fi 6' />
+            <h5>Pacote <br /> Microsoft Completo</h5>
+            <p hidden>Desfrute de uma conexão de internet ultrarrápida e estável com nossa tecnologia Wi-Fi 6, proporcionando uma experiência online mais fluida.
             </p>
           </div>
 

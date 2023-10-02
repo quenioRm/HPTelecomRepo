@@ -42,7 +42,7 @@
 
 .carrossel-Benefits {
   width: auto;
-  height: auto;
+  height: 180px;
   margin: 10px 30px;
   display: flex;
   
@@ -61,46 +61,59 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: carrossel-beneficios 10s infinite;
-  animation-delay: 5s;
-
-  
+  animation: carrossel-beneficios 20s infinite;
   overflow: hidden;
 }
 
 .slide{
   width: 300px;
+  
 }
 
 @keyframes carrossel-beneficios {
 
   0% {
-    transform: translateX(0%);
+    transform: translateX(+20%);
+  }
+
+  10% {
+    transform: translateX(+20%);
+    
   }
 
   20% {
-    transform: translateX(-20%);
+    transform: translateX(0%);
+    
+  }
+
+  30% {
+    transform: translateX(0%);
     
   }
 
   40% {
-    transform: translateX(-40%);
-    
-  }
-
-  60% {
     transform: translateX(-20%);
     
   }
 
-  80% {
-    transform: translateX(0%);
+  50% {
+    transform: translateX(-20%);
     
   }
 
-  
+  60% {
+    transform: translateX(-40%);
+    
+  }
+  70% {
+    transform: translateX(-40%);
+    
+  }
 
-
+  100% {
+    transform: translateX(+20%);
+    
+  }
 }
 
 .grade p {

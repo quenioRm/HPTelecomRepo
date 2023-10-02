@@ -204,11 +204,20 @@ export const PlansPage = () => {
         });
     }
     
-    function contact(plan) {
-        
-    };
-    
-    const planContact = "https://wa.me/551128762641?text=Ol%C3%A1%2C+vi+este+plano+de+"+plan.downSpeed+"+MEGAS+no+seu+site+e+gostaria+de+saber+mais";
+    function contact() {
+
+        let planContact = "";
+
+        if (isInternetOnly === true) {
+
+            planContact = "https://wa.me/551128762641?text=Ol%C3%A1%2C+vi+este+plano+de+"+plan.downSpeed+"+MEGAS+no+seu+site+e+gostaria+de+saber+mais";
+            
+        }else {
+            planContact = "https://wa.me/551128762641?text=Ol%C3%A1%2C+montei+este+combo+"+plan.downSpeed+"+e+gostaria+de+saber+mais!";
+        }
+
+        return planContact;
+    }
 
     return (
         <>
@@ -345,7 +354,7 @@ export const PlansPage = () => {
                                                 R${(variants.price - (variants.price > 0 ? plan.discount : 0)).toFixed(2).replace('.', ',')}<span style={{ color: "#000", fontWeight: "500" }}>/mês</span>
                                             </span>
                                         </div>
-                                        <a href={planContact} target="_blank" className="button" rel="noreferrer">
+                                        <a href={contact()} target="_blank" className="button" rel="noreferrer">
                                             Contratar
                                         </a>
 
