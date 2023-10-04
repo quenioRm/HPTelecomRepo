@@ -53,7 +53,7 @@ function Benefits(props) {
       </div>
 
       <div className="bt-assinar">
-          <a href="https://api.whatsapp.com/send?phone=551128762641" target="_blanck">Saiba mais</a>
+          <a href="https://wa.me/551128762641?text=Quero+saber+mais+sobre+os+benef%C3%ADcios%2C+em+especial+o%3A+" target="_blanck">Saiba mais</a>
         </div>
 
       <div id="canais">
@@ -74,7 +74,7 @@ function Benefits(props) {
           </div>
         </div>
 
-        <a href="/canais">Veja todos os canais abertos</a>
+        <a href="https://wa.me/551128762641?text=Fiquei+interessado+no+combo+com+Tv+e+gostaria+ver+a+lista+de+canais.">Veja todos os canais abertos</a>
 
         <div className="container-canais">
           <h5 className="tittle-benefits-1">Canais fechados</h5>
@@ -90,10 +90,10 @@ function Benefits(props) {
           </div>
         </div>
 
-        <a href="#" style={{ marginBottom: '20px' }}>Veja todos os canais fechados</a>
+        <a href="https://wa.me/551128762641?text=Fiquei+interessado+no+combo+com+Tv+e+gostaria+ver+a+lista+de+canais." style={{ marginBottom: '20px' }}>Veja todos os canais fechados</a>
 
         <div className="bt-assinar">
-          <a href="https://api.whatsapp.com/send?phone=551128762641" target="_blanck">Assine agora</a>
+          <a href="#" >Assine agora</a>
         </div>
 
       </div>
