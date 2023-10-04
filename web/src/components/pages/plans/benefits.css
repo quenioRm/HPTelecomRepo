@@ -17,6 +17,15 @@
 }
 /*Começo dos beneficios */
 
+.carrossel-Benefits{
+  display: flex;
+  justify-content: center;
+}
+.carrossel-Benefits img{
+  width: 100px;
+  margin: 10px 0;
+}
+
 .container-Benefits {
   display: flex;
   justify-content: center;
@@ -36,10 +45,6 @@
   gap: 50px;
 }
 
-.grade img {
-  margin: 30px 0;
-}
-
 .grade p {
   margin: 0 auto;
   width: 300px;
@@ -54,6 +59,7 @@
   background: var(--cor-1);
 }
 
+
 /*Começo dos canais */
 
 #canais {
@@ -65,7 +71,7 @@
   display: flex;
   justify-content: center;
   gap: 10px; 
-  overflow-x: scroll;
+  overflow-x: none;
 }
 
 .carrossel-canais {
@@ -74,7 +80,7 @@
   justify-content: center;
   gap: 10px;
   
-  overflow-x: scroll;
+  overflow-x: none;
 }
 
 .container-Benefits a {
@@ -89,32 +95,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-@keyframes carrossel-canais {
-
-  0% {
-    transform: translateX(0%);
-
-  }
-
-  25% {
-    transform: translateX(-5%);
-
-  }
-
-  50% {
-    transform: translateX(calc(-5%*2));
-
-  }
-
-  75% {
-    transform: translateX(0%);
-
-  }
+  
 }
 
 /*Começo dos combos telefones*/
+
+.bt-assinar{
+  background-color: var(--cor-1);
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+
+}
+
+.bt-assinar a {
+  color: #ffffff;
+  font-weight: bold;
+}
 
 .combo-telefone {
   margin: 20px 0;
@@ -135,6 +132,12 @@
 
 .tittle-pergunta {
   font-weight: bold;
+}
+
+.name-marca-destaque{
+  font-family: GorditaFont;
+  color: var(--cor-1);
+  font-size: 20px;
 }
 
 .lista-perguntas {

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { BreadCrumb } from "../../layout/BreadCrumb";
 import { PlanService } from "../home/components/services/PlanService";
 import Benefits from "./Benefits";
@@ -16,6 +16,7 @@ export const Plans = () => {
     useEffect(() => {
         handlePlans(0)
     }, [])
+
 
     return (
         <>
@@ -86,7 +87,7 @@ export const Plans = () => {
 
                                             <li>
                                                 <div class="list-bt">
-                                                    <input id="btn1" type="checkbox" name="" value=""></input>
+                                                    <input id="bt1Internet" type="checkbox" checked='false'></input>
                                                     Apenas internet
                                                 </div>
                                                 
@@ -96,10 +97,10 @@ export const Plans = () => {
 
                                             <li>
                                                 <div class="list-bt">
-                                                    <input id="btn1" type="checkbox" name="" value=""></input>
+                                                    <input id="bt2Telefone" type="checkbox" name="" value=""></input>
                                                     Telefone ilimitado
                                                 </div>
-                                                (<span class="bonus">Ganhe + X Mega</span>)
+                                                (<span class="bonus">Ganhe + 100 Mega</span>)
 
                                             </li>
 
@@ -107,11 +108,11 @@ export const Plans = () => {
 
                                             <li>
                                                 <div class="list-bt" >
-                                                    <input id="btn1" type="checkbox" name="" value=""></input>
+                                                    <input id="bt3Tv" type="checkbox" name="" value=""></input>
                                                     Tv ( 91 canais) + VOD <br />
 
                                                 </div>
-                                                (<span class="bonus">Ganhe + X Mega</span>)
+                                                (<span class="bonus">Ganhe + 100 Mega</span>)
                                             </li>
 
                                             <br />
