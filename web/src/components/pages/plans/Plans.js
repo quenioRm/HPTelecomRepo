@@ -46,6 +46,8 @@ export const Plans = () => {
         handlePlans(0)
     }, [])
 
+    const [plan ,setPlan] = useState();
+
 
     return (
         <>
@@ -71,17 +73,19 @@ export const Plans = () => {
                         <div>
                             <button className="button-plan-seta esquerda" onClick={() => {
                                 
+                                setPlan(1);
+                                
                             }}>
                                 <img src="/images/plans/Seta-esquerda.png" /></button>
                         </div>
                         <div className="box-plano">
                             {plans.map((item, key) => (
-                                <div key={key} className="col-lg-3 col-md-6 col-sm-12" class="box-plan">
+                                <div key={key} className="col-lg-3 col-md-6 col-sm-12" class={`box-plan animation-${plan}`}>
                                     <span className="icon" class="icon-p">
                                         <img className="icon-velocidad"
                                             src={`images/another/${item.icon}`}
                                         />
-                        
+
                                     </span>
                                     <div className="iq-pricing">
                                         <div className="pricing-header">
@@ -178,13 +182,25 @@ export const Plans = () => {
                                 </div>
                             ))}
                         </div>
-                        
+
                         <div>
-                        <button className="button-plan-seta direita"><img src="/images/plans/Seta-direita.png" /></button>
+                            <button className="button-plan-seta direita" onClick={() => {
+                                
+                                setPlan(2)
+                            }} ><img src="/images/plans/Seta-direita.png" /></button>
+                            
+                            
                         </div>
                     </div>
-
-
+                            
+                    <div className="manual-navegator">
+                        <label className="manual-btn"  onClick={() => {
+                            setPlan(1)
+                        }}></label>
+                        <label className="manual-btn" onClick={() => {
+                            setPlan(2)
+                        }} ></label>
+                    </div>
                 </div>
 
                 <Benefits />
