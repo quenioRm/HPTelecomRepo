@@ -8,21 +8,35 @@ export const Plans = () => {
     const [checkbox1, setCheckbox1] = useState(true);
     const [checkbox2, setCheckbox2] = useState(false);
     const [checkbox3, setCheckbox3] = useState(false);
+    const [desativado, setDesativado] = useState("desativado");
+    const [extraBonus, setExtraBonus] = useState(0)
+    
 
     const handleCheckbox1Change = () => {
         setCheckbox1(!checkbox1);
         if (checkbox2 || checkbox3) {
             setCheckbox2(false);
             setCheckbox3(false);
+            setDesativado('desativado');
+        } else if (checkbox1) {
+            setCheckbox2(true);
+            setCheckbox3(true);
+            setDesativado('ativado')  
+            setExtraBonus(200)
         }
+
     };
 
     const handleCheckbox2Change = () => {
         setCheckbox2(!checkbox2);
         if (checkbox2 && !checkbox3) {
             setCheckbox1(true);
+            setDesativado('desativado')
+            
         } else {
             setCheckbox1(false);
+            setDesativado('ativado')
+            setExtraBonus(100)
         }
     };
 
@@ -30,8 +44,13 @@ export const Plans = () => {
         setCheckbox3(!checkbox3);
         if (checkbox3 && !checkbox2) {
             setCheckbox1(true);
+            setDesativado('desativado')
+            
         } else {
             setCheckbox1(false);
+            setDesativado('ativado')
+            setExtraBonus(100)
+            
         }
     };
 
@@ -46,7 +65,7 @@ export const Plans = () => {
         handlePlans(0)
     }, [])
 
-    const [plan ,setPlan] = useState();
+    const [plan, setPlan] = useState();
 
 
     return (
@@ -72,9 +91,9 @@ export const Plans = () => {
                     <div className="conteiner-plan">
                         <div>
                             <button className="button-plan-seta esquerda" onClick={() => {
-                                
+
                                 setPlan(1);
-                                
+
                             }}>
                                 <img src="/images/plans/Seta-esquerda.png" /></button>
                         </div>
@@ -140,7 +159,7 @@ export const Plans = () => {
                                                 <li>
                                                     <div class="list-bt" >
                                                         <input id="bt3Tv" type="checkbox" name="" value="Tv" onChange={handleCheckbox3Change} checked={checkbox3}></input>
-                                                        Tv ( 91 canais) + VOD <br />
+                                                        Tv ( + de 90 canais) <br /> + filmes e séries <br />
                                                     </div>
                                                     (<span class="bonus">Ganhe + 100 Mega</span>)
                                                 </li>
@@ -159,6 +178,16 @@ export const Plans = () => {
                                                                 (<span class="bonus">saiba mais</span>)
                                                             </div>
                                                         </div>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div className= {`bonus-de-mega bonus-${desativado}`}>
+                                                        <h3>Você irá receberá:</h3>
+
+                                                        <p>
+                                                            {item.downSpeed + extraBonus} Mega
+                                                        </p>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -185,16 +214,16 @@ export const Plans = () => {
 
                         <div>
                             <button className="button-plan-seta direita" onClick={() => {
-                                
+
                                 setPlan(2)
                             }} ><img src="/images/plans/Seta-direita.png" /></button>
-                            
-                            
+
+
                         </div>
                     </div>
-                            
+
                     <div className="manual-navegator">
-                        <label className="manual-btn"  onClick={() => {
+                        <label className="manual-btn" onClick={() => {
                             setPlan(1)
                         }}></label>
                         <label className="manual-btn" onClick={() => {

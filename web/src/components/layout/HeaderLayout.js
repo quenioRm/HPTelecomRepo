@@ -171,7 +171,7 @@ export const HeaderLayout = () => {
                                                 CONTATO
                                             </Link>
                                             {<ul className="nav-item dropdown">
-                                                <li><a href="#">Contato</a></li>
+                                                <li><a href="#">Atendimento por telefone</a></li>
                                                 <li><a href="#">Contato</a></li>
                                                 <li><a href="#">Contato</a></li>
                                                 <li><a href="#">Contato</a></li>
