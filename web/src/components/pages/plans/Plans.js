@@ -33,10 +33,12 @@ export const Plans = () => {
             setCheckbox1(true);
             setDesativado('desativado')
             
+            
         } else {
             setCheckbox1(false);
-            setDesativado('ativado')
-            setExtraBonus(100)
+            setDesativado('ativado');
+            
+            
         }
     };
 
@@ -46,10 +48,11 @@ export const Plans = () => {
             setCheckbox1(true);
             setDesativado('desativado')
             
+            
         } else {
             setCheckbox1(false);
             setDesativado('ativado')
-            setExtraBonus(100)
+            
             
         }
     };
@@ -186,7 +189,7 @@ export const Plans = () => {
                                                         <h3>Você irá receberá:</h3>
 
                                                         <p>
-                                                            {item.downSpeed + extraBonus} Mega
+                                                            {item.downSpeed + (checkbox2 ? +100 : 0) + (checkbox3 ? +100 : 0)} Mega
                                                         </p>
                                                     </div>
                                                 </li>
@@ -194,12 +197,12 @@ export const Plans = () => {
                                         </div>
                                         <br />
                                         <div>
-                                            <h4 className="price-value2"> R$ {item.price.toFixed(2).replace('.', ',')}
+                                            <h4 className="price-value2"> R$ {(item.price + (checkbox2 ? +30 : 0) + (checkbox3 ? +90 : 0)) .toFixed(2).replace('.', ',') }
                                             </h4>
                                             <div className="vencimento">
                                                 <p>Pagando antes do vencimento você ganha R$10 de desconto.</p>
                                             </div>
-                                            <h3 className="price-value"> R$ {(item.price - item.discount).toFixed(2).replace('.', ',')} <span class="mes-pay">/mês</span></h3>
+                                            <h3 className="price-value"> R$ {(item.price - item.discount + (checkbox2 ? +30 : 0) + (checkbox3 ? +90 : 0)).toFixed(2).replace('.', ',')} <span class="mes-pay">/mês</span></h3>
                                         </div>
                                         <br />
                                         <a className="button" href="https://api.whatsapp.com/send?phone=551128762641" target="_blank">
@@ -222,7 +225,7 @@ export const Plans = () => {
                         </div>
                     </div>
 
-                    <div className="manual-navegator">
+                    <div className="manual-navegator" hidden>
                         <label className="manual-btn" onClick={() => {
                             setPlan(1)
                         }}></label>

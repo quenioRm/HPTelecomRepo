@@ -2,6 +2,7 @@ import react, { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
+
 export const HeaderLayout = () => {
 
     const location = useLocation()
@@ -170,13 +171,31 @@ export const HeaderLayout = () => {
                                             <Link to="#" id="down" href="#down">
                                                 CONTATO
                                             </Link>
-                                            {<ul className="nav-item dropdown">
-                                                <li><a href="#">Atendimento por telefone</a></li>
-                                                <li><a href="#">Contato</a></li>
-                                                <li><a href="#">Contato</a></li>
-                                                <li><a href="#">Contato</a></li>
-                                                <li><a href="#">Contato</a></li>
-                                                <li><a href="#">Contato</a></li>
+                                            {<ul style={{
+                                                width:"auto", 
+                                                padding:"20px", 
+                                                borderRadius:"10px",
+                                                
+                                                display: "flex",
+                                                alignContent:"center",
+                                                alignItems: "center",
+                                                flexWrap: "wrap",
+                                                justifyItems: "center",
+                                                gap: "5px"
+                                                
+                                                }} className="nav-item dropdown">
+                                                
+                                                <li style={{display: "flex"}}> <img src="images/cont-tel.svg" />
+                                                <a href="#">Atendimento por telefone</a></li>
+                                                
+                                                <li style={{display: "flex", justifyItems:"center"}}> <img src="images/cont-whatsapp.svg" />
+                                                <a href="#">Atendimento por WhatsApp</a></li>
+                                                
+                                                <li style={{display: "flex"}}><img src="images/cont-cep.svg" />
+                                                <a href="#">Consulte o seu CEP</a></li>
+                                                
+                                                <li style={{display: "flex"}}><img src="images/cont-email.svg" />
+                                                <a href="#">Mande um E-mail</a></li> 
 
                                             </ul>}
                                         </li>
