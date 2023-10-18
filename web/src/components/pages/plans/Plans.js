@@ -84,7 +84,7 @@ export const Plans = () => {
                                     Não sabe qual é o melhor plano para sua casa?<br />Tem dúvidas de qual possa atender melhor a demanda da sua empresa?
                                     <br />
                                     <br />
-                                    <span style={{ color: "#008C1E" }}>Mande uma mensagem</span> que vamos te ajudar a escolher o melhor plano com base no seu perfil.
+                                    <span style={{ color: "#008C1E" }}><a  target="_blank" href="https://wa.me/551128762641?text=Ol%C3%A1%2C+estou+em+dúvida+de+qual+plano+escolher,+preciso+de+uma+ajuda">Mande uma mensagem</a></span> que vamos te ajudar a escolher o melhor plano com base no seu perfil.
                                 </p>
                             </div>
                         </div>
@@ -242,3 +242,4 @@ export const Plans = () => {
         </>
     )
 }
+export default Plans;

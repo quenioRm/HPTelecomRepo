@@ -52,7 +52,7 @@ function Benefits(props) {
                 <h2 className="tittle-benefits-2">De um Hayp na sua TV</h2>
                 <div className="divisor"></div>
 
-                <h5 className="tittle-benefits-2">Principais canais abertos</h5>
+                <h5 className="tittle-benefits-2">Canais abertos</h5>
                 <div className="container-canais">
                     <div className="container-canais">
                         <div className="carrossel-canais-aberto">
@@ -69,7 +69,7 @@ function Benefits(props) {
                 <a href="#">Veja todos os canais abertos</a>
 
                 <div className="container-canais">
-                    <h5 className="tittle-benefits-2">Principais canais fechados</h5>
+                    <h5 className="tittle-benefits-2">Canais fechados</h5>
                     <div className="container-canais">
                         <div className="carrossel-canais">
                             <img src={require('./img/canal-warner.png')} alt='Canal Warner' />

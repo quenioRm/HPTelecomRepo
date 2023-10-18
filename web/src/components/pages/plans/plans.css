@@ -8,14 +8,16 @@
 
 }
 
-
-
 .box-plano {
   display: flex;
   gap: 50px;
   overflow: hidden;
   padding: 5px;
 
+}
+
+.home {
+  justify-content: center;
 }
 
 .animation-1 {

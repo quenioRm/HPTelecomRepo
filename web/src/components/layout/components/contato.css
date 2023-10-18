@@ -1,0 +1,19 @@
+.tiitle-contato-top {
+    color: rgb(41, 33, 33);
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.lista-de-contato{
+
+    width: auto;
+    padding: 0 0 20px 30px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
