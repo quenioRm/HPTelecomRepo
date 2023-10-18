@@ -204,12 +204,14 @@ export const Plans = () => {
                                             </div>
                                             <h3 className="price-value"> R$ {(item.price - item.discount + (checkbox2 ? +30 : 0) + (checkbox3 ? +90 : 0)).toFixed(2).replace('.', ',')} <span class="mes-pay">/mês</span></h3>
                                         </div>
+
+                                        
                                         <br />
-                                        <a className="button" href="https://api.whatsapp.com/send?phone=551128762641" target="_blank">
+                                        <a className="button" href= {checkbox1 ? "https://wa.me/551128762641?text=Ol%C3%A1%2C+vi+este+plano+de+"+item.name+"+no+seu+site+e+gostaria+de+saber+mais": "https://wa.me/551128762641?text=Ol%C3%A1%2C+montei+este+combo+"+item.downSpeed+ (checkbox3 ? "+de+Tv":"") + (checkbox2 ?"+com+Telefone":"") +"+no+site+e+gostaria+de+saber+mais" } target="_blank">
                                             Assine já
                                         </a>
                                         <br />
-                                        <a href="" style={{ marginTop: "10px" }}>(<span class="channel">confira todos os canais</span>)</a>
+                                        <a href= "" style={{ marginTop: "10px" }}>(<span class="channel">confira todos os canais</span>)</a>
                                     </div>
                                 </div>
                             ))}
