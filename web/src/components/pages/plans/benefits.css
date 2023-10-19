@@ -101,16 +101,17 @@
 /*Começo dos combos telefones*/
 
 .bt-assinar{
-  background-color: var(--cor-1);
-  padding: 10px;
+  background: linear-gradient(82deg, #008D1E 4.34%, #04CB3A 97.83%);
+  padding: 10px 20px;
   margin: 10px auto;
-  border-radius: 5px;
+  border-radius: 10px;
 
 }
 
 .bt-assinar a {
   color: #ffffff;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .combo-telefone {

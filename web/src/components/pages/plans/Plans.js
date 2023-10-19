@@ -9,7 +9,7 @@ export const Plans = () => {
     const [checkbox2, setCheckbox2] = useState(false);
     const [checkbox3, setCheckbox3] = useState(false);
     const [desativado, setDesativado] = useState("desativado");
-    const [extraBonus, setExtraBonus] = useState(0)
+    const [extraBonus, setExtraBonus] = useState(0);
     
 
     const handleCheckbox1Change = () => {
@@ -186,7 +186,7 @@ export const Plans = () => {
 
                                                 <li>
                                                     <div className= {`bonus-de-mega bonus-${desativado}`}>
-                                                        <h3>Você irá receberá:</h3>
+                                                        <h3>Você irá receber:</h3>
 
                                                         <p>
                                                             {item.downSpeed + (checkbox2 ? +100 : 0) + (checkbox3 ? +100 : 0)} Mega
@@ -237,7 +237,7 @@ export const Plans = () => {
                     </div>
                 </div>
 
-                <Benefits />
+                <Benefits  />
             </section>
         </>
     )

@@ -1,0 +1,97 @@
+.Tittle-Telefone{
+    margin: 20px;
+}
+
+.telefone{
+    display: flex;
+    
+    justify-content: center;
+    gap: 150px;
+
+    padding: 20px;
+    margin: 10px;
+    align-items: center;
+}
+
+.list-Telefone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 22px;
+    font-family: GorditaFont, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+
+
+    
+}
+
+.telefone-lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    text-align: left;
+}
+
+.lista-total-tel {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5px 5px 5px 0;
+ }
+
+.bola {
+    width: 10px;
+    height: 10px;
+
+    display: flex;
+    position: relative;
+    bottom: 5px;
+}
+
+.icone-telefone {
+    display: flex;
+    gap: 20px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 15px;
+}
+
+.icone img {
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    position: relative;
+    bottom: 5px;
+}
+
+.img-tel img {
+    width: 500px;
+}
+
+.bt-tel {
+    background: linear-gradient(82deg, #008D1E 4.34%, #04CB3A 97.83%);
+    padding: 10px 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    color: #ffffff;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+

@@ -80,6 +80,13 @@
   font-size: 40px;
 }
 
+.button{
+  background: linear-gradient(82deg, #008D1E 4.34%, #04CB3A 97.83%);
+  border-radius: 15px;
+  width: 150px;
+  margin: auto;
+}
+
 .button-plan-seta {
   width: auto;
   border: hidden;
