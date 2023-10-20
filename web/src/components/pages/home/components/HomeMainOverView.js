@@ -22,7 +22,7 @@ export const HomeMainOverView = () => {
     }, [])
 
     return(
-    <section className="overview-block-ptb iq-feature-aria grey-bg overviewHe">
+    <section className="overview-block-ptb iq-feature-aria overviewHe">
         <div className="container">
             <div className="row">
             <div className="col-sm-12">
@@ -381,7 +381,7 @@ export const HomeMainOverView = () => {
                 </div>
             </div>
             <div className="particles text-center">
-                <img className="img-fluid" src="images/particles.png" alt="" />
+                <img className="img-fluid" style={{display:"flex", position:"relative", top:"170px", left:"280px"}} src="images/particles.png" alt="" />
             </div>
             </div>
         </div>
