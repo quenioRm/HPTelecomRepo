@@ -20,7 +20,7 @@ function Benefits(props) {
           </div>
           
           <div className="slide">
-            <img src={require('./img/card.png')} alt='Pacote Microsoft 365' />
+            <img src={require('./img/card.png')} alt='Clube de descontos' />
             <h5>Clube de descontos</h5>
             <p hidden>Economize em suas compras com nosso Clube de Desconto exclusivo, aproveitando ofertas especiais em diversos produtos e serviços.</p>
           </div>
@@ -33,15 +33,15 @@ function Benefits(props) {
           </div>
 
           <div className="slide">
-            <img src={require('./img/instalacao.png')} alt='Wi-Fi 6' />
+            <img src={require('./img/instalacao.png')} alt='Instalação personalizada' />
             <h5>Instalação <br /> personalizada</h5>
             <p hidden>Nossa equipe de especialistas está pronta para personalizar a instalação de acordo com suas necessidades, garantindo que sua experiência seja adaptada às suas preferências.
             </p>
           </div>
 
           <div className="slide">
-            <img src={require('./img/365.png')} alt='Wi-Fi 6' />
-            <h5>Pacote <br /> Microsoft Completo</h5>
+            <img src={require('./img/365.png')} alt='Pacotece microsoft 365 completo' />
+            <h5>Pacote Microsoft <br /> 365 Completo</h5>
             <p hidden>Desfrute de uma conexão de internet ultrarrápida e estável com nossa tecnologia Wi-Fi 6, proporcionando uma experiência online mais fluida.
             </p>
           </div>
@@ -67,7 +67,7 @@ function Benefits(props) {
               <img src={require('./img/canal-band.png')} alt='Canal Band' />
               <img src={require('./img/canal-globo.png')} alt='Canal Globo' />
               <img src={require('./img/canal-sbt.png')} alt='Canal SBT' />
-              <img src={require('./img/canal-record.png')} alt='Canal Band' />
+              <img src={require('./img/canal-record.png')} alt='Canal Record' />
               <img src={require('./img/canal-globo.png')} alt='Canal Globo' />
               <img src={require('./img/canal-sbt.png')} alt='Canal SBT' />
             </div>

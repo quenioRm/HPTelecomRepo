@@ -355,7 +355,7 @@ export const PlansPage = () => {
                                             </span>
                                         </div>
                                         <a href={contact()} target="_blank" className="button" rel="noreferrer">
-                                            Contratar
+                                            Assine Já
                                         </a>
 
                                         <a href="#canais">
