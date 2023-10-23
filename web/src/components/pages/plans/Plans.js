@@ -100,6 +100,7 @@ export const Plans = () => {
                             }}>
                                 <img src="/images/plans/Seta-esquerda.png" /></button>
                         </div>
+
                         <div className="box-plano">
                             {plans.map((item, key) => (
                                 <div key={key} className="col-lg-3 col-md-6 col-sm-12" class={`box-plan animation-${plan}`}>
@@ -131,7 +132,7 @@ export const Plans = () => {
                                                 <span>{item.description1}</span>
                                             </li>
                                             <li id="wifi">
-                                                <span>{item.description2}</span>
+                                                <span>Pacote Microsoft 365</span>
                                             </li>
                                             <li id="clube">
                                                 <span>{item.description4}</span>
@@ -211,7 +212,7 @@ export const Plans = () => {
                                             Assine já
                                         </a>
                                         <br />
-                                        <a href= "" style={{ marginTop: "10px" }}>(<span class="channel">confira todos os canais</span>)</a>
+                                        <a href= "https://wa.me/551128762641?text=Fiquei+interessado+no+combo+com+Tv+e+gostaria+ver+a+lista+de+canais." style={{ marginTop: "10px" }}>(<span class="channel">confira todos os canais</span>)</a>
                                     </div>
                                 </div>
                             ))}

@@ -67,7 +67,7 @@ function Benefits(props) {
                     </div>
                 </div>
 
-                <a href="#">Veja todos os canais abertos</a>
+                <a href="https://wa.me/551128762641?text=Fiquei+interessado+no+combo+com+Tv+e+gostaria+ver+a+lista+de+canais.">Veja todos os canais abertos</a>
 
                 <div className="container-canais">
                     <h5 className="tittle-benefits-2">Canais fechados</h5>
@@ -80,20 +80,20 @@ function Benefits(props) {
                             <img src={require('./img/canal-animal.png')} alt='Canal Animal Planet' />
 
                         </div>
-                        
+
                     </div>
                 </div>
 
-                <a href="#">Veja todos os canais fechados</a>
+                <a href="https://wa.me/551128762641?text=Fiquei+interessado+no+combo+com+Tv+e+gostaria+ver+a+lista+de+canais.">Veja todos os canais fechados</a>
 
             </div>
 
             <Telefone />
 
 
+            {/*Começo do Combo de telefone
+            <div>
 
-            <div hidden>
-                {/*Começo do Combo de telefone*/}
                 <h5 className="tittle-benefits-3"> Monte um combo e ganhe <br />  <span style={{ color: "#04CB3A" }}>MEGAS de bônus</span>!!</h5>
                 <div>
                     <p className="combo-assinando">Assinando</p>
@@ -113,9 +113,10 @@ function Benefits(props) {
                     <p>Monte um completo completo e desfrute  de toda experiência que só é possível com a <span className="name-marca">Hayp</span>.</p>
                 </div>
                 <div className="bt-assinar">
-                          <a href="#">Assine agora</a>
-                        </div>
-                {/*Começo para as perguntas frequentes*/}
+                    <a href="#">Assine agora</a>
+                </div>
+                */}
+                {/*Começo para as perguntas frequentes
                 <div hidden className="contatos-para-assinar">
                     <h2 className="tittle-benefits-1">Perguntas frequentes</h2>
                     <div className="divisor"></div>
@@ -132,13 +133,14 @@ function Benefits(props) {
                         resposta="Não sei o que colocar aqui dentro, mas vamos colocar alguma coisa"
                     />
                 </div>
-            </div>
+                
+            </div>*/}
 
-            
+
 
         </section>
 
-        
+
 
 
 
