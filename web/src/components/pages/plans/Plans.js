@@ -92,18 +92,18 @@ export const Plans = () => {
 
 
                     <div className="conteiner-plan">
-                        <div>
+                        <div style={{opacity:`${1}`}}>
                             <button className="button-plan-seta esquerda" onClick={() => {
 
                                 setPlan(1);
-
+                                
                             }}>
                                 <img src="/images/plans/Seta-esquerda.png" /></button>
                         </div>
 
                         <div className="box-plano">
                             {plans.map((item, key) => (
-                                <div key={key} className="col-lg-3 col-md-6 col-sm-12" class={`box-plan animation-${plan}`}>
+                                <div key={key} className= {`col-lg-3 col-md-6 col-sm-12 box-plan animation-${plan}`}>
                                     <span className="icon" class="icon-p">
                                         <img className="icon-velocidad"
                                             src={`images/another/${item.icon}`}
@@ -123,7 +123,7 @@ export const Plans = () => {
                                                 </li>
                                                 <li>
                                                     <img src="/images/plans/Upload.png" />
-                                                    <span> Upload até {item.upSpeed} Mbps</span>
+                                                    <span style={{fontFamily:"GorditaFontLite"}}> Upload até {item.upSpeed} Mbps</span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -132,7 +132,7 @@ export const Plans = () => {
                                                 <span>{item.description1}</span>
                                             </li>
                                             <li id="wifi">
-                                                <span>Pacote Microsoft 365</span>
+                                                <span>{item.description2}</span>
                                             </li>
                                             <li id="clube">
                                                 <span>{item.description4}</span>
@@ -212,13 +212,13 @@ export const Plans = () => {
                                             Assine já
                                         </a>
                                         <br />
-                                        <a href= "https://wa.me/551128762641?text=Fiquei+interessado+no+combo+com+Tv+e+gostaria+ver+a+lista+de+canais." style={{ marginTop: "10px" }}>(<span class="channel">confira todos os canais</span>)</a>
+                                        <a href= "https://wa.me/551128762641?text=Fiquei+interessado+no+combo+com+Tv+e+gostaria+ver+a+lista+de+canais." style={{ marginTop: "10px", fontFamily:"GorditaFontRegular" }}>(<span class="channel">confira todos os canais</span>)</a>
                                     </div>
                                 </div>
                             ))}
                         </div>
 
-                        <div>
+                        <div style={{opacity:`${1}`}}>
                             <button className="button-plan-seta direita" onClick={() => {
 
                                 setPlan(2)

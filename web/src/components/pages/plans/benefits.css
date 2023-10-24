@@ -59,11 +59,20 @@
   background: var(--cor-1);
 }
 
+.slide p {
+  padding: 10px;
+  font-family: 'GorditaFontRegular';
+}
+
 
 /*Começo dos canais */
 
 #canais {
   margin: 10px 0;
+}
+
+#canais a {
+  font-family: 'GorditaFontLite';
 }
 
 .carrossel-canais-aberto {

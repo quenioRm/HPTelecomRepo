@@ -5,6 +5,10 @@
   scroll-behavior: smooth;
 }
 
+.primeira{
+  opacity: 0;
+}
+
 .tittle-benefits-1 {
   font-family: gordita-bold;
   padding: 5px;

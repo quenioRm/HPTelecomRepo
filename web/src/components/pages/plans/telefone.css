@@ -21,10 +21,11 @@
 
     font-size: 22px;
     font-family: GorditaFont, Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-weight: 600;    
+}
 
-
-    
+.list-Telefone p {
+    font-family: 'GorditaFontRegular';
 }
 
 .telefone-lista {
@@ -59,6 +60,10 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+.icone-telefone p {
+    font-family: 'GorditaFontLite';
 }
 
 .icone{
