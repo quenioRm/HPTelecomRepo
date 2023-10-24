@@ -1,6 +1,7 @@
 import React from "react";
 import './benefits.css';
 import Perguntas_Frequentes from "./Perguntas_Frequentes"
+import Telefone from "../telefone/telefone";
 
 function Benefits(props) {
   return (
@@ -97,6 +98,8 @@ function Benefits(props) {
         </div>
 
       </div>
+
+      <Telefone />
 
       <div>
         <h5 className="tittle-benefits-3"> Monte um combo e ganhe <br />  <span style={{color: "#04CB3A" }}>MEGAS de bônus</span>!!</h5>

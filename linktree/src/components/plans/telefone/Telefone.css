@@ -1,0 +1,41 @@
+.contianer-telefone{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.Lista-Telefone ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.Lista-Telefone ul li{
+    font-family: gordita;
+    font-size: 16px;
+}
+
+.Lista-Telefone ul li img{
+    position: relative;
+    bottom: 2px;
+}
+
+.icones-telefone ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.icones-telefone ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones-telefone ul li img{
+    display: flex;
+    position: relative;
+    bottom: 10px;
+}
