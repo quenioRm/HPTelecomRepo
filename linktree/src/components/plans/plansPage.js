@@ -226,6 +226,8 @@ export const PlansPage = () => {
         return planContact;
     }
 
+    
+
     return (
         <>
             <main className="content">
@@ -271,9 +273,9 @@ export const PlansPage = () => {
                                                     {plan.firstDescription}
                                                 </li>
 
-                                                <li>
+                                                <li  hidden={plan.downSpeed === 300 ? true : (plan.downSpeed && variants.downSpeed >= 500 ? false : true)}>
                                                     <i className="fa fa-wifi" />
-                                                    {plan.secondDescription}
+                                                    {plan.thirdDescription}
                                                 </li>
 
                                                 <li>
