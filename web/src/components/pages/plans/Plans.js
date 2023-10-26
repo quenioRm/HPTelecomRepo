@@ -9,7 +9,6 @@ export const Plans = () => {
     const [checkbox2, setCheckbox2] = useState(false);
     const [checkbox3, setCheckbox3] = useState(false);
     const [desativado, setDesativado] = useState("desativado");
-    const [extraBonus, setExtraBonus] = useState(0);
     
 
     const handleCheckbox1Change = () => {
@@ -22,7 +21,6 @@ export const Plans = () => {
             setCheckbox2(true);
             setCheckbox3(true);
             setDesativado('ativado')  
-            setExtraBonus(200)
         }
 
     };
@@ -118,23 +116,43 @@ export const Plans = () => {
                                         <div className="desc-plano-top">
                                             <ul>
                                                 <li>
-                                                    <img src="/images/plans/Download.png" />
+                                                    <img src="/images/plans/Download.svg" />
                                                     <span className="downloadFont">Download até {item.downSpeed} Mbps</span>
                                                 </li>
                                                 <li>
-                                                    <img src="/images/plans/Upload.png" />
+                                                    <img src="/images/plans/Upload.svg" />
                                                     <span style={{fontFamily:"GorditaFontLite"}}> Upload até {item.upSpeed} Mbps</span>
                                                 </li>
                                             </ul>
                                         </div>
                                         <ul className="ulPlan">
-                                            <li id="fidelidade">
+                                            <li className="icone-benefits">
+                                            <img 
+                                                src="/images/plans/sem_fidelidade.svg"
+                                                alt="Sem Fidelidade"
+                                                />
                                                 <span>{item.description1}</span>
                                             </li>
-                                            <li id="wifi">
+                                            <li className="icone-benefits" hidden={item.downSpeed === 300 ? true : (item.downSpeed && (item.downSpeed + (checkbox2 ? +100 : 0) + (checkbox3 ? +100 : 0)) >= 500 ? false : true)}>
+                                            <img 
+                                                src="/images/plans/365-plan.svg"
+                                                alt="Pacote Microsoft 365 completo"
+                                                />
+                                                <span>Pacote Micrsoft 365</span>
+                                            </li>
+                                            
+                                            <li className="icone-benefits">
+                                                <img style={{width:"20px", height:"16px"}}
+                                                src="/images/plans/wifi.svg"
+                                                alt="Melhores tecnologia de Wi-Fi"
+                                                />
                                                 <span>{item.description2}</span>
                                             </li>
-                                            <li id="clube">
+                                            <li className="icone-benefits">
+                                            <img 
+                                                src="/images/plans/card.svg"
+                                                alt="Clube de desconto"
+                                                />
                                                 <span>{item.description4}</span>
                                             </li>
                                         </ul>
@@ -188,7 +206,7 @@ export const Plans = () => {
                                                 <li>
                                                     <div className= {`bonus-de-mega bonus-${desativado}`}>
                                                         <h3>Você irá receber:</h3>
-
+                                                        
                                                         <p>
                                                             {item.downSpeed + (checkbox2 ? +100 : 0) + (checkbox3 ? +100 : 0)} Mega
                                                         </p>

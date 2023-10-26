@@ -266,7 +266,7 @@ export const PlansPage = () => {
                                                 <li>
                                                     <img
                                                         src="./assets/images/nofidelity.png"
-                                                        alt="image"
+                                                        alt="Sem Fidelidade"
                                                         className="img-fluid d-inline-block"
                                                         style={{ paddingRight: 10 }}
                                                     />
@@ -274,7 +274,11 @@ export const PlansPage = () => {
                                                 </li>
 
                                                 <li  hidden={plan.downSpeed === 300 ? true : (plan.downSpeed && variants.downSpeed >= 500 ? false : true)}>
-                                                    <i className="fa fa-wifi" />
+                                                    <img src="./assets/images/365-plan.png" 
+                                                    className="img-fluid d-inline-block"
+                                                    style={{ paddingRight: 10, paddingBottom: 7 }}
+                                                    alt="Pacote Microsft 365 Completo"
+                                                    />
                                                     {plan.thirdDescription}
                                                 </li>
 

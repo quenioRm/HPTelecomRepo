@@ -132,7 +132,7 @@ export const FooterLayout = () => {
                     <div className="col-sm-6">
                         <div className="iq-copyright iq-mt-10 iq-font-white">
                         Todos os direitos reservados <span id="copyright"> </span>{" "}
-                        <a href="/About"><strong>HP Telecom LTDA</strong></a> {" "}
+                        <a href="/About"><strong>HAYP Telecom LTDA</strong></a> {" "}
                         </div>
                     </div>
                     <div className="col-sm-6">
@@ -145,21 +145,21 @@ export const FooterLayout = () => {
                             </a>
                         </li> */}
                         <li>
-                            <a style={{border:"transparent"}} target="_blank" href="https://www.facebook.com/HPTelecom">
+                            <a style={{border:"transparent"}} target="_blank" href="https://www.facebook.com/HaypTelecom">
                                 <i style={{position: "relative", top:"-4px"}}>
                                     <img src="/images/footer/facebok-8.png" style={{width:"100%"}}></img>
                                 </i>
                             </a>
                         </li>
                         <li>
-                            <a style={{border:"transparent"}} target="_blank" href="https://www.instagram.com/hp_internet/">
+                            <a style={{border:"transparent"}} target="_blank" href="https://www.instagram.com/haypoficial/">
                                 <i style={{position: "relative", top:"-4px"}}>
                                     <img src="/images/footer/instagram-8.png" style={{width:"100%"}}></img>
                                 </i>
                             </a>
                         </li>
                         <li>
-                            <a style={{border:"transparent"}} target="_blank" href="https://www.linkedin.com/company/hp-telecom">
+                            <a style={{border:"transparent"}} target="_blank" href="https://www.linkedin.com/company/hayp-telecom">
                                 <i style={{position: "relative", top:"-4px"}}>
                                     <img src="/images/footer/linkedin-8.png" style={{width:"100%"}}></img>
                                 </i>

@@ -32,7 +32,7 @@ function Telefone() {
                         </li>
                         <li>
                             <img src={require('../beneficios/img/negocio-telefone.png')} alt='Sua casa com Telefone' />
-                            <p>Para sua casa</p>
+                            <p>Para seu negócio</p>
                         </li>
                     </ul>
                 </div>
