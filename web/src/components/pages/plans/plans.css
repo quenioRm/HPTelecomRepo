@@ -14,10 +14,19 @@
   overflow: hidden;
   }
 
-.desc-plano-top img{
+
+
+.desc-plano-top ul li {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
   position: relative;
-  right: 10px;
+  right: 6px;
 }
+
+
 
 .home {
   justify-content: center;
@@ -222,6 +231,67 @@
 .iq-pricing:hover .bonus-de-mega p {
 
   color: #fff;
+}
+
+.icon-download {
+  width: 19px;
+  height: 19px;
+
+  background: url('../../../../public/images/plans/Download.svg') no-repeat;
+
+}
+
+.iq-pricing:hover .icon-download{
+  background-image: url('../../../../public/images/plans/Download-verde.svg')
+}
+
+.icon-upload {
+  width: 19px;
+  height: 20px;
+
+  background: url('../../../../public/images/plans/Upload.svg') no-repeat;
+
+}
+
+.iq-pricing:hover .icon-upload{
+  background-image: url('../../../../public/images/plans/Upload-verde.svg')
+}
+
+.icon-semFidelidade {
+  width: 24px;
+  height: 24px;
+
+  background: url('../../../../public/images/plans/sem-fidelidade.svg') no-repeat;
+
+}
+
+.iq-pricing:hover .icon-semFidelidade{
+  background-image: url('../../../../public/images/plans/sem-fidelidade-branco.svg')
+}
+
+
+.icon-wifi {
+  width: 20px;
+  height: 16px;
+
+  background: url('../../../../public/images/plans/wifi.svg') no-repeat;
+
+}
+
+.iq-pricing:hover .icon-wifi{
+  background-image: url('../../../../public/images/plans/wifi-branco.svg')
+}
+
+.icon-card {
+  width: 26.6px;
+  height: 24px;
+
+  background: url('../../../../public/images/plans/card.svg') no-repeat;
+
+}
+
+.iq-pricing:hover .icon-card{
+  background-image: url('../../../../public/images/plans/card-branco.svg')
 }
 
 .vencimento{

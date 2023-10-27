@@ -9,7 +9,7 @@ export const Plans = () => {
     const [checkbox2, setCheckbox2] = useState(false);
     const [checkbox3, setCheckbox3] = useState(false);
     const [desativado, setDesativado] = useState("desativado");
-    
+
 
     const handleCheckbox1Change = () => {
         setCheckbox1(!checkbox1);
@@ -20,7 +20,7 @@ export const Plans = () => {
         } else if (checkbox1) {
             setCheckbox2(true);
             setCheckbox3(true);
-            setDesativado('ativado')  
+            setDesativado('ativado')
         }
 
     };
@@ -30,13 +30,13 @@ export const Plans = () => {
         if (checkbox2 && !checkbox3) {
             setCheckbox1(true);
             setDesativado('desativado')
-            
-            
+
+
         } else {
             setCheckbox1(false);
             setDesativado('ativado');
-            
-            
+
+
         }
     };
 
@@ -45,13 +45,13 @@ export const Plans = () => {
         if (checkbox3 && !checkbox2) {
             setCheckbox1(true);
             setDesativado('desativado')
-            
-            
+
+
         } else {
             setCheckbox1(false);
             setDesativado('ativado')
-            
-            
+
+
         }
     };
 
@@ -82,7 +82,7 @@ export const Plans = () => {
                                     Não sabe qual é o melhor plano para sua casa?<br />Tem dúvidas de qual possa atender melhor a demanda da sua empresa?
                                     <br />
                                     <br />
-                                    <span style={{ color: "#008C1E" }}><a  target="_blank" rel="noreferrer" href="https://wa.me/551128762641?text=Ol%C3%A1%2C+estou+em+dúvida+de+qual+plano+escolher,+preciso+de+uma+ajuda">Mande uma mensagem</a></span> que vamos te ajudar a escolher o melhor plano com base no seu perfil.
+                                    <span style={{ color: "#008C1E" }}><a target="_blank" rel="noreferrer" href="https://wa.me/551128762641?text=Ol%C3%A1%2C+estou+em+dúvida+de+qual+plano+escolher,+preciso+de+uma+ajuda">Mande uma mensagem</a></span> que vamos te ajudar a escolher o melhor plano com base no seu perfil.
                                 </p>
                             </div>
                         </div>
@@ -90,18 +90,18 @@ export const Plans = () => {
 
 
                     <div className="conteiner-plan">
-                        <div style={{opacity:`${1}`}}>
+                        <div style={{ opacity: `${1}` }}>
                             <button className="button-plan-seta esquerda" onClick={() => {
 
                                 setPlan(1);
-                                
+
                             }}>
                                 <img src="/images/plans/Seta-esquerda.png" alt="seta para ver planos entre 100 a 400 Mega" /></button>
                         </div>
 
                         <div className="box-plano">
                             {plans.map((item, key) => (
-                                <div key={key} className= {`col-lg-3 col-md-6 col-sm-12 box-plan animation-${plan}`}>
+                                <div key={key} className={`col-lg-3 col-md-6 col-sm-12 box-plan animation-${plan}`}>
                                     <span className="icon" class="icon-p">
                                         <img className="icon-velocidad"
                                             alt="Icone de velocidade"
@@ -117,45 +117,36 @@ export const Plans = () => {
                                         <div className="desc-plano-top">
                                             <ul>
                                                 <li>
-                                                    <img src="/images/plans/Download.svg" alt="Icone de download" />
+                                                    <div className="icon-download" ></div>
                                                     <span className="downloadFont">Download até {item.downSpeed} Mbps</span>
                                                 </li>
                                                 <li>
-                                                    <img src="/images/plans/Upload.svg" alt="Icone de Upload" />
-                                                    <span style={{fontFamily:"GorditaFontLite"}}> Upload até {item.upSpeed} Mbps</span>
+                                                    <div className="icon-upload" ></div>
+                                                    <span style={{ fontFamily: "GorditaFontLite" }}> Upload até {item.upSpeed} Mbps</span>
                                                 </li>
                                             </ul>
                                         </div>
                                         <ul className="ulPlan">
                                             <li className="icone-benefits">
-                                            <img 
-                                                src="/images/plans/sem_fidelidade.svg"
-                                                alt="Sem Fidelidade"
-                                                />
+                                            <div className="icon-semFidelidade" ></div>
                                                 <span>{item.description1}</span>
                                             </li>
                                             <li className="icone-benefits" hidden={item.downSpeed === 300 ? true : (item.downSpeed && (item.downSpeed + (checkbox2 ? +100 : 0) + (checkbox3 ? +100 : 0)) >= 500 ? false : true)}>
-                                            <img 
-                                                
-                                                src="/images/plans/365-plan-red.svg"
-                                                
-                                                alt="Pacote Microsoft 365 completo"
+                                                <img
+
+                                                    src="/images/plans/365-plan-red.svg"
+
+                                                    alt="Pacote Microsoft 365 completo"
                                                 />
                                                 <span>{item.description3}</span>
                                             </li>
-                                            
+
                                             <li className="icone-benefits" >
-                                                <img style={{width:"20px", height:"16px"}}
-                                                src="/images/plans/wifi.svg"
-                                                alt="Melhores tecnologia de Wi-Fi"
-                                                />
+                                            <div className="icon-wifi" ></div>
                                                 <span>{item.description2}</span>
                                             </li>
                                             <li className="icone-benefits">
-                                            <img 
-                                                src="/images/plans/card.svg"
-                                                alt="Clube de desconto"
-                                                />
+                                            <div className="icon-card" ></div>
                                                 <span>{item.description4}</span>
                                             </li>
                                         </ul>
@@ -183,7 +174,7 @@ export const Plans = () => {
                                                 <br />
                                                 <li hidden={item.downSpeed === 900}>
                                                     <div class="list-bt" >
-                                                        <input  id="bt3Tv" type="checkbox" name="" value="Tv" onChange={handleCheckbox3Change} checked={checkbox3}></input>
+                                                        <input id="bt3Tv" type="checkbox" name="" value="Tv" onChange={handleCheckbox3Change} checked={checkbox3}></input>
                                                         <spam className="info-list-bt">Tv ( + de 90 canais) <br /> + filmes e séries <br /></spam>
                                                     </div>
                                                     (<span class="bonus">Ganhe + 100 Mega</span>)
@@ -207,9 +198,9 @@ export const Plans = () => {
                                                 </li>
 
                                                 <li>
-                                                    <div hidden={item.downSpeed === 900 ? true : false} className= {`bonus-de-mega bonus-${desativado}`}>
+                                                    <div hidden={item.downSpeed === 900 ? true : false} className={`bonus-de-mega bonus-${desativado}`}>
                                                         <h3>Você irá receber:</h3>
-                                                        
+
                                                         <p>
                                                             {item.downSpeed + (checkbox2 ? +100 : 0) + (checkbox3 ? +100 : 0)} Mega
                                                         </p>
@@ -219,29 +210,29 @@ export const Plans = () => {
                                         </div>
                                         <br />
                                         <div>
-                                            <h4 className="price-value2"> R$ {item.downSpeed === 900 ? ("209,90") : (item.price + (checkbox2 ? +30 : 0) + (checkbox3 ? +90 : 0)).toFixed(2).replace('.', ',') }
+                                            <h4 className="price-value2"> R$ {item.downSpeed === 900 ? ("209,90") : (item.price + (checkbox2 ? +30 : 0) + (checkbox3 ? +90 : 0)).toFixed(2).replace('.', ',')}
                                             </h4>
                                             <div className="vencimento">
                                                 <p>Pagando antes do vencimento você ganha R$10 de desconto.</p>
                                             </div>
-                                            <h3 className="price-value"> R$ {item.downSpeed === 900 ? ("199,90") : (item.price - item.discount + (checkbox2 ? +30 : 0) + (checkbox3 ? +90 : 0)).toFixed(2).replace('.', ',') } <span className="mes-pay">/mês</span></h3>
+                                            <h3 className="price-value"> R$ {item.downSpeed === 900 ? ("199,90") : (item.price - item.discount + (checkbox2 ? +30 : 0) + (checkbox3 ? +90 : 0)).toFixed(2).replace('.', ',')} <span className="mes-pay">/mês</span></h3>
                                         </div>
 
                                         {console.log(item)}
 
-                                        
+
                                         <br />
-                                        <a className="button" href= {checkbox1 ? "https://wa.me/551128762641?text=Ol%C3%A1%2C+vi+este+plano+de+"+item.name+"+no+seu+site+e+gostaria+de+saber+mais": "https://wa.me/551128762641?text=Ol%C3%A1%2C+montei+este+combo+"+item.downSpeed+ (checkbox3 ? "+de+Tv":"") + (checkbox2 ?"+com+Telefone":"") +"+no+site+e+gostaria+de+saber+mais" } target="_blank" rel="noreferrer">
+                                        <a className="button" href={checkbox1 ? "https://wa.me/551128762641?text=Ol%C3%A1%2C+vi+este+plano+de+" + item.name + "+no+seu+site+e+gostaria+de+saber+mais" : "https://wa.me/551128762641?text=Ol%C3%A1%2C+montei+este+combo+" + item.downSpeed + (checkbox3 ? "+de+Tv" : "") + (checkbox2 ? "+com+Telefone" : "") + "+no+site+e+gostaria+de+saber+mais"} target="_blank" rel="noreferrer">
                                             Assine já
                                         </a>
                                         <br />
-                                        <a href= "https://wa.me/551128762641?text=Fiquei+interessado+no+combo+com+Tv+e+gostaria+ver+a+lista+de+canais." style={{ marginTop: "10px", fontFamily:"GorditaFontRegular" }}>(<span class="channel">confira todos os canais</span>)</a>
+                                        <a href="https://wa.me/551128762641?text=Fiquei+interessado+no+combo+com+Tv+e+gostaria+ver+a+lista+de+canais." style={{ marginTop: "10px", fontFamily: "GorditaFontRegular" }}>(<span class="channel">confira todos os canais</span>)</a>
                                     </div>
                                 </div>
                             ))}
                         </div>
 
-                        <div style={{opacity:`${1}`}}>
+                        <div style={{ opacity: `${1}` }}>
                             <button className="button-plan-seta direita" onClick={() => {
 
                                 setPlan(2)
@@ -261,7 +252,7 @@ export const Plans = () => {
                     </div>
                 </div>
 
-                <Benefits  />
+                <Benefits />
             </section>
         </>
     )
