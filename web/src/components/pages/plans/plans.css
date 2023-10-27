@@ -10,11 +10,9 @@
 
 .box-plano {
   display: flex;
-  gap: 50px;
+  gap: 45px;
   overflow: hidden;
-  padding: 5px;
-
-}
+  }
 
 .desc-plano-top img{
   position: relative;
@@ -81,10 +79,13 @@
   background-color: #008930;
 }
 
+
+
 .planName {
   font-size: 40px;
   font-family: 'GorditaFont';
 }
+
 
 .button{
   background: linear-gradient(82deg, #008D1E 4.34%, #04CB3A 97.83%);
@@ -134,12 +135,7 @@
   transition: all 0.5s ease-in-out 0s;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
-
   width: 300px;
-
-
 }
 
 .pricing-header {
@@ -148,7 +144,7 @@
 
 .iq-pricing:hover {
   color: #fff;
-  background-color: #008C1E;
+  background-color: #333333;
 }
 
 .iq-pricing .title {
@@ -195,7 +191,7 @@
 
 .iq-pricing:hover .bonus {
 
-  color: #fff;
+  color: var(--cor-2);
 }
 
 .iq-pricing:hover .price-value2 {
@@ -215,20 +211,24 @@
 }
 
 
-.iq-pricing:hover .price-value{
-
-  color: #fff;
+.iq-pricing:hover .price-value,
+.iq-pricing:hover .bonus-de-mega h3,
+.iq-pricing:hover .bonus-de-mega p,
+.iq-pricing:hover .planName {
+  color: var(--cor-2);
 }
 
-.iq-pricing:hover .bonus-de-mega h3 {
-
-  color: #fff;
-}
-
+.iq-pricing:hover .info-list-bt,
 .iq-pricing:hover .bonus-de-mega p {
 
   color: #fff;
 }
+
+.vencimento{
+  margin: 10px auto;
+}
+
+
 
 .list-bt {
   display: flex;
@@ -311,11 +311,7 @@ input:checked[type="checkbox"]:before {
 
 .mes-pay {
   font-size: 16px;
-  color: #000;
-}
-
-.iq-pricing:hover .button {
-  background: #151d2e;
+  color: rgba(128, 128, 128, 0.616);
 }
 
 .iq-pricing:hover .button:hover {

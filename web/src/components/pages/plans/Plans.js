@@ -82,7 +82,7 @@ export const Plans = () => {
                                     Não sabe qual é o melhor plano para sua casa?<br />Tem dúvidas de qual possa atender melhor a demanda da sua empresa?
                                     <br />
                                     <br />
-                                    <span style={{ color: "#008C1E" }}><a  target="_blank" href="https://wa.me/551128762641?text=Ol%C3%A1%2C+estou+em+dúvida+de+qual+plano+escolher,+preciso+de+uma+ajuda">Mande uma mensagem</a></span> que vamos te ajudar a escolher o melhor plano com base no seu perfil.
+                                    <span style={{ color: "#008C1E" }}><a  target="_blank" rel="noreferrer" href="https://wa.me/551128762641?text=Ol%C3%A1%2C+estou+em+dúvida+de+qual+plano+escolher,+preciso+de+uma+ajuda">Mande uma mensagem</a></span> que vamos te ajudar a escolher o melhor plano com base no seu perfil.
                                 </p>
                             </div>
                         </div>
@@ -96,7 +96,7 @@ export const Plans = () => {
                                 setPlan(1);
                                 
                             }}>
-                                <img src="/images/plans/Seta-esquerda.png" /></button>
+                                <img src="/images/plans/Seta-esquerda.png" alt="seta para ver planos entre 100 a 400 Mega" /></button>
                         </div>
 
                         <div className="box-plano">
@@ -104,6 +104,7 @@ export const Plans = () => {
                                 <div key={key} className= {`col-lg-3 col-md-6 col-sm-12 box-plan animation-${plan}`}>
                                     <span className="icon" class="icon-p">
                                         <img className="icon-velocidad"
+                                            alt="Icone de velocidade"
                                             src={`images/another/${item.icon}`}
                                         />
 
@@ -116,11 +117,11 @@ export const Plans = () => {
                                         <div className="desc-plano-top">
                                             <ul>
                                                 <li>
-                                                    <img src="/images/plans/Download.svg" />
+                                                    <img src="/images/plans/Download.svg" alt="Icone de download" />
                                                     <span className="downloadFont">Download até {item.downSpeed} Mbps</span>
                                                 </li>
                                                 <li>
-                                                    <img src="/images/plans/Upload.svg" />
+                                                    <img src="/images/plans/Upload.svg" alt="Icone de Upload" />
                                                     <span style={{fontFamily:"GorditaFontLite"}}> Upload até {item.upSpeed} Mbps</span>
                                                 </li>
                                             </ul>
@@ -135,13 +136,15 @@ export const Plans = () => {
                                             </li>
                                             <li className="icone-benefits" hidden={item.downSpeed === 300 ? true : (item.downSpeed && (item.downSpeed + (checkbox2 ? +100 : 0) + (checkbox3 ? +100 : 0)) >= 500 ? false : true)}>
                                             <img 
-                                                src="/images/plans/365-plan.svg"
+                                                
+                                                src="/images/plans/365-plan-red.svg"
+                                                
                                                 alt="Pacote Microsoft 365 completo"
                                                 />
-                                                <span>Pacote Micrsoft 365</span>
+                                                <span>{item.description3}</span>
                                             </li>
                                             
-                                            <li className="icone-benefits">
+                                            <li className="icone-benefits" >
                                                 <img style={{width:"20px", height:"16px"}}
                                                 src="/images/plans/wifi.svg"
                                                 alt="Melhores tecnologia de Wi-Fi"
@@ -160,28 +163,28 @@ export const Plans = () => {
                                         <div class="container-new-list">
                                             <div class="container-bt">
                                             </div>
-                                            <ul>
+                                            <ul >
                                                 <li>
                                                     <div class="list-bt">
-                                                        <input id="bt1Internet" type="checkbox" checked={checkbox1} onChange={handleCheckbox1Change}></input>
-                                                        Apenas internet
+                                                        <input id="bt1Internet" type="checkbox" checked={item.downSpeed === 900 ? true : checkbox1} disabled={item.downSpeed === 900 ? true : false} onChange={handleCheckbox1Change}></input>
+                                                        <span className="info-list-bt">Apenas internet</span>
                                                     </div>
                                                 </li>
                                                 <br />
-                                                <li>
+                                                <li hidden={item.downSpeed === 900}>
                                                     <div class="list-bt">
                                                         <label >
                                                             <input id="bt2Telefone" type="checkbox" name="" value="Telefone" onChange={handleCheckbox2Change} checked={checkbox2}></input>
                                                         </label>
-                                                        Telefone ilimitado
+                                                        <span className="info-list-bt">Telefone ilimitado</span>
                                                     </div>
                                                     (<span class="bonus">Ganhe + 100 Mega</span>)
                                                 </li>
                                                 <br />
-                                                <li>
+                                                <li hidden={item.downSpeed === 900}>
                                                     <div class="list-bt" >
-                                                        <input id="bt3Tv" type="checkbox" name="" value="Tv" onChange={handleCheckbox3Change} checked={checkbox3}></input>
-                                                        Tv ( + de 90 canais) <br /> + filmes e séries <br />
+                                                        <input  id="bt3Tv" type="checkbox" name="" value="Tv" onChange={handleCheckbox3Change} checked={checkbox3}></input>
+                                                        <spam className="info-list-bt">Tv ( + de 90 canais) <br /> + filmes e séries <br /></spam>
                                                     </div>
                                                     (<span class="bonus">Ganhe + 100 Mega</span>)
                                                 </li>
@@ -190,8 +193,8 @@ export const Plans = () => {
                                                     <div class="list-bt" >
                                                         <div hidden class="content-turbo">
                                                             <div class="icon-turbo">
-                                                                <img hidde class="turbo" src="/images/plans/fire.gif" />
-                                                                <img class="turbo icon-velocidade" src="/images/plans/turbo.svg" />
+                                                                <img hidde class="turbo" src="/images/plans/fire.gif" alt="Icone do turbo" />
+                                                                <img class="turbo icon-velocidade" src="/images/plans/turbo.svg" alt="turbo" />
                                                             </div>
                                                             <div>Turbo das 1h as 6h
                                                                 <br />
@@ -204,7 +207,7 @@ export const Plans = () => {
                                                 </li>
 
                                                 <li>
-                                                    <div className= {`bonus-de-mega bonus-${desativado}`}>
+                                                    <div hidden={item.downSpeed === 900 ? true : false} className= {`bonus-de-mega bonus-${desativado}`}>
                                                         <h3>Você irá receber:</h3>
                                                         
                                                         <p>
@@ -216,17 +219,19 @@ export const Plans = () => {
                                         </div>
                                         <br />
                                         <div>
-                                            <h4 className="price-value2"> R$ {(item.price + (checkbox2 ? +30 : 0) + (checkbox3 ? +90 : 0)) .toFixed(2).replace('.', ',') }
+                                            <h4 className="price-value2"> R$ {item.downSpeed === 900 ? ("209,90") : (item.price + (checkbox2 ? +30 : 0) + (checkbox3 ? +90 : 0)).toFixed(2).replace('.', ',') }
                                             </h4>
                                             <div className="vencimento">
                                                 <p>Pagando antes do vencimento você ganha R$10 de desconto.</p>
                                             </div>
-                                            <h3 className="price-value"> R$ {(item.price - item.discount + (checkbox2 ? +30 : 0) + (checkbox3 ? +90 : 0)).toFixed(2).replace('.', ',')} <span class="mes-pay">/mês</span></h3>
+                                            <h3 className="price-value"> R$ {item.downSpeed === 900 ? ("199,90") : (item.price - item.discount + (checkbox2 ? +30 : 0) + (checkbox3 ? +90 : 0)).toFixed(2).replace('.', ',') } <span className="mes-pay">/mês</span></h3>
                                         </div>
+
+                                        {console.log(item)}
 
                                         
                                         <br />
-                                        <a className="button" href= {checkbox1 ? "https://wa.me/551128762641?text=Ol%C3%A1%2C+vi+este+plano+de+"+item.name+"+no+seu+site+e+gostaria+de+saber+mais": "https://wa.me/551128762641?text=Ol%C3%A1%2C+montei+este+combo+"+item.downSpeed+ (checkbox3 ? "+de+Tv":"") + (checkbox2 ?"+com+Telefone":"") +"+no+site+e+gostaria+de+saber+mais" } target="_blank">
+                                        <a className="button" href= {checkbox1 ? "https://wa.me/551128762641?text=Ol%C3%A1%2C+vi+este+plano+de+"+item.name+"+no+seu+site+e+gostaria+de+saber+mais": "https://wa.me/551128762641?text=Ol%C3%A1%2C+montei+este+combo+"+item.downSpeed+ (checkbox3 ? "+de+Tv":"") + (checkbox2 ?"+com+Telefone":"") +"+no+site+e+gostaria+de+saber+mais" } target="_blank" rel="noreferrer">
                                             Assine já
                                         </a>
                                         <br />
@@ -240,7 +245,7 @@ export const Plans = () => {
                             <button className="button-plan-seta direita" onClick={() => {
 
                                 setPlan(2)
-                            }} ><img src="/images/plans/Seta-direita.png" /></button>
+                            }} ><img src="/images/plans/Seta-direita.png" alt="seta para ver planos entre 500 a 900 Mega" /></button>
 
 
                         </div>
