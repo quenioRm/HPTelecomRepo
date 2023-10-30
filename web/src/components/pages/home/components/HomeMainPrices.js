@@ -87,23 +87,36 @@ export const HomeMainPrices = () => {
                                         <div className="desc-plano-top">
                                             <ul>
                                                 <li>
-                                                    <img src="/images/plans/Download.png" />
+                                                <div className="icon-download" ></div>
                                                     <span className="downloadFont">Download até {item.downSpeed} Mbps</span>
                                                 </li>
                                                 <li>
-                                                    <img src="/images/plans/Upload.png" />
+                                                <div className="icon-upload" ></div>
                                                     <span> Upload até {item.upSpeed} Mbps</span>
                                                 </li>
                                             </ul>
                                         </div>
                                         <ul className="ulPlan">
-                                            <li id="fidelidade">
+                                            <li className="icone-benefits">
+                                            <div className="icon-semFidelidade" ></div>
                                                 <span>{item.description1}</span>
                                             </li>
-                                            <li id="wifi">
+                                            <li className="icone-benefits" hidden={item.downSpeed === 300 ? true : (item.downSpeed && (item.downSpeed + (checkbox2 ? +100 : 0) + (checkbox3 ? +100 : 0)) >= 500 ? false : true)}>
+                                                <img
+
+                                                    src="/images/plans/365-plan-red.svg"
+
+                                                    alt="Pacote Microsoft 365 completo"
+                                                />
+                                                <span>{item.description3}</span>
+                                            </li>
+
+                                            <li className="icone-benefits" >
+                                            <div className="icon-wifi" ></div>
                                                 <span>{item.description2}</span>
                                             </li>
-                                            <li id="clube">
+                                            <li className="icone-benefits">
+                                            <div className="icon-card" ></div>
                                                 <span>{item.description4}</span>
                                             </li>
                                         </ul>
@@ -111,28 +124,28 @@ export const HomeMainPrices = () => {
                                         <div class="container-new-list">
                                             <div class="container-bt">
                                             </div>
-                                            <ul>
+                                            <ul >
                                                 <li>
                                                     <div class="list-bt">
-                                                        <input id="bt1Internet" type="checkbox" checked={checkbox1} onChange={handleCheckbox1Change}></input>
-                                                        Apenas internet
+                                                        <input id="bt1Internet" type="checkbox" checked={item.downSpeed === 900 ? true : checkbox1} disabled={item.downSpeed === 900 ? true : false} onChange={handleCheckbox1Change}></input>
+                                                        <span className="info-list-bt">Apenas internet</span>
                                                     </div>
                                                 </li>
                                                 <br />
-                                                <li>
+                                                <li hidden={item.downSpeed === 900}>
                                                     <div class="list-bt">
                                                         <label >
                                                             <input id="bt2Telefone" type="checkbox" name="" value="Telefone" onChange={handleCheckbox2Change} checked={checkbox2}></input>
                                                         </label>
-                                                        Telefone ilimitado
+                                                        <span className="info-list-bt">Telefone ilimitado</span>
                                                     </div>
                                                     (<span class="bonus">Ganhe + 100 Mega</span>)
                                                 </li>
                                                 <br />
-                                                <li>
+                                                <li hidden={item.downSpeed === 900}>
                                                     <div class="list-bt" >
                                                         <input id="bt3Tv" type="checkbox" name="" value="Tv" onChange={handleCheckbox3Change} checked={checkbox3}></input>
-                                                        Tv ( + de 90 canais) <br /> + filmes e séries <br />
+                                                        <spam className="info-list-bt">Tv ( + de 90 canais) <br /> + filmes e séries <br /></spam>
                                                     </div>
                                                     (<span class="bonus">Ganhe + 100 Mega</span>)
                                                 </li>
@@ -141,8 +154,8 @@ export const HomeMainPrices = () => {
                                                     <div class="list-bt" >
                                                         <div hidden class="content-turbo">
                                                             <div class="icon-turbo">
-                                                                <img hidde class="turbo" src="/images/plans/fire.gif" />
-                                                                <img class="turbo icon-velocidade" src="/images/plans/turbo.svg" />
+                                                                <img hidde class="turbo" src="/images/plans/fire.gif" alt="Icone do turbo" />
+                                                                <img class="turbo icon-velocidade" src="/images/plans/turbo.svg" alt="turbo" />
                                                             </div>
                                                             <div>Turbo das 1h as 6h
                                                                 <br />
@@ -155,8 +168,8 @@ export const HomeMainPrices = () => {
                                                 </li>
 
                                                 <li>
-                                                    <div className= {`bonus-de-mega bonus-${desativado}`}>
-                                                        <h3>Você irá receberá:</h3>
+                                                    <div hidden={item.downSpeed === 900 ? true : false} className={`bonus-de-mega bonus-${desativado}`}>
+                                                        <h3>Você irá receber:</h3>
 
                                                         <p>
                                                             {item.downSpeed + (checkbox2 ? +100 : 0) + (checkbox3 ? +100 : 0)} Mega

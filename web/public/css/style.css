@@ -102,6 +102,14 @@ Design and Developed by: iqonicthemes.in
   src: url(../fonts/Gordita\ Regular.otf);
 }
 
+* {
+  --cor-1: #008D1E;
+  --cor-2: #04CB3A;
+  --cor-3: #333333;
+
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'GorditaFont';
   font-weight: normal;

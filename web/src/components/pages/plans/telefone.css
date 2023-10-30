@@ -89,7 +89,7 @@
 }
 
 .bt-tel {
-    background: linear-gradient(82deg, #008D1E 4.34%, #04CB3A 97.83%);
+    background: linear-gradient(82deg, var(--cor-1) 4.34%, var(--cor-2) 97.83%);
     padding: 10px 20px;
     margin: 10px auto;
     border-radius: 10px;
