@@ -211,6 +211,8 @@ export const PlansPage = () => {
         });
     }
 
+    const [indexPlano, setIndexPlano] = useState("ativo");
+
     function contact() {
 
         let planContact = "";
@@ -230,7 +232,13 @@ export const PlansPage = () => {
 
     return (
         <>
+        <ul className= {`index-planos ${indexPlano}`}>
+            <li className= {`${indexPlano}`} >Planos Mensal</li>
+            <li>Planos Semestral</li>
+            <li>Planos Anual</li>
+        </ul>
             <main className="content">
+                
                 <div className="container text-center">
                 <div className="packages">
                 <Slider {...settings}>
