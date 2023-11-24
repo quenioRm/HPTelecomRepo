@@ -134,6 +134,11 @@
     font-display: swap;
 }
 
+* {
+    --cor-1: #008D1E;
+    --cor-2: #4AD62B;
+    --cor-3: #333333;
+  }
 
 
 body {

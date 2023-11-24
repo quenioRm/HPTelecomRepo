@@ -5,7 +5,7 @@ import './header.css';
 export const HeaderLayout = () => {
     return(
         <>
-        <header>
+        <header hidden>
             <div hidden className="container text-center">
                 <div className="row justify-content-center">
                 <a href="/">

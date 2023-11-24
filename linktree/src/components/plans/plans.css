@@ -1,19 +1,34 @@
 .index-planos{
     display: flex;
-    gap: 5px;
-
+    gap: 10px;
     justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.ativo li{
-    background: white;
-    color: black;
-    padding: 5px;
+.index-planos .verde{
+    background: green;
+}
 
-    font-family: gordita;
-    font-size: 11.5px;
+.index-planos button{
+    background: white;
+    opacity: 0.4;
+    color: black;
+    padding: 6px;
+    font-family: Gordita;
+    font-weight: 500;
+    font-size: 77%;
     border-radius: 3px;
+    border: none;
     cursor: pointer;
+
+    transition: 250ms;
+}
+
+.index-planos .verde {
+    opacity: 1;
+    color: #fff;
+    background-color: var(--cor-2);
 }
 
 .content .container .packages .package-list {
@@ -102,7 +117,7 @@
 .price-plan {
     display: flex;
     justify-content: center;
-    width: 100%;
+    align-items: center;
     gap: 15px;
 }
 
@@ -114,7 +129,7 @@
 }
 
 .line-divisor {
-    background: linear-gradient(270deg, #04CB3A 0%, #008930 100%);
+    background: linear-gradient(270deg, var(--cor-2) 0%, var(--cor-1) 100%);
     width: 90%;
     height: 5px;
     margin: auto;
@@ -148,7 +163,7 @@ ul {
 }
 
 .bonus {
-    color: #008D1E;
+    color: var(--cor-1);
     font-size: 12px;
     font-family: "Gordita";
     margin: auto;
@@ -167,7 +182,7 @@ input[type="checkbox"] {
 }
 
 input:checked[type="checkbox"] {
-    background: #04CB3A;
+    background: var(--cor-2);
 }
 
 input[type="checkbox"]:before {
@@ -234,7 +249,7 @@ input:checked[type="checkbox"]:before {
 }
 
 .channel {
-    color: #008D1E;
+    color: var(--cor-1);
     font-family: "Gordita";
     font-weight: 500;
     font-size: 14px;
@@ -253,7 +268,7 @@ input:checked[type="checkbox"]:before {
     box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.479);
     color: white;
 
-    background: #008D1E;
+    background: var(--cor-1);
 }
 
 .button .green-button {
@@ -268,3 +283,9 @@ input:checked[type="checkbox"]:before {
 
 /*Barra de contato*/
 
+@media screen and  (min-width: 430px){
+
+    .index-planos button{
+        font-size: 100%;
+    }
+}
